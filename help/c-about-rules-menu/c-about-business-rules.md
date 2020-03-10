@@ -84,10 +84,10 @@ Les étapes suivantes supposent que vous utilisez le Créateur de règles visuel
 
    Sur la [!DNL Business Rules] page, utilisez la **[!UICONTROL Filter by tag]** fonction pour filtrer les règles qui correspondent à une étiquette donnée. 1. Sur la [!DNL Business Rule Builder] page, définissez les déclencheurs et les actions à utiliser.
 
-       **Options de déclenchement**
- Les     
-     déclencheurs sont les conditions qui doivent être remplies pour qu’une règle métier s’exécute. Lorsqu’une règle de fonctionnement comporte plusieurs déclencheurs, vous pouvez configurer la manière dont les déclencheurs répondent à l’aide de l’une des trois méthodes suivantes :
-   
+   **Options de déclenchement**
+
+   Les déclencheurs sont les conditions qui doivent être remplies pour qu’une règle métier s’exécute. Lorsqu’une règle de fonctionnement comporte plusieurs déclencheurs, vous pouvez configurer la manière dont les déclencheurs répondent à l’aide de l’une des trois méthodes suivantes :
+
    * Réponse dans laquelle tous les déclencheurs doivent être vrais (paramètre par défaut), comme dans l’exemple suivant :
 
       `if a AND b AND c then ...`

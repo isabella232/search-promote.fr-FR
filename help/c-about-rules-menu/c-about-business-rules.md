@@ -7,7 +7,7 @@ title: A propos des règles de fonctionnement
 topic: Rules,Site search and merchandising
 uuid: f2186f54-7a39-4f46-bb29-5115d5a17f07
 translation-type: tm+mt
-source-git-commit: 2dd205d3034e8397d88007a1618a121f0b6087a8
+source-git-commit: fc1f0b15a15a9d0308494fc23c5b4258442c8aab
 
 ---
 
@@ -22,11 +22,11 @@ Vous pouvez, par exemple, configurer le moment où apparaissent les bannières o
 
 Chaque règle de fonctionnement est composée de déclencheurs et d’actions.
 
-Le déclencheur définit le moment où la règle s’exécute. Par exemple, lorsque le terme de requête est &quot;mens&quot; ou lorsque les résultats sont principalement des chapeaux. Le déclencheur est constitué de plusieurs conditions qui doivent être toutes, ou l’une d’elles doit être vraie pour que le déclencheur global soit vrai. Vous pouvez spécifier la priorité en modifiant l’opérateur de déclenchement.
+Le déclencheur définit le moment où la règle s’exécute. Par exemple, lorsque le terme  est &quot;hommes&quot; ou lorsque les résultats sont principalement des chapeaux. Le déclencheur est constitué de plusieurs conditions qui doivent être toutes, ou l’une d’elles doit être vraie pour que le déclencheur global soit vrai. Vous pouvez spécifier la priorité en modifiant l’opérateur de déclenchement.
 
 L’action définit ce qui se produit lorsque la condition de déclenchement est remplie. Par exemple, la définition de la bannière pour afficher ou déplacer un résultat donné vers la position 1. Le tableau des règles affiche des informations récapitulatives sur la règle. Vous pouvez cliquer sur le nom d’une règle pour l’ouvrir et afficher des informations supplémentaires.
 
-Le tableau des règles affiche la liste de toutes vos règles de fonctionnement. Par défaut, le tableau affiche les dix dernières règles qui ont été ajoutées, dans l’ordre décroissant. Vous pouvez cliquer sur les en-têtes de colonne dans le tableau pour trier les règles par ordre croissant ou décroissant.
+Le tableau des règles présente un  de toutes vos règles de fonctionnement. Par défaut, le tableau affiche les dix dernières règles qui ont été ajoutées, dans l’ordre décroissant. Vous pouvez cliquer sur les en-têtes de colonne dans le tableau pour trier les règles par ordre croissant ou décroissant.
 
 Les règles de fonctionnement peuvent avoir l’un des trois états suivants : Approuvé, Suspendu ou En cours (travail en cours)
 
@@ -40,20 +40,20 @@ Les règles de fonctionnement peuvent avoir l’un des trois états suivants : A
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Approuvés </p> </td> 
-   <td colname="col2"> <p>Les règles de fonctionnement approuvées s’exécutent dans votre environnement de production et dans votre environnement d’évaluation. Vous approuvez une règle de fonctionnement dans le Créateur de règles avancé. </p> </td> 
+   <td colname="col2"> <p>Les règles de fonctionnement approuvées s’exécutent dans votre  de  en direct et dans votre de  en direct. Vous approuvez une règle de fonctionnement dans le Créateur de règles avancé. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Suspendu </p> </td> 
-   <td colname="col2"> <p>Les règles de fonctionnement suspendues ne s’exécutent jamais dans votre environnement d’évaluation ou votre environnement de production. </p> </td> 
+   <td colname="col2"> <p>Les règles de fonctionnement suspendues ne s’exécutent jamais dans votre   de mise en scène ou votre de  de vie. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>WIP </p> </td> 
-   <td colname="col2"> <p>WIP (Work In Progress) sont des règles de fonctionnement qui ne sont ni approuvées ni suspendues. C'est-à-dire que vous travaillez toujours sur eux ou que vous voudrez peut-être d'abord les tester avant de les approuver. Les règles de fonctionnement dans un état de travaux en cours s'exécutent uniquement dans votre environnement d'évaluation. </p> </td> 
+   <td colname="col2"> <p>WIP (Work In Progress) sont des règles de fonctionnement qui ne sont ni approuvées ni suspendues. C'est-à-dire que vous travaillez toujours sur eux ou que vous voudrez peut-être d'abord les tester avant de les approuver. Les règles de fonctionnement dans un état de travaux en cours ne s'exécutent que dans votre   intermédiaire. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Vous approuvez les règles de fonctionnement et les poussez en direct pour qu’elles s’exécutent dans votre environnement de production. Actuellement, vous ne pouvez publier que *toutes les* règles. Cependant, vous pouvez modifier l’état d’une règle pour contrôler les règles qui s’exécutent et qui ne s’exécutent pas dans votre environnement de production.
+Vous approuvez les règles de fonctionnement et les poussez en direct pour qu’elles s’exécutent dans votre  de vie . Actuellement, vous ne pouvez publier que *toutes les* règles. Cependant, vous pouvez modifier l’état d’une règle afin de contrôler quelles règles s’exécutent et ne s’exécutent pas dans votre  de  en direct.
 
 Par défaut, les règles s’exécutent chaque fois que leurs déclencheurs associés sont satisfaits. Cependant, vous pouvez éventuellement planifier l’exécution d’une règle pour une période et une date spécifiques.
 
@@ -120,7 +120,7 @@ Les étapes suivantes supposent que vous utilisez le Créateur de règles visuel
       <td colname="col2"> <p>Le déclencheur est true lorsque le terme de recherche correspond au mot-clé sensible à la casse donné. Le déclencheur est true pour le mot-clé et tous ses synonymes, comme défini dans le dictionnaire linguistique. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p> Correspondances de requête </p> </td> 
+      <td colname="col1"> <p> Correspondance  </p> </td> 
       <td colname="col2"> <p> Le déclencheur est true lorsque tous les paramètres de recherche correspondent. </p> </td> 
       </tr> 
       <tr> 
@@ -143,7 +143,7 @@ Les étapes suivantes supposent que vous utilisez le Créateur de règles visuel
 
    Lorsque les déclencheurs d’une règle métier sont satisfaits, les actions associées à la règle sont exécutées. Bien que le Créateur de règles visuel vous permette de créer les actions suivantes, vous pouvez utiliser le Créateur de règles avancé pour créer des types d’actions supplémentaires.
 
-   Les actions Supprimer un élément de facette, Afficher un élément de facette, Afficher une facette, Supprimer une facette, Envoyer un élément de facette dans le tableau suivant nécessitent une facette. L’interface de sélection d’une facette dépend de la configuration de votre compte. Par exemple, un compte normal utilise une liste déroulante pour choisir des facettes. Toutefois, si votre compte comporte des facettes en pointillés, une zone de texte de saisie automatique s’affiche, dans laquelle vous pouvez saisir le nom de n’importe quelle facette. La saisie automatique suggère des facettes dans une liste déroulante lorsque vous saisissez le nom de la facette. Les suggestions incluent des facettes actuellement définies. Si votre compte dispose d’une carte d’emplacements, il suggère également des facettes en pointillés.
+   Les actions Supprimer un élément de facette, Afficher un élément de facette, Afficher une facette, Supprimer une facette, Envoyer un élément de facette dans le tableau suivant nécessitent une facette. L’interface de sélection d’une facette dépend de la configuration de votre compte. Par exemple, un compte normal utilise un déroulant pour choisir des facettes. Toutefois, si votre compte comporte des facettes en pointillés, une zone de texte de saisie automatique s’affiche, dans laquelle vous pouvez saisir le nom de n’importe quelle facette. La saisie automatique suggère des facettes dans un déroulant lorsque vous saisissez le nom de la facette. Les suggestions incluent des facettes actuellement définies. Si votre compte dispose d’une carte d’emplacements, il suggère également des facettes en pointillés.
 
    <table> 
     <thead> 
@@ -158,8 +158,8 @@ Les étapes suivantes supposent que vous utilisez le Créateur de règles visuel
       <td colname="col2"> <p> Place le groupe de résultats de recherche tel que défini par les critères de recherche spécifiés à une position spécifique. </p> <p>La publication d’un groupe de résultats de recherche n’ajoute pas implicitement le groupe. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Ajouter un groupe </p> </td> 
-      <td colname="col2"> <p> Ajoutez le groupe de résultats de recherche tel que défini par les critères de recherche spécifiés. </p> </td> 
+      <td colname="col1"> <p>Groupe Ajouter </p> </td> 
+      <td colname="col2"> <p> Ajouter le groupe de résultats de recherche tel que défini par les critères de recherche spécifiés. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Supprimer un groupe </p> </td> 
@@ -170,7 +170,7 @@ Les étapes suivantes supposent que vous utilisez le Créateur de règles visuel
       <td colname="col2"> <p> Place le résultat de recherche individuel à la position sélectionnée. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Ajouter un seul </p> </td> 
+      <td colname="col1"> <p>Ajouter unique </p> </td> 
       <td colname="col2"> <p> Ajoute un résultat de recherche individuel à la position sélectionnée. </p> </td> 
       </tr> 
       <tr> 
@@ -229,7 +229,7 @@ Les étapes suivantes supposent que vous utilisez le Créateur de règles visuel
 
    * Lorsque le **[!UICONTROL Triggers]** panneau est déplié : dans la zone du modèle de présentation de la page Créateur de règles de fonctionnement, cliquez avec le bouton droit sur un résultat de recherche ou une facette de recherche, puis cliquez **[!UICONTROL Add "result present" trigger]**.
 
-      Dans le panneau Déclencheurs, cliquez sur le X à gauche d’un déclencheur pour le supprimer de la liste des déclencheurs.
+      Dans le panneau Déclencheurs, cliquez sur le X à gauche d’un déclencheur pour le supprimer du  des déclencheurs.
 
    * Lorsque le **[!UICONTROL Actions]** panneau est déplié : dans la zone du modèle de présentation de la page Créateur de règles de fonctionnement, cliquez avec le bouton droit sur un résultat de recherche. Cliquez sur **[!UICONTROL Add Result]**, **[!UICONTROL Remove Result]**, **[!UICONTROL Push to bottom]** ou **[!UICONTROL Push to #`<n>`]** (où `<n>` est un nombre).
 
@@ -255,7 +255,7 @@ Les étapes suivantes supposent que vous utilisez le Créateur de règles visuel
 1. (Facultatif) Dans le **[!UICONTROL Schedule]** panneau, effectuez l’une des opérations suivantes :
 
    * Cliquez sur **[!UICONTROL Run Indefinitely]** pour que la règle s’exécute chaque fois que les déclencheurs associés sont satisfaits. Il s’agit de l’option par défaut.
-   * Cliquez sur **[!UICONTROL Fixed Schedule]**, puis spécifiez la date et l’heure de début et la date et l’heure de fin de l’exécution de la règle chaque fois que le déclencheur associé est satisfait.
+   * Cliquez sur **[!UICONTROL Fixed Schedule]**, puis spécifiez la date et l’heure de  du, ainsi que la date et l’heure de fin de l’exécution de la règle chaque fois que le déclencheur associé est satisfait.
 
 1. Cliquez sur **[!UICONTROL Save Rule]**.
 1. (Facultatif) Sur la [!DNL Business Rules] page, effectuez l’une des opérations suivantes :
@@ -285,7 +285,7 @@ Vous pouvez utiliser Visual Rule Builder ou Advanced Rule Builder pour modifier 
 
       La règle de fonctionnement s’ouvre dans l’interface par défaut spécifiée dans **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL My Preferences]**.
 
-   * Dans la liste déroulante, en regard du nom d’une règle de fonctionnement à modifier, cliquez sur **[!UICONTROL Edit in advanced mode]** ou **[!UICONTROL Edit in visual mode]**.
+   * Dans le  déroulant, en regard du nom d’une règle de fonctionnement à modifier, cliquez sur **[!UICONTROL Edit in advanced mode]** ou **[!UICONTROL Edit in visual mode]**.
 
 1. Dans le champ [!DNL Name] de texte, saisissez le nouveau nom de la règle de fonctionnement.
 
@@ -313,7 +313,7 @@ Vous pouvez utiliser Visual Rule Builder ou Advanced Rule Builder pour modifier 
 1. (Facultatif) Dans le [!DNL Schedule] panneau, effectuez l’une des opérations suivantes :
 
    * Cliquez sur **[!UICONTROL Run Indefinitely]** pour que la règle s’exécute chaque fois que les déclencheurs associés sont satisfaits. Il s’agit de l’option par défaut.
-   * Cliquez sur **[!UICONTROL Fixed Schedule]**, puis spécifiez la date et l’heure de début et la date et l’heure de fin de l’exécution de la règle chaque fois que le déclencheur associé est satisfait.
+   * Cliquez sur **[!UICONTROL Fixed Schedule]**, puis spécifiez la date et l’heure de  du, ainsi que la date et l’heure de fin de l’exécution de la règle chaque fois que le déclencheur associé est satisfait.
 
 1. Cliquez sur **[!UICONTROL Save Rule]**.
 
@@ -338,7 +338,7 @@ Vous pouvez copier une règle de fonctionnement existante pour l’utiliser comm
 **Pour copier une règle de fonctionnement**
 
 1. Dans le menu du produit, cliquez sur **[!UICONTROL Rules]** > **[!UICONTROL Business Rules]**.
-1. Sur la **[!UICONTROL Business Rules]** page, dans la liste déroulante en regard du nom d’une règle de fonctionnement à copier, cliquez sur **[!UICONTROL Copy rule]**.
+1. Sur la **[!UICONTROL Business Rules]** page, dans le déroulant  en regard du nom d’une règle de fonctionnement à copier, cliquez sur **[!UICONTROL Copy rule]**.
 1. Modifiez la règle de fonctionnement copiée comme d’habitude.
 
    See [Editing a business rule](../c-about-rules-menu/c-about-business-rules.md#task_375CFA75D1D94D9E92A35DE1228E5087).
@@ -462,7 +462,7 @@ Vous pouvez supprimer des règles de fonctionnement dont l&#39;état est En cour
    * Utilisez l’en-tête de colonne de la case à cocher pour vérifier toutes les règles actuellement affichées sur la page.
    * Vérifiez uniquement les règles de fonctionnement que vous souhaitez supprimer, en fonction de l’état dans la colonne État du tableau.
 
-1. Dans la liste [!DNL Bulk Actions] déroulante, cliquez sur **[!UICONTROL Delete]**.
+1. Dans le  [!DNL Bulk Actions] déroulant, cliquez sur **[!UICONTROL Delete]**.
 1. Dans la [!DNL Confirm Action] boîte de dialogue, cliquez sur **[!UICONTROL OK]**.
 1. (Facultatif) Effectuez l’une des opérations suivantes :
 

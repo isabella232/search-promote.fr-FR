@@ -7,7 +7,7 @@ title: Simulateur
 topic: Simulator,Site search and merchandising
 uuid: 7ec8f5b9-3ab3-4b9a-bf8a-65d0ca1dfddb
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: 91ddead9f73b73ea1a20e26582998966f801d6ff
 
 ---
 
@@ -33,7 +33,7 @@ Voir [Ajout d’une nouvelle règle](c-about-rules-menu/c-about-business-rules.m
 **Pour utiliser le simulateur**
 
 1. Dans le menu du produit, cliquez sur **[!UICONTROL Simulator]**.
-1. Dans la liste **[!UICONTROL Options]** déroulante, sélectionnez l’option à exécuter.
+1. Dans le  **[!UICONTROL Options]** déroulant, sélectionnez l’option à exécuter.
 
    <!-- 
    
@@ -41,7 +41,7 @@ Voir [Ajout d’une nouvelle règle](c-about-rules-menu/c-about-business-rules.m
    
    -->
 
-   (Facultatif) Utilisez la colonne de case à cocher du tableau de la page Simulateur pour activer ou désactiver une règle donnée dans la simulation.
+   (Facultatif) Utilisez la colonne de case à cocher du tableau de la page Simulateur pour activer ou désactiver une règle donnée dans le .
 
    <table> 
     <thead> 
@@ -52,28 +52,28 @@ Voir [Ajout d’une nouvelle règle](c-about-rules-menu/c-about-business-rules.m
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <p>Simuler l’évaluation/Simuler l’expérience en direct </p> </td> 
-      <td colname="col2"> <p>Vous pouvez également simuler votre environnement de production ou votre environnement d’affichage. </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">Simuler l’évaluation/Simuler l’expérience en direct</span> </p> </td> 
+      <td colname="col2"> <p>Alternez entre la simulation de votre  en direct  ou votre de scène . </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Afficher/Masquer les règles de traitement </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">Afficher/Masquer les règles de traitement</span> </p> </td> 
       <td colname="col2"> <p>Affichez ou masquez toutes les règles de traitement qui ont été déclenchées au lieu des seules règles de fonctionnement. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Modifier la date de simulation </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">Modifier la date  du</span> </p> </td> 
       <td colname="col2"> <p>Simuler les résultats de la recherche pour une date donnée. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Simuler sur PC </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">Simuler sur PC</span> </p> </td> 
       <td colname="col2"> <p>Simulez les résultats de la recherche comme si vous utilisiez un ordinateur personnel. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Simuler sur mobile </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">Simuler sur mobile</span> </p> </td> 
       <td colname="col2"> <p>Simulez les résultats de la recherche comme si vous utilisiez un téléphone mobile ou une tablette. </p> <p>Lorsque vous sélectionnez cette option, vous pouvez choisir l’une des options associées suivantes : </p> 
         <ul id="ul_2A9901418212486A8EE67A78CB99CBE4"> 
-        <li id="li_B210E954DF0D44C397718112C72C2103"> <b>Device </b> <p>Simulez les résultats de la recherche sur un téléphone mobile ou une tablette. </p> </li> 
-        <li id="li_90B64EAA0B57446A90CE22172E703594"> <b>Résolution</b> <p>Selon le périphérique que vous avez sélectionné, vous pouvez choisir la résolution associée. </p> </li> 
-        <li id="li_042AF9FA3FA846EDB48F7296DB361515"> <b>Vue horizontale</b> <p>Affichez comment les résultats de la recherche simulée apparaissent horizontalement sur le périphérique sélectionné. </p> </li> 
+        <li id="li_B210E954DF0D44C397718112C72C2103"> <b><span class="uicontrol">Device </span></b> <p>Simulez les résultats de la recherche sur un téléphone mobile ou une tablette. </p> </li> 
+        <li id="li_90B64EAA0B57446A90CE22172E703594"> <b><span class="uicontrol">Résolution</span></b> <p>Selon le périphérique que vous avez sélectionné, vous pouvez choisir la résolution associée. </p> </li> 
+        <li id="li_042AF9FA3FA846EDB48F7296DB361515"> <b><span class="uicontrol">de horizontal</span></b> <p>de l’affichage horizontal des résultats de la recherche simulée sur le périphérique sélectionné. </p> </li> 
         </ul> </td> 
       </tr> 
     </tbody> 

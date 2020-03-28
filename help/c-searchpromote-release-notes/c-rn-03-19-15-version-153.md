@@ -7,7 +7,7 @@ title: Notes de mise à jour de Search&amp;Promote 15.3.1 (24/03/2015)
 topic: Release Notes,Site search and merchandising
 uuid: f02da5a4-2207-4603-aa05-5cff7be16dd5
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 
 ---
 
@@ -16,13 +16,13 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 
 ## Nouvelles fonctionnalités et améliorations {#section_2A10EF6B40FC4F2CB2381FFA9FFA64BD}
 
-* Recherche de numéros de modèle de produit - Ajout d&#39;un nouveau paramètre Linguistique qui vous permet de fractionner éventuellement les jetons sur les transitions alphabétique-numérique. Cette fonctionnalité permet des correspondances de texte libre plus souples sur les jetons de style de pièce ou de produit.
+* Recherche de numéros de modèle de produit - Ajout d&#39;un nouveau paramètre Linguistique qui vous permet de fractionner éventuellement les jetons sur des  alphanumériques. Cette fonctionnalité permet des correspondances de texte libre plus souples sur les jetons de style de pièce ou de produit.
 
    Reportez-vous **[!UICONTROL Partial Alphanumeric Matching]** à la section [Configuration de la correspondance des termes de recherche avec votre contenu Web...](../c-about-linguistics-menu/c-about-words-and-language.md#task_351A9144A51F4B41923BDBACDEF3B616).
 
-* Possibilité d’exporter les résultats des affichages de données.
+* Ajout de la capacité d’exporter les résultats  des de données.
 
-   Voir [A propos des vues](../c-about-reports-menu/c-about-data-views.md#concept_DCA897D074464BC1861AA47B40CC86C3)de données.
+   Voir [A propos des](../c-about-reports-menu/c-about-data-views.md#concept_DCA897D074464BC1861AA47B40CC86C3)de données.
 
 * Plages générées dynamiquement pour les attributs de plage des fonctions de cumul automatique de facettes et de valeurs.
 
@@ -35,8 +35,8 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 * La boîte de dialogue de modification du rail de facettes doit inclure des facettes intermédiaires.
 * Résultats de recherche principaux vides pour le mode de recherche &quot;incorporé&quot;, pour une recherche contenant des caractères japonais.
 * La conversion Tika des fichiers .docx Word renseigne désormais l’ `title` attribut.
-* Correction de messages erronés de &quot;bannière en double&quot; dans le **[!UICONTROL Banner]** gestionnaire.
-* Les bannières Dynamic Media Classic sont désormais non conformes au protocole.
+* Correction des messages erronés de la bannière &quot;&quot; dans le **[!UICONTROL Banner]** gestionnaire.
+* [!DNL Dynamic Media Classic] les bannières sont maintenant agnostiques du protocole.
 * L’attribut de **[!UICONTROL Table Name]** champ était parfois masqué lors de la modification de champs définis par l’utilisateur dans l’interface utilisateur des métadonnées, même lorsque **[!UICONTROL Dynamic Facets]** le compte était activé.
 * **[!UICONTROL Recent Searches]** n’encode plus de caractères non ASCII à plusieurs chiffres.
 * Les champs MDI peuvent être renseignés sans avoir recours au filtrage par script.

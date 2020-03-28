@@ -7,7 +7,7 @@ title: Notes de mise à jour de Search&amp;Promote 8.16.0 (18/09/2014)
 topic: Release Notes,Site search and merchandising
 uuid: 0a59858b-213b-40d6-aea1-d085c4d6d2fa
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 
 ---
 
@@ -50,5 +50,5 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 * Le paramètre **[!UICONTROL Strip HTML]** du connecteur d’index s’affichait toujours comme coché.
 * Inconsistent search results were experienced with the **[!UICONTROL Common Phrases]** feature.
 * L’affichage des noms d’attribut était tronqué dans le résumé des listes de règles.
-* La publication d’une règle métier individuelle publiait toutes les règles métier.
+* La publication d’une règle métier individuelle entraînait l’activation de toutes les règles métier.
 

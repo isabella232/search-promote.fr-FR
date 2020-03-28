@@ -8,7 +8,7 @@ title: A propos des facettes dynamiques
 topic: Design,Site search and merchandising
 uuid: 1ea91c22-dcc2-4173-aa50-ce618ad0a99c
 translation-type: tm+mt
-source-git-commit: 4270ea66ba645ad0f71c9c8b5c2a1fcc6eb02ad2
+source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 
 ---
 
@@ -96,16 +96,16 @@ Voir également
 1. Cliquez sur **regénérer l’index** de votre site intermédiaire dans la zone bleue pour recréer rapidement l’index de votre site Web intermédiaire.
 
    Voir aussi [Régénération de l’index d’un site Web](../c-about-index-menu/c-about-regenerate-index.md#task_B28DE40C0E9A475ABCBCBC4FF993AACD)en direct ou par étape.
-1. Déterminez le nombre de facettes dynamiques à sélectionner pour une recherche donnée. Pour accomplir cette tâche, effectuez l’une des opérations suivantes :
+1. Déterminez le nombre de facettes dynamiques à sélectionner pour une recherche donnée. Pour accomplir cette , effectuez l’une des opérations suivantes :
 
-   * Créez une règle de nettoyage de requête avec les conditions souhaitées, qui exécute l’action `set`, `backend parameter`à `sp_sfvl_df_count` évaluer `X`, où `X` correspond au nombre souhaité de facettes dynamiques à demander au moment de la recherche, puis cliquez sur **[!UICONTROL Add]**.
+   * Créez une règle de nettoyage  avec les conditions souhaitées, qui effectue l’action `set`, `backend parameter`à `sp_sfvl_df_count` évaluer `X`, où `X` correspond au nombre souhaité de facettes dynamiques à demander au moment de la recherche, puis cliquez sur **[!UICONTROL Add]**.
    ![](assets/querycleaningrule_dynamicfacets.png)
 
-   Voir [Ajout d’une règle](../c-about-rules-menu/c-about-query-cleaning-rules.md#task_47F43988D3D9485F8AE1DFDA7E00BF54)de nettoyage de requête.
+   Voir [Ajout d’une règle](../c-about-rules-menu/c-about-query-cleaning-rules.md#task_47F43988D3D9485F8AE1DFDA7E00BF54)de nettoyage .
 
    Voir aussi Paramètres [CGI de recherche](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8)principal, ligne 40 du tableau pour plus d’informations sur `sp_sfvl_df_count`les
 
-   * Ajoutez une recherche et définissez le `sp_sfvl_df_count` paramètre &quot;personnalisé&quot; sur la valeur souhaitée, puis cliquez sur **[!UICONTROL Add]**.
+   * Ajouter une recherche et définissez le `sp_sfvl_df_count` paramètre &quot;personnalisé&quot; sur la valeur souhaitée, puis cliquez sur **[!UICONTROL Add]**.
    ![](assets/gs_addsearch_dynamic_facets.png)
 
    Voir [Ajout d’une nouvelle définition](../c-about-settings-menu/c-about-searching-menu.md#task_98D3A168AB5D4F30A1ADB6E0D48AB648)de recherche.
@@ -169,7 +169,7 @@ Voir également
 
    Veillez à spécifier `__dynamic_facets` le `gsname` dans la `guided-facet-rail` balise . Cette balise est un rail de facettes prédéfini réservé à la sortie des facettes dynamiques renvoyées pour une recherche donnée.
 
-   Vous pouvez également modifier ce rail de facettes spécial au moyen de Règles > Règles métier, et utiliser le Créateur de règles avancé comme illustré ci-dessous.
+   Vous pouvez également modifier ce rail de facettes spécial au moyen de **[!UICONTROL Rules > Business Rules]**, et utiliser le **[!UICONTROL Advanced Rule Builder]** comme illustré ci-dessous.
 
    ![](assets/dynamicfacetrail_businessrule.png)
 

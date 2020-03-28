@@ -7,7 +7,7 @@ title: Notes de mise à jour de Search&amp;Promote 8.17.0 (30/10/2014)
 topic: Release Notes,Site search and merchandising
 uuid: ea1725df-778c-4875-a269-f33d0c367126
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 
 ---
 
@@ -32,10 +32,10 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
    Voir [A propos des mots et de la langue](../c-about-linguistics-menu/c-about-words-and-language.md#concept_CEB4B9576F3C4E2EB87B352EEC738D79) et [A propos de la saisie semi-automatique](../c-about-auto-complete.md#concept_093A9CD754864BA79B456FE4BEB64578).
 
 * Le moniteur de traitement redémarre maintenant les processus apache.
-* Mise en œuvre d’une action L’action Afficher l’élément de facette dans les règles de fonctionnement.
+* Mise en œuvre d’une action &quot;Révéler l’élément de facette&quot; dans [!DNL Business Rules].
 * On the [!DNL Adjust Ranking Weights] page, you now have the ability to adjust the **[!UICONTROL Rule & Relevancy Balance]** setting in 1% increments.
 
-   Voir [Ajustement du poids associé aux règles](../c-about-rules-menu/c-about-ranking-rules.md#task_3CB6FC92A66F4D99874A42D55825DB64)de classement.
+   Voir [Ajustement du  associé aux règles](../c-about-rules-menu/c-about-ranking-rules.md#task_3CB6FC92A66F4D99874A42D55825DB64)de classement.
 
 * Apache se bloquait avec l’agent utilisateur du navigateur Silk de Kindle Fire.
 * Résolution d’un problème d’échec de l’indexation.

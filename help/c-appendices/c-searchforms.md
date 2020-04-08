@@ -7,7 +7,7 @@ title: Formulaires de recherche
 topic: Appendices,Site search and merchandising
 uuid: 91153e3a-c437-47f3-8c2a-d9ac02965b8c
 translation-type: tm+mt
-source-git-commit: 55f48748f8c0a2f739dfbe30e8d42b73c8106b81
+source-git-commit: 4542702e1d2ba04c70d9f6b24bfa32e1f1c6acb5
 
 ---
 
@@ -151,7 +151,7 @@ Le processus de configuration des jeux de cadres est le suivant :
   <tr> 
    <td colname="col1"> <p>5 </p> </td> 
    <td colname="col02"> <p>Testez le formulaire de recherche. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="../c-appendices/c-searchforms.md#section_43D8D4A7BF524DC480DFE5442F6A2E3C" type="section" format="dita"> Test du formulaire de recherche </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_43D8D4A7BF524DC480DFE5442F6A2E3C" type="section" format="dita"> Test du formulaire de recherche </a> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -286,7 +286,7 @@ En utilisant l’exemple de formulaire de recherche avancée suivant, le reste d
 
 Vous pouvez  le code HTML du formulaire de recherche avancée entier de l&#39;exemple ci-dessus.
 
-Voir Code [HTML de formulaire de recherche](../c-appendices/c-searchforms.md#reference_9AAD4A46B68D4D48865508982CB86DB9)avancée.
+Voir Code [HTML de formulaire de recherche](#reference_9AAD4A46B68D4D48865508982CB86DB9)avancée.
 
 Voir [Configuration d’une page CSS](../c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96)à remplissage automatique.
 
@@ -435,7 +435,7 @@ Voir [Copie du code HTML du formulaire de recherche dans le...](../c-about-auto-
 
 Code de formulaire HTML utilisé pour produire le formulaire de recherche avancée qui s’affiche en haut de la rubrique Exemple de formulaire de recherche avancée.
 
-Voir [Exemple de formulaire](../c-appendices/c-searchforms.md#reference_82E1051918744EBA88A01E9E6AE42C4A)de recherche avancée.
+Voir [Exemple de formulaire](#reference_82E1051918744EBA88A01E9E6AE42C4A)de recherche avancée.
 
 Si vous utilisez ce code, n’oubliez pas de remplacer la `sp_a` valeur de `sp99999999` par votre numéro de compte réel.
 

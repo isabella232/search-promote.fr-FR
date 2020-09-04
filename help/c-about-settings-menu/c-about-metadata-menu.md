@@ -8,9 +8,9 @@ title: A propos du menu Métadonnées
 topic: Settings,Site search and merchandising
 uuid: f12fc863-a140-45e8-b219-3dbfdef099cd
 translation-type: tm+mt
-source-git-commit: e080a61e24a3809beff7c212ff3d088b2a8ad3b6
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
 workflow-type: tm+mt
-source-wordcount: '8064'
+source-wordcount: '8039'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Vous pouvez modifier les champs déjà prédéfinis. Vous pouvez également cré
 
 Voir aussi [A propos des Vues](../c-about-reports-menu/c-about-data-views.md#concept_DCA897D074464BC1861AA47B40CC86C3)de données.
 
-## Ajouter un nouveau champ de balise meta {#task_6DF188C0FC7F4831A4444CA9AFA615E5}
+## ajouter un nouveau champ de balise meta {#task_6DF188C0FC7F4831A4444CA9AFA615E5}
 
 Vous pouvez définir et ajouter vos propres champs de balise de métadonnées.
 
@@ -68,10 +68,9 @@ Avant que les effets de la nouvelle définition de balise meta ne soient visible
       </tr> 
       <tr> 
       <td colname="col1"> <p>Nom(s) de la méta-balise </p> </td> 
-      <td colname="col2"> <p>Détermine le contenu associé au champ défini. </p> <p>La liste des noms peut comporter jusqu’à 255 caractères. De plus, le nom peut contenir tous les caractères autorisés dans l’attribut name d’une balise meta HTML. </p> <p>Vous pouvez spécifier plusieurs balises meta dans une définition de champ unique. </p> <p>Plusieurs valeurs doivent être séparées par des virgules et le nom de balise meta le plus à gauche figurant sur une page Web donnée est prioritaire. </p> <p>Supposons, par exemple, que vous ayez défini un champ nommé "auth". Le nom du champ comporte les balises meta associées "author, dc.author". Dans ce cas, le contenu de la balise meta "author" est indexé et recherché sur celui de "dc.author" si les deux balises meta apparaissent sur une page Web. </p> <p>Les champs définis par l’utilisateur doivent comporter au moins un nom de balise meta dans leur définition. Les champs prédéfinis n’ont pas besoin d’avoir une balise meta associée. Cependant, si une ou plusieurs balises meta sont spécifiées, le contenu des balises meta remplace la source de données actuelle pour chaque balise . </p> <p>Par exemple, si la balise meta "dc.title" est associée au champ prédéfini "title", le contenu de la balise meta "dc.title" est indexé sur celui de la balise META 
-      <userinput>
+      <td colname="col2"> <p>Détermine le contenu associé au champ défini. </p> <p>La liste des noms peut comporter jusqu’à 255 caractères. De plus, le nom peut contenir tous les caractères autorisés dans l’attribut name d’une balise meta HTML. </p> <p>Vous pouvez spécifier plusieurs balises meta dans une définition de champ unique. </p> <p>Plusieurs valeurs doivent être séparées par des virgules et le nom de balise meta le plus à gauche figurant sur une page Web donnée est prioritaire. </p> <p>Supposons, par exemple, que vous ayez défini un champ nommé "auth". Le nom du champ comporte les balises meta associées "author, dc.author". Dans ce cas, le contenu de la balise meta "author" est indexé et recherché sur celui de "dc.author" si les deux balises meta apparaissent sur une page Web. </p> <p>Les champs définis par l’utilisateur doivent comporter au moins un nom de balise meta dans leur définition. Les champs prédéfinis n’ont pas besoin d’avoir une balise meta associée. Cependant, si une ou plusieurs balises meta sont spécifiées, le contenu des balises meta remplace la source de données actuelle pour chaque balise . </p> <p>Par exemple, si la balise meta "dc.title" est associée au champ prédéfini "title", le contenu de la balise meta "dc.title" est indexé sur celui de la <code>
         &lt;title&gt; 
-      </userinput> pour un document particulier. </p> <p>Voici quelques exemples : </p> <p> 
+      </code> balise pour un document particulier. </p> <p>Voici quelques exemples : </p> <p> 
       <ul id="ul_0132E15FC19E4C0CA13CD5A12EA3BBEC"> 
       <li id="li_ECD3B194FECB4C2090CAEC8449320D3F"> dc.date </li> 
       <li id="li_09C76BC7AC7348859D01989697212E31"> description </li> 
@@ -96,38 +95,31 @@ Avant que les effets de la nouvelle définition de balise meta ne soient visible
       </ul> </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Listes autorisées </p> </td> 
-      <td colname="col2"> <p>Disponible uniquement si le type de données <span class="uicontrol"> Texte </span>ou <span class="uicontrol"> Numéro </span> est sélectionné. </p> <p>Index distinct des valeurs délimitées dans le contenu des métadonnées de ce champ. </p> <p>Par exemple, le contenu "Rouge, Jaune, Vert, Bleu" est traité comme quatre valeurs distinctes au lieu d’une valeur lorsque "Listes autorisées" est sélectionné. Ce traitement est particulièrement utile pour la recherche de plage (à l’aide de 
-      <userinput>
+      <td colname="col1"> <p>listes autorisées </p> </td> 
+      <td colname="col2"> <p>Disponible uniquement si le type de données <span class="uicontrol"> Texte </span>ou <span class="uicontrol"> Numéro </span> est sélectionné. </p> <p>Index distinct des valeurs délimitées dans le contenu des métadonnées de ce champ. </p> <p>Par exemple, le contenu "Rouge, Jaune, Vert, Bleu" est traité comme quatre valeurs distinctes au lieu d’une valeur lorsque "Listes autorisées" est sélectionné. Ce traitement est particulièrement utile pour la recherche de plage (à l’aide <code>
         sp_q_min 
-      </userinput>, 
-      <userinput>
+      </code>, <code>
         sp_q_max 
-      </userinput> ni 
-      <userinput>
+      </code>ou <code>
         sp_q_exact 
-      </userinput>) et avec la variable 
-      <userinput>
-        &lt;recherche-champ-valeur-liste&gt; 
-      </userinput>, 
-      <userinput>
+      </code>) et pour la recherche <code>
+        &lt;search-field-value-list&gt; 
+      </code>, <code>
         &lt;search-field-values&gt; 
-      </userinput>, et 
-      <userinput>
+      </code>et <code>
         &lt;search-display-field-values&gt; 
-      </userinput>. </p> <p>Non disponible si le type de données Version est sélectionné. </p> </td> 
+      </code>. </p> <p>Non disponible si le type de données Version est sélectionné. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> Facette dynamique </p> </td> 
       <td colname="col2"> <p> 
-        <!--NEW 2/2/2014--> <p>Remarque : cette fonctionnalité n’est pas activée par défaut. Contactez le support technique pour l’activer pour votre utilisation. Une fois activé, il apparaît dans l’interface utilisateur. </p> </p> <p>Définit la facette identifiée comme étant dynamique. </p> <p>Les facettes sont créées au-dessus des champs de balise meta. Un champ de balise meta est un calque de recherche principal de bas niveau de l’Search&amp;Promote Adobe. Les facettes, en revanche, font partie de GS (Guided Search) - la couche supérieure de présentation de l'Search&amp;Promote Adobe. Les facettes possèdent des champs de balise meta, cependant, les champs de balise meta ne connaissent rien aux facettes. </p> <p>Voir <a href="../c-about-design-menu/c-about-dynamic-facets.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> A propos des facettes dynamiques </a>. </p> </td> 
+        <!--NEW 2/2/2014--> <p>Remarque : cette fonctionnalité n’est pas activée par défaut. Contactez le support technique pour l’activer pour votre utilisation. Une fois activé, il apparaît dans l’interface utilisateur. </p> </p> <p>Définit la facette identifiée comme étant dynamique. </p> <p>Les facettes sont créées au-dessus des champs de balise meta. Un champ de balise meta est un calque de recherche principal de bas niveau de l’Search &amp; Promote d’Adobe. Les facettes, en revanche, font partie de GS (Guided Search) - la couche supérieure de présentation de l'Search &amp; Promote d'Adobe. Les facettes possèdent des champs de balise meta, cependant, les champs de balise meta ne connaissent rien aux facettes. </p> <p>Voir <a href="../c-about-design-menu/c-about-dynamic-facets.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> A propos des facettes dynamiques </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Autoriser la déduplication </p> </td> 
-      <td colname="col2"> <p>Cochez cette option pour activer la déduplication de ce champ. En d’autres termes, autorisez la spécification de ce champ au moment de la recherche au moyen de la variable 
-        <userinput>
+      <td colname="col2"> <p>Cochez cette option pour activer la déduplication de ce champ. En d’autres termes, autorisez ce champ à être spécifié au moment de la recherche au moyen du paramètre <code>
           sp_dedupe_field 
-        </userinput> Paramètre CGI de recherche. </p> <p>Voir <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> Rechercher des paramètres CGI </a>. </p> </td> 
+        </code> Search CGI. </p> <p>Voir <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> Rechercher des paramètres CGI </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Nom du tableau </p> </td> 
@@ -143,7 +135,7 @@ Avant que les effets de la nouvelle définition de balise meta ne soient visible
       </tr> 
       <tr> 
       <td colname="col1"> <p>Champ de mise à jour verticale </p> </td> 
-      <td colname="col2"> <p> <p>Remarque : cette fonctionnalité n’est pas activée par défaut. Contactez le support technique pour l’activer pour votre utilisation. Une fois activé, il apparaît dans l’interface utilisateur. </p> </p> <p>Définit le champ identifié comme un champ Mise à jour verticale. </p> <p>Les champs Mise à jour verticale sont susceptibles d’être mis à jour au moyen du processus Mise à jour verticale ( <span class="uicontrol"> Index </span> &gt; <span class="uicontrol"> Mise à jour verticale </span>). En raison de la manière dont les mises à jour verticales sont effectuées, il n’est pas possible de rechercher le contenu de ces champs dans des recherches en texte libre. Si cette option est cochée, le contenu de ce champ n’est pas ajouté à l’index "word" lors d’une opération d’index de quelque type que ce soit. Il active également la mise à jour de ce champ lors d’une opération de mise à jour verticale. </p> <p>Pour en savoir plus sur les mises à jour verticales, voir <a href="../c-about-index-menu/c-about-vertical-updates.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> A propos des mises à jour verticales </a>. </p> </td> 
+      <td colname="col2"> <p> <p>Remarque : cette fonctionnalité n’est pas activée par défaut. Contactez le support technique pour l’activer pour votre utilisation. Une fois activé, il apparaît dans l’interface utilisateur. </p> </p> <p>Définit le champ identifié comme un champ Mise à jour verticale. </p> <p>Les champs Mise à jour verticale sont susceptibles d’être mis à jour au moyen du processus Mise à jour verticale ( <span class="uicontrol"> Index </span> &gt; <span class="uicontrol"> Mise à jour verticale </span>). En raison de la manière dont les mises à jour verticales sont effectuées, il n’est pas possible de rechercher le contenu de ces champs dans des recherches de texte libre. Si cette option est cochée, le contenu de ce champ n’est pas ajouté à l’index "word" lors d’une opération d’index de quelque type que ce soit. Il active également la mise à jour de ce champ lors d’une opération de mise à jour verticale. </p> <p>Pour en savoir plus sur les mises à jour verticales, voir <a href="../c-about-index-menu/c-about-vertical-updates.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> A propos des mises à jour verticales </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Pertinence </p> </td> 
@@ -151,10 +143,9 @@ Avant que les effets de la nouvelle définition de balise meta ne soient visible
       </tr> 
       <tr> 
       <td colname="col1"> <p>Tri </p> </td> 
-      <td colname="col2"> <p>Indique le moment où les résultats sont triés par champ nommé, au moyen de la variable 
-        <userinput>
+      <td colname="col2"> <p>Indique le moment où les résultats sont triés par champ nommé, au moyen du paramètre <code>
           sp_s 
-        </userinput> Paramètre CGI de recherche. </p> <p>Voir <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> Rechercher des paramètres CGI </a>. </p> </td> 
+        </code> Search CGI. </p> <p>Voir <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> Rechercher des paramètres CGI </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Langue </p> </td> 
@@ -170,7 +161,7 @@ Avant que les effets de la nouvelle définition de balise meta ne soient visible
       </tr> 
       <tr> 
       <td colname="col1"> <p>Fuseau horaire </p> </td> 
-      <td colname="col2"> <p>Disponible uniquement si le type de données Date <span class="uicontrol"> </span> est sélectionné en tant que Type de données. </p> <p>Contrôle le fuseau horaire supposé appliqué lors de l’indexation des valeurs de date pour ce champ qui ne spécifient pas de fuseau horaire. </p> <p>Par exemple, si le fuseau horaire de votre compte est défini sur "Amérique/Los Angeles" et que vous sélectionnez <span class="uicontrol"> Utiliser le fuseau horaire du compte </span>, la valeur de date méta suivante, qui ne comporte pas de fuseau horaire spécifié, est traitée comme s’il s’agissait de l’heure du Pacifique, en tenant compte des économies d’heure du jour : </p> <p>&lt;meta name="dc.date" content="Mon, 05 sept 201213:12:00"&gt; </p> </td> 
+      <td colname="col2"> <p>Disponible uniquement si le type de données Date <span class="uicontrol"> </span> est sélectionné en tant que Type de données. </p> <p>Contrôle le fuseau horaire supposé appliqué lors de l’indexation des valeurs de date pour ce champ qui ne spécifient pas de fuseau horaire. </p> <p>Si, par exemple, le fuseau horaire de votre compte est défini sur "Amérique/Los Angeles" et que vous sélectionnez <span class="uicontrol"> Utiliser le fuseau horaire du compte </span>, la valeur de date méta suivante, qui ne comporte pas de fuseau horaire spécifié, est traitée comme s’il s’agissait de l’heure du Pacifique, en tenant compte des économies d’heure du jour : </p> <p>&lt;meta name="dc.date" content="Mon, 05 sept 201213:12:00"&gt; </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Valeur de classement la moins importante </p> </td> 
@@ -186,16 +177,13 @@ Avant que les effets de la nouvelle définition de balise meta ne soient visible
       </tr> 
       <tr> 
       <td colname="col1"> <p>Unités par défaut </p> </td> 
-      <td colname="col2"> <p>Disponible uniquement si le type de données Emplacement <span class="uicontrol"> </span> est sélectionné en tant que Type de données. </p> <p>Contrôle le traitement des valeurs de distance pour les recherches de proximité. </p> <p>Si vous définissez les unités par défaut sur <span class="uicontrol"> Miles </span>, tous les critères de distance minimale/maximale de recherche de proximité appliqués à ce champ (au moyen de la variable 
-      <userinput>
+      <td colname="col2"> <p>Disponible uniquement si le type de données Emplacement <span class="uicontrol"> </span> est sélectionné en tant que Type de données. </p> <p>Contrôle le traitement des valeurs de distance pour les recherches de proximité. </p> <p>Si vous définissez les unités par défaut sur <span class="uicontrol"> Miles </span>, tous les critères de distance minimale/maximale de recherche de proximité appliqués à ce champ (au moyen des paramètres <code>
         sp_q_min[_#] 
-      </userinput> ou la variable 
-      <userinput>
+      </code> ou des paramètres CGI <code>
         sp_q_max[_#] 
-      </userinput> Rechercher les paramètres CGI) est traité comme des milles, sinon comme des kilomètres. </p> <p>Cette option contrôle également les unités de distance par défaut appliquées à la sortie de la variable 
-      <userinput>
+      </code> de recherche) sont traités comme des milles, sinon comme des kilomètres. </p> <p>Cette option contrôle également les unités de distance par défaut appliquées à la sortie de la balise de modèle de résultats de <code>
         &lt;Search-Display-Field&gt; 
-      </userinput> balise de modèle des résultats de recherche lorsqu’elle est appliquée à un champ de sortie de recherche de proximité. </p> <p>Voir <a href="../c-appendices/r-about-proximity-search.md#reference_45AC6BB50609431ABD31DA46EE65360D" type="reference" format="dita" scope="local"> A propos de la recherche de proximité </a>. </p> </td> 
+      </code> recherche lorsqu'elle est appliquée à un champ de sortie de recherche de proximité. </p> <p>Voir <a href="../c-appendices/r-about-proximity-search.md#reference_45AC6BB50609431ABD31DA46EE65360D" type="reference" format="dita" scope="local"> A propos de la recherche de proximité </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Créer une description de plage ? </p> </td> 
@@ -207,7 +195,7 @@ Avant que les effets de la nouvelle définition de balise meta ne soient visible
       </tr> 
       <tr> 
       <td colname="col1"> <p>Valeurs de plage </p> </td> 
-      <td colname="col2"> <p>Disponible uniquement si <span class="uicontrol"> Créer une description de plage </span> est coché et qu’un élément de champ de <span class="uicontrol"> plage </span> est sélectionné. </p> <p>liste de points de données délimités par des blancs à utiliser lors de la création des descriptions de plage de champs. Par exemple : </p> <code> 10&amp;nbsp;20&amp;nbsp;50&amp;nbsp;100&amp;nbsp;1000 </code> <p>Vous pouvez entrer ces valeurs dans n’importe quel ordre. Les valeurs sont triées et les duplicata supprimés avant leur enregistrement. Vous pouvez également spécifier des valeurs négatives et non entières. </p> <p>Pour chacune des valeurs de ce champ : 
+      <td colname="col2"> <p>Disponible uniquement si <span class="uicontrol"> Créer une description de plage </span> est coché et qu’un élément de champ de <span class="uicontrol"> plage </span> est sélectionné. </p> <p>Liste de points de données délimités par des blancs à utiliser lors de la création des descriptions de plage de champs. Par exemple : </p> <code> 10&amp;nbsp;20&amp;nbsp;50&amp;nbsp;100&amp;nbsp;1000 </code> <p>Vous pouvez entrer ces valeurs dans n’importe quel ordre. Les valeurs sont triées et les duplicata supprimés avant leur enregistrement. Vous pouvez également spécifier des valeurs négatives et non entières. </p> <p>Pour chacune des valeurs de ce champ : 
       <ul id="ul_C4B41AF5AADF4B84B9C489CE82FF7075"> 
       <li id="li_90736394A5AE4F5CA6B47687BCB627AA">si la valeur est inférieure à (&lt;) la plus petite valeur des valeurs <span class="uicontrol"> de plage </span>, le format <span class="uicontrol"> "Inférieur à" </span> est utilisé. </li> 
       <li id="li_A5C272B2D26A468CA07EB2046B2EA8A7">si la valeur est supérieure ou égale à (&gt;=) la valeur la plus élevée dans <span class="uicontrol"> les valeurs de plage </span>, le format <span class="uicontrol"> "Supérieur à" </span> est utilisé. </li> 
@@ -379,7 +367,7 @@ Vous pouvez ajouter du contenu à des champs indexés spécifiques, tels que &qu
 
 ## Utilisation des injections de champs de test {#section_74939EA9E6EA4D2A92E8066B3B11CF92}
 
-Vous pouvez éventuellement l’utiliser **[!UICONTROL Test]** sur la [!DNL Staged Injections] page. Vous saisissez un nom de champ de test (par exemple, &quot;titre&quot; ou &quot;corps&quot;), la valeur de champ d’origine (par exemple, &quot;Page d&#39;accueil&quot;) et une URL de test de votre site Web. La valeur résultante est affichée pour votre référence. Les valeurs actuelles ne sont pas modifiées pendant le test.
+Vous pouvez éventuellement l’utiliser **[!UICONTROL Test]** sur la [!DNL Staged Injections] page. Vous saisissez un nom de champ de test (par exemple, &quot;titre&quot; ou &quot;corps&quot;), la valeur de champ d’origine (par exemple, &quot;Page d&#39;accueil&quot;) et une URL de test de votre site Web. La valeur résultante est affichée pour votre référence. Les valeurs actives ne sont pas modifiées pendant le test.
 
 ## Utilisation des définitions d’injection de champ {#section_C1BBF19DE8EF4A6F8CC3ED691F3953A9}
 
@@ -448,11 +436,11 @@ replace language https://www.yoursite.com/japanese/intro.txt ja_JP
 
 Voir aussi [Sélection de types de contenu à analyser et à indexer](../c-about-settings-menu/c-about-crawling-menu.md#task_CCAC5C67C8BF4AB7B79D34A1495D5EE8).
 
-## Ajouter des définitions d’injection de champ {#task_E86566FA1FF74CF68115C0ADA05172AE}
+## ajouter des définitions d’injection de champ {#task_E86566FA1FF74CF68115C0ADA05172AE}
 
 Vous pouvez les utiliser [!DNL Injections] pour insérer du contenu dans vos pages Web sans avoir à modifier les pages elles-mêmes.
 
-Vous pouvez éventuellement l’utiliser **[!UICONTROL Test]** sur la [!DNL Injections] page. Vous saisissez un nom de champ de test (par exemple, &quot;titre&quot; ou &quot;corps&quot;), la valeur de champ d’origine (par exemple, &quot;Page d&#39;accueil&quot;) et une URL de test de votre site Web. La valeur résultante est affichée pour votre référence. Les valeurs actuelles ne sont pas modifiées pendant le test.
+Vous pouvez éventuellement l’utiliser **[!UICONTROL Test]** sur la [!DNL Injections] page. Vous saisissez un nom de champ de test (par exemple, &quot;titre&quot; ou &quot;corps&quot;), la valeur de champ d’origine (par exemple, &quot;Page d&#39;accueil&quot;) et une URL de test de votre site Web. La valeur résultante est affichée pour votre référence. Les valeurs actives ne sont pas modifiées pendant le test.
 
 **Pour ajouter des définitions d’injection de champ**
 
@@ -480,7 +468,7 @@ Utilisez-le [!DNL Attribute Loader] pour définir d’autres sources d’entrée
 
 >[!NOTE]
 >
->Pour utiliser le chargeur d’attributs, vous devrez peut-être l’activer dans votre compte par le représentant de votre compte Adobe ou par l’assistance Adobe.
+>Pour utiliser le chargeur d’attributs, vous devrez peut-être l’activer dans votre compte par le représentant de votre compte d’Adobe ou par l’assistance Adobe.
 
 Vous pouvez utiliser une source d’entrée de flux de données pour accéder au contenu stocké dans un formulaire différent de ce qui est généralement découvert sur un site Web. Pour ce faire, utilisez l’une des méthodes d’analyse disponibles. Les données issues de ces sources peuvent ensuite être injectées dans les données issues du contenu analysé.
 
@@ -522,7 +510,7 @@ Voir aussi [A propos de l&#39;utilisation de la Prévisualisation lorsque vous a
   <tr> 
    <td colname="col1"> <p>2 </p> </td> 
    <td colname="col2"> <p>Ventilez la source de données téléchargée en pseudo-documents individuels. </p> </td> 
-   <td colname="col3"> <p>Pour <span class="uicontrol"> Texte </span>, chaque nouvelle ligne de texte délimitée par des lignes correspond à un document individuel et est analysée à l’aide du délimiteur spécifié, tel qu’une virgule ou une tabulation. </p> <p>Pour le <span class="uicontrol"> flux </span>, les données de chaque document sont extraites à l’aide d’un modèle d’expression standard sous la forme suivante : </p> <p> <code class="syntax js"> &lt;${Itemtag}&gt;(.*?)&lt;/${Itemtag}&gt; </code> </p> <p>A l’aide de <span class="uicontrol"> Map </span> sur la page de Ajoute du chargeur d’ <span class="wintitle"> attributs </span> , créez une copie mise en cache des données, puis créez une liste de liens pour l’analyseur de liens. Les données sont stockées dans un cache local et renseignées avec les champs configurés. </p> <p>Les données analysées sont écrites dans le cache local. </p> <p>Ce cache est lu ultérieurement pour créer les documents HTML simples dont a besoin l’analyseur. Par exemple : </p> <p> <code class="syntax html"> &lt;html&gt;&lt;head&gt; 
+   <td colname="col3"> <p>Pour <span class="uicontrol"> Texte </span>, chaque nouvelle ligne de texte délimitée par des lignes correspond à un document individuel et est analysée à l’aide du délimiteur spécifié, tel qu’une virgule ou une tabulation. </p> <p>Pour le <span class="uicontrol"> flux </span>, les données de chaque document sont extraites à l’aide d’un modèle d’expression standard sous la forme suivante : </p> <p> <code class="syntax js"> &lt;${Itemtag}&gt;(.*?)&lt;/${Itemtag}&gt; </code> </p> <p>A l’aide de <span class="uicontrol"> Map </span> sur la page d’Ajoute du chargeur <span class="wintitle"> d’attributs </span> , créez une copie mise en cache des données, puis créez une liste de liens pour le moteur de recherche. Les données sont stockées dans un cache local et renseignées avec les champs configurés. </p> <p>Les données analysées sont écrites dans le cache local. </p> <p>Ce cache est lu ultérieurement pour créer les documents HTML simples dont a besoin l’analyseur. Par exemple : </p> <p> <code class="syntax html"> &lt;html&gt;&lt;head&gt; 
       &lt;title&gt;{title}&lt;/title&gt; 
       &lt;meta&nbsp;name="{field}"&nbsp;content="{data}"&nbsp;/&gt; 
       ... 
@@ -530,7 +518,7 @@ Voir aussi [A propos de l&#39;utilisation de la Prévisualisation lorsque vous a
       {body} 
       &lt;/body&gt;&lt;/html&gt; </code> </p> <p>L’élément <span class="codeph"> &lt;title&gt; </span> n’est généré que lorsqu’il existe un mappage au champ de métadonnées Titre. De même, l’élément <span class="codeph"> &lt;body&gt; </span> n’est généré que lorsqu’il existe un mappage au champ de métadonnées Body. </p> <p> <b>Important</b>: L’affectation de valeurs à la balise meta d’URL prédéfinie n’est pas prise en charge. </p> <p>Pour tous les autres mappages, <span class="codeph"> &lt;meta&gt; </span> balises sont générées pour chaque champ contenant des données trouvées dans le document d’origine. </p> <p>Les champs de chaque document sont ajoutés au cache. Pour chaque document écrit dans le cache, un lien est également généré, comme dans les exemples suivants : </p> <p> <code class="syntax html"> &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
       &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
-      .... </code> </p> <p>Le mappage de la configuration doit comporter un champ identifié comme clé de Principal. Ce mappage forme la clé utilisée lorsque les données sont extraites du cache. </p> <p>L’analyseur de liens identifie l’index <span class="codeph"> d’URL : </span> préfixe de schéma, qui peut ensuite accéder aux données mises en cache localement. </p> </td> 
+      .... </code> </p> <p>Le mappage de la configuration doit comporter un champ identifié comme clé Principal. Ce mappage forme la clé utilisée lorsque les données sont extraites du cache. </p> <p>L’analyseur de liens identifie l’index <span class="codeph"> d’URL : </span> préfixe de schéma, qui peut ensuite accéder aux données mises en cache localement. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>3 </p> </td> 
@@ -580,17 +568,17 @@ Les données du chargeur d’attributs sont chargées avant une opération d’i
 
 Au moment où vous ajoutez un chargeur d’attributs, vous pouvez éventuellement utiliser la fonction **[!UICONTROL Preview]** pour valider les données, comme si vous les aviez enregistrées. Il exécute un test par rapport à la configuration, mais sans enregistrer la configuration dans le compte. Le test accède à la source de données configurée. Cependant, il écrit le cache de téléchargement à un emplacement temporaire ; il n&#39;entre pas en conflit avec le dossier cache principal utilisé par l&#39;analyseur d&#39;indexation.
 
-La Prévisualisation ne traite qu&#39;un documents par défaut de cinq , contrôlé par **Acct:IndexConnector-Prévisualisation-Max-Documents**. Les documents prévisualisés s’affichent sous forme de source, dans la mesure où ils sont présentés à l’analyseur d’indexation. L&#39;affichage est similaire à une fonction &quot;Source de Vue&quot; dans un navigateur Web. Vous pouvez parcourir les documents du jeu de prévisualisations à l’aide de liens de navigation standard.
+La prévisualisation ne traite qu&#39;un documents par défaut de cinq , contrôlé par **Acct:IndexConnector-Prévisualisation-Max-Documents**. Les documents prévisualisés s’affichent sous forme de source, dans la mesure où ils sont présentés à l’analyseur d’indexation. L&#39;affichage est similaire à une fonction &quot;Source de Vue&quot; dans un navigateur Web. Vous pouvez parcourir les documents du jeu de prévisualisations à l’aide de liens de navigation standard.
 
-La Prévisualisation ne prend pas en charge les configurations XML, car ces documents sont traités directement et ne sont pas téléchargés dans le cache.
+La prévisualisation ne prend pas en charge les configurations XML, car ces documents sont traités directement et ne sont pas téléchargés dans le cache.
 
-## Ajouter une définition de chargeur d’attributs {#task_A735E5EF763343A9B675E1A3B09AFDBC}
+## ajouter une définition de chargeur d’attributs {#task_A735E5EF763343A9B675E1A3B09AFDBC}
 
 Chaque configuration du chargeur d’attributs définit une source de données et des mappages pour relier les éléments de données définis pour cette source aux champs de métadonnées de l’index.
 
 >[!NOTE]
 >
->Pour utiliser le chargeur d’attributs, vous devrez peut-être l’activer dans votre compte par le représentant de votre compte Adobe ou par l’assistance Adobe.
+>Pour utiliser le chargeur d’attributs, vous devrez peut-être l’activer dans votre compte par le représentant de votre compte d’Adobe ou par l’assistance Adobe.
 
 Avant que les effets de la nouvelle définition activée ne soient visibles pour les clients, recréez l’index de votre site.
 
@@ -614,10 +602,10 @@ Avant que les effets de la nouvelle définition activée ne soient visibles pour
       </tr> 
       <tr> 
       <td colname="col1"> <p>Type </p> </td> 
-      <td colname="col2"> <p>Source de vos données. Le type de source de données que vous sélectionnez affecte les options résultantes disponibles sur la page de Ajoute du chargeur <span class="wintitle"> d’attributs </span> . Vous pouvez choisir parmi les options suivantes : </p> <p> 
+      <td colname="col2"> <p>Source de vos données. Le type de source de données que vous sélectionnez affecte les options résultantes disponibles sur la <span class="wintitle"> page Ajoute du chargeur d’ </span> attributs. Vous pouvez choisir parmi les options suivantes : </p> <p> 
       <ul id="ul_1ADC3DFBC929467385F7465BE8E13635"> 
       <li id="li_64FCD749F55442BAB316BD474128D4F9"> <span class="uicontrol"> Texte </span> <p>Fichiers de texte simple à plat, délimités par des virgules, délimités par des tabulations ou autres formats délimités de manière cohérente. Chaque nouvelle ligne de texte délimitée par des lignes correspond à un document individuel et est analysée à l’aide du délimiteur spécifié. </p> <p>Vous pouvez mapper chaque valeur, ou colonne, à un champ de métadonnées, référencé par le numéro de colonne, en commençant par 1 (un). </p> </li> 
-      <li id="li_2A4F16CE6DCE4114B7F8E4FE156252BB"> <span class="uicontrol"> Flux </span> <p>Télécharge un document XML principal contenant plusieurs "lignes" d’informations. </p> </li> 
+      <li id="li_2A4F16CE6DCE4114B7F8E4FE156252BB"> <span class="uicontrol"> Flux </span> <p>Télécharge un Principal document XML contenant plusieurs "lignes" d’informations. </p> </li> 
       </ul> </p> </td> 
       </tr> 
       <tr> 
@@ -678,7 +666,7 @@ Avant que les effets de la nouvelle définition activée ne soient visibles pour
       <li id="li_A42CB9DFFF8C45A7BAC2D471FE96CEBE"> <span class="uicontrol"> Colonne </span> <p> Spécifie un numéro de colonne, la première colonne étant 1 (un). Pour ajouter de nouvelles lignes de mappage pour chaque colonne, sous <span class="wintitle"> Action </span>, cliquez sur <span class="uicontrol"> + </span>. </p> <p>Il n’est pas nécessaire de référencer chaque colonne de la source de données. Vous pouvez à la place choisir d’ignorer les valeurs. </p> </li> 
       <li id="li_26E8C9554A5D4BC5A5073D6385E3626F"> <span class="uicontrol"> Champ </span> <p>Définit la valeur d’attribut name utilisée pour chaque balise &lt;meta&gt; générée. </p> </li> 
       <li id="li_5DFA514B7F9549B98D6CBC095A66033C"> <span class="uicontrol"> Métadonnées? </span> <p>Le champ <span class="uicontrol"> </span> devient une liste déroulante à partir de laquelle vous pouvez sélectionner des champs de métadonnées définis pour le compte actif. </p> <p>Si vous le souhaitez, la <span class="uicontrol"> </span> valeur de champ peut être un champ de métadonnées non défini. Un champ de métadonnées non défini est parfois utile pour créer du contenu utilisé par un script de <span class="wintitle"> filtrage </span>. </p> <p>Voir <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> A propos du filtrage de script </a>. </p> </li> 
-      <li id="li_80DB205525094CE1AA6762BFC7892C95"> <span class="uicontrol"> Clé primaire? </span> <p>Un seul champ est identifié comme clé principale. Ce champ sera utilisé comme "clé étrangère" pour faire correspondre les données du chargeur d’attributs avec le document correspondant dans l’index. </p> </li> 
+      <li id="li_80DB205525094CE1AA6762BFC7892C95"> <span class="uicontrol"> Clé primaire? </span> <p>Un seul champ est identifié comme clé Principale. Ce champ sera utilisé comme "clé étrangère" pour faire correspondre les données du chargeur d’attributs avec le document correspondant dans l’index. </p> </li> 
       <li id="li_80DB205525094CE1AA6762BFC7892D96"> <span class="uicontrol"> Eliminer le code HTML ? </span> <p>Lorsque cette option est cochée, toutes les balises HTML trouvées dans les données de ce champ sont supprimées. </p> </li> 
       <li id="li_359D2902859B4C5BADB0BA26F0BA4DC0"> <span class="uicontrol"> Action </span> <p>Permet d’ajouter des rangées au mappage ou de supprimer des rangées du mappage. L’ordre des rangées n’est pas important. </p> </li> 
       </ul> </p> </td> 
@@ -697,7 +685,7 @@ Avant que les effets de la nouvelle définition activée ne soient visibles pour
       </tr> 
       <tr> 
       <td colname="col1"> <p>Chemin du fichier </p> </td> 
-      <td colname="col2"> <p>Spécifie le chemin d’accès au document XML principal qui contient plusieurs "lignes" d’informations. </p> <p>Le chemin d’accès est relatif à la racine de l’adresse hôte. </p> </td> 
+      <td colname="col2"> <p>Spécifie le chemin d’accès au document XML Principal qui contient plusieurs "lignes" d’informations. </p> <p>Le chemin d’accès est relatif à la racine de l’adresse hôte. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Protocole </p> </td> 
@@ -712,7 +700,7 @@ Avant que les effets de la nouvelle définition activée ne soient visibles pour
       </tr> 
       <tr> 
       <td colname="col1"> <p>Itemtag </p> </td> 
-      <td colname="col2"> <p>Identifie l’élément XML que vous pouvez utiliser pour identifier des lignes XML individuelles dans le fichier de source de données que vous avez spécifié. </p> <p>Par exemple, dans le fragment Flux suivant d’un document XML Adobe, la valeur Itemtag est <span class="codeph"> un enregistrement </span>: </p> <p> <code class="syntax xml"> &lt;?xml&nbsp;version="1.0"&nbsp;encoding="utf-8"?&gt; 
+      <td colname="col2"> <p>Identifie l’élément XML que vous pouvez utiliser pour identifier des lignes XML individuelles dans le fichier de source de données que vous avez spécifié. </p> <p>Par exemple, dans le fragment Flux suivant d’un document XML d’Adobe, la valeur Itemtag est <span class="codeph"> un enregistrement </span>: </p> <p> <code class="syntax xml"> &lt;?xml&nbsp;version="1.0"&nbsp;encoding="utf-8"?&gt; 
         &lt;!DOCTYPE&nbsp;gsafeed&nbsp;PUBLIC&nbsp;"-//Google//DTD&nbsp;GSA&nbsp;Feeds//EN"&nbsp;""&gt; 
         &lt;gsafeed&gt; 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;header&gt; 
@@ -763,7 +751,7 @@ Avant que les effets de la nouvelle définition activée ne soient visibles pour
       <td colname="col1"> <p>Carte </p> </td> 
       <td colname="col2"> <p>Vous permet de spécifier des mappages élément XML/métadonnées, à l’aide d’expressions XPath. </p> <p> 
       <ul id="ul_604108C0277C4892AE8A40CA39889ABD"> 
-      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> Baliser </span> <p>Spécifie une représentation XPath des données XML analysées. A l’aide de l’exemple de document XML Adobe ci-dessus, sous l’option Itemtag, il peut être mappé à l’aide de la syntaxe suivante : </p> <p> <code class="syntax xml"> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
+      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> Baliser </span> <p>Spécifie une représentation XPath des données XML analysées. A l’aide de l’exemple de document XML d’Adobe ci-dessus, sous l’option Itemtag, il peut être mappé à l’aide de la syntaxe suivante : </p> <p> <code class="syntax xml"> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
         /record/metadata/meta[@name='title']/@content&nbsp;-&gt;&nbsp;title 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;desc 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;body </code> </p> <p>La syntaxe ci-dessus se traduit comme suit : </p> <p> 
@@ -775,7 +763,7 @@ Avant que les effets de la nouvelle définition activée ne soient visibles pour
         </ul> </p> <p>XPath est une notation relativement compliquée. Pour plus d'informations, consultez l'adresse suivante : </p> <p>Voir <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Champ </span> <p>Définit la valeur d’attribut name utilisée pour chaque balise <span class="codeph"> &lt;meta&gt; </span> générée. </p> </li> 
       <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Métadonnées? </span> <p>Le champ <span class="uicontrol"> </span> devient une liste déroulante à partir de laquelle vous pouvez sélectionner des champs de métadonnées définis pour le compte actif. </p> <p>Si vous le souhaitez, la <span class="uicontrol"> </span> valeur de champ peut être un champ de métadonnées non défini. Un champ de métadonnées non défini est parfois utile pour créer le contenu utilisé par <span class="wintitle"> le script de filtrage </span>. </p> <p>Voir <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> A propos du filtrage de script </a>. </p> <p>Lorsque le chargeur d’attributs traite des documents XML avec plusieurs accès sur un champ de mappage, les valeurs multiples sont concaténées en une seule valeur dans le document mis en cache qui en résulte. Par défaut, ces valeurs sont combinées à l’aide d’un délimiteur de virgules. Cependant, supposons que la valeur de <span class="wintitle"> champ correspondante </span> soit un champ de métadonnées défini. En outre, l’attribut <span class="wintitle"> Listes autorisées </span> est défini pour ce champ. Dans ce cas, la valeur Délimiteurs de Liste du champ, qui est le premier délimiteur défini, est utilisée dans la concaténation. </p> </li> 
-      <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Clé primaire? </span> <p>Un seul champ est identifié comme clé principale. Ce champ sera utilisé comme "clé étrangère" pour faire correspondre les données du chargeur d’attributs avec le document correspondant dans l’index. </p> </li> 
+      <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Clé primaire? </span> <p>Un seul champ est identifié comme clé Principale. Ce champ sera utilisé comme "clé étrangère" pour faire correspondre les données du chargeur d’attributs avec le document correspondant dans l’index. </p> </li> 
       <li id="li_80D6AF130FCE40AC972FE4B605B86BF6"> <span class="uicontrol"> Eliminer le code HTML ? </span> <p>Lorsque cette option est cochée, toutes les balises HTML trouvées dans les données de ce champ sont supprimées. </p> </li> 
       <li id="li_D40E2F9AD8AD49FC9AC4B8C75BA31E28"> <span class="uicontrol"> Action </span> <p>Permet d’ajouter des rangées au mappage ou de supprimer des rangées du mappage. L’ordre des rangées n’est pas important. </p> </li> 
       </ul> </p> </td> 
@@ -806,7 +794,7 @@ Vous pouvez modifier un chargeur d’attributs existant que vous avez défini.
 
 >[!NOTE]
 >
->Pour utiliser le chargeur d’attributs, vous devrez peut-être l’activer dans votre compte par le représentant de votre compte Adobe ou par l’assistance Adobe.
+>Pour utiliser le chargeur d’attributs, vous devrez peut-être l’activer dans votre compte par le représentant de votre compte d’Adobe ou par l’assistance Adobe.
 
 Toutes les options du chargeur d’attributs ne sont pas disponibles pour que vous puissiez les modifier, comme le nom du chargeur d’attributs ou le type dans la liste [!DNL Type] déroulante.
 
@@ -835,11 +823,11 @@ Toutes les options du chargeur d’attributs ne sont pas disponibles pour que vo
 
 ## Copie d&#39;une définition de chargeur d&#39;attributs {#task_9B40D5ECFC81411E9480F62A0FD5F2E0}
 
-Vous pouvez copier une définition existante de chargeur d’attributs à utiliser comme base pour un nouveau chargeur d’attributs que vous souhaitez créer.
+Vous pouvez copier une définition existante de chargeur d’attributs pour l’utiliser comme base d’un nouveau chargeur d’attributs que vous souhaitez créer.
 
 >[!NOTE]
 >
->Pour utiliser le chargeur d’attributs, vous devrez peut-être l’activer dans votre compte par le représentant de votre compte Adobe ou par l’assistance Adobe.
+>Pour utiliser le chargeur d’attributs, vous devrez peut-être l’activer dans votre compte par le représentant de votre compte d’Adobe ou par l’assistance Adobe.
 
 Lors de la copie d’une définition de chargeur d’attributs, la définition copiée est désactivée par défaut. Pour activer ou &quot;activer&quot; la définition, vous devez la modifier à partir de la [!DNL Attribute Loader Edit] page, puis sélectionner **[!UICONTROL Enable]**.
 
@@ -871,7 +859,7 @@ Vous pouvez modifier le nom d’une définition existante de chargeur d’attrib
 
 >[!NOTE]
 >
->Pour utiliser le chargeur d’attributs, vous devrez peut-être l’activer dans votre compte par le représentant de votre compte Adobe ou par l’assistance Adobe.
+>Pour utiliser le chargeur d’attributs, vous devrez peut-être l’activer dans votre compte par le représentant de votre compte d’Adobe ou par l’assistance Adobe.
 
 **Pour renommer une définition de chargeur d’attributs**
 
@@ -968,7 +956,7 @@ Une fois qu’une définition de chargeur d’attributs est ajoutée à la [!DNL
 
 >[!NOTE]
 >
->Pour utiliser le chargeur d’attributs, vous devrez peut-être l’activer dans votre compte par le représentant de votre compte Adobe ou par l’assistance Adobe.
+>Pour utiliser le chargeur d’attributs, vous devrez peut-être l’activer dans votre compte par le représentant de votre compte d’Adobe ou par l’assistance Adobe.
 
 **Pour vue des paramètres d&#39;une définition de chargeur d&#39;attributs**
 
@@ -994,7 +982,7 @@ Vous pouvez supprimer une définition de chargeur d’attributs existante dont v
 
 >[!NOTE]
 >
->Pour utiliser le chargeur d’attributs, vous devrez peut-être l’activer dans votre compte par le représentant de votre compte Adobe ou par l’assistance Adobe.
+>Pour utiliser le chargeur d’attributs, vous devrez peut-être l’activer dans votre compte par le représentant de votre compte d’Adobe ou par l’assistance Adobe.
 
 **Pour supprimer une définition de chargeur d&#39;attributs**
 

@@ -8,9 +8,9 @@ title: A propos du menu Analyse
 topic: Settings,Site search and merchandising
 uuid: a58c03bf-90f7-4b5b-91ff-988b95c246b0
 translation-type: tm+mt
-source-git-commit: e080a61e24a3809beff7c212ff3d088b2a8ad3b6
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
 workflow-type: tm+mt
-source-wordcount: '11115'
+source-wordcount: '11033'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ Utilisez le menu Analyse pour définir des masques de date et d’URL, des mots 
 
 ## A propos des points de terminaison d’URL {#concept_5D857E3B5C124E85BC0B5AE77A509573}
 
-La plupart des sites Web comportent un point d’entrée ou une page d&#39;accueil principale qu’un client visite initialement. Ce point d&#39;entrée principal est l&#39;adresse URL à partir de laquelle le robot de recherche commence l&#39;analyse de l&#39;index. Cependant, si votre site Web comporte plusieurs domaines ou sous-domaines, ou si des parties de votre site ne sont pas liées à partir du point d’entrée principal, vous pouvez utiliser des points d’entrée URL pour ajouter d’autres points d’entrée.
+La plupart des sites Web comportent un point d’entrée ou une page d&#39;accueil Principale qu’un client visite initialement. Ce point d&#39;entrée principal est l&#39;adresse URL à partir de laquelle le robot de recherche commence l&#39;analyse de l&#39;index. Cependant, si votre site Web comporte plusieurs domaines ou sous-domaines, ou si des parties de votre site ne sont pas liées à partir du point d’entrée Principal, vous pouvez utiliser des points d’entrée URL pour ajouter d’autres points d’entrée.
 
 Toutes les pages de site Web situées en dessous de chaque point d’entrée d’URL spécifié sont indexées. Vous pouvez combiner des points d’entrée d’URL avec des masques pour contrôler exactement quelles parties d’un site Web vous souhaitez indexer. Vous devez recréer l’index de votre site Web avant que les effets des paramètres de points de terminaison d’URL ne soient visibles par les clients.
 
@@ -52,45 +52,35 @@ Vous pouvez qualifier chaque point d’entrée avec un ou plusieurs des mots-cl�
  <tbody> 
   <tr> 
    <td colname="col1"> <p>noindex </p> </td> 
-   <td colname="col2"> <p> Si vous ne souhaitez pas indexer le texte sur la page du point d’entrée, mais que vous souhaitez suivre les liens de la page, ajoutez 
-     <userinput>
+   <td colname="col2"> <p> Si vous ne souhaitez pas indexer le texte sur la page du point d’entrée, mais que vous souhaitez suivre les liens de la page, ajoutez <code>
        noindex 
-     </userinput> après le point d'entrée. </p> <p>Séparez le mot-clé du point d'entrée par un espace, comme dans l'exemple suivant : </p> <p> <code> https://www.my-additional-domain.com/more_pages/main.html&amp;nbsp;noindex </code> </p> <p>Ce mot-clé équivaut à une balise meta robots avec 
-     <userinput>
+     </code> après le point d’entrée. </p> <p>Séparez le mot-clé du point d'entrée par un espace, comme dans l'exemple suivant : </p> <p> <code> https://www.my-additional-domain.com/more_pages/main.html&amp;nbsp;noindex </code> </p> <p>Ce mot-clé équivaut à une balise meta robots avec <code>
        content="noindex" 
-     </userinput>) entre les 
-     <userinput>
+     </code>) entre les <code>
        &lt;head&gt; 
-     </userinput>... 
-     <userinput>
+     </code>... <code>
        &lt;/head&gt; 
-     </userinput> balises de la page du point d’entrée. </p> </td> 
+     </code> balises de la page du point d’entrée. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>nofollow </p> </td> 
-   <td colname="col2"> <p> Si vous souhaitez indexer le texte dans la page du point d’entrée mais que vous ne souhaitez pas suivre les liens de la page, ajoutez 
-     <userinput>
+   <td colname="col2"> <p> Si vous souhaitez indexer le texte dans la page du point d’entrée mais que vous ne souhaitez pas suivre les liens de la page, ajoutez <code>
        nofollow 
-     </userinput> après le point d'entrée. </p> <p>Séparez le mot-clé du point d'entrée par un espace, comme dans l'exemple suivant : </p> <p> <code> https://www.domain.com/not_linked/directory_listing&amp;nbsp;nofollow </code> </p> <p>Ce mot-clé équivaut à une balise meta robots avec 
-     <userinput>
+     </code> après le point d’entrée. </p> <p>Séparez le mot-clé du point d'entrée par un espace, comme dans l'exemple suivant : </p> <p> <code> https://www.domain.com/not_linked/directory_listing&amp;nbsp;nofollow </code> </p> <p>Ce mot-clé est équivalent à une balise meta robots avec <code>
        content="nofollow" 
-     </userinput> entre les 
-     <userinput>
+     </code> entre la balise <code>
        &lt;head&gt; 
-     </userinput>... 
-     <userinput>
+     </code>... <code>
        &lt;/head&gt; 
-     </userinput> d’une page de point d’entrée. </p> </td> 
+     </code> d’une page de point d’entrée. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>formulaire </p> </td> 
-   <td colname="col2"> <p> Lorsque le point d’entrée est une page de connexion, 
-     <userinput>
-       formulaire 
-     </userinput> est généralement utilisé de sorte que le robot de recherche puisse envoyer le formulaire de connexion et recevoir les cookies appropriés avant d’analyser le site Web. Lorsque le mot-clé "formulaire" est utilisé, la page du point d’entrée n’est pas indexée et le robot de recherche ne marque pas la page du point d’entrée comme étant analysée. Utilisez les  
-     <userinput>
+   <td colname="col2"> <p> Lorsque le point d’entrée est une page de connexion, <code>
+       form 
+     </code> est généralement utilisé de sorte que le robot de recherche puisse envoyer le formulaire de connexion et recevoir les cookies appropriés avant d’analyser le site Web. Lorsque le mot-clé "formulaire" est utilisé, la page du point d’entrée n’est pas indexée et le robot de recherche ne marque pas la page du point d’entrée comme étant analysée. Utilisez <code>
        nofollow 
-     </userinput> si vous ne souhaitez pas que le robot de recherche suive les liens de la page. </p> </td> 
+     </code> si vous ne souhaitez pas que le robot de recherche suive les liens de la page. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -99,7 +89,7 @@ Voir aussi [A propos des types](../c-about-settings-menu/c-about-crawling-menu.m
 
 Voir aussi [A propos du connecteur](../c-about-settings-menu/c-about-crawling-menu.md#concept_CA6921E2FBF641F9B4F60C92B32AFA84)d’index.
 
-## Ajouter plusieurs points d’entrée d’URL à indexer {#task_2338A47387D74CFDAC4D4EF4A367ED45}
+## ajouter plusieurs points d’entrée d’URL à indexer {#task_2338A47387D74CFDAC4D4EF4A367ED45}
 
 Si votre site Web comporte plusieurs domaines ou sous-domaines et que vous souhaitez qu’ils soient analysés, vous pouvez utiliser des points de saisie d’URL pour ajouter d’autres URL.
 
@@ -117,7 +107,7 @@ Voir [Configuration des paramètres](../c-about-settings-menu/c-about-account-op
 
    ![](assets/url_entrypoints_index_connector.png)
 
-   Voir [Ajoute d’une définition](../c-about-settings-menu/c-about-crawling-menu.md#task_96779B651A654E1F871F55D6DBBC8886)de connecteur d’index.
+   Voir [Ajoute d’une définition](../c-about-settings-menu/c-about-crawling-menu.md#task_96779B651A654E1F871F55D6DBBC8886)du connecteur d’index.
 1. Cliquez sur **[!UICONTROL Save Changes]**.
 1. (Facultatif) Utilisez l’une des méthodes suivantes :
 
@@ -146,7 +136,7 @@ Vous pouvez utiliser les deux types de masques d’URL suivants :
 * Inclure les masques d’URL
 * Exclure les masques d’URL
 
-Insérez des masques URL pour indiquer au robot de recherche d’indexer les documents qui correspondent au modèle du masque.
+Insérez des masques d’URL pour indiquer au robot de recherche d’indexer les documents qui correspondent au modèle du masque.
 
 Exclure les masques d’URL pour indiquer au robot de recherche d’indexer les documents correspondants.
 
@@ -161,7 +151,7 @@ Le masque peut spécifier les éléments suivants :
 * Un chemin complet comme dans `https://www.mydomain.com/products.html`.
 * Chemin partiel comme dans `https://www.mydomain.com/products`.
 * URL qui utilise des caractères génériques comme dans `https://www.mydomain.com/*.html`.
-* expression régulière (pour les utilisateurs avancés).
+* Expression régulière (pour les utilisateurs avancés).
 
    Pour faire d&#39;un masque une expression régulière, insérez le mot-clé `regexp` entre le type de masque ( `exclude` ou `include`) et le masque d&#39;URL.
 
@@ -251,59 +241,47 @@ Une virgule n&#39;est pas valide comme séparateur entre le masque et le mot-cl�
  <tbody> 
   <tr> 
    <td colname="col1"> <p>noindex </p> </td> 
-   <td colname="col2"> <p> Si vous ne souhaitez pas indexer le texte sur les pages qui correspondent au masque d’URL, mais que vous souhaitez suivre les liens de pages correspondants, ajoutez 
-     <userinput>
+   <td colname="col2"> <p> Si vous ne souhaitez pas indexer le texte sur les pages qui correspondent au masque d’URL, mais que vous souhaitez suivre les liens de pages correspondants, ajoutez- <code>
        noindex 
-     </userinput> après le masque d’URL d’inclusion. Veillez à séparer le mot-clé du masque par un espace, comme dans l'exemple suivant : </p> <p> <code> include&amp;nbsp;*.swf&amp;nbsp;noindex </code> </p> <p>L'exemple ci-dessus indique que le robot de recherche suit tous les liens des fichiers avec la variable 
-     <userinput>
+     </code> les après le masque d’URL d’inclusion. Veillez à séparer le mot-clé du masque par un espace, comme dans l'exemple suivant : </p> <p> <code> include&amp;nbsp;*.swf&amp;nbsp;noindex </code> </p> <p>L'exemple ci-dessus indique que le robot de recherche suit tous les liens des fichiers avec l' <code>
        .swf 
-     </userinput> , mais désactive l'indexation de tout le texte contenu dans ces fichiers. </p> <p>L’ 
-     <userinput>
+     </code> extension, mais désactive l'indexation de tout le texte contenu dans ces fichiers. </p> <p>Le <code>
        noindex 
-     </userinput> est l’équivalent d’une balise meta de robot avec 
-     <userinput>
+     </code> mot-clé est équivalent à une balise meta de robot avec <code>
        content="noindex" 
-     </userinput> entre les 
-     <userinput>
+     </code> entre les balises <code>
        &lt;head&gt;...&lt;/head&gt; 
-     </userinput> balises des pages correspondantes. </p> </td> 
+     </code> des pages correspondantes. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>nofollow </p> </td> 
-   <td colname="col2"> <p> Si vous souhaitez indexer le texte sur les pages qui correspondent au masque d’URL, mais que vous ne souhaitez pas suivre les liens de la page correspondante, ajoutez 
-     <userinput>
+   <td colname="col2"> <p> Si vous souhaitez indexer le texte sur les pages qui correspondent au masque d’URL, mais que vous ne souhaitez pas suivre les liens de la page correspondante, ajoutez <code>
        nofollow 
-     </userinput> après le masque d’URL d’inclusion. Veillez à séparer le mot-clé du masque par un espace, comme dans l'exemple suivant : </p> <p> <code> include&amp;nbsp;https://www.mydomain.com/photos&amp;nbsp;nofollow </code> </p> <p>L’ 
-     <userinput>
+     </code> après le masque d’URL d’inclusion. Veillez à séparer le mot-clé du masque par un espace, comme dans l'exemple suivant : </p> <p> <code> include&amp;nbsp;https://www.mydomain.com/photos&amp;nbsp;nofollow </code> </p> <p>Le <code>
        nofollow 
-     </userinput> est l’équivalent d’une balise meta de robot avec 
-     <userinput>
+     </code> mot-clé est équivalent à une balise meta de robot avec <code>
        content="nofollow" 
-     </userinput> entre les 
-     <userinput>
+     </code> entre les balises <code>
        &lt;head&gt;...&lt;/head&gt; 
-     </userinput> balises des pages correspondantes. </p> </td> 
+     </code> des pages correspondantes. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>regexp </p> </td> 
-   <td colname="col2"> <p>Utilisé pour inclure et exclure des masques. </p> <p>Tout masque d’URL précédé de 
-     <userinput>
+   <td colname="col2"> <p>Utilisé pour inclure et exclure des masques. </p> <p>Tout masque d’URL précédé d’ <code>
        regexp 
-     </userinput> est traitée comme une expression régulière. Si le robot de recherche rencontre des documents qui correspondent à un masque URL d’expression standard exclus, ces documents ne sont pas indexés. Si le robot de recherche rencontre des documents qui correspondent à un masque URL d’expression standard inclus, ces documents sont indexés. Supposons, par exemple, que vous ayez le masque d’URL suivant : </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*/products/.*\.html$ </code> </p> <p>Le robot de recherche exclut les fichiers correspondants, tels que 
-     <userinput>
+     </code> est traité comme une expression régulière. Si le robot de recherche rencontre des documents qui correspondent à un masque URL d’expression standard exclus, ces documents ne sont pas indexés. Si le robot de recherche rencontre des documents qui correspondent à un masque URL d’expression standard inclus, ces documents sont indexés. Supposons, par exemple, que vous ayez le masque d’URL suivant : </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*/products/.*\.html$ </code> </p> <p>Le robot de recherche exclut les fichiers correspondants, tels que 
+     <code>
        https://www.mydomain.com/products/page1.html 
-     </userinput> </p> <p>Si vous aviez les éléments suivants à exclure le masque d’URL d’expression classique : </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*\?..*$ </code> </p> <p>Le robot de recherche ne doit pas inclure d’URL contenant un paramètre CGI tel que 
-     <userinput>
+     </code> </p> <p>Si vous aviez les éléments suivants à exclure le masque d’URL d’expression classique : </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*\?..*$ </code> </p> <p>Le robot de recherche ne doit pas inclure d’URL contenant un paramètre CGI tel que <code>
        https://www.mydomain.com/cgi/prog/?arg1=val1&amp;arg2=val2 
-     </userinput>. </p> <p>Si vous aviez les éléments suivants, incluez un masque URL d’expression normal : </p> <p> <code> include&amp;nbsp;regexp&amp;nbsp;^.*\.swf$&amp;nbsp;noindex </code> </p> <p>Le robot de recherche suit tous les liens des fichiers avec l'extension ".swf". L’ 
-     <userinput>
+     </code>. </p> <p>Si vous aviez les éléments suivants, incluez un masque URL d’expression normal : </p> <p> <code> include&amp;nbsp;regexp&amp;nbsp;^.*\.swf$&amp;nbsp;noindex </code> </p> <p>Le robot de recherche suit tous les liens des fichiers avec l'extension ".swf". Le <code>
        noindex 
-     </userinput> spécifie également que le texte des fichiers correspondants n'est pas indexé. </p> <p>Voir Expressions <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> régulières </a>. </p> </td> 
+     </code> mot-clé indique également que le texte des fichiers correspondants n'est pas indexé. </p> <p>Voir Expressions <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> régulières </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Ajouter des masques d’URL pour indexer ou non des parties de votre site Web {#task_E1AFC17C746048B8843013D979E082C1}
+## ajouter des masques d’URL pour indexer ou non des parties de votre site Web {#task_E1AFC17C746048B8843013D979E082C1}
 
 Vous pouvez utiliser [!DNL URL Masks] pour définir les parties de votre site Web que vous souhaitez analyser ou non et les indexer.
 
@@ -473,54 +451,44 @@ Une virgule n&#39;est pas valide comme séparateur entre le masque et le mot-cl�
  <tbody> 
   <tr> 
    <td colname="col1"> <p>noindex </p> </td> 
-   <td colname="col2"> <p> Si vous ne souhaitez pas indexer le texte sur les pages dont la date est antérieure ou égale à la date spécifiée par le masque d’inclusion, ajoutez 
-     <userinput>
+   <td colname="col2"> <p> Si vous ne souhaitez pas indexer le texte sur les pages datées au plus tard à la date spécifiée par le masque d’inclusion, ajoutez <code>
        noindex 
-     </userinput> après le masque de date d’inclusion, comme dans l’exemple suivant : </p> <p> <code> include-days&amp;nbsp;10&amp;nbsp;*.swf&amp;nbsp;noindex </code> </p> <p>Veillez à séparer le mot-clé du masque par un espace. </p> <p>L'exemple ci-dessus indique que le robot de recherche suit tous les liens des fichiers avec l'extension ".swf" qui ont au moins 10 jours. Cependant, il désactive l'indexation de tout le texte contenu dans ces fichiers. </p> <p>Vous pouvez vous assurer que le texte des fichiers plus anciens n’est pas indexé mais qu’il suit tout de même tous les liens de ces fichiers. Dans ce cas, utilisez un masque de date d’inclusion avec le mot-clé "noindex" au lieu d’utiliser un masque de date d’exclusion. </p> </td> 
+     </code> après le masque de date d’inclusion, comme dans l’exemple suivant : </p> <p> <code> include-days&amp;nbsp;10&amp;nbsp;*.swf&amp;nbsp;noindex </code> </p> <p>Veillez à séparer le mot-clé du masque par un espace. </p> <p>L'exemple ci-dessus indique que le robot de recherche suit tous les liens des fichiers avec l'extension ".swf" qui ont au moins 10 jours. Cependant, il désactive l'indexation de tout le texte contenu dans ces fichiers. </p> <p>Vous pouvez vous assurer que le texte des fichiers plus anciens n’est pas indexé mais qu’il suit tout de même tous les liens de ces fichiers. Dans ce cas, utilisez un masque de date d’inclusion avec le mot-clé "noindex" au lieu d’utiliser un masque de date d’exclusion. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>nofollow </p> </td> 
-   <td colname="col2"> <p> Si vous souhaitez indexer le texte sur les pages dont la date est antérieure ou égale à la date spécifiée par le masque d’inclusion, mais que vous ne souhaitez pas suivre les liens de la page correspondante, ajoutez 
-     <userinput>
+   <td colname="col2"> <p> Si vous souhaitez indexer le texte sur les pages dont la date est antérieure ou égale à la date spécifiée par le masque d’inclusion, mais que vous ne souhaitez pas suivre les liens de la page correspondante, ajoutez <code>
        nofollow 
-     </userinput> après le masque de date d’inclusion, comme dans l’exemple suivant : </p> <p> <code> include-days&amp;nbsp;8&amp;nbsp;https://www.mydomain.com/photos&amp;nbsp;nofollow </code> </p> <p>Veillez à séparer le mot-clé du masque par un espace. </p> <p>L’ 
-     <userinput>
+     </code> après le masque de date d’inclusion, comme dans l’exemple suivant : </p> <p> <code> include-days&amp;nbsp;8&amp;nbsp;https://www.mydomain.com/photos&amp;nbsp;nofollow </code> </p> <p>Veillez à séparer le mot-clé du masque par un espace. </p> <p>Le <code>
        nofollow 
-     </userinput> est l’équivalent d’une balise meta de robot avec 
-     <userinput>
+     </code> mot-clé est équivalent à une balise meta de robot avec <code>
        content="nofollow" 
-     </userinput> entre les 
-     <userinput>
+     </code> entre la balise <code>
        &lt;head&gt;...&lt;/head&gt; 
-     </userinput> balise des pages correspondantes. </p> </td> 
+     </code> des pages correspondantes. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>server-date </p> </td> 
-   <td colname="col2"> <p>Utilisé pour inclure et exclure des masques. </p> <p>Le robot de recherche télécharge et analyse généralement chaque fichier avant de vérifier les masques de date. Ce comportement se produit car certains types de fichiers peuvent spécifier une date dans le fichier lui-même. Par exemple, un document HTML peut inclure des balises meta qui définissent la date du fichier. </p> <p>Si vous souhaitez exclure de nombreux fichiers en fonction de leur date et que vous ne souhaitez pas charger inutilement vos serveurs, vous pouvez utiliser 
-     <userinput>
+   <td colname="col2"> <p>Utilisé pour inclure et exclure des masques. </p> <p>Le robot de recherche télécharge et analyse généralement chaque fichier avant de vérifier les masques de date. Ce comportement se produit car certains types de fichiers peuvent spécifier une date dans le fichier lui-même. Par exemple, un document HTML peut inclure des balises meta qui définissent la date du fichier. </p> <p>Si vous souhaitez exclure de nombreux fichiers en fonction de leur date et que vous ne souhaitez pas charger inutilement vos serveurs, vous pouvez utiliser <code>
        server-date 
-     </userinput> après l’URL dans le masque de date. </p> <p>Ce mot-clé indique au robot de recherche de faire confiance à la date du fichier renvoyé par votre serveur au lieu d'analyser chaque fichier. Par exemple, le masque de date d’exclusion suivant ignore les pages qui correspondent à l’URL si les documents sont de 90 jours ou plus, selon la date renvoyée par le serveur dans les en-têtes HTTP : </p> <p> <code> exclude-days&amp;nbsp;90&amp;nbsp;https://www.mydomain.com/docs/archive&amp;nbsp;server-date </code> </p> <p> Si la date renvoyée par le serveur est antérieure à 90 jours ou plus, 
-     <userinput>
+     </code> après l’URL dans le masque de date. </p> <p>Ce mot-clé indique au robot de recherche de faire confiance à la date du fichier renvoyé par votre serveur au lieu d'analyser chaque fichier. Par exemple, le masque de date d’exclusion suivant ignore les pages qui correspondent à l’URL si les documents sont de 90 jours ou plus, selon la date renvoyée par le serveur dans les en-têtes HTTP : </p> <p> <code> exclude-days&amp;nbsp;90&amp;nbsp;https://www.mydomain.com/docs/archive&amp;nbsp;server-date </code> </p> <p> Si la date renvoyée par le serveur est postérieure à 90 jours ou plus, <code>
        server-date 
-     </userinput> indique que les documents exclus ne doivent pas être téléchargés à partir de votre serveur. Le résultat signifie un temps d'indexation plus rapide pour vos documents et une charge réduite placée sur vos serveurs. Si   
-     <userinput>
+     </code> indique que les documents exclus ne doivent pas être téléchargés à partir de votre serveur. Le résultat signifie un temps d'indexation plus rapide pour vos documents et une charge réduite placée sur vos serveurs. Si elle <code>
        server-date 
-     </userinput> n’est pas spécifiée, le robot de recherche ignore la date renvoyée par le serveur dans les en-têtes HTTP. En revanche, chaque fichier est téléchargé et vérifié pour vérifier si la date est spécifiée. Si aucune date n’est spécifiée dans le fichier, le robot de recherche utilise alors la date renvoyée par le serveur. </p> <p>Vous ne devez pas utiliser 
-     <userinput>
+     </code> n’est pas spécifiée, le robot de recherche ignore la date renvoyée par le serveur dans les en-têtes HTTP. En revanche, chaque fichier est téléchargé et vérifié pour vérifier si la date est spécifiée. Si aucune date n’est spécifiée dans le fichier, le robot de recherche utilise alors la date renvoyée par le serveur. </p> <p>Vous ne devez pas utiliser <code>
        server-date 
-     </userinput> si vos fichiers contiennent des commandes qui remplacent la date du serveur. </p> </td> 
+     </code> si vos fichiers contiennent des commandes qui remplacent la date du serveur. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>regexp </p> </td> 
-   <td colname="col2"> <p> Utilisé pour inclure et exclure des masques. </p> <p>Tout masque de date précédé par 
-     <userinput>
+   <td colname="col2"> <p> Utilisé pour inclure et exclure des masques. </p> <p>Tout masque de date précédé par <code>
        regexp 
-     </userinput> est traitée comme une expression régulière. </p> <p>Si le robot de recherche détecte des fichiers qui correspondent à un masque de date d’expression standard exclus, il n’indexe pas ces fichiers. </p> <p>Si le robot de recherche rencontre des fichiers qui correspondent à un masque de date d’expression standard inclus, il indexe ces documents. </p> <p>Supposons, par exemple, que vous ayez le masque de date suivant : </p> <p> <code> exclude-days&amp;nbsp;180&amp;nbsp;regexp&amp;nbsp;.*archive.* </code> </p> <p>Le masque indique au robot de recherche d’exclure les fichiers correspondants de 180 jours ou plus. Autrement dit, les fichiers qui contiennent le mot "archive" dans leur URL. </p> <p>Voir Expressions <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> régulières </a>. </p> </td> 
+     </code> est traité comme une expression régulière. </p> <p>Si le robot de recherche détecte des fichiers qui correspondent à un masque de date d’expression standard exclus, il n’indexe pas ces fichiers. </p> <p>Si le robot de recherche rencontre des fichiers qui correspondent à un masque de date d’expression standard inclus, il indexe ces documents. </p> <p>Supposons, par exemple, que vous ayez le masque de date suivant : </p> <p> <code> exclude-days&amp;nbsp;180&amp;nbsp;regexp&amp;nbsp;.*archive.* </code> </p> <p>Le masque indique au robot de recherche d’exclure les fichiers correspondants de 180 jours ou plus. Autrement dit, les fichiers qui contiennent le mot "archive" dans leur URL. </p> <p>Voir Expressions <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> régulières </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Ajouter des masques de date pour indexer ou non des parties de votre site Web {#task_0010543C55F648D2B5DEFEFAD60FAF04}
+## ajouter des masques de date pour indexer ou non des parties de votre site Web {#task_0010543C55F648D2B5DEFEFAD60FAF04}
 
 Vous pouvez utiliser des masques de date pour inclure ou exclure des fichiers des résultats de recherche des clients en fonction de l’âge des fichiers.
 
@@ -599,7 +567,7 @@ https://www.mysite.com/path6 name6 password6
 
 Dans la liste ci-dessus, le premier mot de passe est utilisé qui contient un domaine ou une URL correspondant à la demande d’authentification du serveur. Même si le fichier `https://www.mysite.com/path1/path2/index.html` se trouve `Realm3`, par exemple, `name2` et `password2` est utilisé car le mot de passe défini avec l&#39;URL est répertorié au-dessus de celui défini avec le domaine.
 
-## Ajouter des mots de passe pour accéder aux zones de votre site Web qui nécessitent une authentification {#task_DED19D476FF04B48BB6456D5ECB8628A}
+## ajouter des mots de passe pour accéder aux zones de votre site Web qui nécessitent une authentification {#task_DED19D476FF04B48BB6456D5ECB8628A}
 
 Vous pouvez utiliser des mots de passe pour accéder aux zones protégées par mot de passe de votre site Web à des fins d’analyse et d’indexation.
 
@@ -639,7 +607,7 @@ Voir [Configuration d’un index incrémentiel d’un site Web](../c-about-index
 
 Vous pouvez utiliser [!DNL Content Types] pour sélectionner les types de fichiers à analyser et à indexer pour ce compte.
 
-Les types de contenu que vous pouvez analyser et indexer sont les documents PDF, les documents de texte, les films Adobe Flash, les fichiers provenant d&#39;applications Microsoft Office telles que Word, Excel et Powerpoint, ainsi que le texte des fichiers MP3. Le texte qui se trouve dans les types de contenu sélectionnés est recherché avec tout le reste du texte de votre site Web.
+Les types de contenu que vous pouvez analyser et indexer incluent les documents PDF, les documents de texte, les films de Flash d&#39;Adobe, les fichiers provenant d&#39;applications Microsoft Office telles que Word, Excel et Powerpoint, ainsi que le texte des fichiers MP3. Le texte qui se trouve dans les types de contenu sélectionnés est recherché avec tout le reste du texte de votre site Web.
 
 Avant que les effets des paramètres Types de contenu ne soient visibles par les clients, vous devez regénérer l&#39;index de votre site.
 
@@ -674,7 +642,7 @@ Si vous souhaitez uniquement empêcher l’indexation de certains fichiers MP3 s
 
 * Entourez les balises d’ancrage qui pointent vers les fichiers MP3 avec `<nofollow>` et `</nofollow>` des balises. Le robot de recherche ne suit pas les liens entre ces balises.
 
-* Ajoutez les URL des fichiers MP3 en tant que masques d’exclusion.
+* ajoutez les URL des fichiers MP3 en tant que masques d’exclusion.
 
    Voir [A propos des masques](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164)URL.
 
@@ -682,7 +650,7 @@ Si vous souhaitez uniquement empêcher l’indexation de certains fichiers MP3 s
 
 Vous pouvez utiliser [!DNL Content Types] pour sélectionner les types de fichiers à analyser et à indexer pour ce compte.
 
-Les types de contenu que vous pouvez analyser et indexer sont les documents PDF, les documents de texte, les films Adobe Flash, les fichiers provenant d&#39;applications Microsoft Office telles que Word, Excel et Powerpoint, ainsi que le texte des fichiers MP3. Le texte qui se trouve dans les types de contenu sélectionnés est recherché avec tout le reste du texte de votre site Web.
+Les types de contenu que vous pouvez analyser et indexer incluent les documents PDF, les documents de texte, les films de Flash d&#39;Adobe, les fichiers provenant d&#39;applications Microsoft Office telles que Word, Excel et Powerpoint, ainsi que le texte des fichiers MP3. Le texte qui se trouve dans les types de contenu sélectionnés est recherché avec tout le reste du texte de votre site Web.
 
 Avant que les effets des paramètres Types de contenu ne soient visibles par les clients, vous devez regénérer l&#39;index de votre site.
 
@@ -717,9 +685,9 @@ Vous pouvez utiliser Connections pour ajouter jusqu’à dix connexions HTTP que
 
 L’augmentation du nombre de connexions peut réduire considérablement le temps nécessaire à l’exécution d’une analyse et d’un index. Notez toutefois que chaque connexion supplémentaire augmente la charge sur votre serveur.
 
-## Ajouter des connexions pour augmenter la vitesse d&#39;indexation {#task_3E9B83E43C1842A19066355A15C4A6FB}
+## ajouter des connexions pour augmenter la vitesse d&#39;indexation {#task_3E9B83E43C1842A19066355A15C4A6FB}
 
-Vous pouvez réduire le temps nécessaire à l’indexation de votre site Web en utilisant Connexions pour augmenter le nombre de connexions HTTP simultanées utilisées par l’analyseur de liens. Vous pouvez ajouter jusqu’à dix connexions.
+Vous pouvez réduire le temps nécessaire à l’indexation de votre site Web en utilisant Connexions pour augmenter le nombre de connexions HTTP simultanées utilisées par l’analyseur de liens. Vous pouvez ajouter jusqu&#39;à dix connexions.
 
 Notez que chaque connexion supplémentaire augmente la charge qui est placée sur votre serveur.
 
@@ -748,7 +716,7 @@ Vous pouvez utiliser Envoi de formulaire pour vous aider à reconnaître et à t
 
 Lors de l’analyse et de l’indexation de votre site Web, chaque formulaire rencontré est comparé aux définitions de formulaire que vous avez ajoutées. Si un formulaire correspond à une définition de formulaire, le formulaire est envoyé pour indexation. Si un formulaire correspond à plusieurs définitions, le formulaire est envoyé une fois pour chaque définition correspondante.
 
-## Ajouter des définitions de formulaire pour l’indexation de formulaires sur votre site Web {#task_62FBCE9E6DBE4BDA8D1249233ADFC00F}
+## ajouter des définitions de formulaire pour l’indexation de formulaires sur votre site Web {#task_62FBCE9E6DBE4BDA8D1249233ADFC00F}
 
 Vous pouvez vous servir [!DNL Form Submission] d’une aide pour traiter les formulaires qui sont reconnus sur votre site Web à des fins d’indexation.
 
@@ -782,61 +750,49 @@ Voir [Configuration d’un index incrémentiel d’un site Web](../c-about-index
       </tr> 
       <tr> 
       <td colname="col1"> <p>Masque d’URL de page </p> </td> 
-      <td colname="col2"> <p>Identifiez la ou les pages Web qui contiennent le formulaire. Pour identifier un formulaire qui s’affiche sur une seule page, saisissez l’URL de cette page, comme dans l’exemple suivant : </p> <p> <code> https://www.mydomain.com/login.html </code> </p> <p>Pour identifier les formulaires qui s’affichent sur plusieurs pages, spécifiez un masque d’URL qui utilise des caractères génériques pour décrire les pages. Pour identifier les formulaires rencontrés sur une page ASP sous <code> https://www.mydomain.com/register/ </code>, par exemple, vous devez spécifier les éléments suivants : </p> <p> <code> https://www.mydomain.com/register/*.asp&amp;nbsp; </code> </p> <p>Vous pouvez également utiliser une expression régulière pour identifier plusieurs pages. Il vous suffit de spécifier la variable 
-      <userinput>
+      <td colname="col2"> <p>Identifiez la ou les pages Web qui contiennent le formulaire. Pour identifier un formulaire qui s’affiche sur une seule page, saisissez l’URL de cette page, comme dans l’exemple suivant : </p> <p> <code> https://www.mydomain.com/login.html </code> </p> <p>Pour identifier les formulaires qui s’affichent sur plusieurs pages, spécifiez un masque d’URL qui utilise des caractères génériques pour décrire les pages. Pour identifier les formulaires rencontrés sur une page ASP sous <code> https://www.mydomain.com/register/ </code>, par exemple, vous devez spécifier les éléments suivants : </p> <p> <code> https://www.mydomain.com/register/*.asp&amp;nbsp; </code> </p> <p>Vous pouvez également utiliser une expression régulière pour identifier plusieurs pages. Il vous suffit de spécifier le <code>
         regexp 
-      </userinput> avant le masque d’URL, comme dans l’exemple suivant : </p> <p> <code> regexp&amp;nbsp;^https://www\.mydomain\.com/.*/login\.html$ </code> </p> </td> 
+      </code> mot-clé avant le masque d’URL, comme dans l’exemple suivant : </p> <p> <code> regexp&amp;nbsp;^https://www\.mydomain\.com/.*/login\.html$ </code> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Masque d’URL d’action </p> </td> 
-      <td colname="col2"> <p>Identifie l’attribut d’action de la variable 
-      <userinput>
-        &lt;formulaire&gt; 
-      </userinput> Balise. </p> <p>Comme le masque d’URL de page, le masque d’URL d’action peut prendre la forme d’une seule URL, d’une URL avec des caractères génériques ou d’une expression régulière. </p> <p>Le masque d’URL peut être l’un des suivants : 
+      <td colname="col2"> <p>Identifie l’attribut d’action de la <code>
+        &lt;form&gt; 
+      </code> balise . </p> <p>Comme le masque d’URL de page, le masque d’URL d’action peut prendre la forme d’une seule URL, d’une URL avec des caractères génériques ou d’une expression régulière. </p> <p>Le masque d’URL peut être l’un des suivants : 
       <ul id="ul_EDFE7688D3DD4C0BBACCE5D4648D8E44"> 
       <li id="li_77550A448D954EF29FF33EE5E8B5E0F5"> Chemin complet, comme dans l’exemple suivant : <code> https://www.mydomain.com/products.html </code> </li> 
       <li id="li_F84E25553BBA41419BE153DC0709E011"> Chemin d’accès partiel comme dans l’exemple suivant : <code> https://www.mydomain.com/products </code> </li> 
       <li id="li_8DADA1C8604740FCACBA30B4AAADB2A1"> URL qui utilise des caractères génériques comme dans l’exemple suivant : <code> https://www.mydomain.com/*.html </code> </li> 
-      <li id="li_1EF637B450654B509AA4B618F7FD3C2B"> expression régulière telle que : <code> regexp&amp;nbsp^https://www\.mydomain\.com/.*/login\.html$ </code> </li> 
-      </ul> </p> <p>Si vous ne souhaitez pas indexer le texte sur des pages identifiées par un masque d’URL ou un masque d’URL d’action, ou si vous ne souhaitez pas que les liens soient suivis sur ces pages, vous pouvez utiliser la variable 
-      <userinput>
+      <li id="li_1EF637B450654B509AA4B618F7FD3C2B"> Expression régulière telle que : <code> regexp&amp;nbsp^https://www\.mydomain\.com/.*/login\.html$ </code> </li> 
+      </ul> </p> <p>Si vous ne souhaitez pas indexer le texte sur des pages identifiées par un masque d’URL ou par un masque d’URL d’action, ou si vous ne souhaitez pas que les liens soient suivis sur ces pages, vous pouvez utiliser les <code>
         noindex 
-      </userinput> et 
-      <userinput>
+      </code> mots-clés et les <code>
         nofollow 
-      </userinput> mots-clés. Vous pouvez ajouter ces mots-clés à vos masques à l’aide de masques d’URL ou de points d’entrée. </p> <p>Voir <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573" type="concept" format="dita" scope="local"> A propos des points de saisie d’URL </a>. </p> <p>Voir <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164" type="concept" format="dita" scope="local"> A propos des masques d’URL </a>. </p> </td> 
+      </code> mots-clés. Vous pouvez ajouter ces mots-clés à vos masques à l’aide de masques d’URL ou de points d’entrée. </p> <p>Voir <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573" type="concept" format="dita" scope="local"> A propos des points de saisie d’URL </a>. </p> <p>Voir <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164" type="concept" format="dita" scope="local"> A propos des masques d’URL </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Masque de nom de formulaire </p> </td> 
-      <td colname="col2"> <p>Identifie les formulaires si la variable 
-      <userinput>
-        &lt;formulaire&gt; 
-      </userinput> dans vos pages Web contiennent un attribut name. </p> <p>Vous pouvez utiliser un nom simple ( 
-      <userinput>
+      <td colname="col2"> <p>Identifie les formulaires si les <code>
+        &lt;form&gt; 
+      </code> balises de vos pages Web contiennent un attribut name. </p> <p>Vous pouvez utiliser un nom simple ( <code>
         login_form 
-      </userinput>), un nom avec un caractère générique ( 
-      <userinput>
-        formulaire* 
-      </userinput>) ou une expression régulière ( 
-      <userinput>
-        regexp ^.*autoriser.*$ 
-      </userinput>). </p> <p>En règle générale, vous pouvez laisser ce champ vide, car les formulaires n’ont généralement pas d’attribut name. </p> </td> 
+      </code>), un nom avec un caractère générique ( <code>
+        form* 
+      </code>) ou une expression normale ( <code>
+        regexp ^.*authorize.*$ 
+      </code>). </p> <p>En règle générale, vous pouvez laisser ce champ vide, car les formulaires n’ont généralement pas d’attribut name. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Masque d’ID de formulaire </p> </td> 
-      <td colname="col2"> <p>Identifie les formulaires si la variable 
-      <userinput>
-        &lt;formulaire&gt; 
-      </userinput> les balises de vos pages Web contiennent un attribut id. </p> <p>Vous pouvez utiliser un nom simple ( 
-      <userinput>
+      <td colname="col2"> <p>Identifie les formulaires si les <code>
+        &lt;form&gt; 
+      </code> balises de vos pages Web contiennent un attribut id. </p> <p>Vous pouvez utiliser un nom simple ( <code>
         login_form 
-      </userinput>), un nom avec un caractère générique ( 
-      <userinput>
-        formulaire* 
-      </userinput>) ou une expression régulière ( 
-      <userinput>
-        regexp ^.*autoriser.*$ 
-      </userinput>). </p> <p>En règle générale, vous pouvez laisser ce champ vide, car les formulaires n’ont généralement pas d’attribut name. </p> </td> 
+      </code>), un nom avec un caractère générique ( <code>
+        form* 
+      </code>) ou une expression normale ( <code>
+        regexp ^.*authorize.*$ 
+      </code>). </p> <p>En règle générale, vous pouvez laisser ce champ vide, car les formulaires n’ont généralement pas d’attribut name. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Paramètres </p> </td> 
@@ -852,52 +808,43 @@ Voir [Configuration d’un index incrémentiel d’un site Web](../c-about-index
       </tr> 
       <tr> 
       <td colname="col1"> <p>Méthode Override </p> </td> 
-      <td colname="col2"> <p>Indiquez quand la cible de l’envoi du formulaire est différente de ce qui est utilisé dans l’attribut action du formulaire et quand le code JavaScript d’envoi a modifié la méthode. </p> <p>Les valeurs par défaut de tous les paramètres de formulaire ( 
-      <userinput>
+      <td colname="col2"> <p>Indiquez quand la cible de l’envoi du formulaire est différente de ce qui est utilisé dans l’attribut action du formulaire et quand le code JavaScript d’envoi a modifié la méthode. </p> <p>Les valeurs par défaut de tous les paramètres de formulaire ( <code>
         &lt;input&gt; 
-      </userinput> balises, y compris les champs masqués), la valeur par défaut 
-      <userinput>
+      </code> balises, y compris les champs masqués), la valeur par défaut <code>
         &lt;option&gt; 
-      </userinput> de 
-      <userinput>
-        &lt;sélectionner&gt; 
-      </userinput> et le texte par défaut entre 
-      <userinput>
-        &lt;zone de texte&gt;...&lt;/textarea&gt; 
-      </userinput> ) sont lues à partir de la page Web. Cependant, tout paramètre répertorié dans la <span class="wintitle"> section Envoi de </span> formulaire, dans le champ <span class="uicontrol"> Paramètres </span> , est remplacé par les valeurs par défaut du formulaire. </p> </td> 
+      </code> d’une <code>
+        &lt;select&gt; 
+      </code> balise et le texte par défaut entre <code>
+        &lt;textarea&gt;...&lt;/textarea&gt; 
+      </code> balises) sont lues à partir de la page Web. Cependant, tout paramètre répertorié dans la <span class="wintitle"> section Envoi de </span> formulaire, dans le champ <span class="uicontrol"> Paramètres </span> , est remplacé par les valeurs par défaut du formulaire. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Paramètres </p> </td> 
-      <td colname="col2"> <p>Vous pouvez préfixer les paramètres d’envoi du formulaire à l’aide de la variable 
-      <userinput>
-        ne sont pas 
-      </userinput> mot-clé. </p> <p>Lorsque vous ajoutez un préfixe à un paramètre 
-      <userinput>
-        ne sont pas 
-      </userinput>, elle n’est pas envoyée dans le cadre de l’envoi du formulaire. Ce comportement s’avère utile pour les cases à cocher qui doivent être envoyées et désactivées. </p> <p>Supposons, par exemple, que vous souhaitiez envoyer les paramètres suivants : </p> <p> 
+      <td colname="col2"> <p>Vous pouvez ajouter un préfixe aux paramètres d’envoi de formulaire avec le <code>
+        not 
+      </code> mot-clé. </p> <p>Lorsque vous ajoutez un préfixe à un paramètre <code>
+        not 
+      </code>, il n’est pas envoyé dans le cadre de l’envoi du formulaire. Ce comportement s’avère utile pour les cases à cocher qui doivent être envoyées et désactivées. </p> <p>Supposons, par exemple, que vous souhaitiez envoyer les paramètres suivants : </p> <p> 
       <ul id="ul_962D12BACF464FF189DB12BFAFCC93A6"> 
       <li id="li_830C6C3EC8D2448388A453BB8EDE5940"> Le paramètre de courrier électronique avec la valeur 
-      <userinput>
+      <code>
         nobody@mydomain.com 
-      </userinput> </li> 
+      </code> </li> 
       <li id="li_905497E3FACE472DBDD49392D5B45E01"> Le paramètre password avec la valeur 
-      <userinput>
+      <code>
         tryme 
-      </userinput> </li> 
+      </code> </li> 
       <li id="li_AAA411708ADC464793EADF0D821E282E"> Le paramètre mycheckbox est désélectionné. </li> 
-      <li id="li_0D3DDE641E2B4BEF9F570C03FDB40ED2"> <p>Tous les autres 
-      <userinput>
-        &lt;formulaire&gt; 
-      </userinput> paramètres en tant que valeurs par défaut </p> </li> 
+      <li id="li_0D3DDE641E2B4BEF9F570C03FDB40ED2"> <p>Tous les autres <code>
+        &lt;form&gt; 
+      </code> paramètres en tant que valeurs par défaut </p> </li> 
       </ul> </p> <p>Le paramètre d’envoi de votre formulaire ressemble à ce qui suit : </p> <p> <code> email=nobody@mydomain.com 
         password=tryme 
-        not&nbsp;mycheckbox </code> </p> <p>L’attribut de méthode de la variable 
-      <userinput>
-        &lt;formulaire&gt; 
-      </userinput> sur la page Web est utilisée pour déterminer si les données sont envoyées à votre serveur à l’aide de la méthode GET ou POST. </p> <p>Si nous avons généré    
-      <userinput>
-        &lt;formulaire&gt; 
-      </userinput> ne contient pas d’attribut de méthode, le formulaire est envoyé à l’aide de la méthode GET. </p> </td> 
+        not&nbsp;mycheckbox </code> </p> <p>L’attribut de méthode de la <code>
+        &lt;form&gt; 
+      </code> balise sur la page Web permet de déterminer si les données sont envoyées à votre serveur à l’aide de la méthode GET ou de la méthode POST. </p> <p>Si la <code>
+        &lt;form&gt; 
+      </code> balise ne contient pas d’attribut de méthode, le formulaire est envoyé à l’aide de la méthode GET. </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -1011,7 +958,7 @@ Voir aussi [A propos du connecteur d’index](../c-about-settings-menu/c-about-c
   <tr> 
    <td colname="col1"> <p>2 </p> </td> 
    <td colname="col2"> <p>Ventilez la source de données téléchargée en pseudo-documents individuels. </p> </td> 
-   <td colname="col3"> <p>Pour <span class="uicontrol"> Texte </span>, chaque nouvelle ligne de texte délimitée par des lignes correspond à un document individuel et est analysée à l’aide du délimiteur spécifié, tel qu’une virgule ou une tabulation. </p> <p>Pour le <span class="uicontrol"> flux </span>, les données de chaque document sont extraites à l’aide d’un modèle d’expression standard sous la forme suivante : </p> <p> <code> &lt;${Itemtag}&gt;(.*?)&lt;/${Itemtag}&gt; </code> </p> <p>A l’aide de <span class="uicontrol"> Map </span> sur la page de Ajoute du connecteur d’ <span class="wintitle"> index </span> , créez une copie mise en cache des données, puis créez une liste de liens pour le moteur de recherche. Les données sont stockées dans un cache local et renseignées avec les champs configurés. </p> <p>Les données analysées sont écrites dans le cache local. </p> <p>Ce cache est lu ultérieurement pour créer les documents HTML simples dont l’analyseur a besoin. Par exemple : </p> <p> <code> &lt;html&gt;&lt;head&gt; 
+   <td colname="col3"> <p>Pour <span class="uicontrol"> Texte </span>, chaque nouvelle ligne de texte délimitée par des lignes correspond à un document individuel et est analysée à l’aide du délimiteur spécifié, tel qu’une virgule ou une tabulation. </p> <p>Pour le <span class="uicontrol"> flux </span>, les données de chaque document sont extraites à l’aide d’un modèle d’expression standard sous la forme suivante : </p> <p> <code> &lt;${Itemtag}&gt;(.*?)&lt;/${Itemtag}&gt; </code> </p> <p>A l’aide de <span class="uicontrol"> Map </span> sur la page d’Ajoute du connecteur d’ <span class="wintitle"> index </span> , créez une copie mise en cache des données, puis créez une liste de liens pour le moteur de recherche. Les données sont stockées dans un cache local et renseignées avec les champs configurés. </p> <p>Les données analysées sont écrites dans le cache local. </p> <p>Ce cache est lu ultérieurement pour créer les documents HTML simples dont l’analyseur a besoin. Par exemple : </p> <p> <code> &lt;html&gt;&lt;head&gt; 
       &lt;title&gt;{title}&lt;/title&gt; 
       &lt;meta&nbsp;name="{field}"&nbsp;content="{data}"&nbsp;/&gt; 
       ... 
@@ -1019,7 +966,7 @@ Voir aussi [A propos du connecteur d’index](../c-about-settings-menu/c-about-c
       {body} 
       &lt;/body&gt;&lt;/html&gt; </code> </p> <p>L’élément <span class="codeph"> &lt;title&gt; </span> n’est généré que lorsqu’il existe un mappage au champ de métadonnées Titre. De même, l’élément <span class="codeph"> &lt;body&gt; </span> n’est généré que lorsqu’il existe un mappage au champ de métadonnées Body. </p> <p> <b>Important</b>: Il n’existe aucune prise en charge pour l’affectation de valeurs à la balise méta d’URL prédéfinie. </p> <p>Pour tous les autres mappages, <span class="codeph"> &lt;meta&gt; </span> balises sont générées pour chaque champ contenant des données trouvées dans le document d’origine. </p> <p>Les champs de chaque document sont ajoutés au cache. Pour chaque document écrit dans le cache, un lien est également généré, comme dans les exemples suivants : </p> <p> <code> &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
       &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
-      .... </code> </p> <p>Le mappage de la configuration doit comporter un champ identifié comme clé de Principal. Ce mappage forme la clé utilisée lorsque les données sont extraites du cache. </p> <p>L’analyseur de liens identifie l’index <span class="codeph"> d’URL : </span> préfixe de schéma, qui peut ensuite accéder aux données mises en cache localement. </p> </td> 
+      .... </code> </p> <p>Le mappage de la configuration doit comporter un champ identifié comme clé Principal. Ce mappage forme la clé utilisée lorsque les données sont extraites du cache. </p> <p>L’analyseur de liens identifie l’index <span class="codeph"> d’URL : </span> préfixe de schéma, qui peut ensuite accéder aux données mises en cache localement. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>3 </p> </td> 
@@ -1044,7 +991,7 @@ Les documents des analyses XML étant déjà séparés en fichiers individuels, 
 <a href="index:<ic_config_name>?url="{url}">
 ```
 
-Par exemple, si la configuration d’Adobe renvoyait les liens suivants :
+Par exemple, si la configuration de l’Adobe renvoyait les liens suivants :
 
 ```
 <a href="https://www.adobe.com/somepath/doc1.xml">doc 1</a> 
@@ -1063,7 +1010,7 @@ Par exemple, supposons que vous ayez la règle de réécriture suivante :
 RewriteRule (^http.*[.]xml$) index:Adobe?key=$1
 ```
 
-Cette règle traduit toute URL se terminant par `.xml` un lien Connecteur d’index. L’analyseur de liens identifie et réécrit le schéma d’ `index:` URL. Le processus de téléchargement est redirigé vers le serveur Apache Index Connector sur le serveur principal. Chaque document téléchargé est examiné en utilisant le même modèle d’expression standard que celui utilisé avec les flux. Dans ce cas, cependant, le document HTML fabriqué n’est pas enregistré dans le cache. Au lieu de cela, elle est transmise directement à l’analyseur pour le traitement de l’index.
+Cette règle traduit toute URL se terminant par `.xml` un lien Connecteur d’index. L’analyseur de liens identifie et réécrit le schéma d’ `index:` URL. Le processus de téléchargement est redirigé vers le serveur Apache Index Connector sur la Principale. Chaque document téléchargé est examiné en utilisant le même modèle d’expression standard que celui utilisé avec les flux. Dans ce cas, cependant, le document HTML fabriqué n’est pas enregistré dans le cache. Au lieu de cela, elle est transmise directement à l’analyseur pour le traitement de l’index.
 
 ## Configuration de plusieurs connecteurs d’index {#section_C2B14C0F06354A57AEF6238FF3814E5D}
 
@@ -1085,7 +1032,7 @@ index:<indexconnector_configuration_name>
 
 L’analyseur de liens traite chaque entrée ajoutée si elle se trouve sur la page Connecteurs d’index et si elle est activée.
 
-Remarque : Chaque URL de document étant construite à l’aide du nom de configuration d’Index Connector et de la clé principale du document, veillez à utiliser le même nom de configuration d’Index Connector lors des mises à jour incrémentielles ! Cela permet [!DNL Adobe Search&Promote] de mettre à jour correctement les documents précédemment indexés.
+Remarque : Chaque URL de document étant construite à l’aide du nom de configuration d’Index Connector et de la clé Principale du document, veillez à utiliser le même nom de configuration d’Index Connector lors des mises à jour incrémentielles ! Cela permet [!DNL Adobe Search&Promote] de mettre à jour correctement les documents précédemment indexés.
 
 Voir aussi [A propos des points de terminaison](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573)d’URL.
 
@@ -1111,7 +1058,7 @@ Lorsque vous ajoutez un connecteur d’index, vous pouvez éventuellement utilis
   </tr> 
   <tr> 
    <td colname="col1"> <p>XML </p> </td> 
-   <td colname="col2"> <p>Télécharge l’URL d’un document individuel représentatif, et non la liste de lien principale. Ce document unique est analysé à l’aide du même mécanisme que celui utilisé avec les flux et les résultats s’affichent. </p> <p>Avant de cliquer sur <span class="uicontrol"> Ajouter </span> pour enregistrer la configuration, veillez à rétablir l’URL en document de liste de lien principal. </p> </td> 
+   <td colname="col2"> <p>Télécharge l’URL d’un document individuel représentatif, et non la liste de lien Principale. Ce document unique est analysé à l’aide du même mécanisme que celui utilisé avec les flux et les résultats s’affichent. </p> <p>Avant de cliquer sur <span class="uicontrol"> Ajouter </span> pour enregistrer la configuration, veillez à rétablir l’URL en document de liste de liens Principaux. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1122,11 +1069,11 @@ Lorsque vous ajoutez un connecteur d’index, vous pouvez éventuellement utilis
 
 Lorsque vous ajoutez un connecteur d’index, vous pouvez éventuellement utiliser la fonction **[!UICONTROL Preview]** pour valider les données, comme si vous les aviez enregistrées. Il exécute un test par rapport à la configuration, mais sans enregistrer la configuration dans le compte. Le test accède à la source de données configurée. Cependant, il écrit le cache de téléchargement à un emplacement temporaire ; il n&#39;entre pas en conflit avec le dossier cache principal utilisé par l&#39;analyseur d&#39;indexation.
 
-La Prévisualisation ne traite qu&#39;un documents par défaut de cinq , contrôlé par Acct:IndexConnector-Prévisualisation-Max-Documents. Les documents prévisualisés s’affichent sous forme de source, dans la mesure où ils sont présentés à l’analyseur d’indexation. L&#39;affichage est similaire à une fonction &quot;Source de Vue&quot; dans un navigateur Web. Vous pouvez parcourir les documents du jeu de prévisualisations à l’aide de liens de navigation standard.
+La prévisualisation ne traite qu&#39;un documents par défaut de cinq , contrôlé par Acct:IndexConnector-Prévisualisation-Max-Documents. Les documents prévisualisés s’affichent sous forme de source, dans la mesure où ils sont présentés à l’analyseur d’indexation. L&#39;affichage est similaire à une fonction &quot;Source de Vue&quot; dans un navigateur Web. Vous pouvez parcourir les documents du jeu de prévisualisations à l’aide de liens de navigation standard.
 
-La Prévisualisation ne prend pas en charge les configurations XML, car ces documents sont traités directement et ne sont pas téléchargés dans le cache.
+La prévisualisation ne prend pas en charge les configurations XML, car ces documents sont traités directement et ne sont pas téléchargés dans le cache.
 
-## Ajouter une définition du connecteur d’index {#task_96779B651A654E1F871F55D6DBBC8886}
+## ajouter une définition du connecteur d&#39;index {#task_96779B651A654E1F871F55D6DBBC8886}
 
 Chaque configuration de Connecteur d’index définit une source de données et des mappages pour relier les éléments de données définis pour cette source aux champs de métadonnées de l’index.
 
@@ -1152,14 +1099,13 @@ Avant que les effets de la nouvelle définition activée ne soient visibles pour
       </tr> 
       <tr> 
       <td colname="col1"> <p>Type </p> </td> 
-      <td colname="col2"> <p>Source de vos données. Le type de source de données que vous sélectionnez affecte les options résultantes disponibles sur la <span class="wintitle"> page de Ajoute du connecteur </span> d’index. Vous pouvez choisir parmi les options suivantes : </p> <p> 
+      <td colname="col2"> <p>Source de vos données. Le type de source de données que vous sélectionnez affecte les options résultantes disponibles sur la <span class="wintitle"> page d’Ajoute du connecteur </span> d’index. Vous pouvez choisir parmi les options suivantes : </p> <p> 
       <ul id="ul_1ADC3DFBC929467385F7465BE8E13635"> 
       <li id="li_64FCD749F55442BAB316BD474128D4F9"> <span class="uicontrol"> Texte </span> <p>Fichiers de texte simple à plat, délimités par des virgules, délimités par des tabulations ou autres formats délimités de manière cohérente. Chaque nouvelle ligne de texte délimitée par des lignes correspond à un document individuel et est analysée à l’aide du délimiteur spécifié. </p> <p>Vous pouvez mapper chaque valeur, ou colonne, à un champ de métadonnées, référencé par le numéro de colonne, en commençant par 1 (un). </p> </li> 
-      <li id="li_2A4F16CE6DCE4114B7F8E4FE156252BB"> <span class="uicontrol"> Flux </span> <p>Télécharge un document XML principal contenant plusieurs "lignes" d’informations. </p> </li> 
-      <li id="li_5A61C53522D74D4C9A5F65989604BDEF"> <span class="uicontrol"> XML </span> <p>Télécharge un document XML principal contenant des liens ( 
-      <userinput>
+      <li id="li_2A4F16CE6DCE4114B7F8E4FE156252BB"> <span class="uicontrol"> Flux </span> <p>Télécharge un Principal document XML contenant plusieurs "lignes" d’informations. </p> </li> 
+      <li id="li_5A61C53522D74D4C9A5F65989604BDEF"> <span class="uicontrol"> XML </span> <p>Télécharge un Principal document XML contenant des liens ( <code>
         &lt;a&gt; 
-      </userinput>) à des documents XML individuels. </p> </li> 
+      </code>) vers des documents XML individuels. </p> </li> 
       </ul> </p> </td> 
       </tr> 
       <tr> 
@@ -1188,7 +1134,7 @@ Avant que les effets de la nouvelle définition activée ne soient visibles pour
       </tr> 
       <tr> 
       <td colname="col1"> <p>Supprime le chemin d'accès au fichier </p> </td> 
-      <td colname="col2"> <p>Indique le chemin d’accès au fichier de texte simple à plat, contenant une seule valeur d’identificateur de document par ligne. </p> <p>Le chemin d’accès est relatif à la racine de l’adresse hôte. </p> <p>Ce fichier, s’il est spécifié, est téléchargé et traité pendant les opérations d’index incrémentiel. Les valeurs trouvées dans ce fichier sont utilisées pour créer des requêtes "delete" afin de supprimer des documents précédemment indexés. Les valeurs de ce fichier doivent correspondre aux valeurs trouvées dans les fichiers Chemin d'accès au fichier complet ou incrémentiel, dans la colonne identifiée comme clé de <span class="uicontrol"> Principal </span>. </p> <p> <b>Remarque</b>: Cette fonction n’est pas activée par défaut. Contactez le support technique pour activer la fonction à utiliser. </p> </td> 
+      <td colname="col2"> <p>Indique le chemin d’accès au fichier de texte simple à plat, contenant une seule valeur d’identificateur de document par ligne. </p> <p>Le chemin d’accès est relatif à la racine de l’adresse hôte. </p> <p>Ce fichier, s’il est spécifié, est téléchargé et traité pendant les opérations d’index incrémentiel. Les valeurs trouvées dans ce fichier sont utilisées pour créer des requêtes "delete" afin de supprimer des documents précédemment indexés. Les valeurs de ce fichier doivent correspondre aux valeurs trouvées dans les fichiers Chemin d'accès au fichier complet ou incrémentiel, dans la colonne identifiée comme clé <span class="uicontrol"> Principal </span>. </p> <p> <b>Remarque</b>: Cette fonction n’est pas activée par défaut. Contactez le support technique pour activer la fonction à utiliser. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Protocole </p> </td> 
@@ -1232,7 +1178,7 @@ Avant que les effets de la nouvelle définition activée ne soient visibles pour
       <li id="li_A42CB9DFFF8C45A7BAC2D471FE96CEBE"> <span class="uicontrol"> Colonne </span> <p> Spécifie un numéro de colonne, la première colonne étant 1 (un). Pour ajouter de nouvelles lignes de mappage pour chaque colonne, sous <span class="wintitle"> Action </span>, cliquez sur <span class="uicontrol"> + </span>. </p> <p>Il n’est pas nécessaire de référencer chaque colonne de la source de données. Vous pouvez à la place choisir d’ignorer les valeurs. </p> </li> 
       <li id="li_26E8C9554A5D4BC5A5073D6385E3626F"> <span class="uicontrol"> Champ </span> <p>Définit la valeur d’attribut name utilisée pour chaque balise &lt;meta&gt; générée. </p> </li> 
       <li id="li_5DFA514B7F9549B98D6CBC095A66033C"> <span class="uicontrol"> Métadonnées? </span> <p>Le champ <span class="uicontrol"> </span> devient une liste déroulante à partir de laquelle vous pouvez sélectionner des champs de métadonnées définis pour le compte actif. </p> <p>Si vous le souhaitez, la <span class="uicontrol"> </span> valeur de champ peut être un champ de métadonnées non défini. Un champ de métadonnées non défini est parfois utile pour créer le contenu utilisé par <span class="wintitle"> le script de filtrage </span>. </p> <p>Voir <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> A propos du filtrage de script </a>. </p> <p>Lorsque Index Connector traite des documents XML avec plusieurs accès sur un champ de mappage, les valeurs multiples sont concaténées en une seule valeur dans le document mis en cache qui en résulte. Par défaut, ces valeurs sont combinées à l’aide d’un délimiteur de virgules. Cependant, supposons que la valeur de <span class="wintitle"> champ correspondante </span> soit un champ de métadonnées défini. En outre, l’attribut <span class="wintitle"> Listes autorisées </span> est défini pour ce champ. Dans ce cas, la valeur Délimiteurs de Liste du champ, qui est le premier délimiteur défini, est utilisée dans la concaténation. </p> </li> 
-      <li id="li_80DB205525094CE1AA6762BFC7892C95"> <span class="uicontrol"> Clé primaire? </span> <p>Une seule définition de mappage est identifiée comme clé principale. Ce champ devient la référence unique présentée lorsque ce document est ajouté à l'index. Cette valeur est utilisée dans l’URL du document dans l’index. </p> <p>Les valeurs de clé de <span class="uicontrol"> Principal </span> doivent être uniques dans tous les documents représentés par la configuration d’Index Connector. Tous les duplicata rencontrés seront ignorés. Si vos documents source ne contiennent pas une seule valeur unique à utiliser comme clé de <span class="uicontrol"> Principal </span>, mais que deux ou plusieurs champs pris ensemble <i>peuvent former un identifiant unique, vous pouvez définir la clé de</i> Principal <span class="uicontrol"> en combinant plusieurs valeurs de  de colonnes </span> <span class="uicontrol"> avec une barre verticale ("|") délimitant les valeurs.</span> </p> </li> 
+      <li id="li_80DB205525094CE1AA6762BFC7892C95"> <span class="uicontrol"> Clé primaire? </span> <p>Une seule définition de mappage est identifiée comme la clé Principale. Ce champ devient la référence unique présentée lorsque ce document est ajouté à l'index. Cette valeur est utilisée dans l’URL du document dans l’index. </p> <p>Les valeurs de clé de <span class="uicontrol"> Principal </span> doivent être uniques dans tous les documents représentés par la configuration d’Index Connector. Tous les duplicata rencontrés seront ignorés. Si vos documents source ne contiennent pas une seule valeur unique à utiliser comme clé <span class="uicontrol"> Principal </span>, mais que deux ou plusieurs champs pris ensemble <i>peuvent former un identifiant unique, vous pouvez définir la clé</i> Principal <span class="uicontrol"> </span> <span class="uicontrol"> en combinant plusieurs valeurs de  de colonnes avec une barre verticale ("|") délimitant les valeurs.</span> </p> </li> 
       <li id="li_80DB205525094CE1AA6762BFC7892D96"> <span class="uicontrol"> Eliminer le code HTML ? </span> <p>Lorsque cette option est cochée, toutes les balises HTML trouvées dans les données de ce champ sont supprimées. </p> </li> 
       <li id="li_359D2902859B4C5BADB0BA26F0BA4DC0"> <span class="uicontrol"> Action </span> <p>Permet d’ajouter des rangées au mappage ou de supprimer des rangées du mappage. L’ordre des rangées n’est pas important. </p> </li> 
       </ul> </p> </td> 
@@ -1251,7 +1197,7 @@ Avant que les effets de la nouvelle définition activée ne soient visibles pour
       </tr> 
       <tr> 
       <td colname="col1"> <p>Chemin du fichier </p> </td> 
-      <td colname="col2"> <p>Spécifie le chemin d’accès au document XML principal qui contient plusieurs "lignes" d’informations. </p> <p>Le chemin d’accès est relatif à la racine de l’adresse hôte. </p> </td> 
+      <td colname="col2"> <p>Spécifie le chemin d’accès au document XML Principal qui contient plusieurs "lignes" d’informations. </p> <p>Le chemin d’accès est relatif à la racine de l’adresse hôte. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Chemin de fichier incrémentiel </p> </td> 
@@ -1263,7 +1209,7 @@ Avant que les effets de la nouvelle définition activée ne soient visibles pour
       </tr> 
       <tr> 
       <td colname="col1"> <p>Supprime le chemin d'accès au fichier </p> </td> 
-      <td colname="col2"> <p>Indique le chemin d’accès au fichier de texte simple à plat, contenant une seule valeur d’identificateur de document par ligne. </p> <p>Le chemin d’accès est relatif à la racine de l’adresse hôte. </p> <p>Ce fichier, s’il est spécifié, est téléchargé et traité pendant les opérations d’index incrémentiel. Les valeurs trouvées dans ce fichier sont utilisées pour créer des requêtes "delete" afin de supprimer des documents précédemment indexés. Les valeurs de ce fichier doivent correspondre aux valeurs trouvées dans les fichiers Chemin d'accès au fichier complet ou incrémentiel, dans la colonne identifiée comme clé de <span class="uicontrol"> Principal </span>. </p> <p> <b>Remarque</b>: Cette fonction n’est pas activée par défaut. Contactez le support technique pour activer la fonction à utiliser. </p> </td> 
+      <td colname="col2"> <p>Indique le chemin d’accès au fichier de texte simple à plat, contenant une seule valeur d’identificateur de document par ligne. </p> <p>Le chemin d’accès est relatif à la racine de l’adresse hôte. </p> <p>Ce fichier, s’il est spécifié, est téléchargé et traité pendant les opérations d’index incrémentiel. Les valeurs trouvées dans ce fichier sont utilisées pour créer des requêtes "delete" afin de supprimer des documents précédemment indexés. Les valeurs de ce fichier doivent correspondre aux valeurs trouvées dans les fichiers Chemin d'accès au fichier complet ou incrémentiel, dans la colonne identifiée comme clé <span class="uicontrol"> Principal </span>. </p> <p> <b>Remarque</b>: Cette fonction n’est pas activée par défaut. Contactez le support technique pour activer la fonction à utiliser. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Protocole </p> </td> 
@@ -1278,7 +1224,7 @@ Avant que les effets de la nouvelle définition activée ne soient visibles pour
       </tr> 
       <tr> 
       <td colname="col1"> <p>Itemtag </p> </td> 
-      <td colname="col2"> <p>Identifie l’élément XML que vous pouvez utiliser pour identifier des lignes XML individuelles dans le fichier de source de données que vous avez spécifié. </p> <p>Par exemple, dans le fragment Flux suivant d’un document XML Adobe, la valeur Itemtag est <span class="codeph"> un enregistrement </span>: </p> <p> <code> &lt;?xml&nbsp;version="1.0"&nbsp;encoding="utf-8"?&gt; 
+      <td colname="col2"> <p>Identifie l’élément XML que vous pouvez utiliser pour identifier des lignes XML individuelles dans le fichier de source de données que vous avez spécifié. </p> <p>Par exemple, dans le fragment Flux suivant d’un document XML d’Adobe, la valeur Itemtag est <span class="codeph"> un enregistrement </span>: </p> <p> <code> &lt;?xml&nbsp;version="1.0"&nbsp;encoding="utf-8"?&gt; 
         &lt;!DOCTYPE&nbsp;gsafeed&nbsp;PUBLIC&nbsp;"-//Google//DTD&nbsp;GSA&nbsp;Feeds//EN"&nbsp;""&gt; &lt;gsafeed&gt; 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;header&gt; 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;datasource&gt;marketplace&lt;/datasource&gt; 
@@ -1319,7 +1265,7 @@ Avant que les effets de la nouvelle définition activée ne soient visibles pour
       <td colname="col1"> <p>Carte </p> </td> 
       <td colname="col2"> <p>Vous permet de spécifier des mappages élément XML/métadonnées, à l’aide d’expressions XPath. </p> <p> 
       <ul id="ul_604108C0277C4892AE8A40CA39889ABD"> 
-      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> Baliser </span> <p>Spécifie une représentation XPath des données XML analysées. A l’aide de l’exemple de document XML Adobe ci-dessus, sous l’option Itemtag, il peut être mappé à l’aide de la syntaxe suivante : </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
+      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> Baliser </span> <p>Spécifie une représentation XPath des données XML analysées. A l’aide de l’exemple de document XML d’Adobe ci-dessus, sous l’option Itemtag, il peut être mappé à l’aide de la syntaxe suivante : </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
       /record/metadata/meta[@name='title']/@content&nbsp;-&gt;&nbsp;title 
       /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;desc 
       /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;body </code> </p> <p>La syntaxe ci-dessus se traduit comme suit : </p> <p> 
@@ -1331,7 +1277,7 @@ Avant que les effets de la nouvelle définition activée ne soient visibles pour
       </ul> </p> <p>XPath est une notation relativement compliquée. Pour plus d'informations, consultez l'adresse suivante : </p> <p>Voir <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Champ </span> <p>Définit la valeur d’attribut name utilisée pour chaque balise <span class="codeph"> &lt;meta&gt; </span> générée. </p> </li> 
       <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Métadonnées? </span> <p>Le champ <span class="uicontrol"> </span> devient une liste déroulante à partir de laquelle vous pouvez sélectionner des champs de métadonnées définis pour le compte actif. </p> <p>Si vous le souhaitez, la <span class="uicontrol"> </span> valeur de champ peut être un champ de métadonnées non défini. Un champ de métadonnées non défini est parfois utile pour créer le contenu utilisé par <span class="wintitle"> le script de filtrage </span>. </p> <p>Voir <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> A propos du filtrage de script </a>. </p> <p>Lorsque Index Connector traite des documents XML avec plusieurs accès sur un champ de mappage, les valeurs multiples sont concaténées en une seule valeur dans le document mis en cache qui en résulte. Par défaut, ces valeurs sont combinées à l’aide d’un délimiteur de virgules. Cependant, supposons que la valeur de <span class="wintitle"> champ correspondante </span> soit un champ de métadonnées défini. En outre, l’attribut <span class="wintitle"> Listes autorisées </span> est défini pour ce champ. Dans ce cas, la valeur Délimiteurs de Liste du champ, qui est le premier délimiteur défini, est utilisée dans la concaténation. </p> </li> 
-      <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Clé primaire? </span> <p>Une seule définition de mappage est identifiée comme clé principale. Ce champ devient la référence unique présentée lorsque ce document est ajouté à l'index. Cette valeur est utilisée dans l’URL du document dans l’index. </p> <p>Les valeurs de clé de <span class="uicontrol"> Principal </span> doivent être uniques dans tous les documents représentés par la configuration d’Index Connector. Tous les duplicata rencontrés seront ignorés. Si vos documents source ne contiennent pas une seule valeur unique à utiliser comme clé de <span class="uicontrol"> Principal </span>, mais que deux ou plusieurs champs pris ensemble <i>peuvent former un identifiant unique, vous pouvez définir la clé de</i> Principal <span class="uicontrol"> en combinant plusieurs définitions de  de balise </span> <span class="uicontrol"> avec une barre verticale ("|") délimitant les valeurs.</span> </p> </li> 
+      <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Clé primaire? </span> <p>Une seule définition de mappage est identifiée comme la clé Principale. Ce champ devient la référence unique présentée lorsque ce document est ajouté à l'index. Cette valeur est utilisée dans l’URL du document dans l’index. </p> <p>Les valeurs de clé de <span class="uicontrol"> Principal </span> doivent être uniques dans tous les documents représentés par la configuration d’Index Connector. Tous les duplicata rencontrés seront ignorés. Si vos documents source ne contiennent pas une seule valeur unique à utiliser comme clé <span class="uicontrol"> Principal </span>, mais que deux ou plusieurs champs pris ensemble <i>peuvent former un identifiant unique, vous pouvez définir la clé</i> Principal <span class="uicontrol"> en combinant plusieurs définitions de  de balises </span> <span class="uicontrol"> avec une barre verticale ("|") délimitant les valeurs.</span> </p> </li> 
       <li id="li_DEA24003E97E406DA2510C43CCFDC81F"> <span class="uicontrol"> Eliminer le code HTML ? </span> <p>Lorsque cette option est cochée, toutes les balises HTML trouvées dans les données de ce champ sont supprimées. </p> </li> 
       <li id="li_5E829D1D0DBD4BB7AAB5DB983053D248"> <span class="uicontrol"> Utiliser pour la suppression ? </span> <p>Utilisé uniquement pendant les opérations d’index incrémentiel. Les enregistrements correspondant à ce modèle XPath identifient les éléments à supprimer. La valeur de la clé de <span class="uicontrol"> Principal </span> pour chaque enregistrement de ce type est utilisée pour construire des requêtes de suppression, comme dans le cas de la suppression du chemin de fichier. </p> <p> <b>Remarque</b>: Cette fonction n’est pas activée par défaut. Contactez le support technique pour activer la fonction à utiliser. </p> </li> 
       <li id="li_D40E2F9AD8AD49FC9AC4B8C75BA31E28"> <span class="uicontrol"> Action </span> <p>Permet d’ajouter des rangées au mappage ou de supprimer des rangées du mappage. L’ordre des rangées n’est pas important. </p> </li> 
@@ -1351,10 +1297,9 @@ Avant que les effets de la nouvelle définition activée ne soient visibles pour
       </tr> 
       <tr> 
       <td colname="col1"> <p>Chemin du fichier </p> </td> 
-      <td colname="col2"> <p>Indique le chemin d’accès au document XML principal contenant des liens ( 
-      <userinput>
+      <td colname="col2"> <p>Indique le chemin d’accès au document XML Principal qui contient des liens ( <code>
         &lt;a&gt; 
-      </userinput>) à des documents XML individuels. </p> <p>Le chemin d’accès est relatif à la racine de l’adresse hôte. </p> </td> 
+      </code>) vers des documents XML individuels. </p> <p>Le chemin d’accès est relatif à la racine de l’adresse hôte. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Protocole </p> </td> 
@@ -1375,7 +1320,7 @@ Avant que les effets de la nouvelle définition activée ne soient visibles pour
       <td colname="col1"> <p>Carte </p> </td> 
       <td colname="col2"> <p>Permet de spécifier des mappages colonne/métadonnées à l’aide des numéros de colonne. </p> <p> 
       <ul id="ul_06F50CBA0AA64C7CB1AFAE076E629A64"> 
-      <li id="li_0FA2502869BA40DC93D790B79E15A9D2"> <span class="uicontrol"> Baliser </span> <p>Spécifie une représentation XPath des données XML analysées. A l’aide de l’exemple de document XML Adobe ci-dessus, sous l’option Itemtag, vous pouvez le mapper à l’aide de la syntaxe suivante : </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
+      <li id="li_0FA2502869BA40DC93D790B79E15A9D2"> <span class="uicontrol"> Baliser </span> <p>Spécifie une représentation XPath des données XML analysées. A l’aide de l’exemple de document XML d’Adobe ci-dessus, sous l’option Itemtag, vous pouvez le mapper à l’aide de la syntaxe suivante : </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
         /record/metadata/meta[@name='title']/@content&nbsp;-&gt;&nbsp;title 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;desc 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;body </code> </p> <p>La syntaxe ci-dessus se traduit comme suit : </p> <p> 
@@ -1387,7 +1332,7 @@ Avant que les effets de la nouvelle définition activée ne soient visibles pour
       </ul> </p> <p>XPath est une notation relativement compliquée. Pour plus d'informations, consultez l'adresse suivante : </p> <p>Voir <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_84999D07E0AE4265BC7928BBB49957B9"> <span class="uicontrol"> Champ </span> <p>Définit la valeur d’attribut name utilisée pour chaque balise &lt;meta&gt; générée. </p> </li> 
       <li id="li_E125788D0F5242958BD790E26A675C20"> <span class="uicontrol"> Métadonnées? </span> <p>Le champ <span class="uicontrol"> </span> devient une liste déroulante à partir de laquelle vous pouvez sélectionner des champs de métadonnées définis pour le compte actif. </p> <p>Si vous le souhaitez, la <span class="uicontrol"> </span> valeur de champ peut être un champ de métadonnées non défini. Un champ de métadonnées non défini est parfois utile pour créer le contenu utilisé par <span class="wintitle"> le script de filtrage </span>. </p> <p>Voir <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> A propos du filtrage de script </a>. </p> <p>Lorsque Index Connector traite des documents XML avec plusieurs accès sur un champ de mappage, les valeurs multiples sont concaténées en une seule valeur dans le document mis en cache qui en résulte. Par défaut, ces valeurs sont combinées à l’aide d’un délimiteur de virgules. Cependant, supposons que la valeur de <span class="wintitle"> champ correspondante </span> soit un champ de métadonnées défini. En outre, l’attribut <span class="wintitle"> Listes autorisées </span> est défini pour ce champ. Dans ce cas, la valeur Délimiteurs de Liste du champ, qui est le premier délimiteur défini, est utilisée dans la concaténation. </p> </li> 
-      <li id="li_9F435EFB3EC74B409EC82A851824609F"> <span class="uicontrol"> Clé primaire? </span> <p>Une seule définition de mappage est identifiée comme clé principale. Ce champ devient la référence unique présentée lorsque ce document est ajouté à l'index. Cette valeur est utilisée dans l’URL du document dans l’index. </p> <p>Les valeurs de clé de <span class="uicontrol"> Principal </span> doivent être uniques dans tous les documents représentés par la configuration d’Index Connector. Tous les duplicata rencontrés seront ignorés. Si vos documents source ne contiennent pas une seule valeur unique à utiliser comme clé de <span class="uicontrol"> Principal </span>, mais que deux ou plusieurs champs pris ensemble <i>peuvent former un identifiant unique, vous pouvez définir la clé de</i> Principal <span class="uicontrol"> en combinant plusieurs définitions de  de balise </span> <span class="uicontrol"> avec une barre verticale ("|") délimitant les valeurs.</span> </p> </li> 
+      <li id="li_9F435EFB3EC74B409EC82A851824609F"> <span class="uicontrol"> Clé primaire? </span> <p>Une seule définition de mappage est identifiée comme la clé Principale. Ce champ devient la référence unique présentée lorsque ce document est ajouté à l'index. Cette valeur est utilisée dans l’URL du document dans l’index. </p> <p>Les valeurs de clé de <span class="uicontrol"> Principal </span> doivent être uniques dans tous les documents représentés par la configuration d’Index Connector. Tous les duplicata rencontrés seront ignorés. Si vos documents source ne contiennent pas une seule valeur unique à utiliser comme clé <span class="uicontrol"> Principal </span>, mais que deux ou plusieurs champs pris ensemble <i>peuvent former un identifiant unique, vous pouvez définir la clé</i> Principal <span class="uicontrol"> en combinant plusieurs définitions de  de balises </span> <span class="uicontrol"> avec une barre verticale ("|") délimitant les valeurs.</span> </p> </li> 
       <li id="li_9F435EFB3EC74B409EC82A851824610G"> <span class="uicontrol"> Eliminer le code HTML ? </span> <p>Lorsque cette option est cochée, toutes les balises HTML trouvées dans les données de ce champ sont supprimées. </p> </li> 
       <li id="li_6302D18971AD439FBECE27742649C56B"> <span class="uicontrol"> Action </span> <p>Permet d’ajouter des rangées au mappage ou de supprimer des rangées du mappage. L’ordre des rangées n’est pas important. </p> </li> 
       </ul> </p> </td> 

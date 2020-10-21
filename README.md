@@ -1,9 +1,16 @@
 ---
-source-git-commit: aa5364886b5e09fdbf5840c058ac3f3f364344ab
+source-git-commit: 2c0ca6307586f4b63599856bc20aee196cb8b98f
+workflow-type: tm+mt
 translation-type: tm+mt
+source-wordcount: '509'
+ht-degree: 72%
 
 ---
-# Article de Contribute pour Search &amp; Promote
+# Article Contribute pour Search &amp; Promote
+
+| EXL-PR | EXL | Aperçu | Activer | Publié | Aide |
+|--- |--- |--- |--- |--- |--- |
+| [![État de la création](https://docs.ci.corp.adobe.com/view/exl-pr/job/search-promote.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/search-promote.en_pr-exl/lastBuild/) | [![État de la création](https://docs.ci.corp.adobe.com/view/exl-pr/job/search-promote.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/search-promote.en_exl/lastBuild/lastBuild) | [URL de la prévisualisation](https://experienceleague.corp.adobe.com/docs/search-promote/using/sp-home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [URL en direct](https://experienceleague.adobe.com/docs/search-promote/using/sp-home.html?lang=en) | [Guide de création](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 Nous somme ouverts aux contributions de notre communauté ainsi que des employés d’Adobe en dehors des équipes de documentation.
 
@@ -13,7 +20,7 @@ Ce projet a adopté le [code de conduite Adobe Open Source](code-of-conduct.md) 
 
 ## À propos de vos contributions au contenu Adobe
 
-Reportez-vous au Guide [des contributeurs d’](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)Adobe Docs.
+Consultez le Guide [des contributeurs de](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)documents Adobes.
 
 La façon de contribuer dépend de qui vous êtes et du type de modification que vous souhaitez proposer :
 
@@ -48,7 +55,7 @@ See the [Adobe Docs Contributor Guide](https://docs.adobe.com/help/en/contributo
 Tous les articles de ce référentiel utilisent des marqueurs de style GitHub. Si vous n’avez pas l’habitude de ce genre de marqueurs, voir :
 
 * [Notions de base](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [Feuille de calcul d’annotation imprimable](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [Feuille de calcul de balisage imprimable](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## Étiquettes
 

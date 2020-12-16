@@ -31,7 +31,7 @@ Il existe deux méthodes pour ajouter des bannières publicitaires à votre site
 
 La première méthode consiste à ajouter des bannières par Cible, Search &amp; Promote. Les bannières sont des fragments de code HTML qui s’affichent au moment où un client effectue une recherche sur votre site Web. Votre bannière peut inclure du texte ou une image au format GIF, JPEG ou PNG, ou une combinaison des deux. Vous pouvez choisir parmi des tailles prédéfinies ou définir vos propres dimensions personnalisées pour tenir compte de votre page. Le code HTML utilisé pour afficher la bannière peut également spécifier le style de police à utiliser et la bordure. Cette méthode d&#39;ajout d&#39;une bannière offre les fonctionnalités de base et ne nécessite pas de logiciel supplémentaire.
 
-La deuxième méthode consiste à utiliser Adobe Dynamic Media Classic, un service de publication et de gestion dynamique des médias. Un compte Adobe dynamique Media Classic valide vous permet de gérer et de diffuser directement le contenu de la bannière vers la Cible, la Search &amp; Promote, à l’aide de Contenu multimédia dynamique classique. Dans la recherche/le marchandisage de site, vous configurez l’accès à votre compte Contenu multimédia dynamique classique. Ouvrez ensuite le navigateur de médias Dynamic Media Classic et sélectionnez un fichier de médias dynamiques que vous souhaitez utiliser comme bannière.
+La deuxième méthode consiste à utiliser Adobe Dynamic Media Classic, un service de publication et de gestion dynamique des médias. Un compte Dynamic Media Classic d’Adobe valide vous permet de gérer et de diffuser directement le contenu des bannières à la Cible, à la Search &amp; Promote, à l’aide de Dynamic Media Classic. Dans la recherche/le marchandisage de site, vous configurez l’accès à votre compte Dynamic Media Classic. Ouvrez ensuite le navigateur de médias Dynamic Media Classic et sélectionnez un fichier multimédia dynamique que vous souhaitez utiliser comme bannière.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ La deuxième méthode consiste à utiliser Adobe Dynamic Media Classic, un servi
 
 ## Intégration de bannières à Adobe Scene7 Publishing System {#section_D4D7ADEA6A6348E68EDA138E184FE579}
 
-Vous pouvez utiliser les types de ressources Contenu multimédia dynamique Classic comme bannières dans la recherche/le marchandisage sur site, y compris les images, les bannières dynamiques et les modèles, tels que les modèles d’image ou de Flash.
+Vous pouvez utiliser les types de ressources Dynamic Media Classic comme bannières dans la recherche/le marchandisage de sites, y compris les images, les bannières dynamiques et les modèles, tels que les modèles d’image ou de Flash.
 
 Les modèles sont des fichiers d’image créés dynamiquement et superposés de manière adressable, tels que des fichiers superposés dans des applications de retouche d’images telles que Adobe Photoshop®. Contrairement à un fichier image statique, un modèle peut inclure des paramètres. Grâce aux paramètres, vous pouvez personnaliser les propriétés des images variables et le contenu des images.
 
@@ -47,41 +47,41 @@ Les modèles sont des fichiers d’image créés dynamiquement et superposés de
 >
 >Vous pouvez également créer des modèles à partir de conceptions basées sur des mises en page à l’aide de la publication de modèles dans Scene7 Publishing System et de fichiers provenant de Adobe Illustrator et Adobe InDesign.
 
-Voir Publication [de](https://help.adobe.com/en_US/scene7/using/WSFBFBAD30-2694-4b18-B7CE-894F9FC5CDDF.html) modèles dans le Guide de l’utilisateur de Dynamic Media Classic (Scene7).
+Voir [Publication de modèles](https://help.adobe.com/en_US/scene7/using/WSFBFBAD30-2694-4b18-B7CE-894F9FC5CDDF.html) dans le Guide de l’utilisateur de Dynamic Media Classic (Scene7).
 
-Un modèle peut contenir n’importe quel nombre de calques d’image et de texte. Vous pouvez convertir un fichier statique contenant des calques, tel qu’un fichier PSD superposé, en modèle ou créer des modèles dans Contenu multimédia dynamique classique. Vous pouvez créer des calques de texte dans des modèles à l’aide de polices que vous avez téléchargées dans Scene7 Publishing System. Après avoir ajouté du texte à un modèle, vous pouvez le mettre en forme en modifiant sa justification, ses polices, sa taille et sa couleur.
+Un modèle peut contenir n’importe quel nombre de calques d’image et de texte. Vous pouvez convertir un fichier statique contenant des calques, tel qu’un fichier PSD superposé, en modèle ou créer des modèles dans Dynamic Media Classic. Vous pouvez créer des calques de texte dans des modèles à l’aide de polices que vous avez téléchargées dans Scene7 Publishing System. Après avoir ajouté du texte à un modèle, vous pouvez le mettre en forme en modifiant sa justification, ses polices, sa taille et sa couleur.
 
 L’écran Paramètres de Dynamic Media Classic vous permet de convertir n’importe quel aspect d’un modèle en paramètre adressable. Ce faisant, vous pouvez modifier l’image superposée à utiliser ou la valeur de texte à utiliser dans votre modèle. Les paramètres sont transmis avec la chaîne URL, ce qui vous permet de modifier n’importe quel paramètre pour personnaliser dynamiquement l’image de réponse générée à partir du serveur d’images.
 
 Vous pouvez en savoir plus sur l’utilisation de Dynamic Media Classic pour créer des modèles et paramétrer les propriétés des calques afin de pouvoir les utiliser dans des bannières.
 
-Reportez-vous à la section Concepts de base des [](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) modèles dans le Guide de l’utilisateur de Dynamic Media Classic (Scene7).
+Voir [Concepts de base des modèles](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) dans le Guide de l’utilisateur de Dynamic Media Classic (Scene7).
 
 **Téléchargement et publication de fichiers**
 
-Vous devez télécharger et publier des fichiers dans Dynamic Media Classic avant de pouvoir les utiliser pour des bannières dans la recherche/le marchandisage de site. Ce prérequis inclut également tous les actifs utilisés par un modèle d’image ou un modèle de Flash. Utilisez votre compte Dynamic Media Classic pour télécharger et publier des fichiers numériques. Vous pouvez également utiliser la recherche sur site/le marchandisage pour télécharger un fichier numérique, puis faire en sorte que Dynamic Media Classic le publie automatiquement en fonction de vos paramètres de téléchargement. Si vous tentez de sélectionner un fichier qui n’est pas encore téléchargé et publié, vous en êtes informé dans l’interface utilisateur et vous avez la possibilité de le télécharger avant de continuer.
+Vous devez télécharger et publier des fichiers dans Dynamic Media Classic avant de pouvoir les utiliser pour des bannières dans la recherche/le marchandisage de site. Ce prérequis inclut également tous les actifs utilisés par un modèle d’image ou un modèle de Flash. Utilisez votre compte Dynamic Media Classic pour télécharger et publier des ressources numériques. Vous pouvez également utiliser la recherche sur site/le marchandisage pour télécharger un fichier numérique, puis demander à Dynamic Media Classic de le publier automatiquement en fonction de vos paramètres de téléchargement. Si vous tentez de sélectionner un fichier qui n’est pas encore téléchargé et publié, vous en êtes informé dans l’interface utilisateur et vous avez la possibilité de le télécharger avant de continuer.
 
 Vous pouvez en savoir plus sur le téléchargement et la publication de ressources numériques à l’aide de Scene7 Publishing System.
 
-Voir [Téléchargement et publication de fichiers](https://help.adobe.com/en_US/scene7/using/WS3673AD39-098B-4f08-8A24-CA51261B7366.html) dans le Guide de l’utilisateur de Dynamic Media Classic (Scene7).
+Voir [Téléchargement et publication des ressources](https://help.adobe.com/en_US/scene7/using/WS3673AD39-098B-4f08-8A24-CA51261B7366.html) dans le Guide de l’utilisateur Dynamic Media Classic (Scene7).
 
 >[!NOTE]
 >
->Pour utiliser la fonctionnalité de téléchargement dans la visionneuse de ressources de Dynamic Media Classic, assurez-vous que le compte Contenu de Contenu de Contenu multimédia dynamique que vous utilisez a déjà le rôle &quot;Administrateur de Société SPS&quot;.
+>Pour utiliser la fonctionnalité de téléchargement dans la visionneuse de ressources Dynamic Media Classic, assurez-vous que le compte Dynamic Media Classic que vous utilisez a déjà le rôle &quot;Administrateur de Société SPS&quot;.
 
-Voir Configuration [de](https://help.adobe.com/en_US/scene7/using/WS662101DF-D697-47a7-A7D8-B52FD8E94438.html) l’administration dans le Guide de l’utilisateur de Dynamic Media Classic (Scene7).
+Voir [Configuration de l’administration](https://help.adobe.com/en_US/scene7/using/WS662101DF-D697-47a7-A7D8-B52FD8E94438.html) dans le Guide de l’utilisateur de Dynamic Media Classic (Scene7).
 
-**Modification des paramètres de modèle de contenu multimédia classique dynamique dans une bannière à l’aide de règles de fonctionnement**
+**Modification des paramètres de modèle Dynamic Media Classic dans une bannière à l’aide de règles de fonctionnement**
 
-Si vous avez ajouté une ressource Dynamic Media Classic en tant que bannière, vous pouvez l’utiliser [!DNL Visual Rule Builder] dans [!DNL Business Rules] pour l’ajouter à n’importe quelle zone de bannière de votre site Web. Par exemple, vous ajoutez la bannière à vos pages de résultats de recherche, comme vous le feriez pour toute autre bannière. Vous pouvez également remplacer les valeurs de paramètre par défaut dans les modèles Contenu multimédia dynamique en les personnalisant en fonction de vos besoins spécifiques. Ce type de fonctionnalité vous permet de personnaliser des modèles de contenu Dynamic Media Classic avec différents messages marketing et des hyperliens vers différents points de terminaison.
+Si vous avez ajouté une ressource Dynamic Media Classic en tant que bannière, vous pouvez utiliser [!DNL Visual Rule Builder] dans [!DNL Business Rules] pour l’ajouter à n’importe quelle zone de bannière de votre site Web. Par exemple, vous ajoutez la bannière à vos pages de résultats de recherche, comme vous le feriez pour toute autre bannière. Vous pouvez également remplacer les valeurs de paramètre par défaut dans les modèles Dynamic Media Classic en les personnalisant en fonction de vos besoins spécifiques. Ce type de fonctionnalité vous permet de personnaliser des modèles Dynamic Media Classic avec différents messages marketing et des hyperliens vers différents points de terminaison.
 
-Voir aussi [Ajouter une nouvelle règle](../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7)de fonctionnement.
+Voir aussi [Ajouter une nouvelle règle de fonctionnement](../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7).
 
-Voir aussi [Modification d’une règle](../c-about-rules-menu/c-about-business-rules.md#task_375CFA75D1D94D9E92A35DE1228E5087)de fonctionnement.
+Voir aussi [Modification d&#39;une règle de fonctionnement](../c-about-rules-menu/c-about-business-rules.md#task_375CFA75D1D94D9E92A35DE1228E5087).
 
-## ajouter une bannière {#task_549D02B5F73B4158B105A94E39D937B7}
+## Ajouter une bannière {#task_549D02B5F73B4158B105A94E39D937B7}
 
-Vous pouvez les utiliser [!DNL Banners] pour gérer les bannières publicitaires et leur emplacement sur votre site Web. Lorsque vous ajoutez une bannière, vous référencez l’image de manière externe au moyen de fragments de code HTML qui s’affichent au moment de la recherche.
+Vous pouvez utiliser [!DNL Banners] pour gérer les bannières publicitaires et leur emplacement sur votre site Web. Lorsque vous ajoutez une bannière, vous référencez l’image de manière externe au moyen de fragments de code HTML qui s’affichent au moment de la recherche.
 
 <!-- 
 
@@ -89,17 +89,17 @@ t_adding_a_new_banner.xml
 
  -->
 
-Si vous disposez d’un compte Adobe Dynamic Media Classic valide, vous pouvez ajouter des bannières publicitaires au moyen de Scene7 Publishing System.
+Si vous disposez d’un compte d’Adobe Dynamic Media Classic valide, vous pouvez ajouter des bannières publicitaires au moyen de Scene7 Publishing System.
 
 Voir [Ajouter une bannière à l’aide d’Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3).
 
-Voir [Configuration de l’accès à votre compte](../c-about-settings-menu/c-about-account-options-menu.md#task_CEFF88C2033D41D0B2FE86C435EDAC6D)Adobe Dynamic Media Classic.
+Voir [Configuration de l’accès à votre compte Dynamic Media Classic Adobe](../c-about-settings-menu/c-about-account-options-menu.md#task_CEFF88C2033D41D0B2FE86C435EDAC6D).
 
 **Pour ajouter une bannière**
 
 1. Dans le menu produit, cliquez sur **[!UICONTROL Design]** > **[!UICONTROL Banners]**.
-1. Sur la [!DNL Banners] page, dans la liste **[!UICONTROL Add Banner]** déroulante, sélectionnez **[!UICONTROL HTML code]**.
-1. Dans la [!DNL Add Banner] boîte de dialogue, définissez les options de votre choix.
+1. Sur la page [!DNL Banners], dans la liste déroulante **[!UICONTROL Add Banner]**, sélectionnez **[!UICONTROL HTML code]**.
+1. Dans la boîte de dialogue [!DNL Add Banner], définissez les options de votre choix.
 
    <table> 
     <thead> 
@@ -115,9 +115,11 @@ Voir [Configuration de l’accès à votre compte](../c-about-settings-menu/c-ab
       </tr> 
       <tr> 
       <td colname="col1"> <p>Bannière HTML </p> </td> 
-      <td colname="col2"> <p> Permet de coller le code HTML associé à la bannière. </p> <p>Tout code HTML est acceptable, y compris le code CSS entouré de <code>
+      <td colname="col2"> <p> Permet de coller le code HTML associé à la bannière. </p> <p>Tout code HTML est acceptable, y compris le code CSS entouré de 
+        Balises <code>
           &lt;style&gt; 
-        </code> balises ou le code JavaScript entouré de <code>
+        </code> ou code JavaScript entouré de 
+        <code>
           &lt;script&gt; 
         </code> balises. Par exemple, le bloc de code suivant est destiné à une bannière de texte de type Horizontal top : <code> &lt;div&nbsp;style="width:&nbsp;684px;&nbsp;background-image:&nbsp;url('https://www.brough.com/blackb.gif');&nbsp; 
           padding-top:&nbsp;10px;&nbsp;padding-bottom:&nbsp;10px;&nbsp;color:&nbsp;white;&nbsp;font-family:&nbsp;verdana;&nbsp; 
@@ -127,15 +129,15 @@ Voir [Configuration de l’accès à votre compte](../c-about-settings-menu/c-ab
       <td colname="col1"> <p>Type </p> </td> 
       <td colname="col2"> <p>Spécifie les types de bannières suivants : 
         <ul id="ul_6423AEDB9E664049989EB529D63C4A62"> 
-          <li id="li_BF6CD60B3ED748D49CFFB9C5D607661C"> <span class="uicontrol"> [nouveau type] </span> <p>Permet de spécifier le type de bannière souhaité, y compris les dimensions et le nom. </p> </li> 
-          <li id="li_1A29AB22AD644E60A12298187B5E898E"> <span class="uicontrol"> Démarrage complet </span> <p>La dimension définie pour ce type de bannière est de 680 pixels de large et de 650 pixels de haut. Vous pouvez éventuellement spécifier le nom du type ou accepter le nom par défaut qui correspond au nom du type de bannière lui-même. </p> </li> 
-          <li id="li_2BE06D013CB54DDE851051BFC038BB57"> <span class="uicontrol"> Haut horizontal </span> <p> La bannière est placée dans la partie supérieure de votre site Web. Ce type est utile si vous avez l’intention d’ajouter des hyperliens à gauche ou à droite de la bannière. La dimension définie pour ce type de bannière est de 468 pixels de large et de 60 pixels de haut. Vous pouvez éventuellement spécifier le nom du type ou accepter le nom par défaut qui correspond au nom du type de bannière lui-même. </p> </li> 
-          <li id="li_EC35AB92234749F08AA8A9BD26D0EA8D"> <span class="uicontrol"> Haut horizontal - Pleine largeur </span> <p>Ce type est celui par défaut lorsque vous ajoutez une nouvelle bannière. La bannière est positionnée sur la partie supérieure de votre site Web et occupe toute la largeur de la page. La dimension définie pour ce type de bannière est de 670 pixels de large et de 150 pixels de haut. Vous pouvez éventuellement spécifier le nom du type ou accepter le nom par défaut qui correspond au nom du type de bannière lui-même. </p> </li> 
+          <li id="li_BF6CD60B3ED748D49CFFB9C5D607661C"> <span class="uicontrol"> [nouveau type]  </span> <p>Permet de spécifier le type de bannière souhaité, y compris les dimensions et le nom. </p> </li> 
+          <li id="li_1A29AB22AD644E60A12298187B5E898E"> <span class="uicontrol"> Démarrage complet  </span> <p>La dimension définie pour ce type de bannière est de 680 pixels de large et de 650 pixels de haut. Vous pouvez éventuellement spécifier le nom du type ou accepter le nom par défaut qui correspond au nom du type de bannière lui-même. </p> </li> 
+          <li id="li_2BE06D013CB54DDE851051BFC038BB57"> <span class="uicontrol"> Haut horizontal  </span> <p> La bannière est placée dans la partie supérieure de votre site Web. Ce type est utile si vous avez l’intention d’ajouter des hyperliens à gauche ou à droite de la bannière. La dimension définie pour ce type de bannière est de 468 pixels de large et de 60 pixels de haut. Vous pouvez éventuellement spécifier le nom du type ou accepter le nom par défaut qui correspond au nom du type de bannière lui-même. </p> </li> 
+          <li id="li_EC35AB92234749F08AA8A9BD26D0EA8D"> <span class="uicontrol"> Haut horizontal - Pleine largeur  </span> <p>Ce type est celui par défaut lorsque vous ajoutez une nouvelle bannière. La bannière est positionnée sur la partie supérieure de votre site Web et occupe toute la largeur de la page. La dimension définie pour ce type de bannière est de 670 pixels de large et de 150 pixels de haut. Vous pouvez éventuellement spécifier le nom du type ou accepter le nom par défaut qui correspond au nom du type de bannière lui-même. </p> </li> 
         </ul> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Balises </p> </td> 
-      <td colname="col2"> <p>ajoute les balises ou "mots-clés" que vous souhaitez associer à la bannière. Si vous utilisez de nombreuses bannières, l’ajout de balises peut vous aider à affiner la recherche de bannières afin que vous puissiez rapidement localiser la bannière appropriée à vos besoins. Vous pouvez également supprimer les balises que vous avez ajoutées. </p> </td> 
+      <td colname="col2"> <p>Ajoute les balises ou "mots-clés" que vous souhaitez associer à la bannière. Si vous utilisez de nombreuses bannières, l’ajout de balises peut vous aider à affiner la recherche de bannières afin que vous puissiez rapidement localiser la bannière appropriée à vos besoins. Vous pouvez également supprimer les balises que vous avez ajoutées. </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -145,17 +147,17 @@ Voir [Configuration de l’accès à votre compte](../c-about-settings-menu/c-ab
 
    * Cliquez sur **[!UICONTROL History]** pour annuler les modifications que vous avez apportées.
 
-      Voir [Utilisation de l’option](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historique.
+      Voir [Utilisation de l’option Historique](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Cliquez sur **[!UICONTROL Live]**.
 
-      Voir [Affichage des paramètres](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)en direct.
+      Voir [Affichage des paramètres en direct](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Cliquez sur **[!UICONTROL Push Live]**.
 
       Voir [Activation des paramètres d’étape](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Modification d’une bannière {#task_D4081083BE7B40F5A003D1A2F1435AEA}
+## Modification d&#39;une bannière {#task_D4081083BE7B40F5A003D1A2F1435AEA}
 
 Utilisez [!DNL Edit Banner] pour modifier des éléments tels que le nom de la bannière, le code HTML de la bannière, le type de la bannière et les balises associées.
 
@@ -165,17 +167,17 @@ t_editing_a_banner.xml
 
  -->
 
-Si vous avez ajouté une bannière à l’aide de la recherche sur le site/du marchandisage, vous modifiez également la bannière à l’aide d’Adobe Dynamic Media Classic.
+Si vous avez ajouté une bannière à l’aide de la recherche sur le site/du marchandisage, vous modifiez également la bannière à l’aide de l’Adobe Dynamic Media Classic.
 
 Voir aussi [Modification d’une bannière à l’aide d’Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9).
 
 **Pour modifier une bannière**
 
 1. Dans le menu produit, cliquez sur **[!UICONTROL Design]** > **[!UICONTROL Banners]**.
-1. Sur la [!DNL Banners] page, cliquez sur ![](assets/icon_edit_16.gif).
+1. Sur la page [!DNL Banners], cliquez sur ![](assets/icon_edit_16.gif).
 
    au-dessus d’une miniature de bannière à modifier.
-1. Sur la [!DNL Edit Banner] page, définissez les options de votre choix.
+1. Sur la page [!DNL Edit Banner], définissez les options de votre choix.
 
    Consultez le tableau des options sous [Ajouter une bannière](../c-about-design-menu/c-about-banners.md#task_549D02B5F73B4158B105A94E39D937B7).
 1. Lorsque vous avez terminé de modifier la bannière, cliquez sur **[!UICONTROL Save]**.
@@ -183,19 +185,19 @@ Voir aussi [Modification d’une bannière à l’aide d’Adobe Dynamic Media C
 
    * Cliquez sur **[!UICONTROL History]** pour annuler les modifications que vous avez apportées.
 
-      Voir [Utilisation de l’option](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historique.
+      Voir [Utilisation de l’option Historique](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Cliquez sur **[!UICONTROL Live]**.
 
-      Voir [Affichage des paramètres](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)en direct.
+      Voir [Affichage des paramètres en direct](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Cliquez sur **[!UICONTROL Push Live]**.
 
       Voir [Activation des paramètres d’étape](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## ajouter une bannière à l’aide d’Adobe Dynamic Media Classic {#task_AD1E0C00A9E04B1FA819EB93288786B3}
+## Ajouter une bannière à l’aide d’Adobe Dynamic Media Classic {#task_AD1E0C00A9E04B1FA819EB93288786B3}
 
-Vous pouvez les utiliser [!DNL Banners] pour gérer les bannières publicitaires sur votre site Web. Lorsque vous ajoutez une bannière à l’aide d’Adobe Dynamic Media Classic, vous pouvez choisir parmi les ressources numériques que vous avez téléchargées sur Scene7 Publishing System.
+Vous pouvez utiliser [!DNL Banners] pour gérer les bannières publicitaires sur votre site Web. Lorsque vous ajoutez une bannière à l’aide d’Adobe Dynamic Media Classic, vous pouvez choisir parmi n’importe quelle ressource numérique que vous avez téléchargée sur Scene7 Publishing System.
 
 <!-- 
 
@@ -205,13 +207,13 @@ t_adding_a_banner_using_adobe_scene7.xml
 
 Pour ajouter une bannière à l’aide de l’Adobe Dynamic Media Classic, assurez-vous d’avoir configuré l’accès à votre compte Dynamic Media Classic valide.
 
-Voir [Configuration de l’accès à votre compte](../c-about-settings-menu/c-about-account-options-menu.md#task_CEFF88C2033D41D0B2FE86C435EDAC6D)Adobe Dynamic Media Classic.
+Voir [Configuration de l’accès à votre compte Dynamic Media Classic Adobe](../c-about-settings-menu/c-about-account-options-menu.md#task_CEFF88C2033D41D0B2FE86C435EDAC6D).
 
-**Pour ajouter une bannière à l’aide de l’Adobe Dynamic Media Classic**
+**Pour ajouter une bannière à l’aide d’Adobe Dynamic Media Classic**
 
 1. Dans le menu produit, cliquez sur **[!UICONTROL Design]** > **[!UICONTROL Banners.]**
-1. Sur la [!DNL Banners] page, dans la liste **[!UICONTROL Add Banner]** déroulante, cliquez sur **[!UICONTROL Adobe Scene7]**.
-1. Dans la boîte de [!DNL Pick an Asset] dialogue, dans le volet de gauche, utilisez les options de navigation de l’interface utilisateur pour localiser le dossier contenant le fichier numérique à utiliser pour une bannière.
+1. Sur la page [!DNL Banners], dans la liste déroulante **[!UICONTROL Add Banner]**, cliquez sur **[!UICONTROL Adobe Scene7]**.
+1. Dans la boîte de dialogue [!DNL Pick an Asset], dans le volet de gauche, utilisez les options de navigation de l’interface utilisateur pour localiser le dossier contenant la ressource numérique à utiliser pour une bannière.
 
    À l’exception des options de navigation des fichiers, toutes les autres options dépendent de la ressource numérique que vous avez sélectionnée pour l’ajouter ou la modifier.
 
@@ -219,9 +221,9 @@ Voir [Configuration de l’accès à votre compte](../c-about-settings-menu/c-ab
 
    >[!NOTE]
    >
-   >Les options de navigation des fichiers ne s’affichent pas lorsque vous modifiez la bannière dans la [!DNL Change Parameters] boîte de dialogue.
+   >Les options de navigation des fichiers ne s’affichent pas lorsque vous modifiez la bannière dans la boîte de dialogue [!DNL Change Parameters].
 
-   Voir [Modification d’une bannière à l’aide d’Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9).
+   Voir [Modification d’une bannière à l’aide de l’Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9).
 
    **Options de navigation des fichiers**
 
@@ -235,7 +237,7 @@ Voir [Configuration de l’accès à votre compte](../c-about-settings-menu/c-ab
     <tbody> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/S7_folders.png"> </p> </td> 
-      <td colname="col2"> <p>Permet de sélectionner le compte Contenu multimédia dynamique classique pour votre société particulière dans la liste déroulante et de parcourir les dossiers de ressources numériques de ce compte. </p> <p>Lorsque vous sélectionnez un dossier, le volet droit de la boîte de dialogue <span class="wintitle"> Sélectionner un fichier </span> affiche toutes les ressources numériques disponibles contenues dans ce dossier. </p> </td> 
+      <td colname="col2"> <p>Permet de sélectionner le compte Dynamic Media Classic pour votre société particulière dans la liste déroulante et de parcourir les dossiers de ressources numériques de ce compte. </p> <p>Lorsque vous sélectionnez un dossier, le volet droit de la boîte de dialogue <span class="wintitle"> Sélectionner un fichier </span> affiche toutes les ressources numériques disponibles contenues dans ce dossier. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_folderhistory.png"> </p> </td> 
@@ -243,7 +245,7 @@ Voir [Configuration de l’accès à votre compte](../c-about-settings-menu/c-ab
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_reloadfolder.png"> </p> </td> 
-      <td colname="col2"> <p>Actualise la liste des ressources numériques affichées pour un dossier sélectionné. </p> <p>Vous devrez peut-être cliquer sur ce contrôle si vous déplacez, supprimez ou renommez un fichier sélectionné à l’aide de la liste <span class="uicontrol"> déroulante Actions </span> . </p> </td> 
+      <td colname="col2"> <p>Actualise la liste des ressources numériques affichées pour un dossier sélectionné. </p> <p>Vous devrez peut-être cliquer sur ce contrôle si vous déplacez, supprimez ou renommez une ressource sélectionnée à l’aide de la liste déroulante <span class="uicontrol"> Actions </span>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_list_or_grid.png"> </p> </td> 
@@ -255,7 +257,7 @@ Voir [Configuration de l’accès à votre compte](../c-about-settings-menu/c-ab
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_upload.png"> </p> </td> 
-      <td colname="col2"> <p>Ouvre la boîte de dialogue <span class="wintitle"> Télécharger </span> , dans laquelle vous pouvez télécharger un fichier numérique sélectionné à partir de votre bureau ou d’un serveur externe afin de l’utiliser comme bannière. </p> <p>Une fois le fichier téléchargé, une tâche de publication est automatiquement planifiée dans Scene7 Publishing System. </p> <p>Consultez le tableau des options dans <a href="../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3" type="reference" format="dita" scope="local"> Ajouter une bannière à l’aide d’Adobe Dynamic Media Classic </a>. </p> <p>Vous pouvez en savoir plus sur le téléchargement et la publication de ressources numériques à l’aide de Scene7 Publishing System. </p> <p>Voir <a href="https://help.adobe.com/en_US/scene7/using/WS3673AD39-098B-4f08-8A24-CA51261B7366.html" scope="external" format="html"> Téléchargement et publication de fichiers </a> dans le Guide de l’utilisateur de Scene7 Publishing System. </p> </td> 
+      <td colname="col2"> <p>Ouvre la boîte de dialogue <span class="wintitle"> Télécharger </span> dans laquelle vous pouvez télécharger un fichier numérique sélectionné depuis votre bureau ou depuis un serveur externe afin de l’utiliser comme bannière. </p> <p>Une fois le fichier téléchargé, une tâche de publication est automatiquement planifiée dans Scene7 Publishing System. </p> <p>Consultez le tableau des options dans <a href="../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3" type="reference" format="dita" scope="local"> Ajouter une bannière à l’aide d’Adobe Dynamic Media Classic </a>. </p> <p>Vous pouvez en savoir plus sur le téléchargement et la publication de ressources numériques à l’aide de Scene7 Publishing System. </p> <p>Voir <a href="https://help.adobe.com/en_US/scene7/using/WS3673AD39-098B-4f08-8A24-CA51261B7366.html" scope="external" format="html"> Téléchargement et publication des ressources </a> dans le Guide de l’utilisateur de Scene7 Publishing System. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_searchfield.png"> </p> </td> 
@@ -263,7 +265,7 @@ Voir [Configuration de l’accès à votre compte](../c-about-settings-menu/c-ab
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_addfilter.png"> </p> </td> 
-      <td colname="col2"> <p>ajoute un autre filtre de ressources afin que vous puissiez affiner davantage la liste des ressources numériques affichées par type ou par date spécifique. </p> </td> 
+      <td colname="col2"> <p>Ajoute un autre filtre de ressources afin que vous puissiez affiner davantage la liste des ressources numériques affichées par type ou par date spécifique. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_Kindfilter.png"> </p> </td> 
@@ -384,7 +386,7 @@ Voir [Configuration de l’accès à votre compte](../c-about-settings-menu/c-ab
     <tbody> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_addfilter.png"> </p> </td> 
-      <td colname="col2"> <p>ajoute un champ de recherche et de remplacement. </p> </td> 
+      <td colname="col2"> <p>Ajoute un champ de recherche et de remplacement. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_deletefilter.png"> </p> </td> 
@@ -396,7 +398,7 @@ Voir [Configuration de l’accès à votre compte](../c-about-settings-menu/c-ab
       </tr> 
       <tr> 
       <td colname="col1"> <p>Remplacez </p> </td> 
-      <td colname="col2"> <p>Permet de spécifier le texte à insérer à la place du texte que vous recherchez. </p> <p>Lorsque vous appuyez sur <span class="uicontrol"> Entrée </span> dans ce champ, la fenêtre de prévisualisation est mise à jour avec le texte de remplacement. </p> </td> 
+      <td colname="col2"> <p>Permet de spécifier le texte à insérer à la place du texte que vous recherchez. </p> <p>Lorsque vous appuyez sur <span class="uicontrol"> Entrée </span> dans ce champ, la fenêtre de prévisualisation est mise à jour avec votre texte de remplacement. </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -409,9 +411,9 @@ Voir [Configuration de l’accès à votre compte](../c-about-settings-menu/c-ab
    >
    >Gardez à l’esprit que toute modification apportée aux paramètres peut être remplacée par des règles de fonctionnement. Les paramètres servent uniquement de valeurs par défaut lorsqu’aucune règle de fonctionnement n’est créée qui, autrement, modifierait les paramètres.
 
-   Voir [Ajouter une nouvelle règle](../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7)de fonctionnement.
+   Voir [Ajouter une nouvelle règle de fonctionnement](../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7).
 
-   See [Editing a business rule](../c-about-rules-menu/c-about-business-rules.md#task_375CFA75D1D94D9E92A35DE1228E5087).
+   Voir [Modification d&#39;une règle de fonctionnement](../c-about-rules-menu/c-about-business-rules.md#task_375CFA75D1D94D9E92A35DE1228E5087).
 
    **Basculer les options de visibilité des calques**
 
@@ -438,7 +440,7 @@ Voir [Configuration de l’accès à votre compte](../c-about-settings-menu/c-ab
    >
    >Si vous souhaitez utiliser la fonctionnalité de téléchargement dans la visionneuse de ressources Scene7, assurez-vous que le compte Scene7 que vous utilisez a déjà le rôle &quot;Administrateur de Sociétés SPS&quot; défini.
 
-   Voir Configuration [de](https://help.adobe.com/en_US/scene7/using/WS662101DF-D697-47a7-A7D8-B52FD8E94438.html) l’administration dans le Guide de l’utilisateur de Scene7 Publishing System.
+   Voir [Configuration de l’administration](https://help.adobe.com/en_US/scene7/using/WS662101DF-D697-47a7-A7D8-B52FD8E94438.html) dans le Guide de l’utilisateur de Scene7 Publishing System.
 
    **Options de base**
 
@@ -469,7 +471,7 @@ Voir [Configuration de l’accès à votre compte](../c-about-settings-menu/c-ab
 
    Lorsque vous téléchargez des fichiers d’image PostScript (EPS) ou Illustrator (AI), vous pouvez les formater de différentes manières. Vous pouvez pixelliser les fichiers, les convertir au format FXG pour la publication de modèles, conserver l’arrière-plan transparent, choisir une résolution et choisir un espace colorimétrique.
 
-   Les fichiers PSD (Photoshop Document) sont le plus souvent utilisés dans Dynamic Media Classic pour créer des modèles. Lorsque vous téléchargez un fichier PSD, vous pouvez créer automatiquement un modèle Contenu multimédia dynamique classique à partir du fichier (sélectionnez l’ **[!UICONTROL Create Template]** option).
+   Les fichiers PSD (Photoshop Document) sont le plus souvent utilisés dans Dynamic Media Classic pour créer des modèles. Lorsque vous téléchargez un fichier PSD, vous pouvez créer automatiquement un modèle Dynamic Media Classic à partir du fichier (sélectionnez l’option **[!UICONTROL Create Template]**).
 
    Scene7 Publishing System crée plusieurs images à partir d’un fichier PSD avec des calques si vous utilisez le fichier pour créer un modèle ; il crée une image pour chaque calque.
 
@@ -487,8 +489,8 @@ Voir [Configuration de l’accès à votre compte](../c-about-settings-menu/c-ab
       <td colname="col02"> <p>Profil de couleur </p> </td> 
       <td colname="col2"> <p> Vous permet de choisir parmi les options suivantes : </p> 
         <ul id="ul_6927BC08CA2647EDB2C85DAD2B82AE31"> 
-        <li id="li_CA3F44FF9C0F4CE987DCB0AF9303C2E4"> <span class="uicontrol"> Convertir en SRVB </span> <p>Convertit en SRGB (Standard Red Green Blue). SRVB est l’espace colorimétrique recommandé pour l’affichage d’images sur les pages Web. </p> </li> 
-        <li id="li_FCCEE6B14CCD4246ADA152932010ABF1"> <span class="uicontrol"> Conserver l’espace colorimétrique d’origine </span> <p>Conserve l’espace colorimétrique d’origine. </p> </li> 
+        <li id="li_CA3F44FF9C0F4CE987DCB0AF9303C2E4"> <span class="uicontrol"> Convertir en SRVB  </span> <p>Convertit en SRGB (Standard Red Green Blue). SRVB est l’espace colorimétrique recommandé pour l’affichage d’images sur les pages Web. </p> </li> 
+        <li id="li_FCCEE6B14CCD4246ADA152932010ABF1"> <span class="uicontrol"> Conserver l’espace colorimétrique d’origine  </span> <p>Conserve l’espace colorimétrique d’origine. </p> </li> 
         </ul> </td> 
       </tr> 
       <tr> 
@@ -511,10 +513,10 @@ Voir [Configuration de l’accès à votre compte](../c-about-settings-menu/c-ab
       <td colname="col02"> <p> Espace colorimétrique </p> </td> 
       <td colname="col2"> <p>Permet de choisir un espace colorimétrique pour le fichier Illustrator. L’espace colorimétrique RVB est préférable pour l’affichage en ligne. </p> <p>Vous pouvez choisir parmi les options d’espace colorimétrique suivantes : </p> 
         <ul id="ul_0E83E2762A574480B243F963A7FB2ACD"> 
-        <li id="li_B9FEC7D220D04CCABACD30839051DAE4"> <span class="uicontrol"> Détecter automatiquement </span> <p> Conserve l’espace colorimétrique du fichier PDF. </p> </li> 
-        <li id="li_ED0EB3B12BCF41C7AFC435447010B6FF"> <span class="uicontrol"> Forcer comme RVB </span> <p> Convertit dans l’espace colorimétrique RVB. </p> </li> 
-        <li id="li_3FB5DD8887C540BC97148A4D63B38F72"> <span class="uicontrol"> Forcer comme CMJN </span> <p> Convertit dans l’espace colorimétrique CMJN. </p> </li> 
-        <li id="li_6C018D3A4B254880AD41896E9F4AF3D9"> <span class="uicontrol"> Forcer comme Niveaux de gris </span> <p> Convertit dans l’espace colorimétrique Niveaux de gris. </p> </li> 
+        <li id="li_B9FEC7D220D04CCABACD30839051DAE4"> <span class="uicontrol"> Détecter automatiquement  </span> <p> Conserve l’espace colorimétrique du fichier PDF. </p> </li> 
+        <li id="li_ED0EB3B12BCF41C7AFC435447010B6FF"> <span class="uicontrol"> Forcer comme RVB  </span> <p> Convertit dans l’espace colorimétrique RVB. </p> </li> 
+        <li id="li_3FB5DD8887C540BC97148A4D63B38F72"> <span class="uicontrol"> Forcer comme CMJN  </span> <p> Convertit dans l’espace colorimétrique CMJN. </p> </li> 
+        <li id="li_6C018D3A4B254880AD41896E9F4AF3D9"> <span class="uicontrol"> Forcer comme Niveaux de gris  </span> <p> Convertit dans l’espace colorimétrique Niveaux de gris. </p> </li> 
         </ul> </td> 
       </tr> 
       <tr> 
@@ -547,10 +549,10 @@ Voir [Configuration de l’accès à votre compte](../c-about-settings-menu/c-ab
       <td colname="col02"> <p> Nom de calque </p> </td> 
       <td colname="col2"> <p>Les calques du fichier PSD sont téléchargés en tant qu’images distinctes. Vous pouvez sélectionner l’une des options suivantes pour choisir le nom de ces images dans Scene7 Publishing System : </p> 
         <ul id="ul_C2A25177A07740CA90B32C638304D39F"> 
-        <li id="li_477D5BFF7238454BBF0E04B22DE378F7"> <span class="uicontrol"> Utiliser le nom du calque à partir du fichier PSD </span> <p>Nomme les images après leur nom de calque dans le fichier PSD. Par exemple, un calque nommé <span class="codeph"> Etiquette de prix </span> dans le fichier PSD d’origine devient une image nommée <span class="codeph"> Etiquette de prix </span>. Cependant, si les noms de calque du fichier PSD sont des noms de calque Photoshop par défaut (Arrière-plan, Calque 1, Calque 2, etc.), les images sont nommées d’après leur numéro de calque dans le fichier PSD, et non leur nom de calque par défaut. </p> </li> 
-        <li id="li_EB4173B884FC41328CFBDE27DA6D43AA"> <span class="uicontrol"> Utiliser le nom de fichier PSD et le numéro d’ajout </span> <p>Nomme les images après leur numéro de calque dans le fichier PSD, en ignorant les noms de calque d’origine. Les images sont nommées avec le nom de fichier Photoshop et un numéro de calque annexé. Par exemple, le second calque d’un fichier appelé <span class="codeph"> Pub printemps.psd </span> est nommé <span class="codeph"> Pub printemps_2 </span> , même s’il portait un nom différent de celui par défaut dans Photoshop. </p> </li> 
-        <li id="li_10B2D2DE2FD24BD08DB56D1D95ABA53D"> <span class="uicontrol"> Utiliser le nom de fichier PSD et le nom ou numéro de calque </span> <p>Nomme les images après le fichier PSD suivi du nom du calque ou du numéro de calque. Le numéro de calque est utilisé si les noms de calque du fichier PSD sont des noms de calque Photoshop par défaut. Par exemple, un calque nommé <span class="codeph"> Etiquette de prix </span> dans un fichier PSD appelé <span class="codeph"> Annonce au printemps </span> est nommé Etiquette de prix de l’annonce au printemps <span class="codeph"> </span>. Un calque portant le nom par défaut <span class="codeph"> Layer 2 </span> est nommé <span class="codeph"> Spring Ad_2 </span>. </p> </li> 
-        <li id="li_5E57AC0719D4484B9C9BD14DB42B4455"> <span class="uicontrol"> Créer un dossier en fonction du nom de fichier PSD </span> <p>Crée un dossier pour les images de calque à l’aide du nom de fichier du fichier PSD. </p> </li> 
+        <li id="li_477D5BFF7238454BBF0E04B22DE378F7"> <span class="uicontrol"> Utiliser le nom du calque à partir du fichier PSD  </span> <p>Nomme les images après leur nom de calque dans le fichier PSD. Par exemple, un calque nommé <span class="codeph"> Etiquette de prix </span> dans le fichier PSD d’origine devient une image nommée <span class="codeph"> Etiquette de prix </span>. Cependant, si les noms de calque du fichier PSD sont des noms de calque Photoshop par défaut (Arrière-plan, Calque 1, Calque 2, etc.), les images sont nommées d’après leur numéro de calque dans le fichier PSD, et non leur nom de calque par défaut. </p> </li> 
+        <li id="li_EB4173B884FC41328CFBDE27DA6D43AA"> <span class="uicontrol"> Utiliser le nom de fichier PSD et le numéro d’ajout  </span> <p>Nomme les images après leur numéro de calque dans le fichier PSD, en ignorant les noms de calque d’origine. Les images sont nommées avec le nom de fichier Photoshop et un numéro de calque annexé. Par exemple, le second calque d’un fichier appelé <span class="codeph"> Pub printemps </span> est nommé <span class="codeph"> Pub printemps_2 </span> même s’il portait un nom non par défaut dans Photoshop. </p> </li> 
+        <li id="li_10B2D2DE2FD24BD08DB56D1D95ABA53D"> <span class="uicontrol"> Utiliser le nom de fichier PSD et le nom ou numéro de calque  </span> <p>Nomme les images après le fichier PSD suivi du nom du calque ou du numéro de calque. Le numéro de calque est utilisé si les noms de calque du fichier PSD sont des noms de calque Photoshop par défaut. Par exemple, un calque nommé <span class="codeph"> Etiquette de prix </span> dans un fichier PSD nommé <span class="codeph"> PubPrintemps </span> est nommé <span class="codeph"> Etiquette de prix de l'annonce de printemps </span>. Un calque portant le nom par défaut <span class="codeph"> Layer 2 </span> est nommé <span class="codeph"> Spring Ad_2 </span>. </p> </li> 
+        <li id="li_5E57AC0719D4484B9C9BD14DB42B4455"> <span class="uicontrol"> Créer un dossier en fonction du nom de fichier PSD  </span> <p>Crée un dossier pour les images de calque à l’aide du nom de fichier du fichier PSD. </p> </li> 
         </ul> </td> 
       </tr> 
       <tr> 
@@ -561,7 +563,7 @@ Voir [Configuration de l’accès à votre compte](../c-about-settings-menu/c-ab
       <tr> 
       <td colname="col1"> <p>Options PDF </p> </td> 
       <td colname="col02"> <p>Traitement </p> </td> 
-      <td colname="col2"> <p> <span class="uicontrol"> L’ </span> option Pixelliser permet de pixelliser les pages du fichier PDF et de convertir les graphiques vectoriels en images bitmap. 
+      <td colname="col2"> <p> <span class="uicontrol"> L’ </span> option Pixelliser permet d’extraire les pages du fichier PDF et de convertir les graphiques vectoriels en images bitmap.  
         <!--Choose this option to create an eCatalog. (This option is thedefault.)--> </p> </td> 
       </tr> 
       <tr> 
@@ -574,10 +576,10 @@ Voir [Configuration de l’accès à votre compte](../c-about-settings-menu/c-ab
       <td colname="col02"> <p> Espace colorimétrique </p> </td> 
       <td colname="col2"> <p>Permet de choisir un espace colorimétrique pour le fichier PDF. La plupart des fichiers PDF comportent des images couleur RVB et CMJN. L’espace colorimétrique RVB est préférable pour l’affichage en ligne. </p> <p>Vous pouvez choisir parmi les options d’espace colorimétrique suivantes : </p> 
         <ul id="ul_44A8C39DEB21473F9375E3962F14D3C6"> 
-        <li id="li_1046FA0017934C5EB7C0100F8F78507D"> <span class="uicontrol"> Détecter automatiquement </span> <p> Conserve l’espace colorimétrique du fichier PDF. </p> </li> 
-        <li id="li_561CCF705EDD451993D2DA2EB33F05F7"> <span class="uicontrol"> Forcer comme RVB </span> <p> Convertit dans l’espace colorimétrique RVB. </p> </li> 
-        <li id="li_D9E8CF61C40140979484EDEF7DAD2C44"> <span class="uicontrol"> Forcer comme CMJN </span> <p> Convertit dans l’espace colorimétrique CMJN. </p> </li> 
-        <li id="li_F3606B45C0F84BA594263EA12243F67A"> <span class="uicontrol"> Forcer comme Niveaux de gris </span> <p> Convertit dans l’espace colorimétrique Niveaux de gris. </p> </li> 
+        <li id="li_1046FA0017934C5EB7C0100F8F78507D"> <span class="uicontrol"> Détecter automatiquement  </span> <p> Conserve l’espace colorimétrique du fichier PDF. </p> </li> 
+        <li id="li_561CCF705EDD451993D2DA2EB33F05F7"> <span class="uicontrol"> Forcer comme RVB  </span> <p> Convertit dans l’espace colorimétrique RVB. </p> </li> 
+        <li id="li_D9E8CF61C40140979484EDEF7DAD2C44"> <span class="uicontrol"> Forcer comme CMJN  </span> <p> Convertit dans l’espace colorimétrique CMJN. </p> </li> 
+        <li id="li_F3606B45C0F84BA594263EA12243F67A"> <span class="uicontrol"> Forcer comme Niveaux de gris  </span> <p> Convertit dans l’espace colorimétrique Niveaux de gris. </p> </li> 
         </ul> </td> 
       </tr> 
       <tr> 
@@ -595,30 +597,30 @@ Voir [Configuration de l’accès à votre compte](../c-about-settings-menu/c-ab
 
 1. Dans le volet de droite, cliquez sur l’image, le modèle ou le fichier de Flash de votre choix.
 
-   La fenêtre [!DNL Pick An Asset] contextuelle s&#39;affiche.
-1. (Facultatif) Dans la fenêtre [!DNL Pick An Asset] contextuelle, dans la liste [!DNL Actions] déroulante, effectuez l’une des opérations suivantes :
+   La fenêtre contextuelle [!DNL Pick An Asset] s&#39;affiche.
+1. (Facultatif) Dans la fenêtre contextuelle [!DNL Pick An Asset], dans la liste déroulante [!DNL Actions], effectuez l’une des opérations suivantes :
 
-   * Cliquez sur **[!UICONTROL Move]**. Dans la [!DNL Select a folder to move to] boîte de dialogue, sélectionnez le dossier dans lequel vous souhaitez déplacer la ressource numérique. Cliquez sur **[!UICONTROL Move]**.
+   * Cliquez sur **[!UICONTROL Move]**. Dans la boîte de dialogue [!DNL Select a folder to move to], sélectionnez le dossier dans lequel vous souhaitez déplacer la ressource numérique. Cliquez sur **[!UICONTROL Move]**.
 
       Vous pouvez également sélectionner plusieurs fichiers numériques que vous souhaitez déplacer vers un autre dossier.
 
-   * Cliquez sur **[!UICONTROL Delete]**. Dans la boîte de [!DNL Delete Selected Assets] dialogue, cliquez sur **[!UICONTROL Delete]**.
+   * Cliquez sur **[!UICONTROL Delete]**. Dans la boîte de dialogue [!DNL Delete Selected Assets], cliquez sur **[!UICONTROL Delete]**.
 
       Vous pouvez également sélectionner plusieurs fichiers numériques à supprimer du dossier.
 
-   * Cliquez sur **[!UICONTROL Rename]**. Dans la boîte de [!DNL Enter a new name for] dialogue, dans le champ de texte, tapez le nouveau nom de la ressource numérique. Cliquez sur **[!UICONTROL Rename]**.
+   * Cliquez sur **[!UICONTROL Rename]**. Dans la boîte de dialogue [!DNL Enter a new name for], dans le champ de texte, tapez un nouveau nom pour la ressource numérique. Cliquez sur **[!UICONTROL Rename]**.
 
-1. (Facultatif) Selon l’actif numérique sélectionné, définissez les options de votre choix dans le volet gauche de la fenêtre [!DNL Pick an Asset] contextuelle.
+1. (Facultatif) En fonction de la ressource numérique que vous avez sélectionnée, définissez les options de votre choix dans le volet gauche de la fenêtre contextuelle [!DNL Pick an Asset].
 1. Cliquez sur le fichier pour le sélectionner pour l’utiliser comme bannière.
 1. (Facultatif) Effectuez l’une des opérations suivantes :
 
    * Cliquez sur **[!UICONTROL History]** pour annuler les modifications que vous avez apportées.
 
-      Voir [Utilisation de l’option](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historique.
+      Voir [Utilisation de l’option Historique](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Cliquez sur **[!UICONTROL Live]**.
 
-      Voir [Affichage des paramètres](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)en direct.
+      Voir [Affichage des paramètres en direct](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Cliquez sur **[!UICONTROL Push Live]**.
 
@@ -626,7 +628,7 @@ Voir [Configuration de l’accès à votre compte](../c-about-settings-menu/c-ab
 
 ## Modification d’une bannière à l’aide d’Adobe Dynamic Media Classic {#task_C3E782477FBF428ABEA220751781ACA9}
 
-Permet [!DNL Edit Banner] de modifier les propriétés et les paramètres d’une bannière ajoutée à l’aide d’Adobe Dynamic Media Classic.
+Utilisez [!DNL Edit Banner] pour modifier les propriétés et paramètres d&#39;une bannière que vous avez ajoutée à l&#39;aide de l&#39;Adobe Dynamic Media Classic.
 
 <!-- 
 
@@ -636,23 +638,23 @@ t_editing_a_banner_using_adobe_scene7.xml
 
 Si vous avez ajouté une bannière en y ajoutant du code HTML, vous modifiez la bannière en utilisant plutôt la fonction de recherche/marchandisage sur le site.
 
-Voir aussi [Modification d’une bannière](../c-about-design-menu/c-about-banners.md#task_D4081083BE7B40F5A003D1A2F1435AEA).
+Voir aussi [Modification d&#39;une bannière](../c-about-design-menu/c-about-banners.md#task_D4081083BE7B40F5A003D1A2F1435AEA).
 
 **Pour modifier une bannière à l’aide de l’Adobe Dynamic Media Classic**
 
 1. Dans le menu produit, cliquez sur **[!UICONTROL Design]** > **[!UICONTROL Banners]**.
-1. Sur la [!DNL Banners] page, cliquez ![](assets/icon_edit_16.gif) au-dessus d’une miniature de bannière contenant une icône S7 dans le coin inférieur gauche de la fenêtre de bannière.
-1. Sur la [!DNL Change Parameter] page, définissez les options de votre choix.
+1. Sur la page [!DNL Banners], cliquez sur ![](assets/icon_edit_16.gif) au-dessus d’une miniature de bannière contenant une icône S7 dans le coin inférieur gauche de la fenêtre de bannière.
+1. Sur la page [!DNL Change Parameter], définissez les options de votre choix.
 1. Lorsque vous avez terminé de modifier la bannière, cliquez sur **[!UICONTROL Save]**.
 1. (Facultatif) Effectuez l’une des opérations suivantes :
 
    * Cliquez sur **[!UICONTROL History]** pour annuler les modifications que vous avez apportées.
 
-      Voir [Utilisation de l’option](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historique.
+      Voir [Utilisation de l’option Historique](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Cliquez sur **[!UICONTROL Live]**.
 
-      Voir [Affichage des paramètres](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)en direct.
+      Voir [Affichage des paramètres en direct](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Cliquez sur **[!UICONTROL Push Live]**.
 
@@ -673,35 +675,35 @@ t_deleting_banners.xml
 1. Dans le menu produit, cliquez sur **[!UICONTROL Design]** > **[!UICONTROL Banners]**.
 1. (Facultatif) Effectuez une ou plusieurs des opérations suivantes :
 
-   * Sur la [!DNL Banners] page, sélectionnez le type de bannière à rechercher dans la liste **[!UICONTROL Find banner of type]** déroulante. Si vous le souhaitez, indiquez un nom de balise dans le champ de **[!UICONTROL with tag]** texte ou un nom de type de bannière dans le champ de **[!UICONTROL with name]** texte. Cliquez sur **[!UICONTROL Find.]**
+   * Sur la page [!DNL Banners], sélectionnez le type de bannière à rechercher dans la liste déroulante **[!UICONTROL Find banner of type]**. Si vous le souhaitez, spécifiez un nom de balise dans le champ de texte **[!UICONTROL with tag]** ou un nom de type de bannière dans le champ de texte **[!UICONTROL with name]**. Cliquez sur **[!UICONTROL Find.]**
 
-   * Dans la liste **[!UICONTROL Sort]** déroulante, sélectionnez la liste des bannières commandées.
-   * Dans la liste **[!UICONTROL Show]** déroulante, sélectionnez le nombre de bannières à charger dans la page active que vous consultez.
+   * Dans la liste déroulante **[!UICONTROL Sort]**, sélectionnez la liste des bannières commandées.
+   * Dans la liste déroulante **[!UICONTROL Show]**, sélectionnez le nombre de bannières à charger dans la page active que vous consultez.
 
 1. Effectuez l’une des opérations suivantes :
 
    * Dans le coin supérieur gauche d’une bannière, cochez la case de chaque bannière à supprimer.
-   * Dans la barre supérieure de la [!DNL Banners] page, cochez **[!UICONTROL Select all]** la case pour sélectionner chaque bannière chargée sur la page actuellement affichée.
+   * Dans la barre supérieure de la page [!DNL Banners], cochez **[!UICONTROL Select all]** pour sélectionner chaque bannière chargée sur la page actuellement affichée.
 
-1. Dans la liste **[!UICONTROL Bulk Actions]** déroulante, cliquez sur **[!UICONTROL Delete]**.
-1. Dans la boîte de [!DNL Confirmation Action] dialogue, cliquez sur **[!UICONTROL OK]**.
+1. Dans la liste déroulante **[!UICONTROL Bulk Actions]**, cliquez sur **[!UICONTROL Delete]**.
+1. Dans la boîte de dialogue [!DNL Confirmation Action], cliquez sur **[!UICONTROL OK]**.
 1. (Facultatif) Effectuez l’une des opérations suivantes :
 
    * Cliquez sur **[!UICONTROL History]** pour annuler les modifications que vous avez apportées.
 
-      Voir [Utilisation de l’option](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historique.
+      Voir [Utilisation de l’option Historique](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Cliquez sur **[!UICONTROL Live]**.
 
-      Voir [Affichage des paramètres](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)en direct.
+      Voir [Affichage des paramètres en direct](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Cliquez sur **[!UICONTROL Push Live]**.
 
       Voir [Activation des paramètres d’étape](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Prévisualisation des bannières {#task_6AB1F81A984A4DC2ACACD1FE030545E2}
+## Aperçu des bannières {#task_6AB1F81A984A4DC2ACACD1FE030545E2}
 
-Vous pouvez parcourir les bannières que vous avez ajoutées à la [!DNL Banners] page pour en vue de taille réelle. Aucune page CSS du modèle qui affecte la bannière n’est affichée.
+Vous pouvez parcourir les bannières que vous avez ajoutées à la page [!DNL Banners] pour en vue la taille complète. Aucune page CSS du modèle qui affecte la bannière n’est affichée.
 
 <!-- 
 
@@ -714,16 +716,16 @@ t_previewing_banners.xml
 1. Dans le menu produit, cliquez sur **[!UICONTROL Design]** > **[!UICONTROL Banners]**.
 1. (Facultatif) Effectuez une ou plusieurs des opérations suivantes :
 
-   * Sur la [!DNL Banners] page, sélectionnez le type de bannière à rechercher dans la liste **[!UICONTROL Find banner of type]** déroulante. Si vous le souhaitez, indiquez un nom de balise dans le champ de **[!UICONTROL with tag]** texte ou un nom de type de bannière dans le champ de **[!UICONTROL with name]** texte. Cliquez sur **[!UICONTROL Find.]**
+   * Sur la page [!DNL Banners], sélectionnez le type de bannière à rechercher dans la liste déroulante **[!UICONTROL Find banner of type]**. Si vous le souhaitez, spécifiez un nom de balise dans le champ de texte **[!UICONTROL with tag]** ou un nom de type de bannière dans le champ de texte **[!UICONTROL with name]**. Cliquez sur **[!UICONTROL Find.]**
 
-   * Dans la liste **[!UICONTROL Sort]** déroulante, sélectionnez la liste des bannières commandées.
-   * Dans la liste **[!UICONTROL Show]** déroulante, sélectionnez le nombre de bannières à charger dans la page active que vous consultez.
+   * Dans la liste déroulante **[!UICONTROL Sort]**, sélectionnez la liste des bannières commandées.
+   * Dans la liste déroulante **[!UICONTROL Show]**, sélectionnez le nombre de bannières à charger dans la page active que vous consultez.
 
-1. Sur la [!DNL Banners] page, cliquez sur une miniature de bannière pour en vue la taille complète.
+1. Sur la page [!DNL Banners], cliquez sur une miniature de bannière pour en vue la taille complète.
 1. Effectuez l’une des opérations suivantes :
 
    * Dans la boîte de dialogue prévisualisation de la bannière, cliquez sur la flèche vers la gauche ou la flèche vers la droite pour parcourir et vue les bannières en taille réelle que vous avez ajoutées.
-   * Cliquez sur le bouton de fermeture pour fermer la boîte de dialogue prévisualisation de bannière et revenir à la [!DNL Banners] page.
+   * Cliquez sur le bouton de fermeture pour fermer la boîte de dialogue de prévisualisation de bannière et revenir à la page [!DNL Banners].
 
 ## Pousser les bannières en direct {#task_161F4FEC8362474296A566E64BF05B97}
 
@@ -735,7 +737,7 @@ t_pushing_banners_live.xml
 
  -->
 
-Ou, si vous préférez, vous pouvez diffuser en direct toutes les modifications sur une bannière à l’aide de l’ **[!UICONTROL Push Live]** option située en bas de la [!DNL Banners] page.
+Ou, si vous préférez, vous pouvez diffuser en direct toutes les modifications sur une bannière à l’aide de l’option **[!UICONTROL Push Live]** située au bas de la page [!DNL Banners].
 
 Voir [Activation des paramètres d’étape](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
@@ -744,18 +746,18 @@ Voir [Activation des paramètres d’étape](../c-about-staging.md#task_44306783
 1. Dans le menu produit, cliquez sur **[!UICONTROL Design]** > **[!UICONTROL Banners]**.
 1. (Facultatif) Effectuez une ou plusieurs des opérations suivantes :
 
-   * Sur la [!DNL Banners] page, sélectionnez le type de bannière à rechercher dans la liste **[!UICONTROL Find banner of type]** déroulante. Si vous le souhaitez, indiquez un nom de balise dans le champ de **[!UICONTROL with tag]** texte ou un nom de type de bannière dans le champ de **[!UICONTROL with name]** texte. Cliquez sur **[!UICONTROL Find]**.
+   * Sur la page [!DNL Banners], sélectionnez le type de bannière à rechercher dans la liste déroulante **[!UICONTROL Find banner of type]**. Si vous le souhaitez, spécifiez un nom de balise dans le champ de texte **[!UICONTROL with tag]** ou un nom de type de bannière dans le champ de texte **[!UICONTROL with name]**. Cliquez sur **[!UICONTROL Find]**.
 
-   * Dans la liste **[!UICONTROL Sort]** déroulante, sélectionnez la liste des bannières commandées.
-   * Dans la liste **[!UICONTROL Show]** déroulante, sélectionnez le nombre de bannières à charger dans la page active que vous consultez.
+   * Dans la liste déroulante **[!UICONTROL Sort]**, sélectionnez la liste des bannières commandées.
+   * Dans la liste déroulante **[!UICONTROL Show]**, sélectionnez le nombre de bannières à charger dans la page active que vous consultez.
 
 1. Effectuez l’une des opérations suivantes :
 
    * Dans le coin supérieur gauche d’une bannière, cochez la case de chaque bannière à supprimer.
-   * Dans la barre supérieure de la [!DNL Banner] page, cochez **[!UICONTROL Select all]** la case pour sélectionner chaque bannière chargée sur la page actuellement affichée.
+   * Dans la barre supérieure de la page [!DNL Banner], cochez **[!UICONTROL Select all]** pour sélectionner chaque bannière chargée sur la page actuellement affichée.
 
-1. Dans la liste **[!UICONTROL Bulk Actions]** déroulante, cliquez sur **[!UICONTROL Push live]**.
-1. Dans la boîte de [!DNL Confirmation Action] dialogue, cliquez sur **[!UICONTROL OK]**.
-1. (Facultatif) Sur la [!DNL Banners] page, cliquez sur **[!UICONTROL History]** pour annuler les modifications que vous avez apportées.
+1. Dans la liste déroulante **[!UICONTROL Bulk Actions]**, cliquez sur **[!UICONTROL Push live]**.
+1. Dans la boîte de dialogue [!DNL Confirmation Action], cliquez sur **[!UICONTROL OK]**.
+1. (Facultatif) Sur la page [!DNL Banners], cliquez sur **[!UICONTROL History]** pour annuler les modifications que vous avez apportées.
 
-   Voir [Utilisation de l’option](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historique.
+   Voir [Utilisation de l’option Historique](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).

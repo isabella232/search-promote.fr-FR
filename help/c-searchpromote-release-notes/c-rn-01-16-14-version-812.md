@@ -1,18 +1,21 @@
 ---
 description: valeur nulle
 seo-description: valeur nulle
-seo-title: Notes de mise à jour de Search&amp;Promote 8.12.0 (16/01/2014)
+seo-title: Notes de mise à jour de Search&amp ; amp ; Promote 8.12.0 (16/01/2014)
 solution: Target
-title: Notes de mise à jour de Search&amp;Promote 8.12.0 (16/01/2014)
+title: Notes de mise à jour de Search&amp ; amp ; Promote 8.12.0 (16/01/2014)
 topic: Release Notes,Site search and merchandising
 uuid: 4db10eb4-11bf-4483-a7f2-87981d9c7a50
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 74%
 
 ---
 
 
-# Search&amp;Promote 8.12.0 Release Notes (01/16/2014){#search-promote-release-notes}
+# Notes de mise à jour de la version 8.12.0 de la Search &amp; Promote (16/01/2014){#search-promote-release-notes}
 
 <table> 
  <thead> 
@@ -34,7 +37,7 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
       <li id="li_96DDE1A196834845A0FA319903C5934B"> <p>Rapport Termes </p> </li> 
       <li id="li_4F1A19DE98C84F8CAD963EEA2B38ED7A"> <p>Rapport Termes de recherche nuls </p> </li> 
       <li id="li_A7716C62C4D44CD69D411C3FEE246D96"> <p>Rapport Requête de recherche </p> </li> 
-     </ul> </p> <p>Voir <a href="../c-about-reports-menu/c-about-reports-menu.md#concept_5F901459C7AB461BAB30B305957EB00C" format="dita" scope="local"> A propos du menu</a>Rapports. </p> </td> 
+     </ul> </p> <p>Voir <a href="../c-about-reports-menu/c-about-reports-menu.md#concept_5F901459C7AB461BAB30B305957EB00C" format="dita" scope="local"> A propos du menu Rapports</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Ne pas associer </p> </td> 
@@ -49,20 +52,20 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 * Vous ne pouviez pas enregistrer de règles basées sur les résultats pour un compte avec recherche HTTPS uniquement.
 * La configuration d’une règle métier pour « n’est pas un appareil mobile » ne fonctionnait pas.
 
-   See [About Business Rules](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
+   Voir [A propos des règles de fonctionnement](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
 
 * L’exécution d’une recherche avec filtre d’inventaire ne renvoyait aucun résultat.
 * La commande de facettes Taille n’était pas mise à jour.
 * Ajout de l’option pour une définition de règle « personnalisée » à la page de nettoyage des requêtes.
 
-   Voir [A propos des règles](../c-about-rules-menu/c-about-query-cleaning-rules.md#concept_17F3CDDC3C8A4128AF092A82B777B86C)de nettoyage de requête.
+   Voir [A propos des règles de nettoyage de Requête](../c-about-rules-menu/c-about-query-cleaning-rules.md#concept_17F3CDDC3C8A4128AF092A82B777B86C).
 
 * Le rapport Termes répétait les entrées s’il n’y avait pas suffisamment de données.
 
-   Voir [Affichage du rapport Termes ou du rapport Termes de recherche nuls...](../c-about-reports-menu/c-about-reports-menu.md#task_53B7ED1582DD4B0E8376546A7AFC789A).
+   Voir [Affichage du rapport Termes ou du rapport Termes de recherche nuls..](../c-about-reports-menu/c-about-reports-menu.md#task_53B7ED1582DD4B0E8376546A7AFC789A).
 
 * La publication d’une règle métier unique fonctionnait en mode d’évaluation, mais échouait en mode d’activation.
 * Les modifications de saisie semi-automatique visant à inclure ou à exclure les listes n’étaient pas enregistrées dans l’historique et, par conséquent, ne pouvaient pas être annulées.
 
-   Voir [A propos du remplissage](../c-about-auto-complete.md#concept_093A9CD754864BA79B456FE4BEB64578)automatique.
+   Voir [À propos de la saisie semi-automatique](../c-about-auto-complete.md#concept_093A9CD754864BA79B456FE4BEB64578).
 

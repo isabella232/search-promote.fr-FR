@@ -1,6 +1,6 @@
 ---
-description: Vous pouvez définir les formats de date utilisés lorsqu’il analyse et indexe un champ avec un type de données "date".
-seo-description: Vous pouvez définir les formats de date utilisés lorsqu’il analyse et indexe un champ avec un type de données "date".
+description: Vous pouvez définir les formats de date utilisés lors de l’analyse et de l’index de n’importe quel champ avec un type de données "date".
+seo-description: Vous pouvez définir les formats de date utilisés lors de l’analyse et de l’index de n’importe quel champ avec un type de données "date".
 seo-title: Formats de date
 solution: Target
 title: Formats de date
@@ -8,55 +8,58 @@ topic: Appendices,Site search and merchandising
 uuid: 148914b5-33ef-41db-8404-67c03f6f0832
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '767'
+ht-degree: 3%
 
 ---
 
 
 # Formats de date{#date-formats}
 
-Vous pouvez définir les formats de date utilisés lorsqu’il analyse et indexe un champ avec un type de données &quot;date&quot;.
+Vous pouvez définir les formats de date utilisés lors de l’analyse et de l’index de n’importe quel champ avec un type de données &quot;date&quot;.
 
-Le format de la date et de l’heure est spécifié avec une chaîne de format. La chaîne de format comprend zéro ou plusieurs spécifications de conversion (une spécification de conversion est constituée d’un symbole de pourcentage et d’un autre caractère) et de caractères ordinaires. Une liste par défaut contient des chaînes de format de date pour chaque champ de date.
+Le format de la date et de l’heure est spécifié avec une chaîne de format. La chaîne de format est composée de zéro ou plusieurs spécifications de conversion (une spécification de conversion consiste en un signe de pourcentage et un autre caractère) et de caractères ordinaires. Une liste par défaut est fournie avec des chaînes de format de date pour chaque champ de date.
 
-Vous contrôlez complètement cette liste et pouvez l&#39;ajouter ou la modifier en fonction des besoins de votre site. La chaîne de format supérieure est prioritaire et les chaînes de format suivantes ne sont utilisées que si l’analyse du contenu d’une balise de métadonnées donnée génère une erreur.
+Vous avez un contrôle total sur cette liste et pouvez l’ajouter ou la modifier en fonction des besoins de votre site. La chaîne de format supérieure est prioritaire et les chaînes de format suivantes ne sont utilisées que si l’analyse du contenu d’une balise de métadonnées donnée génère une erreur.
 
 Supposons, par exemple, que vous ayez spécifié les formats de date suivants :
 
 <table> 
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>%B %d, %Y %T %Z </p> <p>%b %d %Y %T %Z </p> <p>%A %B %d %Y %T %Z </p> <p>%A %b %d %Y %T %Z </p> <p>%a %B %d %Y %T %Z </p> <p>%a %b %d %Y %T %Z </p> <p>%d %b %Y %T %Z </p> </td> 
+   <td colname="col1"> <p>%B %d, %Y %T %Z </p> <p>%b %d, %Y %T %Z </p> <p>%A %B %d, %Y %T %Z </p> <p>%A %b %d, %Y %T %Z </p> <p>%a %B %d, %Y %T %Z </p> <p>%a %b %d, %Y %T %Z </p> <p>%d %b %Y %T %Z </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Le premier format, &quot;%B %d, %Y %T %Z&quot;, correspond à des dates du type &quot;20 septembre 2014 13:12:00 PDT&quot;. Si le contenu de la balise de métadonnées ne peut pas être analysé avec cette chaîne de format, le format suivant &quot;%b %d, %Y %T %Z&quot; est essayé. Ce format correspond aux dates suivantes : &quot;20 Septembre 2014 3:12:00 PDT&quot;. Si le contenu de la balise de métadonnées ne peut pas être analysé avec cette chaîne de format, la recherche/marchandisage sur le site déplace la liste des chaînes de format jusqu’à ce qu’elle trouve une chaîne de format qui fonctionne.
+Le premier format, &quot;%B %d, %Y %T %Z&quot;, correspond à des dates du type &quot;20 septembre 2014 13:12:00 PDT&quot;. Si le contenu de la balise de métadonnées ne peut pas être analysé avec cette chaîne de format, le prochain format disponible &quot;%b %d, %Y %T %Z&quot; est essayé. Ce format correspond aux dates suivantes : &quot;20 septembre 2014 à 15h12 HAP&quot;. Si le contenu des balises de métadonnées ne peut pas être analysé avec cette chaîne de format, la recherche/marchandisage sur le site déplace la liste des chaînes de format jusqu’à ce qu’elle trouve une chaîne de format qui fonctionne.
 
 Le tableau suivant décrit les chaînes de format de date disponibles :
 
 <table> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> <p>Format de données </p> </th> 
+   <th colname="col1" class="entry"> <p>Format des données </p> </th> 
    <th colname="col2" class="entry"> <p>Description </p> </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p>%Une </p> </td> 
-   <td colname="col2"> <p>Correspond à la représentation nationale du nom complet du jour de la semaine, par exemple "Lundi". La représentation nationale est déterminée à partir du paramètre "Langue" de l’option "Mots et langues". </p> </td> 
+   <td colname="col2"> <p>Correspond à la représentation nationale du nom complet du jour de la semaine, par exemple "lundi". La représentation nationale est déterminée à partir du paramètre "Langue" de l'option "Mots et langues". </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>%a </p> </td> 
-   <td colname="col2"> <p> correspond à la représentation nationale du nom abrégé du jour de la semaine, où l’abréviation est les trois premiers caractères, p. ex. "Mon." La représentation nationale est déterminée à partir du paramètre "Langue" de l’option "Mots et langues". </p> </td> 
+   <td colname="col2"> <p> correspond à la représentation nationale du nom abrégé du jour de la semaine, où l’abréviation est les trois premiers caractères, par ex. "Mon." La représentation nationale est déterminée à partir du paramètre "Langue" de l'option "Mots et langues". </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>%B </p> </td> 
-   <td colname="col2"> <p> correspond à la représentation nationale du nom complet du mois, p. ex. "Juin." La représentation nationale est déterminée à partir du paramètre "Langue" de l’option "Mots et langues". </p> </td> 
+   <td colname="col2"> <p> correspond à la représentation nationale du nom complet du mois, par ex. "Juin." La représentation nationale est déterminée à partir du paramètre "Langue" de l'option "Mots et langues". </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>%b </p> </td> 
-   <td colname="col2"> <p> correspond à la représentation nationale du nom abrégé du mois, où l’abréviation est les trois premiers caractères, p. ex. "Jun." La représentation nationale est déterminée à partir du paramètre "Langue" de l’option "Mots et langues". </p> </td> 
+   <td colname="col2"> <p> correspond à la représentation nationale du nom abrégé du mois, où l’abréviation est les trois premiers caractères, par ex. "Jun." La représentation nationale est déterminée à partir du paramètre "Langue" de l'option "Mots et langues". </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>%D </p> </td> 
@@ -64,11 +67,11 @@ Le tableau suivant décrit les chaînes de format de date disponibles :
   </tr> 
   <tr> 
    <td colname="col1"> <p>%d </p> </td> 
-   <td colname="col2"> <p> correspond au jour du mois en tant que nombre décimal (01-31) </p> </td> 
+   <td colname="col2"> <p> correspond au jour du mois sous forme de nombre décimal (01-31) </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>%e </p> </td> 
-   <td colname="col2"> <p> correspond au jour du mois en tant que nombre décimal (1-31) ; les chiffres uniques sont précédés d’un blanc </p> </td> 
+   <td colname="col2"> <p> correspond au jour du mois sous forme de nombre décimal (1-31); les chiffres simples sont précédés d’un blanc. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>%H </p> </td> 
@@ -76,7 +79,7 @@ Le tableau suivant décrit les chaînes de format de date disponibles :
   </tr> 
   <tr> 
    <td colname="col1"> <p>%h </p> </td> 
-   <td colname="col2"> <p> correspond à la représentation nationale du nom abrégé du mois, où l’abréviation est les trois premiers caractères, p. ex. "Jun" (identique à %b) </p> </td> 
+   <td colname="col2"> <p> correspond à la représentation nationale du nom abrégé du mois, où l’abréviation est les trois premiers caractères, par ex. "Jun" (identique à %b) </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>%I </p> </td> 
@@ -88,11 +91,11 @@ Le tableau suivant décrit les chaînes de format de date disponibles :
   </tr> 
   <tr> 
    <td colname="col1"> <p>%k </p> </td> 
-   <td colname="col2"> <p> correspond à l’heure (horloge de 24 heures) comme un nombre décimal (0-23) ; les chiffres uniques sont précédés d’un blanc </p> </td> 
+   <td colname="col2"> <p> correspond à l’heure (horloge de 24 heures) comme nombre décimal (0-23); les chiffres simples sont précédés d’un blanc. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>%l </p> </td> 
-   <td colname="col2"> <p> correspond à l’heure (horloge de 12 heures) comme nombre décimal (1-12) ; les chiffres uniques sont précédés d’un blanc </p> </td> 
+   <td colname="col2"> <p> correspond à l’heure (horloge de 12 heures) comme nombre décimal (1-12); les chiffres simples sont précédés d’un blanc. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>%M </p> </td> 
@@ -104,7 +107,7 @@ Le tableau suivant décrit les chaînes de format de date disponibles :
   </tr> 
   <tr> 
    <td colname="col1"> <p>%p </p> </td> 
-   <td colname="col2"> <p> correspond à la représentation nationale de "ante meridiem" ou de "post meridiem" selon le cas, p. ex. "PM." La représentation nationale est déterminée à partir du paramètre "Langue" de l’option "Mots et langues". </p> </td> 
+   <td colname="col2"> <p> correspond à la représentation nationale de "ante meridiem" ou de "post meridiem" selon le cas, par ex. "PM." La représentation nationale est déterminée à partir du paramètre "Langue" de l'option "Mots et langues". </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>%R </p> </td> 
@@ -128,11 +131,11 @@ Le tableau suivant décrit les chaînes de format de date disponibles :
   </tr> 
   <tr> 
    <td colname="col1"> <p>%v </p> </td> 
-   <td colname="col2"> <p> est équivalent à "%e-%b-%Y", par ex. "6-Jun-2001" </p> </td> 
+   <td colname="col2"> <p> est équivalent à "%e-%b-%Y", par ex. "6-juin-2001" </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>%O </p> </td> 
-   <td colname="col2"> <p> correspond à l’année avec le siècle comme nombre décimal, p. ex. "2001" </p> </td> 
+   <td colname="col2"> <p> correspond à l’année avec le siècle comme nombre décimal, par ex. "2001" </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>%y </p> </td> 
@@ -140,7 +143,7 @@ Le tableau suivant décrit les chaînes de format de date disponibles :
   </tr> 
   <tr> 
    <td colname="col1"> <p>%Z </p> </td> 
-   <td colname="col2"> <p> correspond au nom du fuseau horaire </p> </td> 
+   <td colname="col2"> <p> correspond au nom du fuseau horaire. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>%% </p> </td> 
@@ -151,7 +154,7 @@ Le tableau suivant décrit les chaînes de format de date disponibles :
 
 **Chaînes de format par défaut**
 
-Les chaînes de format par défaut suivantes sont utilisées par les modèles. Vous pouvez l’ajouter à cette liste ou la modifier si nécessaire.
+Les chaînes de format par défaut suivantes sont utilisées par les modèles. Vous pouvez ajouter ou modifier cette liste si nécessaire.
 
 <table> 
  <thead> 
@@ -163,31 +166,31 @@ Les chaînes de format par défaut suivantes sont utilisées par les modèles. V
  <tbody> 
   <tr> 
    <td colname="col1"> <p>%B %d, %Y %T %Z </p> </td> 
+   <td colname="col2"> <p> 5 septembre 1999 13:12:00 HAP </p> </td> 
+  </tr> 
+  <tr> 
+   <td colname="col1"> <p>%b %d, %Y %T %Z </p> </td> 
    <td colname="col2"> <p> 5 septembre 1999 13:12:00 PDT </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>%b %d %Y %T %Z </p> </td> 
-   <td colname="col2"> <p> 5 septembre 1999 13:12:00 PDT </p> </td> 
+   <td colname="col1"> <p>%A %B %d, %Y %T %Z </p> </td> 
+   <td colname="col2"> <p> Dimanche 5 septembre 1999 13:12:00 HAP </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>%A %B %d %Y %T %Z </p> </td> 
+   <td colname="col1"> <p>%A %b %d, %Y %T %Z </p> </td> 
    <td colname="col2"> <p> Dimanche 5 septembre 1999 13:12:00 PDT </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>%A %b %d %Y %T %Z </p> </td> 
-   <td colname="col2"> <p> Dimanche 5 septembre 1999 13:12:00 PDT </p> </td> 
+   <td colname="col1"> <p>%a %B %d, %Y %T %Z </p> </td> 
+   <td colname="col2"> <p> Sun le 5 septembre 1999 13:12:00 PDT </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>%a %B %d %Y %T %Z </p> </td> 
-   <td colname="col2"> <p> Sun 5 septembre 1999 13:12:00 PDT </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>%a %b %d %Y %T %Z </p> </td> 
+   <td colname="col1"> <p>%a %b %d, %Y %T %Z </p> </td> 
    <td colname="col2"> <p> Sun Sep 5, 1999 13:12:00 PDT </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>%d %b %Y %T %Z </p> </td> 
-   <td colname="col2"> <p> 5 Sep 1999 13:12:00 PDT </p> </td> 
+   <td colname="col2"> <p> 5 septembre 1999 13:12:00 PDT </p> </td> 
   </tr> 
  </tbody> 
 </table>

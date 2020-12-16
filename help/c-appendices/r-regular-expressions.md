@@ -15,11 +15,11 @@ ht-degree: 1%
 ---
 
 
-# Regular Expressions{#regular-expressions}
+# Expressions régulières{#regular-expressions}
 
 Actualisation concernant la syntaxe et les règles de construction des expressions régulières.
 
-Voir aussi [Configuration d’un index incrémentiel d’un site Web](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0)intermédiaire.
+Voir aussi [Configuration d’un index incrémentiel d’un site Web intermédiaire](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
 
 **Syntaxe des expressions régulières**
 
@@ -108,34 +108,34 @@ Voir aussi [Configuration d’un index incrémentiel d’un site Web](../c-about
 * Un caractère ordinaire, et non l’un des caractères spéciaux décrits ci-dessous, est une expression régulière à un caractère qui se correspond.
 * Une barre oblique inverse (\) suivie d’un caractère spécial est une expression régulière à un caractère qui correspond au caractère spécial lui-même. Les caractères spéciaux sont les suivants :
 
-   * `.` (point), `*` (astérisque), `?` (point d’interrogation), `+` (signe plus), `[` (crochet gauche), `|` (barre verticale) et `\` (barre oblique inverse) sont toujours des caractères spéciaux, sauf lorsqu’ils apparaissent entre crochets.
+   * `.` (point),  `*` (astérisque),  `?` (point d’interrogation),  `+` (signe plus),  `[` (crochet gauche),  `|` (barre verticale) et  `\` (barre oblique inverse) sont toujours des caractères spéciaux, sauf lorsqu’ils apparaissent entre crochets.
    * `^` (circonflexe ou circonflexe) est spécial au début d&#39;une expression normale, ou lorsqu&#39;il suit immédiatement la gauche d&#39;une paire de crochets.
    * `$` (signe dollar) est spécial à la fin d&#39;une expression ordinaire.
    * `.` (point) est une expression régulière d’un caractère qui correspond à n’importe quel caractère, y compris les caractères de jeu de codes supplémentaires, à l’exception de la nouvelle ligne.
-   * Une chaîne non vide de caractères entre crochets `[ ]` (crochets gauche et droit) est une expression régulière à un caractère qui correspond à un caractère, y compris les caractères de jeu de code supplémentaires, dans cette chaîne.
+   * Une chaîne de caractères non vides entre `[ ]` (crochets gauche et droit) est une expression régulière à un caractère qui correspond à un caractère, y compris les caractères de jeu de code supplémentaires, de cette chaîne.
 
       Si, toutefois, le premier caractère de la chaîne est un `^` (circumflex), l’expression régulière à un caractère correspond à n’importe quel caractère, y compris les caractères de jeu de code supplémentaires, à l’exception des caractères de nouvelle ligne et des caractères restants de la chaîne.
 
-      Cette signification particulière n’ `^` est définie que si elle se produit en premier dans la chaîne. Vous pouvez utiliser `-` (signe moins) pour indiquer une plage de caractères consécutifs, y compris des caractères de jeu de code supplémentaires. Par exemple, [0-9] équivaut à [0123456789].
+      `^` a cette signification spéciale uniquement si elle se produit en premier dans la chaîne. Vous pouvez utiliser `-` (signe moins) pour indiquer une plage de caractères consécutifs, y compris des caractères de jeu de code supplémentaires. Par exemple, [0-9] est équivalent à [0123456789].
 
-      Les caractères spécifiant la plage doivent provenir du même jeu de codes. Lorsque les caractères proviennent de différents jeux de codes, l’un des caractères qui spécifient la plage est mis en correspondance. Cette signification particulière `-` est perdue si elle se produit en premier (après un premier `^`, le cas échéant) ou en dernier dans la chaîne. Le `]` (crochet droit) ne termine pas une telle chaîne lorsqu’il s’agit du premier caractère qu’elle contient, après un premier caractère `^`, le cas échéant. Par exemple, `[]a-f]` correspond à un `]` (crochet droit) ou à l’une des lettres ASCII a à f inclusif. Les quatre caractères répertoriés en tant que caractères spéciaux ci-dessus se trouvent dans une telle chaîne de caractères.
+      Les caractères spécifiant la plage doivent provenir du même jeu de codes. Lorsque les caractères proviennent de différents jeux de codes, l’un des caractères qui spécifient la plage est mis en correspondance. `-` perd cette signification spéciale si elle survient en premier (après un `^` initial, le cas échéant) ou s&#39;il dure dans la chaîne. Le `]` (crochet droit) ne termine pas une telle chaîne lorsqu&#39;il s&#39;agit du premier caractère qu&#39;elle contient, après un premier `^`, le cas échéant. Par exemple, `[]a-f]` correspond à `]` (crochet droit) ou à l’une des lettres ASCII a à f inclusif. Les quatre caractères répertoriés en tant que caractères spéciaux ci-dessus se trouvent dans une telle chaîne de caractères.
 
 **Règles de construction d’expressions régulières à partir d’expressions régulières à un caractère**
 
 Vous pouvez utiliser les règles suivantes pour construire des expressions régulières à partir d’expressions régulières à un caractère :
 
 * Une expression régulière d’un caractère est une expression régulière qui correspond à l’expression régulière d’un caractère, quelle que soit la nature de celle-ci.
-* Une expression régulière d’un caractère suivie d’un `*` (astérisque) est une expression régulière qui correspond à zéro ou plusieurs occurrences de l’expression régulière d’un caractère, qui peut être un caractère de jeu de codes supplémentaire. Si vous avez le choix, la chaîne la plus longue à gauche qui permet une correspondance est choisie.
-* Une expression régulière à un caractère suivie d&#39;un `?` (point d&#39;interrogation) est une expression régulière qui correspond à zéro ou à une occurrence de l&#39;expression régulière à un caractère, qui peut être un caractère de jeu de codes supplémentaire. Si vous avez le choix, la chaîne la plus longue à gauche qui permet une correspondance est choisie.
-* Une expression régulière d’un caractère suivie d’un signe `+` (plus) est une expression régulière qui correspond à une ou plusieurs occurrences de l’expression régulière d’un caractère, qui peut être un caractère supplémentaire de jeu de codes. Si vous avez le choix, la chaîne la plus longue à gauche qui permet une correspondance est choisie.
-* Une expression régulière d’un caractère suivie d’une expression `{m}`, `{m,}`ou `{m,n}` est une  régulière qui correspond à une plage d’occurrences de l’expression régulière d’un caractère. Les valeurs de m et n doivent être des entiers non négatifs inférieurs à 256 ; `{m}` correspond exactement à m occurrences ; `{m,}` correspond au moins à m occurrences ; `{m,n}` correspond à tout nombre d’occurrences entre m et n inclus. Chaque fois qu’un choix existe, l’expression régulière correspond au plus grand nombre d’occurrences possible.
+* Une expression régulière à un caractère suivie d&#39;un `*` (astérisque) est une expression régulière qui correspond à zéro ou plusieurs occurrences de l&#39;expression régulière à un caractère, qui peut être un caractère supplémentaire de jeu de codes. Si vous avez le choix, la chaîne la plus longue à gauche qui permet une correspondance est choisie.
+* Une expression régulière à un caractère suivie d&#39;une `?` (point d&#39;interrogation) est une expression régulière qui correspond à zéro ou à une occurrence de l&#39;expression régulière à un caractère, qui peut être un caractère de jeu de codes supplémentaire. Si vous avez le choix, la chaîne la plus longue à gauche qui permet une correspondance est choisie.
+* Une expression régulière à un caractère suivie d&#39;une `+` (signe plus) est une expression régulière qui correspond à une ou plusieurs occurrences de l&#39;expression régulière à un caractère, qui peut être un caractère supplémentaire de jeu de codes. Si vous avez le choix, la chaîne la plus longue à gauche qui permet une correspondance est choisie.
+* Une expression régulière à un caractère suivie de `{m}`, `{m,}` ou `{m,n}` est une expression régulière qui correspond à une série d&#39;occurrences de l&#39;expression régulière à un caractère. Les valeurs de m et n doivent être des entiers non négatifs inférieurs à 256 ; `{m}` correspond exactement à m occurrences ; `{m,}` correspond au moins à m occurrences ; `{m,n}` correspond à tout nombre d’occurrences entre m et n inclus. Chaque fois qu’un choix existe, l’expression régulière correspond au plus grand nombre d’occurrences possible.
 * La concaténation des expressions régulières est une expression régulière qui correspond à la concaténation des chaînes correspondant à chaque composant de l&#39;expression régulière.
 * Une expression régulière encadrée entre les séquences de caractères ( et ) est une expression régulière qui correspond à ce que l’expression régulière non ornée correspond.
-* Une expression régulière suivie d&#39;une `|` (canalisation verticale) suivie d&#39;une expression régulière est une expression régulière qui correspond soit à la première expression régulière (avant la canalisation verticale), soit à la seconde expression régulière (après la canalisation verticale).
+* Une expression régulière suivie d&#39;une `|` (pipe verticale) suivie d&#39;une expression régulière est une expression régulière qui correspond soit à la première expression régulière (avant la canalisation verticale), soit à la deuxième expression régulière (après la canalisation verticale).
 
 Vous pouvez également contraindre une expression régulière à ne correspondre qu’à un segment initial ou final d’une ligne, ou les deux.
 
-* Un `^` (circonflexe) au début d’une expression régulière limite cette expression régulière pour qu’elle corresponde à un segment initial d’une ligne.
+* Un `^` (circonflexe) au début d&#39;une expression régulière limite cette expression régulière pour qu&#39;elle corresponde à un segment initial d&#39;une ligne.
 * Un signe `$` (dollar) à la fin d’une expression régulière entière limite cette expression régulière pour qu’elle corresponde à un segment final d’une ligne.
 * La construction de ^normal expression$ contraint l&#39;expression régulière à correspondre à la ligne entière.
 
@@ -146,7 +146,7 @@ Les classes de caractères prédéfinies et leur signification sont les suivante
 <table> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> <p>Classe Caractère </p> </th> 
+   <th colname="col1" class="entry"> <p>Classe Character </p> </th> 
    <th colname="col2" class="entry"> <p>Signification </p> </th> 
   </tr> 
  </thead>
@@ -207,7 +207,7 @@ Deux noms de classe de caractères spéciaux correspondent à l’espace nul au 
 <table> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> <p>Classe Caractère </p> </th> 
+   <th colname="col1" class="entry"> <p>Classe Character </p> </th> 
    <th colname="col2" class="entry"> <p>Signification </p> </th> 
   </tr> 
  </thead>

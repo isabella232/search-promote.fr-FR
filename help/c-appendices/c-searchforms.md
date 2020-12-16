@@ -1,22 +1,25 @@
 ---
 description: valeur nulle
 seo-description: valeur nulle
-seo-title: Formulaires de recherche
+seo-title: Rechercher des formulaires
 solution: Target
-title: Formulaires de recherche
+title: Rechercher des formulaires
 topic: Appendices,Site search and merchandising
 uuid: 91153e3a-c437-47f3-8c2a-d9ac02965b8c
 translation-type: tm+mt
 source-git-commit: 4542702e1d2ba04c70d9f6b24bfa32e1f1c6acb5
+workflow-type: tm+mt
+source-wordcount: '2921'
+ht-degree: 0%
 
 ---
 
 
-# Formulaires de recherche{#search-forms}
+# Rechercher des formulaires{#search-forms}
 
 ## Utilisation des collections dans les formulaires de recherche {#reference_5A079AEEEFB84457892EF0870D0605C3}
 
-Les collections permettent à vos clients de rechercher des zones spécifiques de votre site Web. Selon que vous mettez en oeuvre un  déroulant ou un de cases à cocher, vous pouvez permettre à vos clients de rechercher une ou plusieurs collections.
+Les collections permettent à vos clients de rechercher des zones spécifiques de votre site Web. Selon que vous mettez en oeuvre une liste déroulante ou une liste de cases à cocher, vous pouvez permettre à vos clients de rechercher une ou plusieurs collections.
 
 Voir aussi [A propos des collections](../c-about-settings-menu/c-about-searching-menu.md#concept_62E42ACE53D54EEE9273433B86259127).
 
@@ -44,17 +47,17 @@ L’exemple suivant montre quatre noms de collection différents et les zones as
    <td colname="col2"> <p>https://www.mycompany.com/customers/ </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>News </p> </td> 
+   <td colname="col1"> <p>Actualités </p> </td> 
    <td colname="col2"> <p>https://www.mycompany.com/news/ </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>À propos d’Adobe </p> </td> 
+   <td colname="col1"> <p>À propos de l'Adobe </p> </td> 
    <td colname="col2"> <p>https://www.mycompany.com/company/ </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-L’interface de formulaire de recherche déroulante permet aux utilisateurs de sélectionner une collection et se présente comme suit :
+L’interface de formulaire de recherche déroulante permet aux utilisateurs de sélectionner une collection et ressemble à ce qui suit :
 
 ![](assets/DropdownsearchformUI.png)
 
@@ -70,7 +73,7 @@ Le formulaire de recherche déroulante est généré avec le code HTML suivant :
 </select>
 ```
 
-Vous pouvez également utiliser un groupe de cases à cocher dans votre formulaire de recherche afin que les puissent sélectionner plusieurs collections :
+Vous pouvez également utiliser un groupe de cases à cocher dans votre formulaire de recherche afin que les visiteurs puissent sélectionner plusieurs collections :
 
 ![](assets/checkboxes.png)
 
@@ -84,9 +87,9 @@ Le formulaire de recherche de case à cocher est généré avec le code HTML sui
 <input type="checkbox" name="sp_k" value="About Adobe">About Adobe<br>
 ```
 
-## Search results {#section_BBDD5B44E2B349BC88D937F44583D350}
+## Résultats de la recherche {#section_BBDD5B44E2B349BC88D937F44583D350}
 
-La balise de modèle de recherche `<search-input-collections>` génère le code HTML de la zone de de la collection dans les résultats de la recherche et sélectionne automatiquement la collection spécifiée dans la recherche. Si vous souhaitez plutôt générer des cases à cocher, utilisez la `<search-input>` balise au lieu de la `<input>` balise comme suit :
+La balise de modèle de recherche `<search-input-collections>` génère le code HTML de la zone de liste de la collection dans les résultats de la recherche et sélectionne automatiquement la collection spécifiée dans la recherche. Si vous souhaitez plutôt générer des cases à cocher, utilisez la balise `<search-input>` au lieu de la balise `<input>` comme suit :
 
 ```
 <search-input type="checkbox" name="sp_k" value="">All of Adobe<br> 
@@ -96,26 +99,26 @@ La balise de modèle de recherche `<search-input-collections>` génère le code 
 <search-input type="checkbox" name="sp_k" value="About Adobe">About Adobe<br>
 ```
 
-La `<search-input>` balise génère une `<input>` balise et inclut l’ `checked` attribut si la collection a été spécifiée dans la recherche.
+La balise `<search-input>` génère une balise `<input>` et inclut l&#39;attribut `checked` si la collection a été spécifiée dans la recherche.
 
 ## Utilisation de cadres avec des formulaires {#reference_82CDDDA1E37042E4849EBF7EA05407C5}
 
-Vous pouvez configurer vos jeux de cadres pour qu’ils fonctionnent avec la recherche/le marchandisage sur le site.
+Vous pouvez configurer vos jeux de cadres pour qu&#39;ils fonctionnent avec la recherche/le marchandisage sur le site.
 
-Pour en savoir plus sur les cadres HTML et l’élément de jeu de cadres HTML, voir l’URL suivante :
+Pour en savoir plus sur les cadres HTML et l&#39;élément de jeu de cadres HTML, voir l&#39;URL suivante :
 
 [https://www.w3schools.com/html/html_frames.asp](https://www.w3schools.com/html/html_frames.asp)
 
-Si votre site utilise des cadres, vous pouvez spécifier un cadre de  pour les liens de résultats de recherche. Le par défaut est _self, ce qui ouvre les liens dans le cadre actuel ou dans la fenêtre du navigateur. Vous pouvez, à la place, spécifier des  spécifiques au site ou réservées au navigateur :
+Si votre site utilise des cadres, vous pouvez spécifier une cible pour les liens de résultats de recherche. La cible par défaut est _self, qui ouvre les liens dans le cadre actif ou la fenêtre de navigateur. Vous pouvez plutôt spécifier des cibles spécifiques au site ou réservées au navigateur :
 
-* _top (réservé au navigateur) s’ouvre dans la fenêtre active du navigateur et remplace tous les cadres actuels.
-* _blank (réservé au navigateur) s’ouvre dans une nouvelle fenêtre du navigateur.
-* _parent (réservé au navigateur) s’ouvre dans le cadre parent du cadre actuel.
-* frame2 (spécifique au site) s’ouvre dans un cadre nommé &quot;frame2&quot;. Vous pouvez spécifier le nom d’un cadre comme valeur (par exemple, main ou contenu).
+* _top (réservé au navigateur) s’ouvre dans la fenêtre active du navigateur et remplace toutes les images actives.
+* _blank (réservé au navigateur) s’ouvre dans une nouvelle fenêtre de navigateur.
+* _parent (réservé au navigateur) s’ouvre dans le cadre parent du cadre actif.
+* frame2 (spécifique au site) s’ouvre dans un cadre nommé &quot;frame2&quot;. Vous pouvez spécifier le nom de n’importe quel cadre comme valeur (par exemple, main ou contenu).
 
-Si votre site n’utilise pas de cadres, il est probable que vous ne souhaitiez pas modifier le nom du  par défaut.
+Si votre site n’utilise pas de cadres, vous ne souhaitez probablement pas modifier le nom de la cible par défaut.
 
-Si vous créez un modèle de résultats de recherche personnalisé pour votre site Web, vous pouvez remplacer le paramètre spécifié à l’aide de l’ `target` attribut de la `<search-link>` balise .
+Si vous créez un modèle de résultats de recherche personnalisé pour votre site Web, vous pouvez remplacer le paramètre spécifié en utilisant l&#39;attribut `target` de la balise `<search-link>`.
 
 Le processus de configuration des jeux de cadres est le suivant :
 
@@ -130,37 +133,37 @@ Le processus de configuration des jeux de cadres est le suivant :
  <tbody> 
   <tr> 
    <td colname="col1"> <p>1 </p> </td> 
-   <td colname="col02"> <p>Ajouter le formulaire au cadre souhaité dans votre page Web. </p> </td> 
-   <td colname="col2"> <p> <a href="#section_BAA8A502BB2243F8B5FF9783CDF2BFFD" type="section" format="dita" scope="local"> Ajout du code du formulaire de recherche à un cadre dans votre... </a> </p> </td> 
+   <td colname="col02"> <p>Ajoutez le formulaire au cadre de votre choix dans votre page Web. </p> </td> 
+   <td colname="col2"> <p> <a href="#section_BAA8A502BB2243F8B5FF9783CDF2BFFD" type="section" format="dita" scope="local"> Ajouter le code du formulaire de recherche à un cadre dans votre...  </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>2 </p> </td> 
-   <td colname="col02"> <p>Définissez le cadre de  de la page des résultats de la recherche. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="#section_532CACB90888467093D95EACB64FDFA1" type="section" format="dita"> Définition du cadre de  du pour la page des résultats de la recherche </a> </p> </td> 
+   <td colname="col02"> <p>Définissez le cadre de cible de la page des résultats de la recherche. </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_532CACB90888467093D95EACB64FDFA1" type="section" format="dita"> Définition de la cible de la page des résultats de la recherche  </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>3 </p> </td> 
-   <td colname="col02"> <p>Définissez le  des liens créés à partir de la page des résultats de la recherche. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="#section_523248C5AC424D878321C21A23A5CD66" type="section" format="dita"> Définition du  des liens créés à partir des résultats de la recherche... </a> </p> </td> 
+   <td colname="col02"> <p>Définissez la cible des liens créés à partir de la page des résultats de la recherche. </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_523248C5AC424D878321C21A23A5CD66" type="section" format="dita"> Définition de la cible des liens créés à partir des résultats de la recherche...  </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>4 </p> </td> 
-   <td colname="col02"> <p>Modifiez les pages des cadres de navigation pour les empêcher d’être indexées. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="#section_C62E5F0EE1294D5EBD97E123E54433FC" type="section" format="dita"> Modification des pages du cadre de navigation pour les empêcher d’être... </a> </p> </td> 
+   <td colname="col02"> <p>Modifiez les pages de cadres de navigation pour les empêcher d’être indexées. </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_C62E5F0EE1294D5EBD97E123E54433FC" type="section" format="dita"> Modification des pages du cadre de navigation pour les empêcher d'être...  </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>5 </p> </td> 
    <td colname="col02"> <p>Testez le formulaire de recherche. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="#section_43D8D4A7BF524DC480DFE5442F6A2E3C" type="section" format="dita"> Test du formulaire de recherche </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_43D8D4A7BF524DC480DFE5442F6A2E3C" type="section" format="dita"> Test du formulaire de recherche  </a> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Ajout du code du formulaire de recherche à un cadre dans votre page Web {#section_BAA8A502BB2243F8B5FF9783CDF2BFFD}
+## Ajouter le code du formulaire de recherche dans un cadre de votre page Web {#section_BAA8A502BB2243F8B5FF9783CDF2BFFD}
 
-1. Dans le menu du produit, cliquez sur **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Form Source]**.
+1. Dans le menu produit, cliquez sur **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Form Source]**.
 
-   Le code du formulaire de recherche HTML se présente comme suit :
+   Le code du formulaire de recherche HTML ressemble à ce qui suit :
 
    ```
    <!-- Adobe Target HTML for [your customer name] --> 
@@ -171,20 +174,20 @@ Le processus de configuration des jeux de cadres est le suivant :
    </form>
    ```
 
-1. Sur la [!DNL Standard Form Source] page, sélectionnez et copiez le code du formulaire de recherche HTML qui apparaît dans le champ de texte.
-1. Collez le code du formulaire de recherche dans le cadre souhaité dans votre jeu de cadres.
+1. Sur la page [!DNL Standard Form Source], sélectionnez et copiez le code du formulaire de recherche HTML qui apparaît dans le champ de texte.
+1. Collez le code du formulaire de recherche dans le cadre de votre choix dans votre jeu de cadres.
 
-   Dans l’exemple ci-dessous, le code du formulaire de recherche est collé dans le cadre de navigation, c’est-à-dire le cadre vertical étroit sur le côté gauche de l’écran.
+   Dans l’exemple ci-dessous, le code du formulaire de recherche est collé dans le cadre de navigation, c’est-à-dire le cadre vertical étroit situé à gauche de l’écran.
 
    ![](assets/frames1.gif)
 
-## Définition du cadre de  du pour la page des résultats de la recherche {#section_532CACB90888467093D95EACB64FDFA1}
+## Définition du cadre de cible de la page des résultats de la recherche {#section_532CACB90888467093D95EACB64FDFA1}
 
-Si vous avez placé le code du formulaire de recherche dans le cadre de navigation vertical comme ci-dessus, vous pouvez afficher les résultats de la recherche dans le cadre principal plus grand. Dans cet exemple, vous appelez le cadre principal &quot;body&quot; et le définissez comme cadre de .
+Si vous avez placé le code de votre formulaire de recherche dans le cadre de navigation vertical comme ci-dessus, vous pouvez afficher les résultats de la recherche dans le cadre principal plus grand. Dans cet exemple, vous appelez le cadre principal &quot;body&quot; et le définissez comme cadre de cible.
 
 ![](assets/frames2.gif)
 
-1. Pour spécifier le cadre de  du pour la page de résultats, ajoutez un et une valeur au formulaire en modifiant la ligne suivante du code du formulaire de recherche à partir de ce qui suit :
+1. Pour spécifier le cadre de cible de la page de résultats, ajoutez une cible et une valeur au formulaire en modifiant la ligne suivante dans le code du formulaire de recherche à partir des éléments suivants :
 
    `<form method="get" action="https://search.atomz.com/search/">`
 
@@ -192,54 +195,54 @@ Si vous avez placé le code du formulaire de recherche dans le cadre de navigati
 
    `<form target="body" method="get" action="https://search.atomz.com/search/">`
 
-   Veillez à placer des guillemets autour de la valeur du de formulaire.
+   Veillez à placer des guillemets autour de la valeur de la cible du formulaire.
 
 Lorsqu’un client effectue une recherche sur votre site Web, les résultats de la recherche apparaissent dans le cadre &quot;body&quot; de la page Web.
 
-## Définition du  des liens créés à partir de la page des résultats de la recherche {#section_523248C5AC424D878321C21A23A5CD66}
+## Définition de la cible des liens créés à partir de la page de résultats de la recherche {#section_523248C5AC424D878321C21A23A5CD66}
 
 Vous pouvez définir le cadre de destination en modifiant directement votre modèle.
 
-Si vos résultats de recherche apparaissent dans le cadre &quot;body&quot;, vous souhaitez probablement que les liens s’ouvrent également dans le cadre &quot;body&quot;. Puisqu’il s’agit du même cadre, la valeur  `"_self"` qui est le paramètre par défaut, vous n’avez pas besoin d’effectuer de modifications.
+Si vos résultats de recherche apparaissent dans le cadre &quot;body&quot;, vous souhaitez probablement que les liens s’ouvrent également dans le cadre &quot;body&quot;. Dans la mesure où il s’agit de la même image, la valeur de cible `"_self"` qui est le paramètre par défaut, vous n’avez pas besoin d’apporter des modifications.
 
-Vous pouvez également définir le cadre de destination pour les liens de résultats. Voici quelques exemples de ce que vous pouvez faire :
+Vous pouvez également définir le cadre de destination pour les liens de résultats. Vous trouverez ci-dessous quelques exemples de ce que vous pouvez faire :
 
-* Spécifiez des cadres différents pour les résultats de la recherche et leurs liens afin que les résultats de la recherche restent actifs dans leur propre cadre pendant que chaque résultat sur lequel l’utilisateur clique s’ouvre dans un cadre distinct.
-* Indiquez que les résultats de la recherche s’ouvrent dans une nouvelle fenêtre vierge, de sorte que votre ancienne fenêtre reste active avec son contenu d’origine, ce qui préserve également les résultats de la recherche.
+* Spécifiez des cadres différents pour les résultats de la recherche et leurs liens de sorte que les résultats de la recherche restent principaux dans leur propre cadre tandis que chaque résultat sur lequel l’utilisateur clique s’ouvre dans un cadre distinct.
+* Indiquez que les résultats de la recherche s’ouvrent dans une nouvelle fenêtre vierge, de sorte que votre ancienne fenêtre reste principale avec son contenu d’origine, ce qui préserve également les résultats de la recherche.
 
-Le nom de l’ du peut être soit le nom d’un cadre spécifié dans votre code HTML, soit l’un des paramètres HTML par défaut suivants :
+Le nom de la cible peut être soit le nom d’un cadre spécifié dans votre code HTML, soit l’un des paramètres HTML par défaut suivants :
 
 * `target="_blank"` Ouvrez les liens dans une nouvelle fenêtre vierge sans nom.
 
-* `target="_self"` Par défaut. Ouvrez les liens dans la fenêtre où résident les résultats de la recherche. Dans ce cas, la fenêtre des résultats de la recherche d’origine. Utilisez cette option pour remplacer un  de base affecté globalement.
+* `target="_self"` Par défaut. Ouvrez les liens dans la même fenêtre que celle où résident les résultats de la recherche. Dans ce cas, la fenêtre des résultats de la recherche initiale. Utilisez cette option pour remplacer une cible de base affectée globalement.
 
-* `target="_parent"` Ouvrez les liens dans le jeu de cadres parent de la page de liens. Si le n’a pas de parent, cela fonctionne comme `"_self"` par défaut.
+* `target="_parent"` Ouvrez les liens dans le jeu de cadres parent de la page de liens. Si le document n&#39;a pas de parent, cela fonctionne comme `"_self"` par défaut.
 
-* `target="_top"` Ouvrez les liens dans la fenêtre complète. Si le se trouve déjà en haut de la page, cela fonctionne comme `"_self"` par défaut. Utilisez cette option pour rompre l’imbrication arbitraire d’images profondes.
+* `target="_top"` Ouvrez les liens dans la fenêtre complète. Si le document se trouve déjà en haut de l&#39;écran, cette fonction est par défaut de type `"_self"`. Utilisez cette option pour rompre l’imbrication arbitraire d’images profondes.
 
-Par exemple, pour définir le cadre de destination du `_blank` , vous pouvez modifier le modèle de la manière suivante :
+Par exemple, pour définir le cadre de destination de la cible `_blank`, vous pouvez modifier le modèle de la manière suivante :
 
-1. Dans le menu du produit, cliquez sur **[!UICONTROL Design]** > **[!UICONTROL Templates]**.
+1. Dans le menu produit, cliquez sur **[!UICONTROL Design]** > **[!UICONTROL Templates]**.
 
-1. Sur la [!DNL Staged Templates] page, dans le tableau, cliquez sur le nom du modèle avec le cadre de destination ciblé.
-1. Recherchez la `<search-link>` balise . Your default `<search-link>` tag should look similar to the following:
+1. Sur la page [!DNL Staged Templates], dans le tableau, cliquez sur le nom du modèle avec le cadre de destination ciblé.
+1. Recherchez la balise `<search-link>`. La balise `<search-link>` par défaut doit ressembler à ce qui suit :
 
    `<search-link><search-title length=100></search-link>`
 
-1. Ajouter le du cadre à la `<search-link>` balise . Dans l’exemple ci-dessus, saisissez `target="_blank"`. Veillez à inclure le trait de soulignement et les guillemets autour de la valeur  du.
+1. Ajoutez la cible du cadre à la balise `<search-link>`. Dans l’exemple ci-dessus, saisissez `target="_blank"`. Veillez à inclure le trait de soulignement et les guillemets autour de la valeur de la cible.
 
-   La `<search-link>` balise s’affiche désormais comme suit :
+   La balise `<search-link>` s’affiche désormais comme suit :
 
    `<search-link target="_blank"><search-title length=100></search-link>`
 
-Lorsqu&#39;un de site choisit un lien de résultats de recherche, la page liée s&#39;ouvre désormais dans une nouvelle fenêtre vide.
+Lorsqu&#39;un visiteur de site sélectionne un lien de résultats de recherche, la page liée s&#39;ouvre désormais dans une nouvelle fenêtre vierge.
 
-## Modification des pages du cadre de navigation pour les empêcher d’être indexées {#section_C62E5F0EE1294D5EBD97E123E54433FC}
+## Modification des pages du cadre de navigation pour les empêcher d&#39;être indexées {#section_C62E5F0EE1294D5EBD97E123E54433FC}
 
-En règle générale, vous souhaitez exclure vos cadres de navigation de l’indexation des résultats de recherche. Pour accomplir cette fonctionnalité, vous pouvez ajouter `noindex` une balise meta à ces pages.
+En règle générale, vous souhaitez exclure vos cadres de navigation de l’indexation avec vos résultats de recherche. Pour accomplir cette fonctionnalité, vous pouvez ajouter une balise META `noindex` à ces pages.
 
-1. Ouvrez la source de la page HTML pour votre cadre de navigation.
-1. Ajouter la balise meta suivante dans la `<head>` section de votre code HTML :
+1. Ouvrez la source de page HTML pour votre cadre de navigation.
+1. Ajoutez la balise meta suivante dans la section `<head>` de votre code HTML :
 
    `<meta name="robots" content="noindex">`
 
@@ -256,39 +259,40 @@ En règle générale, vous souhaitez exclure vos cadres de navigation de l’ind
 
 ## Test du formulaire de recherche {#section_43D8D4A7BF524DC480DFE5442F6A2E3C}
 
-1. Accédez à votre site Web et à un formulaire.
-1. Dans le champ de recherche, saisissez quelques termes de recherche, puis cliquez sur **[!UICONTROL Search]**.
+1. Accédez à votre site Web et accédez à un formulaire.
+1. Dans le champ de recherche, entrez quelques termes de recherche, puis cliquez sur **[!UICONTROL Search]**.
 
    Ce qui suit est vrai :
 
-   * La page des résultats de la recherche s’affiche dans le cadre de  de spécifié.
-   * Les liens provenant des résultats de votre recherche se trouvent dans le cadre de  de spécifié.
+   * La page des résultats de la recherche s’affiche dans la cible spécifiée.
+   * Les liens des résultats de la recherche se trouvent dans la cible spécifiée.
    * Les résultats du cadre de navigation n’apparaissent pas.
+
    Si vous rencontrez des problèmes avec les cadres après avoir testé le formulaire de recherche, contactez le service clientèle.
 
 ## Exemple de formulaire de recherche avancée {#reference_82E1051918744EBA88A01E9E6AE42C4A}
 
-Vous pouvez modifier le code de formulaire avancé en fonction de vos besoins en matière de conception et de contenu, ou ajouter ou supprimer des paramètres de recherche supplémentaires.
+Vous pouvez modifier le code de formulaire avancé en fonction de vos besoins de conception et de contenu, ou ajouter ou supprimer des paramètres de recherche supplémentaires.
 
-Votre est un bon endroit pour insérer un formulaire de recherche avancée car de nombreux clients espèrent y trouver une fonctionnalité de recherche. Vous pouvez également créer une page HTML qui comprend le formulaire de recherche et d’autres informations utiles, puis créer un lien vers cette page dans votre site Web.
+Votre page d&#39;accueil est un bon endroit pour insérer un formulaire de recherche avancée car de nombreux clients s&#39;attendent à y trouver une fonctionnalité de recherche. Vous pouvez également créer une page HTML qui comprend le formulaire de recherche et d’autres informations utiles, puis créer un lien vers cette page sur l’ensemble de votre site Web.
 
-Si vous indexez du contenu sécurisé, vous pouvez obtenir les résultats de la recherche à partir de serveurs Web de recherche sécurisés. Modifiez l’URL de l’attribut d’action du formulaire de recherche en : action=&quot;https://search.atomz.com/search/&quot; pour ce faire.
+Si vous indexez du contenu sécurisé, les résultats de la recherche peuvent être diffusés à partir des serveurs Web de recherche sécurisés. Modifiez l’URL de l’attribut d’action du formulaire de recherche en : action=&quot;https://search.atomz.com/search/&quot; pour ce faire.
 
 >[!NOTE]
 >
->Certains éditeurs HTML ont du mal à coller le code HTML d&#39;autres applications. Si le code HTML apparaît sur votre page Web sous forme de texte, copiez et collez le code de recherche dans un éditeur de texte simple, tel que le Bloc-notes sous Windows ou le texte simple sous Mac, puis copiez et collez à nouveau du simple éditeur de texte dans votre éditeur HTML.
+>Certains éditeurs HTML ont du mal à coller du code HTML à partir d&#39;autres applications. Si le code HTML s’affiche sur votre page Web sous la forme de texte, copiez et collez le code de recherche dans un éditeur de texte simple, tel que le Bloc-notes sous Windows ou le texte simple sous Mac, puis copiez et collez à nouveau du simple éditeur de texte dans votre éditeur HTML.
 
-Les paramètres de recherche sont utilisés dans le code de formulaire de recherche avancée pour créer des boutons radio, des cases à cocher et des  que les clients peuvent utiliser pour personnaliser des recherches individuelles. Les clients peuvent indiquer le nombre de résultats de recherche affichés, par exemple, ou une plage de dates, ou si les résumés s&#39;affichent avec les résultats de recherche, toutes les options apparaissant dans les formulaires de recherche avancée.
+Les paramètres de recherche sont utilisés dans le code de formulaire de recherche avancée pour créer des boutons radio, des cases à cocher et des zones de liste que les clients peuvent utiliser pour personnaliser des recherches individuelles. Les clients peuvent indiquer le nombre de résultats de recherche affichés, par exemple, ou une plage de dates, ou si des résumés s&#39;affichent avec les résultats de la recherche, via les options qui apparaissent dans les formulaires de recherche avancée.
 
-En utilisant l’exemple de formulaire de recherche avancée suivant, le reste de cette rubrique vous montre comment chaque option du formulaire est créée à l’aide des paramètres de recherche.
+A l’aide de l’exemple de formulaire de recherche avancée suivant, le reste de cette rubrique vous montre comment chaque option du formulaire est créée à l’aide des paramètres de recherche.
 
 ![](assets/advancedsearchform.png)
 
-Vous pouvez  le code HTML du formulaire de recherche avancée entier de l&#39;exemple ci-dessus.
+Vous pouvez vue l&#39;intégralité du code HTML du formulaire de recherche avancée de l&#39;exemple ci-dessus.
 
-Voir Code [HTML de formulaire de recherche](#reference_9AAD4A46B68D4D48865508982CB86DB9)avancée.
+Voir [Code HTML du formulaire de recherche avancée](#reference_9AAD4A46B68D4D48865508982CB86DB9).
 
-Voir [Configuration d’une page CSS](../c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96)à remplissage automatique.
+Voir [Configuration de la saisie semi-automatique CSS](../c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96).
 
 Voir [Copie du code HTML du formulaire de recherche dans le...](../c-about-auto-complete.md#task_A3A01EA800F24C0AA33902387E0362C7).
 
@@ -304,41 +308,41 @@ Voir [Copie du code HTML du formulaire de recherche dans le...](../c-about-auto-
  <tbody> 
   <tr> 
    <td colname="col2"> <p>Activer les options de formulaire de recherche avancée (champ masqué) </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_advanced </span> </p> </td> 
-   <td colname="col3"> <p> <span class="syntax html codeph"> &lt;input type=hidden name="sp_advanced" value=1&gt; </span> </p> </td> 
-   <td colname="col4"> <p>Activez ou désactivez les options de recherche avancée. Par exemple, vous pouvez placer un formulaire de recherche standard sur votre  avec un lien vers une deuxième page qui contient un formulaire avancé. Dans ce cas, vous devez placer une copie de votre formulaire standard dans <span class="codeph"> &lt;search-if-not-advanced&gt;...Balises de modèle &lt;/search-if-not-advanced&gt; </span> . </p> <p>Un client qui effectue une recherche à partir du formulaire standard voit un formulaire de recherche standard lorsque les résultats de la recherche sont affichés. Dans l’écran du formulaire de recherche avancée, vous incluez la balise <span class="codeph"> &lt;input type=hidden name="sp_advanced" value=1&gt; </span> avec les autres options de formulaire avancées. </p> <p>Vous incluez également une copie du formulaire de recherche avancée dans le formulaire &lt;search-if-advanced&gt;... Balises de modèle &lt;/search-if-advanced&gt;. Un client qui effectue une recherche à partir de votre formulaire de recherche avancée voit un formulaire de recherche avancée lorsque les résultats de la recherche sont affichés. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_advanced  </span> </p> </td> 
+   <td colname="col3"> <p> <span class="syntax html codeph"> &lt;input type="hidden" name="sp_advanced" value="1"&gt; </span> </p> </td> 
+   <td colname="col4"> <p>Active ou désactive les options de recherche avancée. Par exemple, vous pouvez placer un formulaire de recherche standard sur votre page d'accueil avec un lien vers une deuxième page contenant un formulaire avancé. Dans ce cas, vous devez placer une copie de votre formulaire standard dans <span class="codeph"> &lt;search-if-not-advanced&gt;...&lt;/search-if-not-advanced&gt; </span> balises de modèle. </p> <p>Un client qui effectue une recherche à partir du formulaire standard voit un formulaire de recherche standard lorsque les résultats de la recherche sont affichés. Dans l’écran du formulaire de recherche avancée, vous ajoutez la balise <span class="codeph"> &lt;input type=hidden name="sp_advanced" value=1&gt; </span> aux autres options de formulaire avancées. </p> <p>Vous incluez également une copie du formulaire de recherche avancée dans les balises de modèle &lt;search-if-advanced&gt;... &lt;/search-if-advanced&gt;. Un client qui effectue une recherche à partir de votre formulaire de recherche avancée voit apparaître un formulaire de recherche avancée lorsque les résultats de la recherche sont affichés. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <p> Correspondance avec n’importe quelle expression, tout ou phrase </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_p </span> </p> <p> </p> </td> 
+   <td colname="col2"> <p> Faire correspondre n’importe quelle expression, tout ou phrase </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_p  </span> </p> <p> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;Allow&nbsp;"any,"&nbsp;"all,"&nbsp;or&nbsp;"phrase"&nbsp;--&gt; 
       &lt;input&nbsp;type=radio&nbsp;name="sp_p"&nbsp;value="any"&gt;Any&nbsp;word 
       &lt;input&nbsp;type=radio&nbsp;name="sp_p"&nbsp;value="all"&nbsp;checked&gt;All&nbsp;words 
       &lt;input&nbsp;type=radio&nbsp;name="sp_p"&nbsp;value="phrase"&gt;Exact&nbsp;phrase </code> </p> </td> 
-   <td colname="col4"> <p>Autorisez votre client à indiquer que "n’importe quel mot", "tous les mots" ou "l’expression exacte" doit être présent pour qu’un puisse correspondre. Lorsque le paramètre <span class="codeph"> sp_p </span> est spécifié, les clients n'ont pas besoin d'utiliser "+" ou "-", ou les deux dans le de recherche. </p> <p> Si le paramètre <span class="codeph"> sp_p </span> est omis ou s’il est défini sur "" ou "any", les clients peuvent toujours utiliser les spécificateurs "+" et "-". Si le paramètre <span class="codeph"> sp_p </span> est défini sur "all" ou "phrase", les valeurs "+" et "-" spécifiées sont ignorées. </p> <p>Vous pouvez en savoir plus sur l’utilisation de "+" et "-" dans une recherche. </p> <p>Voir <a href="../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8" type="concept" format="dita" scope="local">A propos des recherches </a>. </p> </td> 
+   <td colname="col4"> <p>Permet à votre client de spécifier que "n’importe quel mot", "tous les mots" ou "l’expression exacte" doit être présent pour qu’un document corresponde. Lorsque le paramètre <span class="codeph"> sp_p </span> est spécifié, les clients n'ont pas besoin d'utiliser "+" ou "-", ou les deux dans la requête de recherche. </p> <p> Si le paramètre <span class="codeph"> sp_p </span> est omis ou s'il est défini sur "" ou "any", les clients peuvent toujours utiliser les spécificateurs "+" et "-". Si le paramètre <span class="codeph"> sp_p </span> est défini sur "all" ou "phrase", les valeurs "+" et "-" spécifiées sont ignorées. </p> <p>Vous pouvez en savoir plus sur l’utilisation de "+" et "-" dans une recherche. </p> <p>Voir <a href="../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8" type="concept" format="dita" scope="local">A propos des recherches </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p> Correspondance sonore </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_w </span> </p> <p>et </p> <p> <span class="codeph"> sp_w_control </span> </p> <p> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_w  </span> </p> <p>et </p> <p> <span class="codeph"> sp_w_control  </span> </p> <p> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;Checkbox&nbsp;enables&nbsp;sound-alike&nbsp;matching&nbsp;--&gt; 
       &lt;input&nbsp;type=hidden&nbsp;name="sp_w_control"&nbsp;value=1&gt; 
       &lt;input&nbsp;type=checkbox&nbsp;name="sp_w"&nbsp;value="alike"&gt;&nbsp;Sound-alike&nbsp;matching </code> </p> </td> 
-   <td colname="col4"> <p>Permet aux clients d’activer ou de désactiver la correspondance audio-similaire. La correspondance son-sosie permet aux de recherche mal orthographiés de faire correspondre des mots qui "se ressemblent" dans votre  de. </p> <p>Lorsque le paramètre <span class="codeph"> sp_w_control </span> est défini sur 1 et que le <span class="codeph"> paramètre </span> sp_w est défini sur "same", la case à cocher générée est activée, ce qui permet la correspondance du son par défaut. </p> <p>Si le paramètre <span class="codeph"> sp_w </span> est défini sur "", la case à cocher n’est pas sélectionnée. </p> <p>Si vous n’avez pas activé la correspondance son/son pendant votre dernière opération d’indexation, la correspondance son/son n’est pas possible et le paramètre <span class="codeph"> sp_w </span> est ignoré. Pour activer l’association du son identique, dans le menu du produit, cliquez sur <span class="uicontrol"> Linguistique </span> &gt; <span class="uicontrol"> Mots et langue </span> &gt; <span class="uicontrol"> Correspondance de l’analogie sonore </span>. </p> <p>Vous pouvez également affecter les paramètres <span class="codeph"> sp_w </span> et <span class="codeph"> sp_w_control </span> de la manière suivante : </p> <p> <code class="syntax html"> &lt;!--&nbsp;Checkbox&nbsp;disables&nbsp;sound-alike&nbsp;matching&nbsp;--&gt; 
+   <td colname="col4"> <p>Permet aux clients d’activer ou de désactiver la mise en correspondance des sons similaires. La correspondance son-sosie permet aux requêtes de recherche mal orthographiées de correspondre à des mots qui "se ressemblent" dans vos documents. </p> <p>Lorsque le paramètre <span class="codeph"> sp_w_control </span> est défini sur 1 et que le paramètre <span class="codeph"> sp_w </span> est défini sur "identique", la case à cocher générée est sélectionnée, ce qui permet la correspondance du son par défaut. </p> <p>Si le paramètre <span class="codeph"> sp_w </span> est défini sur "", la case à cocher n'est pas sélectionnée. </p> <p>Si vous n'avez pas activé la correspondance son/sole lors de votre dernière opération d'indexation, la correspondance son/sole n'est pas possible et le paramètre <span class="codeph"> sp_w </span> est ignoré. Pour activer la correspondance du son, dans le menu du produit, cliquez sur <span class="uicontrol"> Linguistique </span> &gt; <span class="uicontrol"> Mots et langue </span> &gt; <span class="uicontrol"> Correspondance sonore </span>. </p> <p>Vous pouvez également attribuer les paramètres <span class="codeph"> sp_w </span> et <span class="codeph"> sp_w_control </span> de la manière suivante : </p> <p> <code class="syntax html"> &lt;!--&nbsp;Checkbox&nbsp;disables&nbsp;sound-alike&nbsp;matching&nbsp;--&gt; 
       &lt;input&nbsp;type=hidden&nbsp;name="sp_w_control"&nbsp;value=0&gt; 
       &lt;input&nbsp;type=checkbox&nbsp;name="sp_w"&nbsp;value="exact"&gt; 
-      No&nbsp;sound-alike&nbsp;matching </code> </p> <p>Dans ce cas, lorsque le paramètre <span class="codeph"> sp_w_control </span> est défini sur 0 et que le paramètre <span class="codeph"> sp_w </span> est défini sur "exact", la correspondance de type son est désactivée par défaut. Si le paramètre <span class="codeph"> sp_w </span> est défini sur "", la correspondance du son est activée. </p> </td> 
+      No&nbsp;sound-alike&nbsp;matching </code> </p> <p>Dans ce cas, lorsque le paramètre <span class="codeph"> sp_w_control </span> est défini sur 0 et que le paramètre <span class="codeph"> sp_w </span> est défini sur "exact", la correspondance du son identique est désactivée par défaut. Si le paramètre <span class="codeph"> sp_w </span> est défini sur "", la correspondance du son est activée. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>Correspondance de plage de dates </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_d </span> </p> <p> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_d  </span> </p> <p> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--Specifies&nbsp;type&nbsp;of&nbsp;date&nbsp;range&nbsp;searching&nbsp;to&nbsp;perform.--&gt; 
       &lt;input&nbsp;type=radio&nbsp;name="sp_d"&nbsp;value="custom"&nbsp;checked&gt; 
       &lt;input&nbsp;type=radio&nbsp;name="sp_d"&nbsp;value="specific"&gt; </code> </p> </td> 
-   <td colname="col4"> <p>Le paramètre <span class="codeph"> sp_d </span> spécifie une plage de données personnalisée à exécuter ou une plage de dates spécifique à exécuter. </p> <p>Dans le formulaire de recherche avancée par défaut, cette option est présentée sous la forme d’un groupe de boutons radio avec un déroulant de plages de dates "personnalisées" tel qu’il est généré avec un <span class="codeph"> paramètre </span> sp_date_range. Il inclut également un groupe de dates de  et de fin "spécifiques" qui sont générées avec les paramètres <span class="codeph"> sp___day </span>, <span class="codeph"> sp_ </span>_ <span class="codeph"> __month </span>, <span class="codeph"> sp___year_year, sp_end_day, sp_end_month et sp_end_year_year.</span><span class="codeph"></span><span class="codeph"></span> </p> <p>Une plage de dates "personnalisée" est une plage de dates nommée à rechercher. Par exemple, "N’importe quand", "Aujourd’hui", "Au cours de l’année écoulée", etc. </p> <p>Une plage de dates "spécifique" se compose d’une date de  et d’une date de fin. Par exemple, de "8 septembre 2009 au 18 octobre 2011". </p> </td> 
+   <td colname="col4"> <p>Le paramètre <span class="codeph"> sp_d </span> spécifie une plage de données personnalisée à exécuter ou une plage de dates spécifique à exécuter. </p> <p>Dans le formulaire de recherche avancée par défaut, cette option est présentée comme un groupe de boutons radio avec une liste déroulante de plages de dates "personnalisées", comme générée avec un paramètre <span class="codeph"> sp_date_range </span>. Il comprend également un groupe de dates de début et de fin "spécifiques" qui sont générées avec <span class="codeph"> sp_début_day </span>, <span class="codeph"> sp_début_month </span>, <span class="codeph"> sp_début_year </span>, <span class="codeph"> sp_end_day </span>, <span class="codeph"> sp_end_month &lt;a9/ et <span class="codeph"> sp_end_year </span> paramètres.</span> </p> <p>Une plage de dates "personnalisée" est une plage de dates nommée à rechercher. Par exemple, "En tout temps", "Aujourd'hui", "Au cours de l'année écoulée", etc. </p> <p>Une plage de dates "spécifique" comprend une date de début et une date de fin. Par exemple, de "8 septembre 2009 au 18 octobre 2011". </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>Correspondance de plage de dates : plage de dates personnalisée </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_date_range </span> </p> <p> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_date_range  </span> </p> <p> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--Selection&nbsp;list&nbsp;for&nbsp;custom&nbsp;date&nbsp;range.--&gt; 
       &lt;select&nbsp;name="sp_date_range"&nbsp;size=1&gt; 
       &lt;option&nbsp;value=-1&nbsp;selected&gt;Anytime&lt;/option&gt; 
@@ -351,32 +355,32 @@ Voir [Copie du code HTML du formulaire de recherche dans le...](../c-about-auto-
       &lt;option&nbsp;value=365&gt;Within&nbsp;the&nbsp;last&nbsp;year&lt;/option&gt; 
       &lt;option&nbsp;value=730&gt;Within&nbsp;the&nbsp;last&nbsp;two&nbsp;years&lt;/option&gt; 
       &lt;/select&gt; </code> </p> </td> 
-   <td colname="col4"> <p>Le paramètre <span class="codeph"> sp_date_range </span> est utilisé pour créer une plage de dates "personnalisée". Par exemple, "N’importe quand", "Aujourd’hui", "Au cours de l’année écoulée", etc. </p> <p>Les valeurs supérieures ou égales à zéro indiquent le nombre de jours avant la date d’aujourd’hui. Par exemple, une valeur de 0 indique "Aujourd’hui", une valeur de "1" indique "Aujourd’hui et hier", une valeur de "30" indique "Au cours des 30 derniers jours", etc. Les valeurs inférieures à zéro définissent une plage personnalisée comme suit : </p> <p> 
+   <td colname="col4"> <p>Le paramètre <span class="codeph"> sp_date_range </span> est utilisé pour créer une plage de dates "personnalisée". Par exemple, "En tout temps", "Aujourd'hui", "Au cours de l'année écoulée", etc. </p> <p>Les valeurs supérieures ou égales à zéro spécifient le nombre de jours avant la date d’aujourd’hui pour la recherche. Par exemple, la valeur 0 indique "Aujourd’hui", la valeur 1 indique "Aujourd’hui et Hier", la valeur 30 indique "Au cours des 30 derniers jours", etc. Les valeurs inférieures à zéro définissent une plage personnalisée comme suit : </p> <p> 
      <ul id="ul_E65DDE33883F441F9730F315E485AD98"> 
-      <li id="li_83E9466AB9D7438A8544001F6B007186"> <p>-1 = "En tout temps", la même chose que de ne spécifier aucune plage de dates. </p> </li> 
+      <li id="li_83E9466AB9D7438A8544001F6B007186"> <p>-1 = "En tout temps", la même chose que de spécifier aucune plage de dates. </p> </li> 
       <li id="li_38AB8D97179A47F9B860A96EA09119BB"> <p>-2 = "Cette semaine", qui effectue une recherche du dimanche au samedi de la semaine en cours. </p> </li> 
       <li id="li_F4C3A8658428418A8A06FBAAB4733C68"> <p>-3 = "Semaine dernière", qui effectue une recherche du dimanche au samedi de la semaine précédant la semaine en cours. </p> </li> 
       <li id="li_DF2D0B043A4E4DE9BE8D82E69A76E793"> <p>-4 = "Ce mois-ci", qui recherche les dates du mois en cours. </p> </li> 
-      <li id="li_76BC4C2CED574E2A81448158828BFF1B"> <p>-5 = "Mois dernier", qui recherche les dates du mois précédant le mois en cours. </p> </li> 
+      <li id="li_76BC4C2CED574E2A81448158828BFF1B"> <p>-5 = "Dernier mois", qui recherche les dates du mois précédant le mois en cours. </p> </li> 
       <li id="li_17FF849384FB46D58AF6FF1D3BC408C8"> <p>-6 = "Cette année", qui recherche les dates de l’année en cours. </p> </li> 
-      <li id="li_E2B8B4DFF3914BBDB86D0EB77F52B305"> <p>-7 = "L’année dernière", qui recherche les dates dans l’année précédant l’année en cours. </p> </li> 
+      <li id="li_E2B8B4DFF3914BBDB86D0EB77F52B305"> <p>-7 = "L’année dernière", qui recherche les dates de l’année précédant l’année en cours. </p> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <p>Correspondance de plage de dates : Dates  </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp__day, sp__month, sp___année_ </span> </p> <p> </p> </td> 
+   <td colname="col2"> <p>Correspondance de plage de dates : Dates du début </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_début_day, sp_début_month, sp_début_year  </span> </p> <p> </p> </td> 
    <td colname="col3"> </td> 
-   <td colname="col4"> <p>Ce triplet de valeurs numériques spécifie la date de  du d’une plage de dates spécifique à rechercher. Veillez à spécifier les trois valeurs, car une date partiellement spécifiée est ignorée. </p> <p>Il est légal de spécifier uniquement la date de  du, la date de fin ou la date  du et la date de fin. Si seule la date de  du est spécifiée, la recherche inclut des  de correspondantes datées le ou après la date de l' de l'. Si seule la date de fin est spécifiée, la recherche inclut les  correspondantes au plus tard à la date de fin. Si la date de  du et la date de fin sont spécifiées, la recherche inclut des  de correspondant de la date de la  au jour de fin. </p> <p>Toutes les dates sont recherchées par rapport à l’heure de Greenwich. </p> </td> 
+   <td colname="col4"> <p>Ce triplet de valeurs numériques spécifie la date de début d’une plage de dates spécifique à rechercher. Veillez à spécifier les trois valeurs, car une date partiellement spécifiée est ignorée. </p> <p>Il est légal de spécifier uniquement la date de début, la date de fin ou à la fois la date de début et la date de fin. Si seule la date du début est spécifiée, la recherche inclut les documents correspondants datés le ou après la date du début. Si seule la date de fin est spécifiée, la recherche inclut les documents correspondants au plus tard à la date de fin. Si la date de début et la date de fin sont spécifiées, la recherche inclut les documents correspondants entre la date de début et la date de fin. </p> <p>Toutes les dates sont recherchées par rapport à l'heure de Greenwich. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p> Correspondance de plage de dates : dates de fin </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_end_day, sp_end_month, sp_end_year </span> </p> <p> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_end_day, sp_end_month, sp_end_year  </span> </p> <p> </p> </td> 
    <td colname="col3"> </td> 
-   <td colname="col4"> <p>Ce triplet de valeurs numériques spécifie la date de fin de la plage de dates spécifique à rechercher. Veillez à spécifier les trois valeurs, car une date partiellement spécifiée est ignorée. </p> <p>Il est légal de spécifier uniquement la date de  du, la date de fin ou la date de  et la date de fin. Si seule la date de  du est spécifiée, la recherche inclut des  de correspondantes datées le ou après la date de l' de l'. Si seule la date de fin est spécifiée, la recherche inclut les  correspondantes au plus tard à la date de fin. Si le  et la date de fin sont tous deux spécifiés, la recherche inclut des  de correspondant de la date de l' de la fin à la date de fin. </p> <p>Toutes les dates sont recherchées par rapport à l’heure de Greenwich. </p> </td> 
+   <td colname="col4"> <p>Ce triplet de valeurs numériques spécifie la date de fin de la plage de dates spécifique à rechercher. Veillez à spécifier les trois valeurs, car une date partiellement spécifiée est ignorée. </p> <p>Il est légal de spécifier uniquement la date de début, la date de fin ou à la fois le début et la date de fin. Si seule la date du début est spécifiée, la recherche inclut les documents correspondants datés le ou après la date du début. Si seule la date de fin est spécifiée, la recherche inclut les documents correspondants au plus tard à la date de fin. Si le début et la date de fin sont spécifiés, la recherche inclut les documents correspondants entre la date de début et la date de fin. </p> <p>Toutes les dates sont recherchées par rapport à l'heure de Greenwich. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>Dans le champ de recherche </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_x </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_x  </span> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;List&nbsp;box&nbsp;selects&nbsp;the&nbsp;search&nbsp;field&nbsp;--&gt; 
       Within&nbsp;&lt;select&nbsp;name="sp_x"&nbsp;size=1&gt; 
       &lt;option&nbsp;value="any"&nbsp;selected&gt;Anywhere&lt;/option&gt; 
@@ -389,11 +393,11 @@ Voir [Copie du code HTML du formulaire de recherche dans le...](../c-about-auto-
       &lt;option&nbsp;value="target"&gt;Target&lt;/option&gt; 
       &lt;option&nbsp;value="date"&gt;Date&lt;/option&gt;* 
       &lt;/select&gt; </code> </p> </td> 
-   <td colname="col4"> <p>La zone <span class="codeph"> sp_x </span> permet aux clients de spécifier le champ dans lequel rechercher les  de. </p> <p>Les clients peuvent choisir entre tous les champs, le titre, la description de l', les mots-clés de l', le corps, le texte de remplacement, l'URL de l'URL, la date ou les mots-clés de l'. </p> <p>Lorsque le paramètre <span class="codeph"> sp_x </span> est utilisé, les clients n’ont pas besoin de spécifier "title:", "desc:", "keys:", "body:", "alt:", "url:" et ":" dans les chaînes de  de recherche. </p> <p>Si le paramètre <span class="codeph"> sp_x </span> est omis ou s’il est défini sur "" ou "any", les clients peuvent toujours utiliser les chaînes de spécificateur de champ. Si le paramètre <span class="codeph"> sp_x </span> est défini sur un champ spécifique, toutes les autres chaînes de spécificateur de champ sont ignorées. </p> <p>Voir <a href="../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8" type="concept" format="dita" scope="local">A propos des recherches </a>. </p> </td> 
+   <td colname="col4"> <p>La zone de liste <span class="codeph"> sp_x </span> permet à vos clients de spécifier le champ dans lequel rechercher les chaînes de requête. </p> <p>Les clients peuvent choisir entre tous les champs, le titre, la description du document, les mots-clés du document, le corps, le texte de remplacement, l’URL du document, la date ou les mots-clés de cible. </p> <p>Lorsque le paramètre <span class="codeph"> sp_x </span> est utilisé, les clients n'ont pas besoin de spécifier "title:", "desc:", "keys:", "body:", "alt:", "url:" et "cible:" dans les chaînes de requête de recherche. </p> <p>Si le paramètre <span class="codeph"> sp_x </span> est omis ou s'il est défini sur "" ou "any", les clients peuvent toujours utiliser les chaînes de spécificateur de champ. Si le paramètre <span class="codeph"> sp_x </span> est défini sur un champ spécifique, toutes les autres chaînes de spécificateur de champ sont ignorées. </p> <p>Voir <a href="../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8" type="concept" format="dita" scope="local">A propos des recherches </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>Afficher le nombre de résultats </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_c </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_c  </span> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;List&nbsp;box&nbsp;selects&nbsp;number&nbsp;of&nbsp;results&nbsp;to&nbsp;show&nbsp;per&nbsp;page&nbsp;--&gt; 
       Show&nbsp;&lt;select&nbsp;name="sp_c"&nbsp;size=1&gt; 
       &lt;option&nbsp;value=5&gt;5&lt;/option&gt; 
@@ -405,8 +409,8 @@ Voir [Copie du code HTML du formulaire de recherche dans le...](../c-about-auto-
    <td colname="col4"> <p>Permet aux clients de choisir le nombre de résultats de recherche affichés sur chaque page de résultats de recherche. </p> <p>Vous pouvez avoir autant de choix dans le formulaire que vous le souhaitez. Assurez-vous que la valeur "value=" correspond à la valeur affichée. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <p>Affichage ou masquage des résumés </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_m </span> </p> </td> 
+   <td colname="col2"> <p>Afficher ou masquer les résumés </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_m  </span> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;Show&nbsp;or&nbsp;hide&nbsp;summaries&nbsp;in&nbsp;search&nbsp;results&nbsp;--&gt; 
       &lt;select&nbsp;name="sp_m"&nbsp;size=1&gt; 
       &lt;option&nbsp;value=1&nbsp;selected&gt;with&lt;/option&gt; 
@@ -418,26 +422,26 @@ Voir [Copie du code HTML du formulaire de recherche dans le...](../c-about-auto-
   </tr> 
   <tr> 
    <td colname="col2"> <p>Trier par résultats </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_s </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_s  </span> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;Sort&nbsp;results&nbsp;by&nbsp;relevance&nbsp;or&nbsp;by&nbsp;date&nbsp;--&gt; 
       Sort&nbsp;by&nbsp;&lt;select&nbsp;name="sp_s"&nbsp;size=1&gt; 
       &lt;option&nbsp;value=0&nbsp;selected&gt;relevance&lt;/option&gt; 
       &lt;option&nbsp;value=1&gt;date&lt;/option&gt; 
       &lt;/select&gt; </code> </p> </td> 
-   <td colname="col4"> <p>Permet aux clients de choisir si les résultats sont répertoriés par ordre de pertinence ou par date. </p> <p>Lorsque la valeur est définie sur 1, les résultats sont répertoriés depuis le plus récent  modifié vers le le moins récemment modifié. Lorsque la valeur est définie sur 0, les résultats sont répertoriés du plus pertinent au moins pertinent. Vous pouvez également utiliser ce paramètre avec des boutons radio, comme dans l’exemple suivant : </p> <p> <code class="syntax html"> &lt;!--&nbsp;Sort&nbsp;results&nbsp;by&nbsp;relevance&nbsp;or&nbsp;by&nbsp;date&nbsp;--&gt; 
+   <td colname="col4"> <p>Permet aux clients de choisir si les résultats sont répertoriés par ordre de pertinence ou de date. </p> <p>Lorsque la valeur est définie sur 1, les résultats sont répertoriés du document le plus récemment modifié au document le moins récemment modifié. Lorsque la valeur est définie sur 0, les résultats sont répertoriés du plus pertinent au moins pertinent. Vous pouvez également utiliser ce paramètre avec des boutons radio, comme dans l’exemple suivant : </p> <p> <code class="syntax html"> &lt;!--&nbsp;Sort&nbsp;results&nbsp;by&nbsp;relevance&nbsp;or&nbsp;by&nbsp;date&nbsp;--&gt; 
       &lt;input&nbsp;type=radio&nbsp;name="sp_s"&nbsp;value=0&nbsp;selected&gt;Sort&nbsp;by&nbsp;relevance 
       &lt;input&nbsp;type=radio&nbsp;name="sp_s"&nbsp;value=1&gt;Sort&nbsp;by&nbsp;date </code> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Code HTML du formulaire de recherche avancée {#reference_9AAD4A46B68D4D48865508982CB86DB9}
+## Code HTML de formulaire de recherche avancée {#reference_9AAD4A46B68D4D48865508982CB86DB9}
 
 Code de formulaire HTML utilisé pour produire le formulaire de recherche avancée qui s’affiche en haut de la rubrique Exemple de formulaire de recherche avancée.
 
-Voir [Exemple de formulaire](#reference_82E1051918744EBA88A01E9E6AE42C4A)de recherche avancée.
+Voir [Exemple de formulaire de recherche avancée](#reference_82E1051918744EBA88A01E9E6AE42C4A).
 
-Si vous utilisez ce code, n’oubliez pas de remplacer la `sp_a` valeur de `sp99999999` par votre numéro de compte réel.
+Si vous utilisez ce code, veillez à remplacer la valeur `sp_a` de `sp99999999` par votre numéro de compte réel.
 
 Pour trouver votre numéro de compte, dans le menu produit, cliquez sur **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Account Settings]**.
 
@@ -633,9 +637,9 @@ Sound-alike matching
 
 ## Code de modèle de formulaire de recherche avancée {#reference_D762C22E754E462DBEECD88D2C3FA579}
 
-Vous pouvez ajouter le code HTML du formulaire de recherche avancée à votre modèle de manière à ce que le choix par défaut de tout paramètre soit le même que celui de la recherche précédente.
+Vous pouvez ajouter le code HTML de formulaire de recherche avancée à votre modèle de telle sorte que le choix par défaut de tout paramètre soit le même que celui de la recherche précédente.
 
-En d’autres termes, si un client clique sur le bouton **[!UICONTROL Exact phrase]** radio, vous pouvez vous assurer que le bouton radio est sélectionné par défaut lors de l’affichage des résultats de la recherche.
+En d’autres termes, si un client clique sur le bouton radio **[!UICONTROL Exact phrase]**, vous pouvez vous assurer que le bouton radio est sélectionné par défaut lorsque les résultats de la recherche sont affichés.
 
 Pour ce faire, supprimez tous les spécificateurs &quot;cochés&quot; ou &quot;sélectionnés&quot; des balises HTML standard, puis remplacez les balises HTML suivantes :
 
@@ -653,7 +657,7 @@ avec les balises de modèle correspondantes suivantes :
 * `</search-option>`
 * `</search-select>`
 
-Pour ce faire, vous utilisez le code suivant comme `<form>` balise sur votre modèle de recherche.
+Pour ce faire, vous utilisez le code suivant comme balise `<form>` sur votre modèle de recherche.
 
 ```
 <!-- Adobe Target results section.--> 

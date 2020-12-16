@@ -8,6 +8,9 @@ topic: Appendices,Site search and merchandising
 uuid: 234fd563-f249-42b0-88ca-c89b44f8df77
 translation-type: tm+mt
 source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+workflow-type: tm+mt
+source-wordcount: '6298'
+ht-degree: 2%
 
 ---
 
@@ -18,38 +21,38 @@ Vous pouvez personnaliser la sortie dans n’importe quel format texte, y compri
 
 ## Utilisation de la sortie de recherche guidée {#concept_2A1BA3AD413848A1AC2A3ABC4FFE481F}
 
-Le format de sortie est personnalisable pour prendre en charge la facettisation, le tri et d’autres décisions spécifiques à l’implémentation qui sont prises pendant le processus de conception. Vous pouvez adapter le format lui-même pour simplifier le développement du client frontal, si nécessaire.
+Le format de sortie est personnalisable pour prendre en charge les facettes, le tri et d’autres décisions spécifiques à l’implémentation qui sont prises pendant le processus de conception. Vous pouvez adapter le format lui-même pour simplifier le développement du client frontal, si nécessaire.
 
-La sortie entière est contenue dans `<result>` des balises et la plupart des données dynamiques sont entourées de `<![CDATA[ ]]>` balises. Cette organisation permet aux résultats de contenir du code HTML et d’autres entités non XML.
+La sortie complète est contenue dans des balises `<result>` et la plupart des données dynamiques sont placées entre des balises `<![CDATA[ ]]>`. Cette organisation permet aux résultats de contenir du code HTML et d’autres entités non XML.
 
 Lorsque des liens vers d’autres pages sont fournis, ils sont présentés sous la forme d’une URL relative. Ce résultat inclut également les paramètres de chaîne de requête transmis pour générer le résultat souhaité.
 
-## Présentation d’une implémentation de recherche guidée {#section_95483980930C4325BAB50A40BD47245A}
+## Présentation d&#39;une implémentation de recherche guidée {#section_95483980930C4325BAB50A40BD47245A}
 
-Lorsque vous commencez une implémentation de recherche guidée, n’oubliez pas que [!DNL Adobe Search&Promote] c’est la couche métier qui est responsable. C’est-à-dire la logique qui entoure les résultats et les facettes présentés à un client à un moment donné.
+Lorsque vous commencez une mise en oeuvre de la recherche guidée, n’oubliez pas que [!DNL Adobe Search&Promote] est responsable de la couche métier. C&#39;est-à-dire la logique qui entoure les résultats et facettes présentés à un client à un moment donné.
 
-Lorsque vous implémentez le serveur frontal de l&#39;application Web qui analyse et affiche les résultats au format HTML, limitez la fonctionnalité à l&#39;affichage uniquement. En d’autres termes, toute logique côté serveur que vous utilisez pour créer la couche de présentation ne prend pas les décisions concernant les éléments à présenter à un client, sauf si cela est nécessaire. Les règles de fonctionnement ne fonctionnent pas comme prévu si le script frontal modifie les résultats de la recherche.
+Lorsque vous implémentez l’Application web frontale qui analyse et affiche les résultats au format HTML, limitez la fonctionnalité à l’affichage uniquement. En d&#39;autres termes, toute logique côté serveur que vous utilisez pour créer la couche Présentation ne prend pas les décisions concernant ce que vous devez présenter à un client, sauf si cela est nécessaire. Les règles de fonctionnement ne fonctionneront pas comme vous le prévoyez si le script frontal modifie les résultats de la recherche.
 
-[!DNL Adobe Search&Promote] conserve l’état utilisateur des options d’amélioration de la recherche sélectionnées au moyen des paramètres d’URL. Tous les `<link>` noeuds contiennent les paramètres pertinents des sélections du client. Ces paramètres peuvent inclure des sélections de chemin de navigation, de pagination, de tri et de facettes. Le cas échéant, `<undolink>` les noeuds sont renvoyés pour permettre à un client de &quot;désactiver&quot; une sélection. Les facettes et les chemins de navigation proposent ce type de liens.
+[!DNL Adobe Search&Promote] permet de conserver l’état utilisateur des options de raffinement de recherche sélectionnées au moyen des paramètres d’URL. Tous les noeuds `<link>` contiennent les paramètres appropriés des sélections du client. Ces paramètres peuvent inclure des sélections de chemin de navigation, de pagination, de tri et de facettes. Le cas échéant, les noeuds `<undolink>` sont renvoyés pour permettre à un client de &quot;désactiver&quot; une sélection. Facettes et chemins de navigation offre ces types de liens.
 
 ## Utilisation du serveur de recherche {#section_8DBEACDECD714E59BDED6315E6041B8D}
 
-Une API de type REST est utilisée avec laquelle vous pouvez interagir pour effectuer des recherches et recevoir des résultats. Les formats les plus courants utilisés pour les résultats sont XML ou JSON.
+Une API de type REST est utilisée avec laquelle vous pouvez interagir pour effectuer des recherches et recevoir des résultats. Les formats les plus utilisés pour les résultats sont XML ou JSON.
 
-L’URI de base est associé à un compte spécifique et à un environnement intermédiaire ou dynamique. Vous pouvez demander plusieurs alias pour l’URI de base à votre gestionnaire de compte. Par exemple, une société fictive nommée Megacorp a les deux URL de base suivantes associées à son compte :
+L’URI de base est associé à un compte spécifique et à un environnement intermédiaire ou actif. Vous pouvez demander plusieurs alias pour l’URI de base à votre gestionnaire de compte. Par exemple, une société fictive appelée Megacorp comporte les deux URL de base suivantes associées à son compte :
 
 * `https://search.megacorp.com `
 * `https://stage.megacorp.com`
 
-L’URI précédent effectue des recherches par rapport à son index réel et l’URI par rapport à son index intermédiaire.
+L’URI précédent effectue des recherches sur son index actif et l’URI suivant sur son index intermédiaire.
 
 Les demandes de recherche se composent de l’URI de base et d’un ensemble de paramètres CGI ou de paires clé-valeur qui indiquent la recherche souhaitée pour le compte associé à l’URI de base.
 
-Trois formats de paramètres CGI sont pris en charge. Par défaut, votre compte est configuré pour séparer les paramètres CGI par un point-virgule ( `;`), comme dans l’exemple suivant :
+Trois formats de paramètres CGI sont pris en charge. Par défaut, votre compte est configuré pour séparer les paramètres CGI par un point-virgule ( `;`), comme dans l&#39;exemple suivant :
 
 * `https://search.megacorp.com?q=shoes ;page=2`
 
-Si vous préférez, vous pouvez demander au gestionnaire de compte de configurer votre compte pour qu’il utilise des esperluettes ( `&`) afin de séparer les paramètres CGI, comme dans l’exemple suivant :
+Si vous préférez, votre gestionnaire de compte peut configurer votre compte pour qu’il utilise des esperluettes ( `&`) pour séparer les paramètres CGI, comme dans l’exemple suivant :
 
 * `https://search.megacorp.com?q=shoes &page=2`
 
@@ -59,9 +62,9 @@ Un troisième format, appelé format SEO, est également pris en charge lorsqu�
 
 Chaque fois que le format d’optimisation du référencement est utilisé pour envoyer une requête, tous les liens de sortie sont renvoyés au même format.
 
-## Paramètres de requête de recherche {#section_7ADA5E130E3040C9BE85D0D68EDD3223}
+## Paramètres de la requête de recherche {#section_7ADA5E130E3040C9BE85D0D68EDD3223}
 
-Le tableau suivant décrit les paramètres de requête de recherche standard prêts à l’emploi que vous pouvez utiliser. Les règles de traitement et les règles de fonctionnement peuvent être créées à partir de paramètres de requête définis par l’utilisateur pour implémenter une logique métier personnalisée adaptée à votre entreprise. Vous pouvez travailler avec l’équipe de consultants pour obtenir de la documentation sur ces paramètres.
+Le tableau suivant décrit les paramètres standard de requête de recherche prêts à l’emploi que vous pouvez utiliser. Les règles de traitement et les règles de fonctionnement peuvent être créées à partir de paramètres de requête définis par l’utilisateur pour implémenter une logique métier personnalisée adaptée à votre société. Vous pouvez travailler avec l’équipe de conseil pour obtenir de la documentation sur ces paramètres.
 
 <table> 
  <thead> 
@@ -74,56 +77,56 @@ Le tableau suivant décrit les paramètres de requête de recherche standard pr�
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> q </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> q= chaîne </span> </p> </td> 
-   <td colname="col3"> <p> Spécifie la chaîne de requête pour la recherche. Ce paramètre correspond au paramètre de recherche principal <span class="codeph"> sp_q </span> . </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> q= chaîne  </span> </p> </td> 
+   <td colname="col3"> <p> Indique la chaîne de requête pour la recherche. Ce paramètre correspond au paramètre de recherche principal <span class="codeph"> sp_q </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> q# </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> q#= chaîne </span> </p> </td> 
-   <td colname="col3"> <p>Les paramètres numérotés <span class="codeph"> q </span> et <span class="codeph"> x </span> permettent d’accomplir des facettes ou de rechercher dans un champ donné. </p> <p>Le paramètre <span class="codeph"> q </span> définit le terme que vous recherchez dans la facette comme le <span class="codeph"> paramètre x </span> numéroté correspondant le signale. Si, par exemple, vous disposez de deux facettes appelées taille et couleur, vous pouvez avoir quelque chose comme ceci : </p> <p> <span class="codeph"> q1=small;x1=size;q2=red;x2=color </span> </p> <p>Ce paramètre correspond aux paramètres de recherche principal <span class="codeph"> sp_q_exact_# </span> . </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> q#= chaîne  </span> </p> </td> 
+   <td colname="col3"> <p>Les paramètres numérotés <span class="codeph"> q </span> et <span class="codeph"> x </span> permettent d’accomplir des facettes ou de rechercher dans un champ donné. </p> <p>Le paramètre <span class="codeph"> q </span> définit le terme que vous recherchez dans la facette comme le paramètre numéroté <span class="codeph"> x </span> correspondant le désigne. Par exemple, si vous disposez de deux facettes nommées taille et couleur, vous pouvez avoir quelque chose comme ceci : </p> <p> <span class="codeph"> q1=small;x1=size;q2=red;x2=color  </span> </p> <p>Ce paramètre correspond aux paramètres de recherche principale <span class="codeph"> sp_q_exact_# </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> x# </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> x#= chaîne </span> </p> </td> 
-   <td colname="col3"> <p> Les paramètres numérotés <span class="codeph"> q </span> et <span class="codeph"> x </span> permettent d’accomplir des facettes ou de rechercher dans un champ donné. </p> <p>Le paramètre <span class="codeph"> q </span> définit le terme que vous recherchez dans la facette comme le <span class="codeph"> paramètre x </span> numéroté correspondant le signale. Si, par exemple, vous disposez de deux facettes appelées taille et couleur, vous pouvez avoir quelque chose comme ceci : </p> <p> <span class="codeph"> q1=small;x1=size;q2=red;x2=color </span> </p> <p>Ce paramètre correspond aux paramètres de recherche <span class="codeph"> sp_x_# </span> principal. </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> x#= chaîne  </span> </p> </td> 
+   <td colname="col3"> <p> Les paramètres numérotés <span class="codeph"> q </span> et <span class="codeph"> x </span> permettent d’accomplir des facettes ou de rechercher dans un champ donné. </p> <p>Le paramètre <span class="codeph"> q </span> définit le terme que vous recherchez dans la facette comme le paramètre numéroté <span class="codeph"> x </span> correspondant le désigne. Par exemple, si vous disposez de deux facettes nommées taille et couleur, vous pouvez avoir quelque chose comme ceci : </p> <p> <span class="codeph"> q1=small;x1=size;q2=red;x2=color  </span> </p> <p>Ce paramètre correspond aux paramètres de recherche principale <span class="codeph"> sp_x_# </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> collecte </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> collection= chaîne </span> </p> </td> 
-   <td colname="col3"> <p> Indique la collection à utiliser pour la recherche. Ce paramètre correspond au paramètre de recherche <span class="codeph"> sp_k </span> principal. </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> collection= chaîne  </span> </p> </td> 
+   <td colname="col3"> <p> Indique la collection à utiliser pour la recherche. Ce paramètre correspond au paramètre de recherche principal <span class="codeph"> sp_k </span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> count </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> count= nombre </span> </p> </td> 
-   <td colname="col3"> <p> Indique le nombre total de résultats affichés. La valeur par défaut est définie dans <span class="uicontrol"> Paramètres </span> &gt; <span class="uicontrol"> Recherche </span> &gt; <span class="uicontrol"> Recherches </span>. Ce paramètre correspond au paramètre de recherche principal <span class="codeph"> sp_c </span> . </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> count  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> count= nombre  </span> </p> </td> 
+   <td colname="col3"> <p> Indique le nombre total de résultats affichés. La valeur par défaut est définie dans <span class="uicontrol"> Paramètres </span> &gt; <span class="uicontrol"> Recherche </span> &gt; <span class="uicontrol"> Recherches </span>. Ce paramètre correspond au paramètre de recherche principal <span class="codeph"> sp_c </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> page </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> page= nombre </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> page= nombre  </span> </p> </td> 
    <td colname="col3"> <p> Indique la page des résultats qui sont renvoyés. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> grade </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> grade= champ </span> </p> </td> 
-   <td colname="col3"> <p> Indique le champ de classement à utiliser pour le classement statique. Le champ doit être un champ de type Classement avec une pertinence supérieure à 0. Ce paramètre correspond au paramètre <span class="codeph"> sp_sr </span> principal. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> rang  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> rang= champ  </span> </p> </td> 
+   <td colname="col3"> <p> Indique le champ de classement à utiliser pour le classement statique. Le champ doit être un champ de type Classement dont la pertinence est supérieure à 0. Ce paramètre correspond au paramètre principal <span class="codeph"> sp_sr </span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> gs_store </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> gs_store= chaîne </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> gs_store  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> gs_store= chaîne  </span> </p> </td> 
    <td colname="col3"> <p> Indique le magasin à rechercher. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> sort </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> sort= nombre </span> </p> </td> 
-   <td colname="col3"> <p> Indique l’ordre de tri. "0" est la valeur par défaut et trie par score de pertinence ; "1" est classé par date ; "-1" n’est pas trié. </p> <p>Les utilisateurs peuvent spécifier un nom de champ pour la valeur du paramètre <span class="codeph"> _s </span> . Par exemple, <span class="codeph"> sp_s=title </span> trie les résultats en fonction des valeurs contenues dans le champ de titre. Lorsqu’un nom de champ est utilisé pour la valeur d’un paramètre <span class="codeph"> _s </span> , les résultats sont triés par ce champ, puis subtriés par pertinence. </p> <p>Pour activer cette fonctionnalité, procédez comme suit : </p> 
+   <td colname="col1"> <p> <span class="codeph"> sort  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> sort= nombre  </span> </p> </td> 
+   <td colname="col3"> <p> Indique l’ordre de tri. "0" est la valeur par défaut et est triée par score de pertinence ; "1" est classé par date ; "-1" n’est pas trié. </p> <p>Les utilisateurs peuvent spécifier un nom de champ pour la valeur du paramètre <span class="codeph"> sp_s </span>. Par exemple, <span class="codeph"> sp_s=title </span> trie les résultats en fonction des valeurs contenues dans le champ de titre. Lorsqu’un nom de champ est utilisé pour la valeur d’un paramètre <span class="codeph"> sp_s </span>, les résultats sont triés par ce champ, puis subtriés par pertinence. </p> <p>Pour activer cette fonctionnalité, procédez comme suit : </p> 
     <ol id="ol_3894F81EA7BF4827A84DE8662111ABEF"> 
-     <li id="li_C040C0B88F174A4885E1A8E721FD032A">Dans le menu du produit, cliquez sur <span class="uicontrol"> Paramètres </span> &gt; <span class="uicontrol"> Métadonnées </span> &gt; <span class="uicontrol"> Définitions </span>. </li> 
-     <li id="li_2E83C3A46D1B4BF991EABAD9D3E52B7D">Sur la page <span class="wintitle"> Définitions par étapes </span> , effectuez l’une des opérations suivantes : 
+     <li id="li_C040C0B88F174A4885E1A8E721FD032A">Dans le menu produit, cliquez sur <span class="uicontrol"> Paramètres </span> &gt; <span class="uicontrol"> Métadonnées </span> &gt; <span class="uicontrol"> Définitions </span>. </li> 
+     <li id="li_2E83C3A46D1B4BF991EABAD9D3E52B7D">Sur la page <span class="wintitle"> Définitions par étapes </span>, effectuez l'une des opérations suivantes : 
       <ul id="ul_8018FEE10E0A4C96A74F84A897080580"> 
-       <li id="li_E9A7CE43E2734F4D9522A1283CA111FB">Click <span class="uicontrol"> Add New Field </span>. </li> 
+       <li id="li_E9A7CE43E2734F4D9522A1283CA111FB">Cliquez sur <span class="uicontrol"> Ajouter un nouveau champ </span>. </li> 
        <li id="li_9D2434A321924FBD874569CA9AD2EEF7">Cliquez sur <span class="uicontrol"> Modifier </span> pour un nom de champ particulier. </li> 
       </ul> </li> 
-     <li id="li_90D5E3F4AC0A4A6189934A5589F69903">Dans la liste <span class="wintitle"> déroulante </span> Tri, cliquez sur <span class="uicontrol"> Croissant </span> ou <span class="uicontrol"> Décroissant </span>. <p>Ce paramètre correspond au paramètre de recherche <span class="codeph"> </span> principal sp_s. </p> </li> 
+     <li id="li_90D5E3F4AC0A4A6189934A5589F69903">Dans la liste déroulante <span class="wintitle"> Tri </span>, cliquez sur <span class="uicontrol"> Ascendant </span> ou <span class="uicontrol"> Descendant </span>. <p>Ce paramètre correspond au paramètre de recherche principal <span class="codeph"> sp_s </span>. </p> </li> 
     </ol> </td> 
   </tr> 
  </tbody> 
@@ -135,31 +138,31 @@ Vous trouverez ci-dessous des recommandations pour l’intégration à votre sys
 
 * Communication avec le serveur de recherche.
 
-   Vous pouvez communiquer avec les serveurs [!DNL Adobe Search&Promote] Web à l’aide de requêtes http GET. Vos serveurs génèrent ces requêtes ou côté client en exécutant une requête Ajax.
+   Vous pouvez communiquer avec les serveurs Web [!DNL Adobe Search&Promote] à l’aide de requêtes de GET HTTP. Vos serveurs génèrent ces requêtes ou côté client exécutant une requête Ajax.
 * Enregistrement de l&#39;historique de recherche.
 
-[!DNL Adobe Search&Promote] est sans état lorsque l’état complet est transmis dans la requête http.
+[!DNL Adobe Search&Promote] est sans état lorsque l’état entier est transmis dans la requête http.
 * Analyse des résultats renvoyés.
 
-   Il est recommandé d’utiliser un analyseur XML basé sur SAX pour analyser la réponse XML. Si vous générez une requête Ajax, configurez- [!DNL Adobe Search&Promote] vous pour renvoyer des réponses JSON pour ces requêtes afin de faciliter l’analyse de la réponse.
+   Il est recommandé d’utiliser un analyseur XML basé sur SAX pour analyser la réponse XML. Si vous générez une requête Ajax, configurez [!DNL Adobe Search&Promote] pour renvoyer des réponses JSON pour ces requêtes afin de faciliter l’analyse de la réponse.
 
 ## Sortie JSON de recherche guidée {#reference_EB8182A564DE4374BB84158F2AABEF74}
 
 Tableaux décrivant la sortie de réponse JSON standard.
 
-Voir aussi [Guided Search JSON Output](../c-appendices/c-guidedsearchoutput.md#reference_EB8182A564DE4374BB84158F2AABEF74).
+Voir aussi [Recherche guidée JSON Output](../c-appendices/c-guidedsearchoutput.md#reference_EB8182A564DE4374BB84158F2AABEF74).
 
 Vous pouvez consulter la réponse JSON pour les éléments suivants :
 
 * [Bannières](../c-appendices/c-guidedsearchoutput.md#section_88519CAAD25F4BD49D5E517077745B0E)
 * [Chemin de navigation](../c-appendices/c-guidedsearchoutput.md#section_A7DB0F1DA9ED4CBCAE18395122F3E01E)
 * [Facettes](../c-appendices/c-guidedsearchoutput.md#section_65932C95931743A1BFAF1DF16D7E6D92)
-* [En-tête et requête](../c-appendices/c-guidedsearchoutput.md#section_1D57062259CA46E0B4F598FA4EB37065)
+* [En-tête et Requête](../c-appendices/c-guidedsearchoutput.md#section_1D57062259CA46E0B4F598FA4EB37065)
 * [Pagination](../c-appendices/c-guidedsearchoutput.md#section_504E7AB570BD49AF9839530DC438EE96)
 * [Recherches récentes](../c-appendices/c-guidedsearchoutput.md#section_525816A0355C48F8970D89B8FC3F1FFF)
 * [Résultats](../c-appendices/c-guidedsearchoutput.md#section_41AC56BB0A084BF59379B06C8BEF2157)
 * [Formulaire de recherche](../c-appendices/c-guidedsearchoutput.md#section_434DA13EA295474C99FFE9F14801CD0E)
-* [Trier](../c-appendices/c-guidedsearchoutput.md#section_558853CD376F4D71BACF211D53085D55)
+* [Tri](../c-appendices/c-guidedsearchoutput.md#section_558853CD376F4D71BACF211D53085D55)
 * [Suggestions](../c-appendices/c-guidedsearchoutput.md#section_6EC104E1DDD94AC799B65E6E61A2FB3C)
 * [Zones](../c-appendices/c-guidedsearchoutput.md#section_AE53A498B440465EAF2286F2AE87D548)
 
@@ -185,7 +188,7 @@ Exemple :
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;bannière&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;banner&gt; </span> </p> </td> 
    <td colname="col2"> <p> Noeud de bannière individuel. Vous pouvez avoir plusieurs noeuds de bannière. </p> </td> 
   </tr> 
   <tr> 
@@ -194,14 +197,14 @@ Exemple :
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;content&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Contenu HTML de la zone de bannière. </p> </td> 
+   <td colname="col2"> <p> Contenu HTML pour la zone de bannière. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Chemin de navigation {#section_A7DB0F1DA9ED4CBCAE18395122F3E01E}
 
-Dans l’exemple suivant, chaque fois que le client se rétrécit davantage à travers les facettes, la sélection est ajoutée au chemin de navigation. Chaque élément est représenté sous la forme `<breadcrumb-item>`.
+Dans l’exemple suivant, chaque fois que le client se rétrécit davantage à travers les facettes, la sélection est ajoutée à la barre de navigation. Chaque élément est représenté sous la forme `<breadcrumb-item>`.
 
 Exemple :
 
@@ -221,14 +224,14 @@ Exemple :
 <table> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> <p>Balises dans le chemin de navigation </p> </th> 
+   <th colname="col1" class="entry"> <p>Balises dans la barre de navigation </p> </th> 
    <th colname="col2" class="entry"> <p>Description </p> </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;link&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Lien relatif vers les résultats de la recherche qui affiche la vue souhaitée. Le fait de cliquer sur un lien de chemin de navigation permet au client d’obtenir une vue dans laquelle toutes les améliorations suivantes ont été supprimées. D’autres options sont également disponibles. </p> </td> 
+   <td colname="col2"> <p> Lien relatif vers les résultats de la recherche qui affiche la vue souhaitée. Le fait de cliquer sur un lien de chemin de navigation conduit le client à une vue dans laquelle toutes les améliorations suivantes sont supprimées. D’autres options sont également disponibles. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;value&gt; </span> </p> </td> 
@@ -241,9 +244,9 @@ Exemple :
 
 Les facettes sont des options de raffinement qui permettent aux clients de filtrer les résultats. Les facettes sont généralement utilisées pour la catégorisation, les plages de prix, les sélections de couleurs et d’autres ajustements d’attributs. Les métadonnées de l’index sont ce qui motive les facettes.
 
-Il est courant de masquer ou d’afficher les facettes de catégorisation lorsqu’un client passe par la catégorisation. Le niveau le plus élevé de catégorisation (catégorie) est appelé Niveau 1. Lorsqu’un client clique sur une option de niveau 1, les options de raffinement de niveau 2 (sous-catégorie) s’affichent et les options de niveau 1 disparaissent. Lorsqu’un client clique sur une option de niveau 2, les options de raffinement de niveau 3 (sous-catégorie) apparaissent et les options de niveau 2 disparaissent. Comme nous l&#39;avons vu plus haut, ces options sont masquées et affichées. Votre application Web n&#39;est pas affectée par elles.
+Il est courant de masquer ou d’afficher les facettes de catégorisation lorsqu’un client passe par la catégorisation. Le plus haut niveau de catégorisation (catégorie) est connu sous le nom de niveau 1. Lorsqu’un client clique sur une option de niveau 1, les options de raffinement de niveau 2 (sous-catégorie) s’affichent et les options de niveau 1 disparaissent. Lorsqu’un client clique sur une option de niveau 2, les options de raffinement de niveau 3 (sous-catégorie) s’affichent et les options de niveau 2 disparaissent. Comme nous l&#39;avons mentionné plus haut, ces options sont masquées et affichées. Votre application Web n&#39;est pas affectée par elles.
 
-Chaque facette est contenue dans `<facet-item>` des balises. Dans l’exemple suivant, il présente une facette qui permet au client d’affiner les résultats de recherche par &quot;vacances&quot;.
+Chaque facette est contenue dans des balises `<facet-item>`. Dans l’exemple suivant, il présente une facette qui permet au client d’affiner les résultats de la recherche par &quot;vacances&quot;.
 
 Exemple :
 
@@ -326,7 +329,7 @@ Exemple :
 <table> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> <p>Balises dans les facettes </p> </th> 
+   <th colname="col1" class="entry"> <p>Balises en facettes </p> </th> 
    <th colname="col2" class="entry"> <p>Description </p> </th> 
   </tr> 
  </thead>
@@ -337,7 +340,7 @@ Exemple :
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;libellé&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Libellé destiné aux clients pour l’option de facette. </p> </td> 
+   <td colname="col2"> <p> Libellé destiné au client pour l’option de facette. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;link&gt; </span> </p> </td> 
@@ -345,16 +348,16 @@ Exemple :
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;count&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Nombre de résultats dans ce jeu de résultats affiné. </p> </td> 
+   <td colname="col2"> <p> Nombre de résultats dans cet ensemble de résultats affiné. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;unlink&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;undolink&gt; </span> </p> </td> 
    <td colname="col2"> <p> Lorsqu’une valeur de facette est sélectionnée, le noeud renvoie un "lien d’annulation" qui permet à un client d’annuler les résultats. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## En-tête et requête {#section_1D57062259CA46E0B4F598FA4EB37065}
+## En-tête et Requête {#section_1D57062259CA46E0B4F598FA4EB37065}
 
 Exemple :
 
@@ -368,7 +371,7 @@ Exemple :
  </query> 
 ```
 
-Utilisées ensemble, ces balises présentent un message tel que : &quot;Affichage des résultats 1 à 16 sur 621 pour la &quot;nouvelle année&quot;.&quot;
+Utilisées ensemble, ces balises présentent un message tel que ce qui suit : &quot;Affichage des résultats 1 à 16 sur 621 pour la &quot;nouvelle année&quot;.&quot;
 
 <table> 
  <thead> 
@@ -380,22 +383,22 @@ Utilisées ensemble, ces balises présentent un message tel que : &quot;Affichag
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;user-query&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Requête de mot-clé envoyée avec la requête. </p> </td> 
+   <td colname="col2"> <p> Requête de mots-clés envoyée avec la demande. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;lower-results&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Numéro de l’élément du premier résultat sur cette page. </p> </td> 
+   <td colname="col2"> <p> Numéro de l'article du premier résultat sur cette page. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;upper-results&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Numéro de l’élément du dernier résultat sur cette page. </p> </td> 
+   <td colname="col2"> <p> Numéro de l'article du dernier résultat sur cette page. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;total-results&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Nombre total de résultats qui correspondent à la requête de l’utilisateur. </p> </td> 
+   <td colname="col2"> <p> Nombre total de résultats correspondant à la requête utilisateur. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;champ personnalisé&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;custom-field&gt; </span> </p> </td> 
    <td colname="col2"> <p> Champ facultatif qui s’applique globalement aux résultats de la recherche. </p> </td> 
   </tr> 
  </tbody> 
@@ -449,18 +452,18 @@ Exemple :
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;page position="previous"&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Contient un lien relatif vers la page précédente du jeu de résultats, sauf si le client consulte la page 1 ; dans ce cas, c' est vide. </p> </td> 
+   <td colname="col2"> <p> Contient un lien relatif vers la page précédente du jeu de résultats, sauf si le client consulte la page 1 ; dans ce cas, il est vide. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;page position="next"&gt; </span> </p> </td> 
    <td colname="col2"> <p> Contient un lien relatif vers la dernière page du jeu de résultats, sauf si le client consulte la dernière page. Dans ce cas, il est vide. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;page position="x" </span> </p> </td> 
-   <td colname="col2"> <p> Contient un lien relatif vers un numéro de page particulier. Dix numéros de page contigus s’affichent. À la page 1, il s'agirait des pages 1 à 10. À la fin du jeu de résultats (dans ce cas, 39), il s'agirait des pages 30 à 39. Par exemple, au centre du jeu de résultats, page 15, il s’agit des pages 11 à 20. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;page position="x"&gt;</span> </p> </td> 
+   <td colname="col2"> <p> Contient un lien relatif vers un numéro de page particulier. Dix numéros de page contigus s’affichent. À la page 1, il s'agirait des pages 1 à 10. À la fin de l'ensemble de résultats (dans ce cas, 39), il s'agirait des pages 30 à 39. Par exemple, au centre du jeu de résultats, page 15, il s’agirait des pages 11 à 20. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> selected="true"&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> selected="true"&gt;  </span> </p> </td> 
    <td colname="col2"> <p> Appliqué en tant qu’attribut à la page actuellement sélectionnée. </p> </td> 
   </tr> 
  </tbody> 
@@ -468,7 +471,7 @@ Exemple :
 
 ## Recherches récentes {#section_525816A0355C48F8970D89B8FC3F1FFF}
 
-Les recherches récentes sont une fonctionnalité basée sur des cookies qui ne fonctionne que si vous transmettez les informations sur les cookies aux serveurs.
+Les recherches récentes sont une fonctionnalité basée sur des cookies qui ne fonctionne que si vous transmettez les informations des cookies aux serveurs.
 
 Exemple :
 
@@ -484,17 +487,17 @@ Exemple :
 <table> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> <p>Balises des recherches récentes </p> </th> 
+   <th colname="col1" class="entry"> <p>Balises dans les recherches récentes </p> </th> 
    <th colname="col2" class="entry"> <p>Description </p> </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;récent-search&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;recent-search&gt; </span> </p> </td> 
    <td colname="col2"> <p> Noeud de recherche récente individuel. Vous pouvez avoir plusieurs noeuds de recherche récente. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;terme-recherche&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;search-term&gt; </span> </p> </td> 
    <td colname="col2"> <p> Terme recherché précédemment par le client. </p> </td> 
   </tr> 
   <tr> 
@@ -506,11 +509,11 @@ Exemple :
 
 ## Résultats {#section_41AC56BB0A084BF59379B06C8BEF2157}
 
-Le jeu de résultats est une zone personnalisable de la réponse JSON. Chaque index est unique dans les mécanismes d’appellation des champs des métadonnées. Des champs communs sont renvoyés pour chaque résultat, tels que le titre, la description et l’URL. Toutefois, toutes les métadonnées définies pour une page de l’index peuvent être utilisées dans chaque noeud de résultat. La catégorisation, les prix, les couleurs et les miniatures ne sont que quelques-unes des options que vous pouvez appliquer à un résultat pour obtenir des résultats de recherche plus attrayants.
+Le jeu de résultats est une zone personnalisable de la réponse JSON. Chaque index est unique dans les mécanismes de nommage des champs des métadonnées. Des champs communs sont renvoyés pour chaque résultat, tels que le titre, la description et l’URL. Cependant, toutes les métadonnées définies pour une page de l’index peuvent être disponibles pour être utilisées dans chaque noeud de résultats. La catégorisation, les prix, les couleurs et les vignettes ne sont que quelques-unes des options que vous pouvez appliquer à un résultat pour obtenir des résultats de recherche plus convaincants.
 
 Le format Résultats est personnalisé en fonction des métadonnées propres à votre implémentation. Toutes les données par résultat à afficher dans les résultats, y compris les URL des images miniatures, sont contenues ici.
 
-En outre, il est possible de configurer plusieurs zones de résultats dans la page, telles que &quot;Résultats présentés&quot;, ou de séparer les sections de résultats &quot;Produits&quot; et &quot;Contenu&quot;. Dans ce cas, plusieurs zones de résultats sont fournies dans le code HTML, bien que les facettes ne soient associées qu’au jeu de résultats principal.
+En outre, il est possible de configurer plusieurs zones de résultats dans la page, telles que &quot;Résultats présentés&quot;, ou de séparer les sections &quot;Produits&quot; et &quot;Contenu&quot; des résultats. Dans ce cas, plusieurs zones de résultats sont fournies dans le code HTML, bien que les facettes ne soient associées qu’au jeu de résultats Principal.
 
 Exemple :
 
@@ -685,11 +688,11 @@ Exemple :
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;include-tnt-mbox&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Facultatif. Lorsqu’elle est présente dans le fichier JSON, la valeur 1 indique que votre compte est lié à <span class="keyword"> Test&amp;Target </span> et qu’au moins une règle de fonctionnement figure dans un test A:B. </p> </td> 
+   <td colname="col2"> <p> Facultatif. Lorsqu’elle est présente dans le fichier JSON, une valeur de 1 indique que votre compte est lié à <span class="keyword"> Test&amp;Cible </span> et qu’il comporte au moins une règle métier qui fait partie d’un test A:B. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;saisie automatique&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Facultatif. Lors de l’utilisation de la saisie semi-automatique, ce noeud est présent pour indiquer que le code CSS et JavaScript est présent sur la page, ainsi que le contenu du formulaire. Ces champs ne changent généralement pas, sauf si un utilisateur a modifié un paramètre de saisie automatique. Dans ce cas, le champ xxx_cache_ver est incrémenté pour forcer l’invalidation du contenu mis en cache dans le navigateur de votre client. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;autocomplete&gt; </span> </p> </td> 
+   <td colname="col2"> <p> Facultatif. Lors de l’utilisation de la saisie semi-automatique, ce noeud est présent pour indiquer que le code CSS et JavaScript est présent sur la page, ainsi que le contenu du formulaire. En règle générale, ces champs ne changent pas, sauf si un utilisateur a modifié un paramètre de saisie semi-automatique. Dans ce cas, le champ xxx_cache_ver est incrémenté pour forcer l’invalidation du contenu mis en cache dans le navigateur de votre client. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;css&gt; </span> </p> </td> 
@@ -697,11 +700,11 @@ Exemple :
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;form-content&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Contenu requis dans votre recherche, depuis l'utilitaire de saisie automatique pour se connecter au bon contrôle. </p> </td> 
+   <td colname="col2"> <p> Contenu requis dans votre recherche depuis l'utilitaire de saisie automatique pour se connecter au contrôle approprié. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;js&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Code JavaScript personnalisé requis pour la saisie automatique. Il est recommandé de placer cette balise au bas de la page pour améliorer le rendu des pages. Le code JavaScript YUI est également requis pour la saisie automatique. </p> </td> 
+   <td colname="col2"> <p> JavaScript personnalisé requis pour la saisie semi-automatique. Il est recommandé de placer cette balise en bas de la page pour améliorer le rendu des pages. Le code JavaScript YUI est également requis pour la saisie automatique. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;hidden-parameters&gt; </span> </p> </td> 
@@ -710,9 +713,9 @@ Exemple :
  </tbody> 
 </table>
 
-## Trier {#section_558853CD376F4D71BACF211D53085D55}
+## Tri {#section_558853CD376F4D71BACF211D53085D55}
 
-L’exemple suivant montre les données d’un menu de tri à trois options. Le menu permet au client de trier par pertinence, titre ou évaluation. L’élément actuellement sélectionné comprend un attribut &quot;selected=true&quot;. &quot;. Proposez toujours une option de pertinence pour permettre à un client de revenir aux résultats de recherche par défaut qui étaient initialement affichés.
+L&#39;exemple suivant montre les données d&#39;un menu de tri à trois options. Le menu permet au client de trier par pertinence, titre ou classement. L’élément actuellement sélectionné comprend un attribut &quot;selected=true&quot;. &quot;. Toujours offre une option de pertinence pour permettre à un client de revenir aux résultats de recherche par défaut qui étaient initialement affichés.
 
 Exemple :
 
@@ -746,7 +749,7 @@ Exemple :
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;libellé&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Texte orienté vers le client pour l’option. </p> </td> 
+   <td colname="col2"> <p> Texte de l’option destiné aux clients. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;value&gt; </span> </p> </td> 
@@ -754,14 +757,14 @@ Exemple :
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;link&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Pour les options non sélectionnées, le paramètre <span class="codeph"> &lt;link&gt; </span> contient le lien relatif qui renvoie le même jeu de résultats, trié par le nouveau paramètre de tri. Ce champ est vide pour l’option de tri sélectionnée. </p> </td> 
+   <td colname="col2"> <p> Pour les options non sélectionnées, le paramètre <span class="codeph"> &lt;link&gt; </span> contient le lien relatif qui renvoie le même jeu de résultats, trié par le nouveau paramètre de tri. Ce champ est vide pour l’option de tri actuellement sélectionnée. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Suggestions {#section_6EC104E1DDD94AC799B65E6E61A2FB3C}
 
-Les suggestions sont renvoyées lorsqu’il n’y a que quelques résultats ou aucun résultat. Ce noeud contient des termes qui génèrent des requêtes réussies et peut être affiché sur une page &quot;Aucun résultat&quot;. Le lien est également renvoyé afin qu’un client puisse accéder à la nouvelle requête.
+Les suggestions sont renvoyées lorsqu’il n’y a que quelques résultats ou qu’aucun résultat n’est obtenu. Ce noeud contient des termes qui génèrent des requêtes réussies et peut être affiché sur une page &quot;Aucun résultat&quot;. Le lien est également renvoyé afin qu’un client puisse accéder à la nouvelle requête.
 
 Exemple :
 
@@ -782,7 +785,7 @@ Exemple :
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;link&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Lien relatif utilisé pour créer un hyperlien afin de rechercher les résultats du terme de suggestion. </p> </td> 
+   <td colname="col2"> <p>Lien relatif utilisé pour créer un hyperlien permettant de rechercher les résultats du terme de suggestion. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;word&gt; </span> </p> </td> 
@@ -807,7 +810,7 @@ Exemple :
 <table> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> <p>Balises dans les zones </p> </th> 
+   <th colname="col1" class="entry"> <p>Balises en zones </p> </th> 
    <th colname="col2" class="entry"> <p>Description </p> </th> 
   </tr> 
  </thead>
@@ -821,8 +824,8 @@ Exemple :
    <td colname="col2"> <p> Nom de la zone. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;afficher&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 1 ou 0 pour indiquer si la zone est affichée ou non. Le contenu de la zone peut être statique sur votre page Web ou dans les résultats de la recherche, comme les meilleurs vendeurs ou les produits associés. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;display&gt; </span> </p> </td> 
+   <td colname="col2"> <p> 1 ou 0 pour indiquer si la zone est affichée ou non. Le contenu de la zone peut être statique sur votre page Web ou dans les résultats de la recherche, par exemple les meilleurs vendeurs ou les produits associés. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -836,12 +839,12 @@ Vous pouvez consulter la réponse XML pour les éléments suivants :
 * [Bannières](../c-appendices/c-guidedsearchoutput.md#section_6A19EC26DD3B494194AAA788151B78B5)
 * [Chemin de navigation](../c-appendices/c-guidedsearchoutput.md#section_E48A71B0EBDB4EDDA7587009AD865488)
 * [Facettes](../c-appendices/c-guidedsearchoutput.md#section_5CEB1F966C004FFEA3CF675638966E25)
-* [En-tête et requête](../c-appendices/c-guidedsearchoutput.md#section_802835E19BCB48239C6770A1B72DFFF8)
+* [En-tête et Requête](../c-appendices/c-guidedsearchoutput.md#section_802835E19BCB48239C6770A1B72DFFF8)
 * [Pagination](../c-appendices/c-guidedsearchoutput.md#section_72DB86DDE1284B1EA295CFFBC16A3150)
 * [Recherches récentes](../c-appendices/c-guidedsearchoutput.md#section_BCA2DDD17F264CF6BA11634E1A514E28)
 * [Résultats](../c-appendices/c-guidedsearchoutput.md#section_EC496F5CA2634158891455E2F6DF6833)
 * [Formulaire de recherche](../c-appendices/c-guidedsearchoutput.md#section_F92D8C3D37174A10A4E26CAFF3F3DF89)
-* [Trier](../c-appendices/c-guidedsearchoutput.md#section_32DC50A103BF491BA3665A5CADCCAADE)
+* [Tri](../c-appendices/c-guidedsearchoutput.md#section_32DC50A103BF491BA3665A5CADCCAADE)
 * [Suggestions](../c-appendices/c-guidedsearchoutput.md#section_D81BCE46F0AF443695DF9C4BA084B716)
 * [Zones](../c-appendices/c-guidedsearchoutput.md#section_15D8AA585F3246799968BA88EE2C9FC2)
 
@@ -867,7 +870,7 @@ Exemple :
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;bannière&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;banner&gt; </span> </p> </td> 
    <td colname="col2"> <p> Noeud de bannière individuel. Vous pouvez avoir plusieurs noeuds de bannière. </p> </td> 
   </tr> 
   <tr> 
@@ -876,14 +879,14 @@ Exemple :
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;content&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Contenu HTML de la zone de bannière. </p> </td> 
+   <td colname="col2"> <p> Contenu HTML pour la zone de bannière. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Chemin de navigation {#section_E48A71B0EBDB4EDDA7587009AD865488}
 
-Dans l’exemple suivant, chaque fois que le client se rétrécit davantage à travers les facettes, la sélection est ajoutée au chemin de navigation. Chaque élément est représenté sous la forme `<breadcrumb-item>`.
+Dans l’exemple suivant, chaque fois que le client se rétrécit davantage à travers les facettes, la sélection est ajoutée à la barre de navigation. Chaque élément est représenté sous la forme `<breadcrumb-item>`.
 
 Exemple :
 
@@ -903,14 +906,14 @@ Exemple :
 <table> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> <p>Balises dans le chemin de navigation </p> </th> 
+   <th colname="col1" class="entry"> <p>Balises dans la barre de navigation </p> </th> 
    <th colname="col2" class="entry"> <p>Description </p> </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;link&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Lien relatif vers les résultats de la recherche qui affiche la vue souhaitée. Le fait de cliquer sur un lien de chemin de navigation permet au client d’obtenir une vue dans laquelle toutes les améliorations suivantes ont été supprimées. D’autres options sont également disponibles. </p> </td> 
+   <td colname="col2"> <p> Lien relatif vers les résultats de la recherche qui affiche la vue souhaitée. Le fait de cliquer sur un lien de chemin de navigation conduit le client à une vue dans laquelle toutes les améliorations suivantes sont supprimées. D’autres options sont également disponibles. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;value&gt; </span> </p> </td> 
@@ -923,9 +926,9 @@ Exemple :
 
 Les facettes sont des options de raffinement qui permettent aux clients de filtrer les résultats. Les facettes sont généralement utilisées pour la catégorisation, les plages de prix, les sélections de couleurs et d’autres ajustements d’attributs. Les métadonnées de l’index sont ce qui motive les facettes.
 
-Il est courant de masquer ou d’afficher les facettes de catégorisation lorsqu’un client passe par la catégorisation. Le niveau le plus élevé de catégorisation (catégorie) est appelé Niveau 1. Lorsqu’un client clique sur une option de niveau 1, les options de raffinement de niveau 2 (sous-catégorie) s’affichent et les options de niveau 1 disparaissent. Lorsqu’un client clique sur une option de niveau 2, les options de raffinement de niveau 3 (sous-catégorie) apparaissent et les options de niveau 2 disparaissent. Comme nous l&#39;avons vu plus haut, ces options sont masquées et affichées. Votre application Web n&#39;est pas affectée par elles.
+Il est courant de masquer ou d’afficher les facettes de catégorisation lorsqu’un client passe par la catégorisation. Le plus haut niveau de catégorisation (catégorie) est connu sous le nom de niveau 1. Lorsqu’un client clique sur une option de niveau 1, les options de raffinement de niveau 2 (sous-catégorie) s’affichent et les options de niveau 1 disparaissent. Lorsqu’un client clique sur une option de niveau 2, les options de raffinement de niveau 3 (sous-catégorie) s’affichent et les options de niveau 2 disparaissent. Comme nous l&#39;avons mentionné plus haut, ces options sont masquées et affichées. Votre application Web n&#39;est pas affectée par elles.
 
-Chaque facette est contenue dans `<facet-item>` des balises. Dans l’exemple suivant, il présente une facette qui permet au client d’affiner les résultats de recherche par &quot;vacances&quot;.
+Chaque facette est contenue dans des balises `<facet-item>`. Dans l’exemple suivant, il présente une facette qui permet au client d’affiner les résultats de la recherche par &quot;vacances&quot;.
 
 Exemple :
 
@@ -1008,7 +1011,7 @@ Exemple :
 <table> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> <p>Balises dans les facettes </p> </th> 
+   <th colname="col1" class="entry"> <p>Balises en facettes </p> </th> 
    <th colname="col2" class="entry"> <p>Description </p> </th> 
   </tr> 
  </thead>
@@ -1019,7 +1022,7 @@ Exemple :
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;libellé&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Libellé destiné aux clients pour l’option de facette. </p> </td> 
+   <td colname="col2"> <p> Libellé destiné au client pour l’option de facette. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;link&gt; </span> </p> </td> 
@@ -1027,16 +1030,16 @@ Exemple :
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;count&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Nombre de résultats dans ce jeu de résultats affiné. </p> </td> 
+   <td colname="col2"> <p> Nombre de résultats dans cet ensemble de résultats affiné. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;unlink&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;undolink&gt; </span> </p> </td> 
    <td colname="col2"> <p> Lorsqu’une valeur de facette est sélectionnée, le noeud renvoie un "lien d’annulation" qui permet à un client d’annuler les résultats. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## En-tête et requête {#section_802835E19BCB48239C6770A1B72DFFF8}
+## En-tête et Requête {#section_802835E19BCB48239C6770A1B72DFFF8}
 
 Exemple :
 
@@ -1051,34 +1054,34 @@ Exemple :
  </query> 
 ```
 
-Utilisées ensemble, ces balises présentent un message tel que : &quot;Affichage des résultats 1 à 16 sur 621 pour la &quot;nouvelle année&quot;.&quot;
+Utilisées ensemble, ces balises présentent un message tel que ce qui suit : &quot;Affichage des résultats 1 à 16 sur 621 pour la &quot;nouvelle année&quot;.&quot;
 
 <table> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> <p>Balises dans l’en-tête et la requête </p> </th> 
+   <th colname="col1" class="entry"> <p>Balises dans l’en-tête et la Requête </p> </th> 
    <th colname="col2" class="entry"> <p>Description </p> </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;user-query&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Requête de mot-clé envoyée avec la requête. </p> </td> 
+   <td colname="col2"> <p> Requête de mots-clés envoyée avec la demande. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;lower-results&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Numéro de l’élément du premier résultat sur cette page. </p> </td> 
+   <td colname="col2"> <p> Numéro de l'article du premier résultat sur cette page. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;upper-results&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Numéro de l’élément du dernier résultat sur cette page. </p> </td> 
+   <td colname="col2"> <p> Numéro de l'article du dernier résultat sur cette page. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;total-results&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Nombre total de résultats qui correspondent à la requête de l’utilisateur. </p> </td> 
+   <td colname="col2"> <p> Nombre total de résultats correspondant à la requête utilisateur. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;champ personnalisé&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;custom-field&gt; </span> </p> </td> 
    <td colname="col2"> <p> Champ facultatif qui s’applique globalement aux résultats de la recherche. </p> </td> 
   </tr> 
  </tbody> 
@@ -1132,18 +1135,18 @@ Exemple :
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;page position="previous"&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Contient un lien relatif vers la page précédente du jeu de résultats, sauf si le client consulte la page 1 ; dans ce cas, c' est vide. </p> </td> 
+   <td colname="col2"> <p> Contient un lien relatif vers la page précédente du jeu de résultats, sauf si le client consulte la page 1 ; dans ce cas, il est vide. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;page position="next"&gt; </span> </p> </td> 
    <td colname="col2"> <p> Contient un lien relatif vers la dernière page du jeu de résultats, sauf si le client consulte la dernière page. Dans ce cas, il est vide. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;page position="x" </span> </p> </td> 
-   <td colname="col2"> <p> Contient un lien relatif vers un numéro de page particulier. Dix numéros de page contigus s’affichent. À la page 1, il s'agirait des pages 1 à 10. À la fin du jeu de résultats (dans ce cas, 39), il s'agirait des pages 30 à 39. Par exemple, au centre du jeu de résultats, page 15, il s’agit des pages 11 à 20. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;page position="x"&gt;</span> </p> </td> 
+   <td colname="col2"> <p> Contient un lien relatif vers un numéro de page particulier. Dix numéros de page contigus s’affichent. À la page 1, il s'agirait des pages 1 à 10. À la fin de l'ensemble de résultats (dans ce cas, 39), il s'agirait des pages 30 à 39. Par exemple, au centre du jeu de résultats, page 15, il s’agirait des pages 11 à 20. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> selected="true"&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> selected="true"&gt;  </span> </p> </td> 
    <td colname="col2"> <p> Appliqué en tant qu’attribut à la page actuellement sélectionnée. </p> </td> 
   </tr> 
  </tbody> 
@@ -1151,7 +1154,7 @@ Exemple :
 
 ## Recherches récentes {#section_BCA2DDD17F264CF6BA11634E1A514E28}
 
-Les recherches récentes sont une fonctionnalité basée sur des cookies qui ne fonctionne que si vous transmettez les informations sur les cookies aux serveurs.
+Les recherches récentes sont une fonctionnalité basée sur des cookies qui ne fonctionne que si vous transmettez les informations des cookies aux serveurs.
 
 Exemple :
 
@@ -1167,17 +1170,17 @@ Exemple :
 <table> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> <p>Balises des recherches récentes </p> </th> 
+   <th colname="col1" class="entry"> <p>Balises dans les recherches récentes </p> </th> 
    <th colname="col2" class="entry"> <p>Description </p> </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;récent-search&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;recent-search&gt; </span> </p> </td> 
    <td colname="col2"> <p> Noeud de recherche récente individuel. Vous pouvez avoir plusieurs noeuds de recherche récente. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;terme-recherche&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;search-term&gt; </span> </p> </td> 
    <td colname="col2"> <p> Terme recherché précédemment par le client. </p> </td> 
   </tr> 
   <tr> 
@@ -1189,11 +1192,11 @@ Exemple :
 
 ## Résultats {#section_EC496F5CA2634158891455E2F6DF6833}
 
-Le jeu de résultats est une zone personnalisable de la réponse XML. Chaque index est unique dans les mécanismes d’appellation des champs des métadonnées. Des champs communs sont renvoyés pour chaque résultat, tels que le titre, la description et l’URL. Toutefois, toutes les métadonnées définies pour une page de l’index peuvent être utilisées dans chaque noeud de résultat. La catégorisation, les prix, les couleurs et les miniatures ne sont que quelques-unes des options que vous pouvez appliquer à un résultat pour obtenir des résultats de recherche plus attrayants.
+Le jeu de résultats est une zone personnalisable de la réponse XML. Chaque index est unique dans les mécanismes de nommage des champs des métadonnées. Des champs communs sont renvoyés pour chaque résultat, tels que le titre, la description et l’URL. Cependant, toutes les métadonnées définies pour une page de l’index peuvent être disponibles pour être utilisées dans chaque noeud de résultats. La catégorisation, les prix, les couleurs et les vignettes ne sont que quelques-unes des options que vous pouvez appliquer à un résultat pour obtenir des résultats de recherche plus convaincants.
 
 Le format Résultats est personnalisé en fonction des métadonnées propres à votre implémentation. Toutes les données par résultat à afficher dans les résultats, y compris les URL des images miniatures, sont contenues ici.
 
-En outre, il est possible de configurer plusieurs zones de résultats dans la page, telles que &quot;Résultats présentés&quot;, ou de séparer les sections de résultats &quot;Produits&quot; et &quot;Contenu&quot;. Dans ce cas, plusieurs zones de résultats sont fournies dans le code HTML, bien que les facettes ne soient associées qu’au jeu de résultats principal.
+En outre, il est possible de configurer plusieurs zones de résultats dans la page, telles que &quot;Résultats présentés&quot;, ou de séparer les sections &quot;Produits&quot; et &quot;Contenu&quot; des résultats. Dans ce cas, plusieurs zones de résultats sont fournies dans le code HTML, bien que les facettes ne soient associées qu’au jeu de résultats Principal.
 
 Exemple :
 
@@ -1368,11 +1371,11 @@ Exemple :
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;include-tnt-mbox&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Facultatif. Lorsqu’elle est présente dans le code XML, la valeur 1 indique que votre compte est lié à <span class="keyword"> Test&amp;Target </span> et qu’au moins une règle de fonctionnement figure dans un test A:B. </p> </td> 
+   <td colname="col2"> <p> Facultatif. Lorsqu’elle est présente dans le code XML, la valeur 1 indique que votre compte est lié à <span class="keyword"> Test&amp;Cible </span> et qu’il comporte au moins une règle métier qui fait partie d’un test A:B. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;saisie automatique&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Facultatif. Lors de l’utilisation de la saisie semi-automatique, ce noeud est présent pour indiquer que le code CSS et JavaScript est présent sur la page, ainsi que le contenu du formulaire. Ces champs ne changent généralement pas, sauf si un utilisateur a modifié un paramètre de saisie automatique. Dans ce cas, le champ xxx_cache_ver est incrémenté pour forcer l’invalidation du contenu mis en cache dans le navigateur de votre client. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;autocomplete&gt; </span> </p> </td> 
+   <td colname="col2"> <p> Facultatif. Lors de l’utilisation de la saisie semi-automatique, ce noeud est présent pour indiquer que le code CSS et JavaScript est présent sur la page, ainsi que le contenu du formulaire. En règle générale, ces champs ne changent pas, sauf si un utilisateur a modifié un paramètre de saisie semi-automatique. Dans ce cas, le champ xxx_cache_ver est incrémenté pour forcer l’invalidation du contenu mis en cache dans le navigateur de votre client. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;css&gt; </span> </p> </td> 
@@ -1380,11 +1383,11 @@ Exemple :
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;form-content&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Contenu requis dans votre recherche, depuis l'utilitaire de saisie automatique pour se connecter au bon contrôle. </p> </td> 
+   <td colname="col2"> <p> Contenu requis dans votre recherche depuis l'utilitaire de saisie automatique pour se connecter au contrôle approprié. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;js&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Code JavaScript personnalisé requis pour la saisie automatique. Il est recommandé de placer cette balise au bas de la page pour améliorer le rendu des pages. Le code JavaScript YUI est également requis pour la saisie automatique. </p> </td> 
+   <td colname="col2"> <p> JavaScript personnalisé requis pour la saisie semi-automatique. Il est recommandé de placer cette balise en bas de la page pour améliorer le rendu des pages. Le code JavaScript YUI est également requis pour la saisie automatique. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;hidden-parameters&gt; </span> </p> </td> 
@@ -1393,9 +1396,9 @@ Exemple :
  </tbody> 
 </table>
 
-## Trier {#section_32DC50A103BF491BA3665A5CADCCAADE}
+## Tri {#section_32DC50A103BF491BA3665A5CADCCAADE}
 
-L’exemple suivant montre les données d’un menu de tri à trois options. Le menu permet au client de trier par pertinence, titre ou évaluation. L’élément actuellement sélectionné comprend un attribut &quot;selected=true&quot;. &quot;. Proposez toujours une option de pertinence pour permettre à un client de revenir aux résultats de recherche par défaut qui étaient initialement affichés.
+L&#39;exemple suivant montre les données d&#39;un menu de tri à trois options. Le menu permet au client de trier par pertinence, titre ou classement. L’élément actuellement sélectionné comprend un attribut &quot;selected=true&quot;. &quot;. Toujours offre une option de pertinence pour permettre à un client de revenir aux résultats de recherche par défaut qui étaient initialement affichés.
 
 Exemple :
 
@@ -1429,7 +1432,7 @@ Exemple :
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;libellé&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Texte orienté vers le client pour l’option. </p> </td> 
+   <td colname="col2"> <p> Texte de l’option destiné aux clients. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;value&gt; </span> </p> </td> 
@@ -1437,14 +1440,14 @@ Exemple :
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;link&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Pour les options non sélectionnées, le paramètre <span class="codeph"> &lt;link&gt; </span> contient le lien relatif qui renvoie le même jeu de résultats, trié par le nouveau paramètre de tri. Ce champ est vide pour l’option de tri sélectionnée. </p> </td> 
+   <td colname="col2"> <p> Pour les options non sélectionnées, le paramètre <span class="codeph"> &lt;link&gt; </span> contient le lien relatif qui renvoie le même jeu de résultats, trié par le nouveau paramètre de tri. Ce champ est vide pour l’option de tri actuellement sélectionnée. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Suggestions {#section_D81BCE46F0AF443695DF9C4BA084B716}
 
-Les suggestions sont renvoyées lorsqu’il n’y a que quelques résultats ou aucun résultat. Ce noeud contient des termes qui génèrent des requêtes réussies et peut être affiché sur une page &quot;Aucun résultat&quot;. Le lien est également renvoyé afin qu’un client puisse accéder à la nouvelle requête.
+Les suggestions sont renvoyées lorsqu’il n’y a que quelques résultats ou qu’aucun résultat n’est obtenu. Ce noeud contient des termes qui génèrent des requêtes réussies et peut être affiché sur une page &quot;Aucun résultat&quot;. Le lien est également renvoyé afin qu’un client puisse accéder à la nouvelle requête.
 
 Exemple :
 
@@ -1465,7 +1468,7 @@ Exemple :
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;link&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Lien relatif utilisé pour créer un hyperlien afin de rechercher les résultats du terme de suggestion. </p> </td> 
+   <td colname="col2"> <p>Lien relatif utilisé pour créer un hyperlien permettant de rechercher les résultats du terme de suggestion. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;word&gt; </span> </p> </td> 
@@ -1490,7 +1493,7 @@ Exemple :
 <table> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> <p>Balises dans les zones </p> </th> 
+   <th colname="col1" class="entry"> <p>Balises en zones </p> </th> 
    <th colname="col2" class="entry"> <p>Description </p> </th> 
   </tr> 
  </thead>
@@ -1504,13 +1507,13 @@ Exemple :
    <td colname="col2"> <p> Nom de la zone. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;afficher&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 1 ou 0 pour indiquer si la zone est affichée ou non. Le contenu de la zone peut être statique sur votre page Web ou dans les résultats de la recherche, comme les meilleurs vendeurs ou les produits associés. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;display&gt; </span> </p> </td> 
+   <td colname="col2"> <p> 1 ou 0 pour indiquer si la zone est affichée ou non. Le contenu de la zone peut être statique sur votre page Web ou dans les résultats de la recherche, par exemple les meilleurs vendeurs ou les produits associés. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Recherche guidée XML Output pour Adobe Experience Manager {#reference_DBE13C606C3A4BB185DE53F88D0D3048}
+## Sortie XML de recherche guidée pour Adobe Experience Manager {#reference_DBE13C606C3A4BB185DE53F88D0D3048}
 
 Tableaux décrivant la sortie de réponse XML standard pour AEM (Adobe Experience Manager).
 
@@ -1535,11 +1538,11 @@ Vous pouvez consulter la réponse XML pour les éléments suivants :
 
 ## Bannières {#section_B16EDC5533FA4494AC9983AA7357CBE3}
 
-La recherche et le marchandisage sur le site peuvent gérer les bannières d’un client, en branchant les bannières en différentes parties sur une page Web.
+La recherche sur site/le marchandisage peut gérer les bannières d’un client, en branchant les bannières en plusieurs parties sur une page Web.
 
 Exemple de bannière :
 
-Voici un exemple de bannière placée dans la zone des pages nommée &quot;top&quot;.
+Voici un exemple de bannière placée dans la zone des pages appelée &quot;haut&quot;.
 
 ```xml
    <banners> 
@@ -1562,7 +1565,7 @@ Voici un exemple de bannière placée dans la zone des pages nommée &quot;top&q
   <tr> 
    <td colname="col1"> <p>bannières </p> </td> 
    <td colname="col2"> <p>client-results </p> </td> 
-   <td colname="col3"> <p>Contient des noeuds de bannière 0 n représentant chaque zone de bannière et le contenu connecté à cette zone. </p> </td> 
+   <td colname="col3"> <p>Contient des noeuds de bannière 0-n indiquant chaque zone de bannière et le contenu connecté à cette zone. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>bannière </p> </td> 
@@ -1584,9 +1587,9 @@ Voici un exemple de bannière placée dans la zone des pages nommée &quot;top&q
 
 ## Chemin de navigation {#section_49EA7043FBE44315A79A4E738BE30114}
 
-Plusieurs chemins de navigation sont pris en charge. Vous pouvez définir des chemins de navigation et leur comportement correspondant dans **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Breadcrumbs]**. Vous devez également attribuer un nom unique à chaque chemin de navigation que vous définissez. Le noeud XML des chemins de navigation effectue une itération sur tous les chemins de navigation définis. Il est recommandé de n&#39;afficher qu&#39;un seul chemin de navigation dans vos résultats de recherche.
+Plusieurs chemins de navigation sont pris en charge. Vous pouvez définir des chemins de navigation et leur comportement correspondant dans **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Breadcrumbs]**. En outre, vous devez attribuer un nom unique pour chaque chemin de navigation que vous définissez. Le noeud XML des chemins de navigation effectue une itération sur tous les chemins de navigation définis. Il est recommandé de n&#39;afficher qu&#39;un seul chemin de navigation dans les résultats de la recherche.
 
-Dans l’exemple suivant, chaque fois que le client se rétrécit davantage à travers les facettes, la sélection est ajoutée au chemin de navigation. Chaque élément est représenté sous la forme `<breadcrumb-item>`.
+Dans l’exemple suivant, chaque fois que le client se rétrécit davantage à travers les facettes, la sélection est ajoutée à la barre de navigation. Chaque élément est représenté sous la forme `<breadcrumb-item>`.
 
 Exemple de noeud de chemin de navigation :
 
@@ -1634,13 +1637,13 @@ Exemple de noeud de chemin de navigation :
   </tr> 
   <tr> 
    <td colname="col1"> <p>breadcrumb-item </p> </td> 
-   <td colname="col2"> <p>Élément individuel dans le chemin de navigation. Chaque élément indique une étape dans la piste lorsque l’utilisateur réduit l’ensemble de résultats. </p> </td> 
+   <td colname="col2"> <p>Élément individuel dans le chemin de navigation. Chaque élément indique une étape de la piste lorsque l’utilisateur affine l’ensemble de résultats. </p> </td> 
    <td colname="col3"> <p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>link </p> </td> 
    <td colname="col2"> <p>breadcrumb-item </p> </td> 
-   <td colname="col3"> <p> Lien relatif vers les résultats de la recherche qui affiche la vue souhaitée. Le fait de cliquer sur un lien de chemin de navigation permet au client d’obtenir une vue dans laquelle toutes les améliorations suivantes ont été supprimées. D’autres options sont également disponibles, telles que le glisser-déplacer et le supprimer. </p> </td> 
+   <td colname="col3"> <p> Lien relatif vers les résultats de la recherche qui affiche la vue souhaitée. Le fait de cliquer sur un lien de chemin de navigation conduit le client à une vue dans laquelle toutes les améliorations suivantes sont supprimées. D’autres options sont également disponibles, telles que déposer et supprimer. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>value </p> </td> 
@@ -1650,14 +1653,14 @@ Exemple de noeud de chemin de navigation :
   <tr> 
    <td colname="col1"> <p>libellé </p> </td> 
    <td colname="col2"> <p>breadcrumb-item </p> </td> 
-   <td colname="col3"> <p> La balise d’étiquette génère un libellé pour une valeur de chemin de navigation qui détaille la facette sélectionnée pour générer cet élément de chemin de navigation. Il est uniquement utilisé dans le contexte d’un bloc de chemin de navigation guidé. Pour l’étape du terme de requête, ce champ est vide. </p> </td> 
+   <td colname="col3"> <p> La balise d’étiquette génère un libellé pour une valeur de chemin de navigation qui détaille la facette sélectionnée pour générer cet élément de chemin de navigation. Il n'est utilisé que dans le contexte d'un bloc de chemin de fer guidé. Pour l’étape de requête terme, ce champ est vide. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Champs personnalisés {#section_38DD31AFE5DD4263A63644AFF484E0F4}
 
-Les champs personnalisés sont une collection diverse de variables avec un contexte global. Il est généralement utilisé pour transmettre des variables à des fins d’optimisation du référencement définies dans les métadonnées de la page des résultats de recherche.
+Les champs personnalisés sont une collection diverse de variables avec un contexte global. Il est généralement utilisé pour transmettre des variables à des fins d’optimisation du référencement définies dans les métadonnées de la page des résultats de la recherche.
 
 Exemple de noeud de champs personnalisés :
 
@@ -1692,11 +1695,11 @@ Exemple de noeud de champs personnalisés :
 
 ## Facettes {#section_BE98990E3DD748A1BD4E0CA322314B79}
 
-Les facettes sont des options de raffinement qui permettent aux clients de filtrer les résultats. Les facettes sont généralement utilisées pour la catégorisation, les plages de prix, les sélections de couleurs et d’autres ajustements d’attributs. Les facettes sont créées au-dessus des métadonnées de l’index.
+Les facettes sont des options de raffinement qui permettent aux clients de filtrer les résultats. Les facettes sont généralement utilisées pour la catégorisation, les plages de prix, les sélections de couleurs et d’autres ajustements d’attributs. Les facettes sont construites sur les métadonnées de l’index.
 
-Il est courant de masquer ou d’afficher les facettes de catégorisation lorsqu’un client passe par la catégorisation. Le niveau le plus élevé de catégorisation (catégorie) est appelé Niveau 1. Lorsqu’un client clique sur une option de niveau 1, les options de raffinement de niveau 2 (sous-catégorie) s’affichent et les options de niveau 1 disparaissent. Lorsqu’un client clique sur une option de niveau 2, les options de raffinement de niveau 3 (sous-catégorie) apparaissent et les options de niveau 2 disparaissent. Comme indiqué ci-dessus, ces options sont masquées et affichées; votre application Web ne les affecte pas.
+Il est courant de masquer ou d’afficher les facettes de catégorisation lorsqu’un client passe par la catégorisation. Le plus haut niveau de catégorisation (catégorie) est connu sous le nom de niveau 1. Lorsqu’un client clique sur une option de niveau 1, les options de raffinement de niveau 2 (sous-catégorie) s’affichent et les options de niveau 1 disparaissent. Lorsqu’un client clique sur une option de niveau 2, les options de raffinement de niveau 3 (sous-catégorie) s’affichent et les options de niveau 2 disparaissent. Comme indiqué ci-dessus, ces options sont masquées et affichées ; votre application web ne les affecte pas.
 
-Chaque facette est contenue dans `<facet-item>` des balises. Dans l’exemple suivant, il présente une facette qui permet au client d’affiner les résultats de recherche par &quot;vacances&quot;.
+Chaque facette est contenue dans des balises `<facet-item>`. Dans l’exemple suivant, il présente une facette qui permet au client d’affiner les résultats de recherche par &quot;vacances&quot;.
 
 Exemple de bloc de facettes :
 
@@ -1789,7 +1792,7 @@ Exemple de bloc de facettes :
   <tr> 
    <td colname="col1"> <p>facettes </p> </td> 
    <td colname="col2"> <p>client-results </p> </td> 
-   <td colname="col3"> <p>Le noeud de facettes du conteneur qui comporte des noeuds enfants 0-n représentant chaque facette. </p> </td> 
+   <td colname="col3"> <p>Noeud de facettes de conteneur contenant des noeuds enfants 0-n représentant chaque facette. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>facette </p> </td> 
@@ -1814,7 +1817,7 @@ Exemple de bloc de facettes :
   <tr> 
    <td colname="col1"> <p>undo-link </p> </td> 
    <td colname="col2"> <p>facette </p> </td> 
-   <td colname="col3"> <p> Uniquement présente lorsque la facette est sélectionnée. Annuler le lien inverse la facette entière. Par exemple, lorsqu’il s’agit d’une facette à sélection multiple, elle désélectionne toutes les options sélectionnées pour la facette. </p> </td> 
+   <td colname="col3"> <p> Uniquement présente lorsque la facette est sélectionnée. Annuler le lien inverse la facette entière. Par exemple, s’il s’agit d’une facette à sélection multiple, elle désélectionne toutes les options sélectionnées pour la facette. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>facet-value </p> </td> 
@@ -1829,17 +1832,17 @@ Exemple de bloc de facettes :
   <tr> 
    <td colname="col1"> <p>libellé </p> </td> 
    <td colname="col2"> <p>facet-value </p> </td> 
-   <td colname="col3"> <p>Libellé destiné aux clients pour l’option de facette. Par défaut, cette valeur doit déjà être obtenue par séquence d’échappement HTML. </p> </td> 
+   <td colname="col3"> <p>Libellé destiné au client pour l’option de facette. Par défaut, cette option doit déjà être précédée d’une séquence d’échappement HTML. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>link </p> </td> 
    <td colname="col2"> <p>facet-value </p> </td> 
-   <td colname="col3"> <p> Lien relatif vers les résultats que l’option affine davantage. </p> </td> 
+   <td colname="col3"> <p> Lien relatif aux résultats que l’option affine davantage. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>count </p> </td> 
    <td colname="col2"> <p>facet-value </p> </td> 
-   <td colname="col3"> <p>Nombre de résultats dans ce jeu de résultats affiné. </p> </td> 
+   <td colname="col3"> <p>Nombre de résultats dans cet ensemble de résultats affiné. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>undo-link </p> </td> 
@@ -1859,11 +1862,11 @@ xml version="1.0" encoding="utf-8" standalone="yes"
 
 ## Menus et tri {#section_A34CBB645DBF4C70A12A5B7E81211295}
 
-Les menus de tri des résultats sont pris en charge et la modification du nombre de résultats à renvoyer par page. Il prend également en charge un menu de navigation utile pour l’utilisation de la fonction &quot;recherche en tant que navigation&quot;. Un compte peut définir plusieurs menus du même type et utiliser n’importe lequel des menus pour leur présentation.
+Les menus permettant de trier les résultats sont pris en charge et de modifier le nombre de résultats à renvoyer par page. Il prend également en charge un menu de navigation utile pour l’utilisation de la fonction &quot;recherche en tant que navigation&quot;. Un compte peut définir plusieurs menus du même type et utiliser n&#39;importe lequel des menus pour leur présentation.
 
 Exemple de noeud de menus :
 
-L’exemple suivant montre les données d’un menu de tri et d’un menu de navigation à trois options. Le menu de tri permet au client de trier par pertinence, titre ou évaluation. L’élément actuellement sélectionné comprend un attribut &quot;selected=true&quot;. &quot;. Proposez toujours une option de pertinence pour permettre à un client de revenir aux résultats de recherche par défaut qui étaient initialement affichés.
+L&#39;exemple suivant montre les données d&#39;un menu de tri et d&#39;un menu de navigation à trois options. Le menu de tri permet au client de trier par pertinence, titre ou classement. L’élément actuellement sélectionné comprend un attribut &quot;selected=true&quot;. &quot;. Toujours offre une option de pertinence pour permettre à un client de revenir aux résultats de recherche par défaut qui étaient initialement affichés.
 
 ```xml
 <menus> 
@@ -1948,7 +1951,7 @@ L’exemple suivant montre les données d’un menu de tri et d’un menu de nav
   <tr> 
    <td colname="col1"> <p>menu </p> </td> 
    <td colname="col2"> <p>menus </p> </td> 
-   <td colname="col3"> <p>Instance unique d’un menu (correspond à un menu défini dans <span class="uicontrol"> Conception </span> &gt; <span class="uicontrol"> Navigation </span> &gt; <span class="uicontrol"> Menus </span>). </p> </td> 
+   <td colname="col3"> <p>Instance unique d'un menu (correspond à un menu défini dans <span class="uicontrol"> Conception </span> &gt; <span class="uicontrol"> Navigation </span> &gt; <span class="uicontrol"> Menus </span>). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>name </p> </td> 
@@ -1958,31 +1961,31 @@ L’exemple suivant montre les données d’un menu de tri et d’un menu de nav
   <tr> 
    <td colname="col1"> <p>élément </p> </td> 
    <td colname="col2"> <p>menu </p> </td> 
-   <td colname="col3"> <p>Définit chaque élément du menu. L'attribut facultatif sélectionné est défini sur true si l'option de menu donnée est actuellement sélectionnée. </p> </td> 
+   <td colname="col3"> <p>Définit chaque élément du menu. L'attribut facultatif sélectionné est défini sur true si l'élément de menu donné est actuellement sélectionné. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>libellé </p> </td> 
    <td colname="col2"> <p>élément </p> </td> 
-   <td colname="col3"> <p>Texte destiné aux clients pour l’élément de menu. </p> </td> 
+   <td colname="col3"> <p>Texte orienté client de l’élément de menu. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>value </p> </td> 
    <td colname="col2"> <p>élément </p> </td> 
-   <td colname="col3"> <p>Représente la valeur de l’élément de menu (valeur du paramètre de requête défini dans le menu). Cette balise n’est pas nécessaire si la valeur &lt;link&gt; est utilisée. </p> </td> 
+   <td colname="col3"> <p>Représente la valeur de l'élément de menu (la valeur du paramètre de requête définie pour le menu). Cette balise n’est pas nécessaire si la valeur &lt;link&gt; est utilisée. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>link </p> </td> 
    <td colname="col2"> <p>élément </p> </td> 
-   <td colname="col3"> <p>Pour les options non sélectionnées, le paramètre &lt;link&gt; contient le lien relatif qui renvoie le même jeu de résultats, mais avec l’option de menu appliquée. Ce champ est vide pour l’option de tri sélectionnée. </p> </td> 
+   <td colname="col3"> <p>Pour les options non sélectionnées, le paramètre &lt;link&gt; contient le lien relatif qui renvoie le même jeu de résultats, mais avec l'option de menu appliquée. Ce champ est vide pour l’option de tri actuellement sélectionnée. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Pagination {#section_E52F81C6A6EB4B8F996157B657EC540F}
 
-Les jeux de résultats sont répartis sur plusieurs pages. En règle générale, les clients affichent 10 à 20 résultats sur une seule page. Les résultats suivants s’affichent sur la page suivante. Le code XML de pagination vous permet de créer un ensemble de liens de navigation afin que vos clients puissent parcourir les jeux de résultats page par page. Il existe quatre liens de navigation disponibles : premièrement, dernière, suivante et précédente. Chaque type de lien permet aux clients de parcourir rapidement les pages afin de pouvoir examiner et affiner facilement ce qu’ils recherchent.
+Les jeux de résultats sont répartis sur plusieurs pages. En règle générale, les clients affichent 10 à 20 résultats sur une seule page. Les résultats suivants s’affichent sur la page suivante. Le code XML de pagination vous permet de créer un ensemble de liens de navigation afin que vos clients puissent parcourir les jeux de résultats page par page. Il existe quatre liens de navigation disponibles : premier, dernier, suivant et précédent. Chaque type de lien permet aux clients de parcourir rapidement les pages afin de pouvoir examiner et affiner facilement ce qu&#39;ils recherchent.
 
-L’exemple suivant montre la pagination d’une recherche qui se trouve sur la première page et dont la pagination est configurée pour afficher les liens vers cinq pages.
+L&#39;exemple suivant montre la pagination d&#39;une recherche qui se trouve sur la première page et dont la pagination est configurée pour afficher les liens renvoyant à cinq pages.
 
 Exemple de pagination :
 
@@ -2017,7 +2020,7 @@ Exemple de pagination :
    <td colname="col3"> <p> Nombre total de pages de résultats, en fonction du nombre de résultats divisé par le nombre de résultats par page. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>total-pages </p> </td> 
+   <td colname="col1"> <p>nombre total de pages </p> </td> 
    <td colname="col2"> <p>pagination </p> </td> 
    <td colname="col3"> <p>Nombre total de pages sur lesquelles les résultats de la recherche sont répartis. </p> </td> 
   </tr> 
@@ -2029,7 +2032,7 @@ Exemple de pagination :
   <tr> 
    <td colname="col1"> <p>page </p> </td> 
    <td colname="col2"> <p>pages spécifiques </p> </td> 
-   <td colname="col3"> <p>Il existe quatre noeuds de page spéciaux : premièrement, dernière, précédente et suivante. Ces quatre pages sont facultatives et apparaissent dans le jeu de résultats uniquement si elles sont logiques. Par exemple, si vous êtes à la page 1, il n’existe aucun lien "précédent". Toutes les autres pages indiquent une position. Le nombre de pages répertoriées dépend du "nombre de liens vers les pages" configuré dans l’interface utilisateur de pagination. L’attribut "selected" indique la page sur laquelle se trouve actuellement le client. </p> </td> 
+   <td colname="col3"> <p>Il existe quatre noeuds de page spéciaux : premièrement, dernier, précédent et suivant. Ces quatre pages sont facultatives et apparaissent dans le jeu de résultats uniquement si elles ont du sens. Par exemple, si vous êtes à la page 1, il n’existe aucun lien "précédent". Toutes les autres pages indiquent une position. Le nombre de pages répertoriées dépend du "nombre de liens vers les pages" configuré dans l’interface utilisateur de pagination. L’attribut "sélectionné" indique la page sur laquelle se trouve actuellement le client. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -2062,31 +2065,31 @@ Exemple de noeud de requête :
    <td colname="col3"> <p> Noeud global qui fournit un aperçu de la requête. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>user-query </p> </td> 
-   <td colname="col2"> <p>query </p> </td> 
-   <td colname="col3"> <p> Mot-clé recherché. Si <span class="uicontrol"> Voulez-vous dire </span> recherchait automatiquement un terme suggéré en raison du terme d'origine qui n'avait donné aucun résultat, il est reflété dans le nouveau mot-clé recherché (voir le noeud de suggestions pour obtenir le mot-clé d'origine). </p> </td> 
+   <td colname="col1"> <p>requête utilisateur </p> </td> 
+   <td colname="col2"> <p>requête </p> </td> 
+   <td colname="col3"> <p> Mot-clé recherché. Si <span class="uicontrol"> Voulez-vous dire </span> a automatiquement recherché un terme suggéré en raison du terme d'origine qui n'a donné aucun résultat, il est reflété dans le nouveau mot-clé recherché (voir le noeud suggestions pour obtenir le mot-clé d'origine). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>résultats inférieurs </p> </td> 
-   <td colname="col2"> <p>query </p> </td> 
-   <td colname="col3"> <p> Numéro de l’élément du premier résultat sur cette page. </p> </td> 
+   <td colname="col2"> <p>requête </p> </td> 
+   <td colname="col3"> <p> Numéro de l'article du premier résultat sur cette page. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>high-results </p> </td> 
-   <td colname="col2"> <p>query </p> </td> 
-   <td colname="col3"> <p> Numéro de l’élément du dernier résultat sur cette page. </p> </td> 
+   <td colname="col1"> <p>résultats supérieurs </p> </td> 
+   <td colname="col2"> <p>requête </p> </td> 
+   <td colname="col3"> <p> Numéro de l'article du dernier résultat sur cette page. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>total-results </p> </td> 
-   <td colname="col2"> <p>query </p> </td> 
-   <td colname="col3"> <p> Nombre total de résultats qui correspondent à la requête de l’utilisateur. </p> </td> 
+   <td colname="col2"> <p>requête </p> </td> 
+   <td colname="col3"> <p> Nombre total de résultats correspondant à la requête utilisateur. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Recherches récentes {#section_17F942F6EC07456DABED7A483AC08446}
 
-Les recherches récentes sont une fonctionnalité basée sur des cookies qui fonctionne uniquement si vous transmettez les informations sur les cookies aux serveurs de recherche/marchandisage de site.
+Les recherches récentes sont une fonctionnalité basée sur des cookies qui ne fonctionne que si vous transmettez les informations des cookies aux serveurs de recherche/marchandisage de site.
 
 Exemple de recherches récentes :
 
@@ -2115,35 +2118,35 @@ Exemple de recherches récentes :
    <td colname="col3"> <p>Le noeud n’est présent que si la recherche comporte des recherches récentes. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>clear-link </p> </td> 
+   <td colname="col1"> <p>lien clair </p> </td> 
    <td colname="col2"> <p>Recherches récentes </p> </td> 
    <td colname="col3"> <p>Chemin relatif qui efface toutes les recherches récentes du client. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>new-search </p> </td> 
+   <td colname="col1"> <p>recherche récente </p> </td> 
    <td colname="col2"> <p>Recherches récentes </p> </td> 
    <td colname="col3"> <p>Définit les recherches récentes. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>link </p> </td> 
-   <td colname="col2"> <p>new-search </p> </td> 
-   <td colname="col3"> <p>Chemin d’accès pour créer un lien qui effectue une recherche que l’utilisateur a effectuée récemment. </p> </td> 
+   <td colname="col2"> <p>recherche récente </p> </td> 
+   <td colname="col3"> <p>Chemin d’accès permettant de créer un lien qui effectue une recherche récemment effectuée par l’utilisateur. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>libellé </p> </td> 
-   <td colname="col2"> <p>new-search </p> </td> 
-   <td colname="col3"> <p>Libellé d’affichage destiné aux clients pour la recherche récente. </p> </td> 
+   <td colname="col2"> <p>recherche récente </p> </td> 
+   <td colname="col3"> <p>Libellé d’affichage destiné au client pour la recherche récente. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Résultats {#section_155A80B8C4F641678DD9C8F257108412}
 
-Le jeu de résultats est une zone personnalisable de la réponse XML. Chaque index est unique dans les mécanismes d’appellation des champs des métadonnées. Des champs communs sont renvoyés pour chaque résultat, tels que le titre, la description et l’URL. Toutefois, toutes les métadonnées définies pour une page de l’index peuvent être utilisées dans chaque noeud de résultat. La catégorisation, les prix, les couleurs et les miniatures ne sont que quelques-unes des options que vous pouvez appliquer à un résultat pour obtenir des résultats de recherche plus attrayants.
+Le jeu de résultats est une zone personnalisable de la réponse XML. Chaque index est unique dans les mécanismes de nommage des champs des métadonnées. Des champs communs sont renvoyés pour chaque résultat, tels que le titre, la description et l’URL. Cependant, toutes les métadonnées définies pour une page de l’index peuvent être disponibles pour être utilisées dans chaque noeud de résultats. La catégorisation, les prix, les couleurs et les vignettes ne sont que quelques-unes des options que vous pouvez appliquer à un résultat pour obtenir des résultats de recherche plus convaincants.
 
 Le format des résultats est personnalisé en fonction des métadonnées propres à votre implémentation. Toutes les données par résultat à afficher dans les résultats, y compris les URL des images miniatures, sont contenues ici.
 
-En outre, il est possible de configurer plusieurs zones de résultats dans la page, telles que &quot;Résultats présentés&quot;, ou de séparer les sections de résultats &quot;Produits&quot; et &quot;Contenu&quot;. Dans ce cas, plusieurs zones de résultats sont fournies dans le code HTML, bien que les facettes ne soient associées qu’au jeu de résultats principal.
+En outre, il est possible de configurer plusieurs zones de résultats dans la page, telles que &quot;Résultats présentés&quot;, ou de séparer les sections &quot;Produits&quot; et &quot;Contenu&quot; des résultats. Dans ce cas, plusieurs zones de résultats sont fournies dans le code HTML, bien que les facettes ne soient associées qu’au jeu de résultats Principal.
 
 Exemple de noeud de résultats :
 
@@ -2203,7 +2206,7 @@ Exemple de noeud de résultats :
   <tr> 
    <td colname="col1"> <p>résultats </p> </td> 
    <td colname="col2"> <p>client-results </p> </td> 
-   <td colname="col3"> <p>Noeud conteneur pour les jeux de résultats 0-n. Les jeux de résultats zéro signifient que vous vous trouvez sur une page d’entrée sans résultats spéciale. </p> </td> 
+   <td colname="col3"> <p>Noeud de conteneur pour les jeux de résultats 0-n. Les jeux de résultats zéro signifient que vous êtes sur un landing page spécial sans résultat. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>jeu de résultats </p> </td> 
@@ -2221,16 +2224,16 @@ Exemple de noeud de résultats :
    <td colname="col3"> <p>Contient tous les champs associés à un résultat individuel pour le jeu de résultats. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>champ </p> </td> 
+   <td colname="col1"> <p>field </p> </td> 
    <td colname="col2"> <p>résultat </p> </td> 
-   <td colname="col3"> <p>L’attribut name définit le nom du champ dans l’index affiché. La valeur est la valeur réelle de ce champ. Certains résultats peuvent comporter des champs manquants qui ne sont pas pertinents pour ce résultat individuel. </p> </td> 
+   <td colname="col3"> <p>L’attribut name définit le nom du champ de l’index affiché. La valeur est la valeur réelle de ce champ. Certains résultats peuvent comporter des champs manquants qui ne sont pas pertinents pour ce résultat individuel. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Formulaire de recherche {#section_9E4B99D4FEDC49629F6C7E866F3A7493}
 
-Le formulaire de recherche est inclus dans le jeu de résultats pour permettre aux clients de créer leur formulaire de recherche de manière dynamique. Cette étape est facultative. La plupart des clients ont un formulaire de recherche fixe. Toutefois, il permet aux clients de déterminer si le formulaire de recherche nécessite une mbox Test&amp;Target, en fonction d’au moins une règle métier qui effectue un test A:B. De même, il permet aux clients de récupérer automatiquement la dernière saisie automatique de CSS et de JavaScript.
+Le formulaire de recherche est inclus dans le jeu de résultats pour permettre aux clients de créer leur formulaire de recherche de manière dynamique. Cette étape est facultative. La plupart des clients ont un formulaire de recherche fixe. Cependant, il permet aux clients de déterminer si le formulaire de recherche a besoin d’une mbox Test&amp;Cible, en fonction d’au moins une règle de fonctionnement qui effectue un test A:B. De même, il permet aux clients de récupérer automatiquement la dernière saisie automatique de CSS et de JavaScript.
 
 Exemple de formulaire de recherche XML :
 
@@ -2270,12 +2273,12 @@ Exemple de formulaire de recherche XML :
   <tr> 
    <td colname="col1"> <p>include-tnt-mbox </p> </td> 
    <td colname="col2"> <p> search-form </p> </td> 
-   <td colname="col3"> <p>Techniquement, vous n’avez besoin d’une mbox dans le formulaire de recherche que lorsque au moins une règle métier effectue un test A:B Test&amp;Target. Ce noeud indique si vous avez besoin d’une mbox ou si vous ne pouvez pas réduire le nombre d’accès sur les serveurs Test&amp;Target. </p> </td> 
+   <td colname="col3"> <p>Techniquement, vous n’avez besoin d’une mbox dans le formulaire de recherche que si au moins une règle métier effectue un test Test&amp;Cible A:B. Ce noeud indique si vous avez besoin d’une mbox ou si vous ne pouvez pas réduire le nombre d’accès sur les serveurs Test&amp;Cible. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>saisie automatique </p> </td> 
    <td colname="col2"> <p>search-form </p> </td> 
-   <td colname="col3"> <p>Met le noeud enfant associé à la saisie semi-automatique. </p> </td> 
+   <td colname="col3"> <p>Met en place le noeud enfant associé à la saisie semi-automatique. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>enabled </p> </td> 
@@ -2302,11 +2305,11 @@ Exemple de formulaire de recherche XML :
 
 ## Suggestions {#section_2899FACB9AD84F60B3687C1B4EF09E15}
 
-Les clients peuvent configurer **[!UICONTROL Did You Mean]** les fonctionnalités de trois manières différentes : faites des suggestions en raison de l&#39;absence de résultats, recherchez automatiquement la première suggestion lorsque nous n&#39;avons aucun résultat, ou faites des suggestions en raison de résultats faibles (lorsque les suggestions ont un nombre de résultats plus élevé). Toutes les suggestions donnent des résultats.
+Les clients peuvent configurer la fonctionnalité **[!UICONTROL Did You Mean]** de trois manières : faites des suggestions en raison de l&#39;absence de résultats, recherchez automatiquement la première suggestion lorsque nous n&#39;avons pas de résultats, ou faites des suggestions en raison de résultats faibles (lorsque les suggestions ont un nombre de résultats plus élevé). Toutes les suggestions donnent des résultats.
 
 Ce noeud de suggestions contient les termes qui génèrent des requêtes réussies. Le lien est également renvoyé afin qu’un client puisse accéder à la nouvelle requête.
 
-Exemple de sortie pour faire une suggestion en raison de 0 résultat :
+Exemple de résultat pour une suggestion en raison de 0 résultat :
 
 ```xml
     <suggestions> 
@@ -2359,17 +2362,17 @@ Exemple de résultat pour une suggestion en raison de résultats faibles :
   <tr> 
    <td colname="col1"> <p>recherche automatique </p> </td> 
    <td colname="col2"> <p>suggestions </p> </td> 
-   <td colname="col3"> <p> S’il est présent, indique si la recherche/marchandisage sur le site a automatiquement effectué une recherche par rapport à un nouveau terme en raison de l’absence de résultats. </p> </td> 
+   <td colname="col3"> <p> S’il est présent, indique si la recherche/marchandisage sur le site a automatiquement effectué une recherche sur un nouveau terme en raison de l’absence de résultats. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>orig-query </p> </td> 
+   <td colname="col1"> <p>orig-requête </p> </td> 
    <td colname="col2"> <p>suggestions </p> </td> 
-   <td colname="col3"> <p> Lorsque la recherche/marchandisage sur le site effectue automatiquement une recherche par rapport à la première suggestion, la requête utilisateur dans le noeud de requête affiche le mot-clé qui fait l'objet de la recherche. Ce noeud affiche le terme de requête d’origine. La combinaison des deux permet aux clients de créer des structures telles que "La recherche d'arcade plutôt que d'arcade". </p> </td> 
+   <td colname="col3"> <p> Lorsque la recherche/marchandisage sur le site effectue automatiquement des recherches par rapport à la première suggestion, la requête utilisateur dans le noeud de requête affiche le mot-clé recherché. Ce noeud affiche le terme de requête d’origine. La combinaison des deux permet aux clients de créer des structures telles que "Recherche d’arcade au lieu d’arcade". </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>suggestions-résultats faibles </p> </td> 
    <td colname="col2"> <p>suggestions </p> </td> 
-   <td colname="col3"> <p>S’il est présent, indique si la recherche/marchandisage sur le site fait des suggestions en raison du terme de recherche actuel qui donne de faibles résultats et d’une suggestion qui donne des résultats beaucoup plus élevés. Les deux seuils peuvent être configurés dans <span class="uicontrol"> Voulez-vous dire </span>. </p> </td> 
+   <td colname="col3"> <p>S’il est présent, indique si la recherche/le marchandisage du site fait des suggestions en raison du terme de recherche actuel produisant de faibles résultats et une suggestion produisant des résultats considérablement plus élevés. Les deux seuils sont configurables dans <span class="uicontrol"> Voulez-vous dire </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>suggestion-élément </p> </td> 
@@ -2391,7 +2394,7 @@ Exemple de résultat pour une suggestion en raison de résultats faibles :
 
 ## Modèle {#section_1E2BB2F274B04F5491A4CCCC38F507BD}
 
-La possibilité de changer une expérience de recherche de clients en fonction des résultats est prise en charge. Cela implique en partie de basculer entre différents modèles avec une disposition différente des résultats de recherche. Par exemple, vous pouvez avoir un modèle avec une vue en grille des produits pour lesquels vous avez beaucoup de produits. Vous pouvez également avoir un modèle &quot;projecteur&quot; lors de l’affichage d’un seul résultat contenant plus de détails. Vous pouvez également avoir un modèle &quot;aucun résultat&quot; lorsqu’une recherche ne donne aucun résultat. Le noeud de modèle indique le modèle utilisé pour afficher les résultats de la recherche.
+La possibilité de changer une expérience de recherche de clients en fonction des résultats est prise en charge. Cela implique en partie de basculer entre différents modèles avec une disposition différente des résultats de recherche. Par exemple, vous pouvez avoir un modèle avec une grille de vue de produits pour quand vous avez beaucoup de produits. Vous pouvez également utiliser un modèle de &quot;projecteur&quot; lors de l’affichage d’un seul résultat contenant plus de détails. Vous pouvez également avoir un modèle &quot;aucun résultat&quot; lorsqu’une recherche ne donne aucun résultat. Le noeud de modèle indique quel modèle est utilisé pour afficher les résultats de la recherche.
 
 Exemple de modèle :
 
@@ -2418,7 +2421,7 @@ Exemple de modèle :
 
 ## Zones {#section_26C4A947E7B1474A8E37D86D9579B93E}
 
-Les zones sont des sections des pages qui peuvent être activées ou désactivées par les règles de fonctionnement. Une zone peut contenir n’importe quel contenu, y compris, mais sans s’y limiter, les facettes, les recherches, les chemins de navigation, le contenu statique. Les zones de la page Web des clients doivent correspondre aux mêmes zones que la recherche/marchandisage sur le site.
+Les zones sont des sections des pages qui peuvent être activées ou désactivées par les règles de fonctionnement. Une zone peut contenir tout contenu, y compris, mais sans s’y limiter, les facettes, les recherches, les chemins de navigation, le contenu statique. Les zones de la page Web des clients doivent correspondre aux mêmes zones que la recherche/le marchandisage du site.
 
 Exemple de noeuds de zone :
 
@@ -2456,7 +2459,7 @@ Exemple de noeuds de zone :
    <td colname="col3"> <p>Nom de la zone. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>afficher </p> </td> 
+   <td colname="col1"> <p>affichage </p> </td> 
    <td colname="col2"> <p>1 ou 0, indiquant si la zone correspondant au nom de la zone est affichée ou masquée. </p> </td> 
    <td colname="col3"> <p> </p> </td> 
   </tr> 

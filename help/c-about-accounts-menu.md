@@ -1,6 +1,6 @@
 ---
-description: Utilisez Comptes dans le menu du produit pour sélectionner un compte auquel vous souhaitez accéder et que vous souhaitez utiliser.
-seo-description: Utilisez Comptes dans le menu du produit pour sélectionner un compte auquel vous souhaitez accéder et que vous souhaitez utiliser.
+description: Utilisez Comptes dans le menu produit pour sélectionner un compte auquel vous souhaitez accéder et que vous souhaitez utiliser.
+seo-description: Utilisez Comptes dans le menu produit pour sélectionner un compte auquel vous souhaitez accéder et que vous souhaitez utiliser.
 seo-title: A propos du menu Comptes
 solution: Target
 title: A propos du menu Comptes
@@ -8,17 +8,20 @@ topic: Settings,Site search and merchandising
 uuid: 7cfc1b68-5126-484a-8a1d-54995a8fd19b
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '188'
+ht-degree: 2%
 
 ---
 
 
 # A propos du menu Comptes{#about-the-accounts-menu}
 
-Utilisez Comptes dans le menu du produit pour sélectionner un compte auquel vous souhaitez accéder et que vous souhaitez utiliser.
+Utilisez Comptes dans le menu produit pour sélectionner un compte auquel vous souhaitez accéder et que vous souhaitez utiliser.
 
-## Sélection d’un autre compte à utiliser {#task_03C0FE918E2D44529CDC3B8DB75D1B26}
+## Sélection d&#39;un autre compte à utiliser {#task_03C0FE918E2D44529CDC3B8DB75D1B26}
 
-Utilisez la [!DNL Select Account] page pour sélectionner le compte à utiliser et gérer.
+Utilisez la page [!DNL Select Account] pour sélectionner le compte à utiliser et gérer.
 
 <!-- 
 
@@ -26,17 +29,17 @@ t_selecting_a_different_account_to_use.xml
 
  -->
 
-Une fois que vous avez sélectionné un compte, la page d’accueil de recherche/marchandisage sur le site du compte s’affiche et vous pouvez commencer à travailler dessus. Le nom du compte sélectionné apparaît dans le coin supérieur droit de la page.
+Après avoir sélectionné un compte, la Page d&#39;accueil de recherche/marchandisage sur le site du compte s&#39;affiche et vous pouvez commencer à travailler dessus. Le nom de compte sélectionné s’affiche dans le coin supérieur droit de la page.
 
 **Pour sélectionner un autre compte à utiliser**
 
 1. Effectuez l’une des opérations suivantes :
 
-   * Dans le menu du produit, cliquez sur **[!UICONTROL Accounts]**.
-   * In the upper-right corner of the page, click **[!UICONTROL Select Account]**.
+   * Dans le menu produit, cliquez sur **[!UICONTROL Accounts]**.
+   * Dans le coin supérieur droit de la page, cliquez sur **[!UICONTROL Select Account]**.
 
-1. Sur la [!DNL Select Account] page, effectuez l’une des opérations suivantes :
+1. Sur la page [!DNL Select Account], effectuez l&#39;une des opérations suivantes :
 
-   * Dans le tableau, sous l’en-tête de [!DNL Name] colonne, cliquez sur le nom d’un compte que vous souhaitez utiliser et gérer.
-   * Dans le tableau, sous l’en-tête de [!DNL Number] colonne, cliquez sur le numéro de compte que vous souhaitez utiliser et gérer.
+   * Dans le tableau, sous l&#39;en-tête de colonne [!DNL Name], cliquez sur un nom de compte que vous souhaitez début utiliser et gérer.
+   * Dans le tableau, sous l&#39;en-tête de colonne [!DNL Number], cliquez sur un numéro de compte que vous souhaitez début utiliser et gérer.
 

@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 4f1daa8f4737e0e1f2693aa96ab067e552f51a0f
 workflow-type: tm+mt
 source-wordcount: '254'
-ht-degree: 11%
+ht-degree: 10%
 
 ---
 
 
-# Adobe Search and Promote Guide {#using}
+# Guide de recherche et de promotion des Adobes {#using}
 
 + [Présentation de la documentation Search &amp; Promote](sp-home.md)
 + Notes de mise à jour {#release-notes}
@@ -76,7 +76,7 @@ ht-degree: 11%
 + [Evaluation](c-about-staging.md)
 + Génération de rapports de recherche {#reports}
    + [Utilisation des rapports de recherche](c-about-reports-menu/c-about-reports-menu.md)
-   + [Vues des données](c-about-reports-menu/c-about-data-views.md)
+   + [Vues de données](c-about-reports-menu/c-about-data-views.md)
    + [Alertes](c-about-reports-menu/c-about-alerts.md)
 + Indexation de contenu {#index}
    + [Index complet](c-about-index-menu/c-about-full-index.md)
@@ -87,7 +87,7 @@ ht-degree: 11%
    + [Contrôle à distance pour l&#39;indexation](c-about-index-menu/c-about-remote-control-for-indexing.md)
    + [Restauration des index](c-about-index-menu/c-about-rollback-for-indexes.md)
    + [Mise à jour verticale](c-about-index-menu/c-about-vertical-updates.md)
-+ Configuring settings {#settings}
++ Configuration des paramètres {#settings}
    + [Frawling](c-about-settings-menu/c-about-crawling-menu.md)
    + [Recherche](c-about-settings-menu/c-about-searching-menu.md)
    + [Métadonnées](c-about-settings-menu/c-about-metadata-menu.md)

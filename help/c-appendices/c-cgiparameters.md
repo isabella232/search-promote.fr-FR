@@ -19,15 +19,15 @@ ht-degree: 1%
 
 ## Paramètres CGI {#concept_F395999090FE4926B38BC73D5E612800}
 
-## Paramètres CGI de recherche {#reference_DA27A8B0728246DA94994885E1353890}
+## Rechercher les paramètres CGI {#reference_DA27A8B0728246DA94994885E1353890}
 
-Le code du formulaire de recherche est fourni et vous pouvez le copier et le coller dans le code HTML de votre site ( **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Form Source]**).
+Le code du formulaire de recherche est fourni que vous pouvez copier et coller dans le code HTML de votre site ( **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Form Source]**).
 
 Voir [Copie du code HTML du formulaire de recherche dans le...](../c-about-auto-complete.md#task_A3A01EA800F24C0AA33902387E0362C7).
 
 Vous pouvez également définir les paramètres répertoriés dans le formulaire de recherche lui-même ou à partir d’un script. Outre les paramètres répertoriés ci-dessous, vous pouvez également utiliser les paramètres de recherche d’arrière-plan pour contrôler la recherche.
 
-Voir Paramètres [CGI de recherche](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8)dorsale.
+Voir [Paramètres CGI de recherche dorsale](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8).
 
 Les requêtes de recherche se composent d’une URL de base. L’URL de base indique le compte que le client recherche et un ensemble de paramètres CGI (paires clé-valeur) qui indiquent comment renvoyer les résultats de recherche souhaités pour le compte associé.
 
@@ -41,7 +41,7 @@ Si vous préférez, votre gestionnaire de compte peut configurer votre compte po
 
 `https://search.megacorp.com?q=shoes&page=2`
 
-Un troisième format, appelé format d’optimisation du référencement, est également pris en charge lorsqu’une barre oblique `/` est utilisée à la place du séparateur et du signe égal, comme dans l’exemple suivant :
+Un troisième format, appelé format SEO, est également pris en charge lorsqu’une barre oblique (`/`) est utilisée à la place du séparateur et du signe égal, comme dans l’exemple suivant :
 
 `https://search.megacorp.com/q/shoes/page/2`
 
@@ -49,16 +49,16 @@ Chaque fois que le format d’optimisation du référencement est utilisé pour 
 
 | Paramètre de recherche guidée | Exemple | Description |
 |--- |--- |--- |
-| q | `q=string` | Indique la chaîne de requête pour la recherche. Ce paramètre correspond au paramètre de recherche principal. `sp_q`  Voir Paramètres [CGI de recherche](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8)dorsale. |
-| q# | `q#=string` | Le facettage (recherche dans un champ donné) se fait au moyen des paramètres q et x numérotés.  Le paramètre q définit le terme que vous recherchez dans la facette, comme indiqué par le paramètre x numéroté correspondant.<br>Par exemple, si vous avez deux facettes nommées taille et couleur, vous pouvez avoir un élément du type q1=small;x1=size;q2=red;x2=color.  Ce paramètre correspond aux paramètres de recherche `sp_q_exact_#` principaux.  <br>Voir Paramètres [CGI de recherche](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8)dorsale. |
-| x# | `q#=string` | Le facettage (recherche dans un champ donné) se fait au moyen des paramètres q et x numérotés.  Le paramètre q définit le terme que vous recherchez dans la facette, comme indiqué par le paramètre x numéroté correspondant. <br>Par exemple, si vous avez deux facettes nommées taille et couleur, vous pouvez avoir un élément du type q1=small;x1=size;q2=red;x2=color.  Ce paramètre correspond aux paramètres de recherche `sp_x_#` principaux.  <br>Voir Paramètres [CGI de recherche](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8)dorsale. |
-| collecte | `collection=string` | Indique la collection à utiliser pour la recherche.  Ce paramètre correspond au paramètre de recherche principal. `sp_k`  Voir Paramètres [CGI de recherche](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8)dorsale. |
-| count | `count=number` | Indique le nombre total de résultats affichés.  La valeur par défaut est définie dans [!UICONTROL Settings ] > [!UICONTROL Searching ] > [!UICONTROL Searches ]. .  Ce paramètre correspond au paramètre de recherche principal. `sp_c`  Voir Paramètres [CGI de recherche](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8)dorsale. |
+| q | `q=string` | Indique la chaîne de requête pour la recherche. Ce paramètre correspond au paramètre de recherche principal `sp_q`.  Voir [Paramètres CGI de recherche dorsale](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8). |
+| q# | `q#=string` | Le facettage (recherche dans un champ donné) se fait au moyen des paramètres q et x numérotés.  Le paramètre q définit le terme que vous recherchez dans la facette, comme indiqué par le paramètre x numéroté correspondant.<br>Par exemple, si vous avez deux facettes nommées taille et couleur, vous pouvez avoir un élément du type q1=small;x1=size;q2=red;x2=color.  Ce paramètre correspond aux paramètres de recherche du serveur principal `sp_q_exact_#`.  <br>Voir Paramètres [ CGI de recherche ](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8)dorsale. |
+| x# | `q#=string` | Le facettage (recherche dans un champ donné) se fait au moyen des paramètres q et x numérotés.  Le paramètre q définit le terme que vous recherchez dans la facette, comme indiqué par le paramètre x numéroté correspondant. <br>Par exemple, si vous avez deux facettes nommées taille et couleur, vous pouvez avoir un élément du type q1=small;x1=size;q2=red;x2=color.  Ce paramètre correspond aux paramètres de recherche du serveur principal `sp_x_#`.  <br>Voir Paramètres [ CGI de recherche ](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8)dorsale. |
+| collecte | `collection=string` | Indique la collection à utiliser pour la recherche.  Ce paramètre correspond au paramètre de recherche principal `sp_k`.  Voir [Paramètres CGI de recherche dorsale](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8). |
+| count | `count=number` | Indique le nombre total de résultats affichés.  La valeur par défaut est définie dans [!UICONTROL Settings ] > [!UICONTROL Searching ] > [!UICONTROL Searches ]. .  Ce paramètre correspond au paramètre de recherche principal `sp_c`.  Voir [Paramètres CGI de recherche dorsale](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8). |
 | page | `page=number` | Indique la page des résultats qui sont renvoyés. |
-| rang | `rank=field` | Indique le champ de classement à utiliser pour le classement statique.  Le champ doit être un champ de type Classement dont la pertinence est supérieure à 0.  Ce paramètre correspond au paramètre `sp_sr` principal.  Voir Paramètres [CGI de recherche](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8)dorsale. |
-| sort | `sort=number` | Indique l’ordre de tri.<br>&quot;0&quot; est la valeur par défaut et est triée par score de pertinence ; &quot;1&quot; est classé par date ; &quot;-1&quot; n’est pas trié.  Les utilisateurs peuvent spécifier un nom de champ pour la valeur du `sp_s` paramètre.  Par exemple, `sp_s=title` trie les résultats en fonction des valeurs contenues dans le champ de titre. Lorsqu’un nom de champ est utilisé pour la valeur d’un ` sp_s ` paramètre, les résultats sont triés par ce champ, puis subtriés par pertinence.  To enable this feature, click [!UICONTROL Settings ] > [!UICONTROL Metadata ] > [!UICONTROL Definitions ]. Dans la page Définitions, cliquez sur [!UICONTROL Add New Field ] ou sur [!UICONTROL Edit ] un nom de champ particulier. Dans la liste [!UICONTROL Sorting ] déroulante, sélectionnez [!UICONTROL Ascending ] ou [!UICONTROL Descending ]. Ce paramètre correspond au paramètre de recherche principal. `sp_s` <br>Voir Paramètres [CGI de recherche]dorsale.(../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8). |
+| rang | `rank=field` | Indique le champ de classement à utiliser pour le classement statique.  Le champ doit être un champ de type Classement dont la pertinence est supérieure à 0.  Ce paramètre correspond au paramètre principal `sp_sr`.  Voir [Paramètres CGI de recherche dorsale](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8). |
+| sort | `sort=number` | Indique l’ordre de tri.<br>&quot;0&quot; est la valeur par défaut et est triée par score de pertinence ; &quot;1&quot; est classé par date ; &quot;-1&quot; n’est pas trié.  Les utilisateurs peuvent spécifier un nom de champ pour la valeur du paramètre `sp_s`.  Par exemple, `sp_s=title` trie les résultats en fonction des valeurs contenues dans le champ de titre. Lorsqu’un nom de champ est utilisé pour la valeur d’un paramètre ` sp_s `, les résultats sont triés par ce champ, puis subtriés par pertinence.  Pour activer cette fonction, cliquez sur [!UICONTROL Settings ] > [!UICONTROL Metadata ] > [!UICONTROL Definitions ]. Sur la page Définitions, cliquez sur [!UICONTROL Add New Field ] ou sur [!UICONTROL Edit ] pour un nom de champ particulier. Dans la liste déroulante [!UICONTROL Sorting ], sélectionnez [!UICONTROL Ascending ] ou [!UICONTROL Descending ]. Ce paramètre correspond au paramètre de recherche principal `sp_s`. <br>Voir Paramètres [ CGI de recherche ]dorsale.(../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8). |
 
-## Paramètres CGI de recherche en arrière-plan {#reference_582E85C3886740C98FE88CA9DF7918E8}
+## Paramètres CGI de recherche principale {#reference_582E85C3886740C98FE88CA9DF7918E8}
 
 En règle générale, les clients interagissent avec une couche de présentation appelée Recherche guidée. Cependant, il est théoriquement possible d’ignorer le calque Recherche guidée et d’interagir avec la recherche principale principale en utilisant directement les paramètres CGI décrits sur cette page.
 
@@ -86,7 +86,7 @@ Vous pouvez sélectionner les paramètres CGI de recherche principale dans le ta
    <td colname="col2"> <p>sp_advanced </p> </td> 
    <td colname="col03"> <p> </p> </td> 
    <td colname="col3"> <p> <code>sp_advanced= 0 or 1 </code> </p> </td> 
-   <td colname="col4"> <p>Si <code>sp_advanced=1 </code> est envoyé avec une requête, tout le code entre la <code>&lt;search-if-advanced&gt; </code> balise et la <code>&lt;/search-if-advanced&gt; </code> balise dans le modèle de recherche est utilisé pour le formulaire de recherche. Tout le code entre la <code>&lt;search-if-not-advanced&gt; </code> balise et la <code>&lt;/search-if-not-advanced&gt; </code> balise est ignoré. Si <code>sp_advanced=0 </code> (ou toute autre valeur) est envoyée, le bloc de modèle &lt;search-if-advanced&gt; est ignoré et le bloc de modèle &lt;search-if-not-advanced&gt; est utilisé. </p> </td> 
+   <td colname="col4"> <p>Si <code>sp_advanced=1 </code> est envoyé avec une requête, tout le code entre la balise <code>&lt;search-if-advanced&gt; </code> et la balise <code>&lt;/search-if-advanced&gt; </code> dans le modèle de recherche est utilisé pour le formulaire de recherche. Tout le code entre la balise <code>&lt;search-if-not-advanced&gt; </code> et la balise <code>&lt;/search-if-not-advanced&gt; </code> est ignoré. Si <code>sp_advanced=0 </code> (ou toute autre valeur) est envoyé, le bloc de modèle &lt;search-if-advanced&gt; est ignoré et le bloc de modèle &lt;search-if-not-advanced&gt; est utilisé. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>3 </p> </td> 
@@ -100,21 +100,21 @@ Vous pouvez sélectionner les paramètres CGI de recherche principale dans le ta
    <td colname="col2"> <p>sp_context_field </p> </td> 
    <td colname="col03"> <p> </p> </td> 
    <td colname="col3"> <p> <code> sp_context_field= <i>field</i> </code> </p> </td> 
-   <td colname="col4"> <p>Collecte des informations contextuelles pour le champ donné. Les informations collectées sont générées dans les résultats de la recherche par le biais de la balise de <code>&lt;search-context&gt; </code> modèle. La valeur par défaut est <code>body </code>. </p> </td> 
+   <td colname="col4"> <p>Collecte des informations contextuelles pour le champ donné. Les informations collectées sont générées dans les résultats de la recherche par le biais de la balise de modèle <code>&lt;search-context&gt; </code>. La valeur par défaut est <code>body </code>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>5 </p> </td> 
    <td colname="col2"> <p>sp_d </p> </td> 
    <td colname="col03"> <p> </p> </td> 
    <td colname="col3"> <p> <code>sp_d= type </code> </p> </td> 
-   <td colname="col4"> <p>Indique le type de plage de dates à effectuer lors de la recherche. Les valeurs possibles pour le type sont toutes, ce qui signifie ne pas effectuer de recherche de plage de dates, personnalisées, ce qui indique que la valeur de <code>sp_date_range </code> doit être utilisée pour déterminer les dates à rechercher, et spécifiques, ce qui indique que les valeurs dans <code>sp_start_day </code>, <code>sp_start_month </code>, <code>sp_start_year </code>, <code>sp_end_day </code>, <code>sp_end_month </code>et <code>sp_end_year </code> est utilisé pour déterminer la plage de dates à rechercher. <code>sp_d </code> n’est requise que si votre formulaire de recherche contient l’option de recherche selon une plage personnalisée (par exemple <code>sp_date_range </code>) ou selon un début et une plage de dates de fin spécifiques. </p> </td> 
+   <td colname="col4"> <p>Indique le type de plage de dates à effectuer lors de la recherche. Les valeurs possibles pour le type sont toutes, ce qui signifie ne pas effectuer de recherche de plage de dates, personnalisées, ce qui indique que la valeur de <code>sp_date_range </code> doit être utilisée pour déterminer les dates à rechercher, et spécifiques, ce qui indique que les valeurs de <code>sp_start_day </code>, <code>sp_start_month </code>, <code>sp_start_year </code>, <code>sp_end_day </code>, <code>sp_end_month </code> sont utilisées pour déterminer la plage de dates à rechercher. <code>sp_end_year </code> <code>sp_d </code> n’est requise que si votre formulaire de recherche contient l’option de recherche selon une plage personnalisée (par exemple  <code>sp_date_range </code>) ou selon un début et une plage de dates de fin spécifiques. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>6 </p> </td> 
    <td colname="col2"> <p> </p> </td> 
    <td colname="col03"> <p> sp_d_# </p> </td> 
    <td colname="col3"> <p> <code>sp_d_#= type </code> </p> </td> 
-   <td colname="col4"> <p>Indique le type de plage de dates à effectuer pour la <code>sp_q_# </code> requête correspondante. Le "#" est remplacé par un nombre compris entre 1 et 16 (par exemple, <code>sp_d_8 </code>s’applique à la requête numérotée <code>sp_q_8 </code>). </p> <p>Vous pouvez définir <code>type </code> sur n’importe quelle valeur, ce qui signifie qu’il n’est pas nécessaire d’effectuer une recherche de plage de dates, personnalisée, ce qui indique que la valeur de <code>sp_date_range_# </code> est utilisée pour déterminer les dates à rechercher, et spécifique, ce qui indique que les valeurs <code>sp_q_min_day_# </code>, <code>sp_q_min_month_# </code><code>sp_q_min_year_# </code>, <code>sp_q_max_day_# </code><code>sp_q_max_month_# </code>et  doivent être utilisées pour déterminer la plage de dates. <code>sp_q_max_year_# </code> L’utilisation de <code>sp_d_# </code> est obligatoire uniquement si votre formulaire de recherche contient l’option de recherche selon une plage personnalisée (par <code>sp_date_range_# </code>exemple) ou selon un début et une plage de dates de fin spécifiques. </p> </td> 
+   <td colname="col4"> <p>Spécifie le type de plage de dates à effectuer pour la requête <code>sp_q_# </code> correspondante. Le "#" est remplacé par un nombre compris entre 1 et 16 (par exemple, <code>sp_d_8 </code>, s’applique à la requête numérotée <code>sp_q_8 </code>). </p> <p>Vous pouvez définir <code>type </code> sur n'importe quelle valeur, ce qui signifie qu'il ne faut pas effectuer de recherche de plage de dates, personnalisé, ce qui indique que la valeur de <code>sp_date_range_# </code> est utilisée pour déterminer les dates à rechercher et spécifique, ce qui indique que les valeurs de <code>sp_q_min_day_# </code>, <code>sp_q_min_month_# </code>, <code>sp_q_min_year_# </code>, <code>sp_q_max_day_# </code>, <code>sp_q_max_month_# </code> doivent être utilisées pour déterminer la plage de dates. <code>sp_q_max_year_# </code> L'utilisation de <code>sp_d_# </code> n'est requise que si votre formulaire de recherche contient l'option de recherche soit par une plage personnalisée (par <code>sp_date_range_# </code>), soit par un début et une plage de dates de fin spécifiques. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>7 </p> </td> 
@@ -128,28 +128,28 @@ Vous pouvez sélectionner les paramètres CGI de recherche principale dans le ta
    <td colname="col2"> <p> </p> </td> 
    <td colname="col03"> <p>sp_date_range_# </p> </td> 
    <td colname="col3"> <p> <code> sp_date_range_#= <i>number</i> </code> </p> </td> 
-   <td colname="col4"> <p>Spécifie une plage de dates prédéfinie à appliquer à la <code>sp_q_# </code> requête correspondante. Le "#" est remplacé par un nombre compris entre 1 et 16 (par exemple, <code>sp_date_range_8 </code>s’applique à la requête numérotée <code>sp_q_8 </code>). </p> <p>Les valeurs supérieures ou égales à zéro spécifient le nombre de jours de recherche avant aujourd’hui. Par exemple, une valeur de 0 indique aujourd’hui ; une valeur de 1 indique aujourd’hui et hier ; une valeur de 30 indique les 30 derniers jours, etc. </p> <p>Les valeurs inférieures à zéro définissent une plage personnalisée comme suit : </p> <p>-1 = "Aucun", la même chose que de ne spécifier aucune plage de dates. </p> <p>-2 = "Cette semaine", qui effectue une recherche du dimanche au samedi de la semaine en cours. </p> <p>-3 = "Semaine dernière", qui effectue une recherche du dimanche au samedi de la semaine précédant la semaine en cours. </p> <p>-4 = "Ce mois-ci", qui recherche les dates du mois en cours. </p> <p>-5 = "Dernier mois", qui recherche les dates du mois précédant le mois en cours. </p> <p>-6 = "Cette année", qui recherche les dates de l’année en cours. </p> <p>-7 = "L’année dernière", qui recherche les dates de l’année précédant l’année en cours. </p> </td> 
+   <td colname="col4"> <p>Spécifie une plage de dates prédéfinie à appliquer à la requête <code>sp_q_# </code> correspondante. Le "#" est remplacé par un nombre compris entre 1 et 16 (par exemple, <code>sp_date_range_8 </code>, s’applique à la requête numérotée <code>sp_q_8 </code>). </p> <p>Les valeurs supérieures ou égales à zéro spécifient le nombre de jours de recherche avant aujourd’hui. Par exemple, une valeur de 0 indique aujourd’hui ; une valeur de 1 indique aujourd’hui et hier ; une valeur de 30 indique les 30 derniers jours, etc. </p> <p>Les valeurs inférieures à zéro définissent une plage personnalisée comme suit : </p> <p>-1 = "Aucun", la même chose que de ne spécifier aucune plage de dates. </p> <p>-2 = "Cette semaine", qui effectue une recherche du dimanche au samedi de la semaine en cours. </p> <p>-3 = "Semaine dernière", qui effectue une recherche du dimanche au samedi de la semaine précédant la semaine en cours. </p> <p>-4 = "Ce mois-ci", qui recherche les dates du mois en cours. </p> <p>-5 = "Dernier mois", qui recherche les dates du mois précédant le mois en cours. </p> <p>-6 = "Cette année", qui recherche les dates de l’année en cours. </p> <p>-7 = "L’année dernière", qui recherche les dates de l’année précédant l’année en cours. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>9 </p> </td> 
    <td colname="col2"> <p>sp_dedupe_field </p> </td> 
    <td colname="col03"> <p> </p> </td> 
    <td colname="col3"> <p> <code> sp_dedupe_field= <i>fieldname</i> </code> </p> </td> 
-   <td colname="col4"> <p>Indique un champ unique sur lequel dédupliquer les résultats de la recherche. Tous les résultats de duplicata de ce champ sont supprimés des résultats de la recherche. Par exemple, si, pour <code>sp_dedupe_field=title </code>un titre donné, seul le résultat supérieur s’affiche dans les résultats de la recherche (aucun des deux résultats n’a le même contenu de champ de titre). Pour les champs de type à plusieurs valeurs (liste autorisée), le contenu entier du champ est utilisé pour la comparaison. Un seul champ peut être spécifié. Un "qualificateur de table" n'est pas autorisé dans le nom du champ. </p> </td> 
+   <td colname="col4"> <p>Indique un champ unique sur lequel dédupliquer les résultats de la recherche. Tous les résultats de duplicata de ce champ sont supprimés des résultats de la recherche. Par exemple, si pour <code>sp_dedupe_field=title </code>, seul le résultat supérieur d’un titre donné s’affiche dans les résultats de la recherche (aucun résultat n’a le même contenu de champ de titre). Pour les champs de type à plusieurs valeurs (liste autorisée), le contenu entier du champ est utilisé pour la comparaison. Un seul champ peut être spécifié. Un "qualificateur de table" n'est pas autorisé dans le nom du champ. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>10 </p> </td> 
    <td colname="col2"> <p>sp_e </p> </td> 
    <td colname="col03"> <p> </p> </td> 
    <td colname="col3"> <p> <code>sp_e= number </code> </p> </td> 
-   <td colname="col4"> <p>Indique que l’extension automatique des caractères génériques doit avoir lieu pour tout mot de la chaîne de requête contenant plus de plusieurs caractères numériques. En d’autres termes, <code>sp_e=5 </code> indique que les mots de 5 caractères ou plus, tels que "requête" ou "nombre", doivent être développés avec le caractère générique "*", ce qui rend la recherche équivalente à une recherche de "requête*" ou "nombre*". Les mots comportant moins de caractères ne sont pas développés, de sorte qu’une recherche de "mot" ne peut pas être automatiquement étendue. </p> </td> 
+   <td colname="col4"> <p>Indique que l’extension automatique des caractères génériques doit avoir lieu pour tout mot de la chaîne de requête contenant plus de plusieurs caractères numériques. En d'autres termes, <code>sp_e=5 </code> spécifie que les mots de 5 caractères ou plus, tels que "requête" ou "nombre", doivent être développés avec le caractère générique "*", ce qui rend la recherche équivalente à une recherche de "requête*" ou "nombre*". Les mots comportant moins de caractères ne sont pas développés, de sorte qu’une recherche de "mot" ne peut pas être automatiquement étendue. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>11 </p> </td> 
    <td colname="col2"> <p> </p> </td> 
    <td colname="col03"> <p> sp_e_# </p> </td> 
    <td colname="col3"> <p> <code>sp_e_#= number </code> </p> </td> 
-   <td colname="col4"> <p>Indique que l’extension automatique des caractères génériques a lieu pour tout mot de la chaîne de <code>sp_q_# </code> requête correspondante contenant plus de plusieurs caractères numériques. En d’autres termes, <code>sp_e_2=5 </code> indique que les mots contenant cinq caractères ou plus dans la chaîne de <code>sp_q_2 </code> requête, tels que "requête" ou "nombre", doivent être développés avec le caractère générique " <code>* </code>", ce qui rend la recherche équivalente à une recherche de "requête*" ou "nombre*". Les mots comportant moins de caractères ne sont pas développés, de sorte qu’une recherche de "mot" dans <code>sp_q_2 </code> ne peut pas être automatiquement développée. </p> </td> 
+   <td colname="col4"> <p>Indique que l’extension automatique des caractères génériques a lieu pour tout mot de la chaîne de requête <code>sp_q_# </code> correspondante contenant plus de plusieurs caractères. En d'autres termes, <code>sp_e_2=5 </code> spécifie que les mots contenant cinq caractères ou plus dans la chaîne de requête <code>sp_q_2 </code>, tels que "requête" ou "nombre", doivent être développés avec le caractère générique " <code>* </code>", ce qui rend la recherche équivalente à une recherche de "requête*" ou "nombre*". Les mots comportant moins de caractères ne sont pas développés, de sorte qu’une recherche de "mot" dans <code>sp_q_2 </code> ne peut pas être automatiquement étendue. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>12 </p> </td> 
@@ -163,7 +163,7 @@ Vous pouvez sélectionner les paramètres CGI de recherche principale dans le ta
    <td colname="col2"> <p>sp_f </p> </td> 
    <td colname="col03"> <p> </p> </td> 
    <td colname="col3"> <p> <code>sp_f= string </code> </p> </td> 
-   <td colname="col4"> <p>Indique le jeu de caractères des chaînes de paramètres de requête (par exemple <code>sp_q </code>). Cette chaîne doit toujours correspondre au jeu de caractères de la page qui contient le formulaire de recherche. </p> </td> 
+   <td colname="col4"> <p>Spécifie le jeu de caractères des chaînes de paramètres de requête (par exemple <code>sp_q </code>). Cette chaîne doit toujours correspondre au jeu de caractères de la page qui contient le formulaire de recherche. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>14 </p> </td> 
@@ -211,9 +211,9 @@ La même fonctionnalité est généralement définie avec un formulaire :
 
 En règle générale, vous devez utiliser des paramètres par défaut lorsque vous lancez une recherche. Ainsi, la première page est affichée, triée par pertinence, et permet au client de choisir d&#39;autres pages et d&#39;autres options. Si le formulaire de recherche de votre site comporte des options pour les collections, transmettez le nom de la collection en tant que paramètre.
 
-## Exemple détaillé de l’utilisation des paramètres CGI de recherche principale {#section_5FA3C620D5124FB2AB28857F8D8473F6}
+## Exemple détaillé de l&#39;utilisation des paramètres CGI de recherche principale {#section_5FA3C620D5124FB2AB28857F8D8473F6}
 
-Les requêtes de formulaire suivantes affichent `25` les résultats en commençant par le résultat `10`. Les résumés ne s’affichent pas, l’ordre de tri est par date et la collection nommée `support` est utilisée. Seuls les documents datés au cours des 30 derniers jours sont renvoyés.
+Les requêtes de formulaire suivantes affichent les résultats `25` commençant par le résultat `10`. Les résumés ne sont pas affichés, l’ordre de tri est par date et la collection `support` est utilisée. Seuls les documents datés au cours des 30 derniers jours sont renvoyés.
 
 ```
 <form action="https://search.atomz.com/search/"> 

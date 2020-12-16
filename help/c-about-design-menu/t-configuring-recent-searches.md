@@ -9,11 +9,14 @@ topic: Design,Site search and merchandising
 uuid: 8ab1b35c-f953-4c26-921f-524af1fea4ef
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '204'
+ht-degree: 2%
 
 ---
 
 
-# Configuration des recherches récentes{#configuring-recent-searches}
+# Configuration des recherches récentes {#configuring-recent-searches}
 
 Les recherches récentes sont un système basé sur les cookies qui vous permet d’utiliser un modèle de présentation pour afficher l’historique de recherche récente de votre client.
 
@@ -21,12 +24,12 @@ Utilisez la page Recherches récentes pour configurer le comportement des recher
 
 Reportez-vous à la rubrique de référence des balises de modèle de présentation pour en savoir plus sur les différentes balises que vous pouvez utiliser pour afficher les recherches récentes sur votre modèle de présentation.
 
-Voir Balises [de modèle de](../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64)présentation.
+Voir [Balises de modèle de présentation](../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64).
 
 **Pour configurer les recherches récentes**
 
-1. Dans le menu du programme, cliquez sur **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Recent Searches]**.
-1. Sur la [!DNL Recent Searches] page, définissez les options de votre choix.
+1. Dans le menu programme, cliquez sur **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Recent Searches]**.
+1. Sur la page [!DNL Recent Searches], définissez les options de votre choix.
 
    <!-- 
    
@@ -61,13 +64,13 @@ Voir Balises [de modèle de](../c-appendices/c-templates.md#reference_F1BBF616BC
 
    * Cliquez sur **[!UICONTROL History]** pour annuler les modifications que vous avez apportées.
 
-      Voir [Utilisation de l’option](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historique.
+      Voir [Utilisation de l’option Historique](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Cliquez sur **[!UICONTROL Live]**.
 
-      Voir [Affichage des paramètres](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)en direct.
+      Voir [Affichage des paramètres en direct](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Cliquez sur **[!UICONTROL Push Live]**.
 
-      Voir [Pousser les paramètres d’étape en direct](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Voir [Activation des paramètres d’étape](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 

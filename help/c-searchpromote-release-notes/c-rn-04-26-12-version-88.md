@@ -1,30 +1,33 @@
 ---
 description: valeur nulle
 seo-description: valeur nulle
-seo-title: Notes de mise à jour de Search&amp;Promote 8.8 (26/04/2012)
+seo-title: Notes de mise à jour de Search&amp ; amp ; Promote 8.8 (26/04/2012)
 solution: Target
-title: Notes de mise à jour de Search&amp;Promote 8.8 (26/04/2012)
+title: Notes de mise à jour de Search&amp ; amp ; Promote 8.8 (26/04/2012)
 topic: Release Notes,Site search and merchandising
 uuid: ddb9f1af-92a4-4f85-be8f-a36f34d31add
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '324'
+ht-degree: 70%
 
 ---
 
 
-# Search&amp;Promote 8.8 Release Notes (04/26/2012){#search-promote-release-notes}
+# Notes de mise à jour de Search &amp; Promote 8.8 (26/04/2012){#search-promote-release-notes}
 
 **Nouvelles fonctionnalités**
 
 * Facettes dynamiques
 
    Capacité d’appliquer dynamiquement une facette sur un ensemble à structure libre d’attributs associés à chaque page de contenu du site, qui peut changer (nouveaux attributs ajoutés, anciens attributs supprimés ou renommés) d’un index à l’autre. Cette fonction associe automatiquement les facettes d’emplacement aux facettes réelles. Le calque de recherche guidée simplifie l’utilisation de cette fonction avec les règles de fonctionnement.
-* Interface utilisateur d’Adobe Search&amp;Promote
+* Interface utilisateur du Search &amp; Promote d&#39;Adobe
 
-   Mise en oeuvre de l’interface utilisateur Adobe sur toutes les pages Web d’Adobe Search&amp;Promote.
-* Intégration plus étroite avec le portail de connexion d’Adobe
+   Mise en oeuvre de l’interface utilisateur de l’Adobe sur toutes les pages Web de Search &amp; Promote d’Adobe.
+* Intégration plus étroite avec le portail de connexion des Adobes
 
-   Les clients Adobe Search&amp;Promote peuvent exclusivement utiliser le portail de connexion Adobe. Current [!DNL Adobe Publish], Adobe SiteSearch, and Atomz customers will continue to use the legacy login.
+   Les clients des Search &amp; Promote d&#39;Adobe peuvent utiliser exclusivement le portail de connexion d&#39;Adobe. Les clients actuels [!DNL Adobe Publish], Adobe SiteSearch et Atomz continueront à utiliser la connexion héritée.
 *  Nouvel analyseur morphologique pour la prise en charge du chinois et du japonais.
 
    L’analyseur morphologique s’applique sur l’index et sur la durée de recherche pour la prise en charge du chinois et du japonais.
@@ -37,7 +40,7 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 
 **Correctifs et améliorations**
 
-* Correction d’un problème lors de la publication d’une bannière en direct à l’aide de Stage Manager, qui entraînait l’arrêt de la fonctionnalité liée à Dynamic Media Classic.
+* Correction de la publication d’une bannière en direct à l’aide de Stage Manager, qui entraînait l’interruption des fonctionnalités liées à Dynamic Media Classic.
 * Correction d’un problème en raison duquel la modification d’une règle avec le déclencheur « Query Parameter does not exist » (le paramètre de la requête n’existe pas) était incorrectement traduite par « Keyword contains » (le mot-clé contient).
 * Correction d’un problème en raison duquel vous ne pouviez pas modifier le paramètre pour la deuxième fois.
 * Correction d’un problème avec Index Connector, en raison duquel plusieurs définitions de correspondance ne pouvaient pas pointer vers une même valeur de champ/métadonnée.

@@ -1,24 +1,27 @@
 ---
 description: valeur nulle
 seo-description: valeur nulle
-seo-title: Notes de mise à jour de Search&amp;Promote 8.15.0 (19/06/2014)
+seo-title: Notes de mise à jour de Search&amp ; amp ; Promote 8.15.0 (19/06/2014)
 solution: Target
-title: Notes de mise à jour de Search&amp;Promote 8.15.0 (19/06/2014)
+title: Notes de mise à jour de Search&amp ; amp ; Promote 8.15.0 (19/06/2014)
 topic: Release Notes,Site search and merchandising
 uuid: bb250450-48b4-4563-84b9-66f2c3dc063a
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '108'
+ht-degree: 58%
 
 ---
 
 
-# Search&amp;Promote 8.15.0 Release Notes (6/19/2014){#search-promote-release-notes}
+# Notes de mise à jour de la version 8.15.0 de Search &amp; Promote (19/06/2014){#search-promote-release-notes}
 
 **Nouvelles fonctionnalités**
 
-* Enchaînement des expressions : le blocage des synonymes dans une expression est désormais pris en charge.  Pour activer et utiliser cette fonction dans [!DNL Adobe Search&Promote], contactez votre gestionnaire de compte technique Adobe.
+* Recherche de radical d&#39;expression : la recherche de synonymes dans une expression est désormais prise en charge.  Pour activer et utiliser cette fonction dans [!DNL Adobe Search&Promote], contactez votre gestionnaire de compte technique Adobe.
 
-   Voir aussi **[!UICONTROL Alternate Word Forms]** dans le tableau des options de la section [Configuration de la correspondance entre les termes de recherche et votre contenu Web...](../c-about-linguistics-menu/c-about-words-and-language.md#task_351A9144A51F4B41923BDBACDEF3B616).
+   Voir aussi **[!UICONTROL Alternate Word Forms]** dans le tableau des options de [Configuration de la correspondance des termes de recherche avec votre contenu Web...](../c-about-linguistics-menu/c-about-words-and-language.md#task_351A9144A51F4B41923BDBACDEF3B616).
 
 **Correctifs et améliorations**
 

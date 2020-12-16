@@ -22,13 +22,13 @@ Utilisez le menu Métadonnées pour personnaliser les définitions de recherche 
 
 ## A propos des définitions {#concept_AE48035C210145169BE067D396975620}
 
-Vous pouvez l’utiliser [!DNL Definitions] pour personnaliser le contenu et la pertinence des champs HTML et de métadonnées pris en compte lorsqu’un client envoie une requête de recherche.
+Vous pouvez utiliser [!DNL Definitions] pour personnaliser le contenu et la pertinence des champs HTML et de métadonnées pris en compte lorsqu’un client envoie une requête de recherche.
 
-Vous pouvez modifier les champs déjà prédéfinis. Vous pouvez également créer de nouveaux champs définis par l’utilisateur en fonction du contenu des balises de métadonnées. Chaque définition s’affiche sur une seule ligne de la [!DNL Staged Definitions] page.
+Vous pouvez modifier les champs déjà prédéfinis. Vous pouvez également créer de nouveaux champs définis par l’utilisateur en fonction du contenu des balises de métadonnées. Chaque définition est affichée sur une seule ligne de la page [!DNL Staged Definitions].
 
-Voir aussi [A propos des Vues](../c-about-reports-menu/c-about-data-views.md#concept_DCA897D074464BC1861AA47B40CC86C3)de données.
+Voir aussi [À propos des Vues de données](../c-about-reports-menu/c-about-data-views.md#concept_DCA897D074464BC1861AA47B40CC86C3).
 
-## ajouter un nouveau champ de balise meta {#task_6DF188C0FC7F4831A4444CA9AFA615E5}
+## Ajouter un nouveau champ de balise MEA {#task_6DF188C0FC7F4831A4444CA9AFA615E5}
 
 Vous pouvez définir et ajouter vos propres champs de balise de métadonnées.
 
@@ -37,8 +37,8 @@ Avant que les effets de la nouvelle définition de balise meta ne soient visible
 **Pour ajouter un nouveau champ de balise meta**
 
 1. Dans le menu produit, cliquez sur **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Definitions]**.
-1. Sur la [!DNL Definitions] page, cliquez sur **[!UICONTROL Add New Field]**.
-1. Sur la [!DNL Add Field] page, définissez les options de votre choix.
+1. Sur la page [!DNL Definitions], cliquez sur **[!UICONTROL Add New Field]**.
+1. Sur la page [!DNL Add Field], définissez les options de votre choix.
 
    <table> 
     <thead> 
@@ -56,7 +56,7 @@ Avant que les effets de la nouvelle définition de balise meta ne soient visible
       <li id="li_7FC340E7C58545C88CE9AF4AF09AD7AD"> Les tirets sont autorisés dans le nom, mais pas dans les espaces. </li> 
       <li id="li_996FF38457AB4C6DB22B15850A0830CC"> Vous pouvez saisir un nom contenant jusqu’à 20 caractères. </li> 
       <li id="li_C1019E587995444D9587D5EA495D719E"> Le nom n’est pas sensible à la casse, mais il est affiché et stocké exactement au fur et à mesure que vous le tapez. </li> 
-      <li id="li_E55404D6CE354EC89CFFEB1048A11F44"> Vous ne pouvez pas utiliser les noms qui existent dans les champs prédéfinis comme le montre le tableau de la <span class="wintitle"> page Définitions </span> par étapes. </li> 
+      <li id="li_E55404D6CE354EC89CFFEB1048A11F44"> Vous ne pouvez pas utiliser les noms qui existent dans les champs prédéfinis comme le montre le tableau de la page <span class="wintitle"> Définitions par étapes </span>. </li> 
       <li id="li_7CE328AE3B5F45A8A09E2DA7ECB62551"> Vous ne pouvez pas utiliser le mot "any" comme valeur d’un nom de champ défini par l’utilisateur. </li> 
       <li id="li_9B8287EED1784E79BFCBBBA956705CD2"> Vous ne pouvez pas modifier les noms des champs prédéfinis. </li> 
       </ul> </p> <p> Exemples de noms de champ : </p> <p> 
@@ -68,12 +68,13 @@ Avant que les effets de la nouvelle définition de balise meta ne soient visible
       </tr> 
       <tr> 
       <td colname="col1"> <p>Nom(s) de la méta-balise </p> </td> 
-      <td colname="col2"> <p>Détermine le contenu associé au champ défini. </p> <p>La liste des noms peut comporter jusqu’à 255 caractères. De plus, le nom peut contenir tous les caractères autorisés dans l’attribut name d’une balise meta HTML. </p> <p>Vous pouvez spécifier plusieurs balises meta dans une définition de champ unique. </p> <p>Plusieurs valeurs doivent être séparées par des virgules et le nom de balise meta le plus à gauche figurant sur une page Web donnée est prioritaire. </p> <p>Supposons, par exemple, que vous ayez défini un champ nommé "auth". Le nom du champ comporte les balises meta associées "author, dc.author". Dans ce cas, le contenu de la balise meta "author" est indexé et recherché sur celui de "dc.author" si les deux balises meta apparaissent sur une page Web. </p> <p>Les champs définis par l’utilisateur doivent comporter au moins un nom de balise meta dans leur définition. Les champs prédéfinis n’ont pas besoin d’avoir une balise meta associée. Cependant, si une ou plusieurs balises meta sont spécifiées, le contenu des balises meta remplace la source de données actuelle pour chaque balise . </p> <p>Par exemple, si la balise meta "dc.title" est associée au champ prédéfini "title", le contenu de la balise meta "dc.title" est indexé sur celui de la <code>
+      <td colname="col2"> <p>Détermine le contenu associé au champ défini. </p> <p>La liste des noms peut comporter jusqu’à 255 caractères. De plus, le nom peut contenir tous les caractères autorisés dans l’attribut name d’une balise meta HTML. </p> <p>Vous pouvez spécifier plusieurs balises meta dans une définition de champ unique. </p> <p>Plusieurs valeurs doivent être séparées par des virgules et le nom de balise meta le plus à gauche figurant sur une page Web donnée est prioritaire. </p> <p>Supposons, par exemple, que vous ayez défini un champ nommé "auth". Le nom du champ comporte les balises meta associées "author, dc.author". Dans ce cas, le contenu de la balise meta "author" est indexé et recherché sur celui de "dc.author" si les deux balises meta apparaissent sur une page Web. </p> <p>Les champs définis par l’utilisateur doivent comporter au moins un nom de balise meta dans leur définition. Les champs prédéfinis n’ont pas besoin d’avoir une balise meta associée. Cependant, si une ou plusieurs balises meta sont spécifiées, le contenu des balises meta remplace la source de données actuelle pour chaque balise . </p> <p>Par exemple, si la balise meta "dc.title" est associée au champ prédéfini "title", le contenu de la balise meta "dc.title" est indexé sur celui de la balise META 
+      Balise <code>
         &lt;title&gt; 
-      </code> balise pour un document particulier. </p> <p>Voici quelques exemples : </p> <p> 
+      </code> pour un document particulier. </p> <p>Voici quelques exemples : </p> <p> 
       <ul id="ul_0132E15FC19E4C0CA13CD5A12EA3BBEC"> 
       <li id="li_ECD3B194FECB4C2090CAEC8449320D3F"> dc.date </li> 
-      <li id="li_09C76BC7AC7348859D01989697212E31"> description </li> 
+      <li id="li_09C76BC7AC7348859D01989697212E31"> Description </li> 
       <li id="li_9230C0450F9D424087D1F127048DA311"> proprietarytag </li> 
       </ul> </p> </td> 
     </tr> 
@@ -81,12 +82,12 @@ Avant que les effets de la nouvelle définition de balise meta ne soient visible
       <td colname="col1"> <p>Type de données </p> </td> 
       <td colname="col2"> <p>Chaque champ est associé à un type de données tel que texte, nombre, date, version, classement ou emplacement. Ce type de données détermine comment le contenu du champ est indexé, recherché et, éventuellement, trié. </p> <p>Vous ne pouvez pas modifier le type de données après avoir créé la définition de champ. </p> <p>Utilisez les informations suivantes pour vous aider à sélectionner le type de données approprié aux informations contenues dans le champ. </p> <p> 
       <ul id="ul_A3AD5A0CF354410F836311F39151B8A6"> 
-      <li id="li_9F412DA7D9EF497BA6E65F9CE10F3046"> <span class="uicontrol"> Les champs de type </span> de données de texte sont traités comme des chaînes de caractères. </li> 
-      <li id="li_AD78B75644AE40208F0239311015611F"> <span class="uicontrol"> Les champs de type de données Nombre </span> sont traités comme des valeurs numériques entières ou à virgule flottante. </li> 
-      <li id="li_0B46975C589148E9A7C32A8D250487B7"> <span class="uicontrol"> Les champs de type </span> de données de date sont traités comme des indicateurs de date/heure. Vous pouvez personnaliser les formats de date et d’heure autorisés lorsque vous ajoutez ou modifiez le nouveau champ. </li> 
-      <li id="li_BB68CB1DBE0543AC9000B3DEDFB28E7E"> <span class="uicontrol"> Les champs de type de données de version </span> sont traités comme des données numériques de forme libre. Par exemple, la version 1.2.3 est triée avant la version 1.2.2. </li> 
-      <li id="li_0BA895B4DADA46528A7A4161EEB1521E"> <span class="uicontrol"> Les champs de type </span> de données de classement sont traités de la même manière que les champs de type "Nombre", sauf qu’ils influencent en outre les calculs de classement/pertinence dans les résultats de la recherche. <p>Voir <a href="../c-about-rules-menu/c-about-ranking-rules.md#concept_F555C076759B4E81B925441CFE707397" type="concept" format="dita" scope="local">A propos des règles de classement </a>. </p> </li> 
-      <li id="li_459405DA437049AD88AA1FAC28F04720"> <span class="uicontrol"> Les champs </span> de type de données d’emplacement sont traités comme un emplacement physique n’importe où dans le monde. Les formats d’emplacement autorisés sont les suivants : <p> 
+      <li id="li_9F412DA7D9EF497BA6E65F9CE10F3046"> <span class="uicontrol"> Les champs de type de  </span> données de texte sont traités comme des chaînes de caractères. </li> 
+      <li id="li_AD78B75644AE40208F0239311015611F"> <span class="uicontrol"> Les champs de type de  </span> données Nombre sont traités comme des valeurs numériques entières ou à virgule flottante. </li> 
+      <li id="li_0B46975C589148E9A7C32A8D250487B7"> <span class="uicontrol"> Les champs de type de  </span> données de date sont traités comme des indicateurs de date/heure. Vous pouvez personnaliser les formats de date et d’heure autorisés lorsque vous ajoutez ou modifiez le nouveau champ. </li> 
+      <li id="li_BB68CB1DBE0543AC9000B3DEDFB28E7E"> <span class="uicontrol"> Les champs de type de  </span> données de version sont traités comme des données numériques de forme libre. Par exemple, la version 1.2.3 est triée avant la version 1.2.2. </li> 
+      <li id="li_0BA895B4DADA46528A7A4161EEB1521E"> <span class="uicontrol"> Les champs de type de  </span> données de classement sont traités de la même manière que les champs de type "Nombre", sauf qu’ils influencent en outre les calculs de classement/pertinence dans les résultats de la recherche. <p>Voir <a href="../c-about-rules-menu/c-about-ranking-rules.md#concept_F555C076759B4E81B925441CFE707397" type="concept" format="dita" scope="local">A propos des règles de classement </a>. </p> </li> 
+      <li id="li_459405DA437049AD88AA1FAC28F04720"> <span class="uicontrol"> Les champs de type de  </span> données d’emplacement sont traités comme un emplacement physique n’importe où dans le monde. Les formats d’emplacement autorisés sont les suivants : <p> 
       <ul id="ul_D2CEBFA1A5504AA996BA2F7641AFB7F3"> 
       <li id="li_5283A2F2D5D84840B3D920C08D43654C"> Codes ZIP à 5 ou 9 chiffres sous la forme de DJJ ou DJJJJ, où chaque "D" est un 0-9 chiffres. </li> 
       <li id="li_A5CD4DFC90164BC68183DB7D10603B7C"> Codes à trois chiffres sous la forme de DDD. </li> 
@@ -96,17 +97,23 @@ Avant que les effets de la nouvelle définition de balise meta ne soient visible
       </tr> 
       <tr> 
       <td colname="col1"> <p>listes autorisées </p> </td> 
-      <td colname="col2"> <p>Disponible uniquement si le type de données <span class="uicontrol"> Texte </span>ou <span class="uicontrol"> Numéro </span> est sélectionné. </p> <p>Index distinct des valeurs délimitées dans le contenu des métadonnées de ce champ. </p> <p>Par exemple, le contenu "Rouge, Jaune, Vert, Bleu" est traité comme quatre valeurs distinctes au lieu d’une valeur lorsque "Listes autorisées" est sélectionné. Ce traitement est particulièrement utile pour la recherche de plage (à l’aide <code>
+      <td colname="col2"> <p>Disponible uniquement si le type de données <span class="uicontrol"> Texte </span> ou <span class="uicontrol"> Numéro </span> est sélectionné. </p> <p>Index distinct des valeurs délimitées dans le contenu des métadonnées de ce champ. </p> <p>Par exemple, le contenu "Rouge, Jaune, Vert, Bleu" est traité comme quatre valeurs distinctes au lieu d’une valeur lorsque "Listes autorisées" est sélectionné. Ce traitement est particulièrement utile pour la recherche de plage (à l’aide de 
+      <code>
         sp_q_min 
-      </code>, <code>
+      </code>, 
+      <code>
         sp_q_max 
-      </code>ou <code>
+      </code> ou 
+      <code>
         sp_q_exact 
-      </code>) et pour la recherche <code>
+      </code>) et avec la variable 
+      <code>
         &lt;search-field-value-list&gt; 
-      </code>, <code>
+      </code>, 
+      <code>
         &lt;search-field-values&gt; 
-      </code>et <code>
+      </code> et 
+      <code>
         &lt;search-display-field-values&gt; 
       </code>. </p> <p>Non disponible si le type de données Version est sélectionné. </p> </td> 
       </tr> 
@@ -117,9 +124,10 @@ Avant que les effets de la nouvelle définition de balise meta ne soient visible
       </tr> 
       <tr> 
       <td colname="col1"> <p>Autoriser la déduplication </p> </td> 
-      <td colname="col2"> <p>Cochez cette option pour activer la déduplication de ce champ. En d’autres termes, autorisez ce champ à être spécifié au moment de la recherche au moyen du paramètre <code>
+      <td colname="col2"> <p>Cochez cette option pour activer la déduplication de ce champ. En d’autres termes, autorisez la spécification de ce champ au moment de la recherche au moyen de la variable 
+        <code>
           sp_dedupe_field 
-        </code> Search CGI. </p> <p>Voir <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> Rechercher des paramètres CGI </a>. </p> </td> 
+        </code> Paramètre CGI de recherche. </p> <p>Voir <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> Paramètres CGI de recherche </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Nom du tableau </p> </td> 
@@ -135,7 +143,7 @@ Avant que les effets de la nouvelle définition de balise meta ne soient visible
       </tr> 
       <tr> 
       <td colname="col1"> <p>Champ de mise à jour verticale </p> </td> 
-      <td colname="col2"> <p> <p>Remarque : cette fonctionnalité n’est pas activée par défaut. Contactez le support technique pour l’activer pour votre utilisation. Une fois activé, il apparaît dans l’interface utilisateur. </p> </p> <p>Définit le champ identifié comme un champ Mise à jour verticale. </p> <p>Les champs Mise à jour verticale sont susceptibles d’être mis à jour au moyen du processus Mise à jour verticale ( <span class="uicontrol"> Index </span> &gt; <span class="uicontrol"> Mise à jour verticale </span>). En raison de la manière dont les mises à jour verticales sont effectuées, il n’est pas possible de rechercher le contenu de ces champs dans des recherches de texte libre. Si cette option est cochée, le contenu de ce champ n’est pas ajouté à l’index "word" lors d’une opération d’index de quelque type que ce soit. Il active également la mise à jour de ce champ lors d’une opération de mise à jour verticale. </p> <p>Pour en savoir plus sur les mises à jour verticales, voir <a href="../c-about-index-menu/c-about-vertical-updates.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> A propos des mises à jour verticales </a>. </p> </td> 
+      <td colname="col2"> <p> <p>Remarque : cette fonctionnalité n’est pas activée par défaut. Contactez le support technique pour l’activer pour votre utilisation. Une fois activé, il apparaît dans l’interface utilisateur. </p> </p> <p>Définit le champ identifié comme un champ Mise à jour verticale. </p> <p>Les champs Mise à jour verticale peuvent être mis à jour au moyen du processus Mise à jour verticale ( <span class="uicontrol"> Index </span> &gt; <span class="uicontrol"> Mise à jour verticale </span>). En raison de la manière dont les mises à jour verticales sont effectuées, il n’est pas possible de rechercher le contenu de ces champs dans des recherches de texte libre. Si cette option est cochée, le contenu de ce champ n’est pas ajouté à l’index "word" lors d’une opération d’index de quelque type que ce soit. Il active également la mise à jour de ce champ lors d’une opération de mise à jour verticale. </p> <p>Pour en savoir plus sur les mises à jour verticales, voir <a href="../c-about-index-menu/c-about-vertical-updates.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> À propos de la mise à jour verticale </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Pertinence </p> </td> 
@@ -143,13 +151,14 @@ Avant que les effets de la nouvelle définition de balise meta ne soient visible
       </tr> 
       <tr> 
       <td colname="col1"> <p>Tri </p> </td> 
-      <td colname="col2"> <p>Indique le moment où les résultats sont triés par champ nommé, au moyen du paramètre <code>
+      <td colname="col2"> <p>Indique le moment où les résultats sont triés par champ nommé, au moyen de la variable 
+        <code>
           sp_s 
-        </code> Search CGI. </p> <p>Voir <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> Rechercher des paramètres CGI </a>. </p> </td> 
+        </code> Paramètre CGI de recherche. </p> <p>Voir <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> Paramètres CGI de recherche </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Langue </p> </td> 
-      <td colname="col2"> <p>Disponible uniquement si le type de données <span class="uicontrol"> Classement </span>, <span class="uicontrol"> Numéro </span>ou <span class="uicontrol"> Date </span> est sélectionné. </p> <p>Contrôle les conventions de langue et de paramètres régionaux appliquées lors de l’indexation des valeurs de date, de nombre et de classement pour ce champ. </p> <p>Vous pouvez choisir d’appliquer la langue du compte (Linguistique &gt; Mots et langues). Vous pouvez également appliquer la langue associée au document qui contient chaque nombre ou valeur de date, ou une langue spécifique. </p> </td> 
+      <td colname="col2"> <p>Disponible uniquement si le type de données <span class="uicontrol"> Classement </span>, <span class="uicontrol"> Numéro </span> ou <span class="uicontrol"> Date </span> est sélectionné. </p> <p>Contrôle les conventions de langue et de paramètres régionaux appliquées lors de l’indexation des valeurs de date, de nombre et de classement pour ce champ. </p> <p>Vous pouvez choisir d’appliquer la langue du compte (Linguistique &gt; Mots et langues). Vous pouvez également appliquer la langue associée au document qui contient chaque nombre ou valeur de date, ou une langue spécifique. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Format(s) de date </p> </td> 
@@ -157,49 +166,52 @@ Avant que les effets de la nouvelle définition de balise meta ne soient visible
       </tr> 
       <tr> 
       <td colname="col1"> <p>Formats des dates de test </p> </td> 
-      <td colname="col2"> <p>Disponible uniquement si le type de données Date <span class="uicontrol"> </span> est sélectionné en tant que Type de données. </p> <p>Vous permet de prévisualisation les formats de date que vous avez spécifiés pour vous assurer qu’ils sont correctement formatés. </p> </td> 
+      <td colname="col2"> <p>Disponible uniquement si le type de données <span class="uicontrol"> Date </span> est sélectionné comme type de données. </p> <p>Vous permet de prévisualisation les formats de date que vous avez spécifiés pour vous assurer qu’ils sont correctement formatés. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Fuseau horaire </p> </td> 
-      <td colname="col2"> <p>Disponible uniquement si le type de données Date <span class="uicontrol"> </span> est sélectionné en tant que Type de données. </p> <p>Contrôle le fuseau horaire supposé appliqué lors de l’indexation des valeurs de date pour ce champ qui ne spécifient pas de fuseau horaire. </p> <p>Si, par exemple, le fuseau horaire de votre compte est défini sur "Amérique/Los Angeles" et que vous sélectionnez <span class="uicontrol"> Utiliser le fuseau horaire du compte </span>, la valeur de date méta suivante, qui ne comporte pas de fuseau horaire spécifié, est traitée comme s’il s’agissait de l’heure du Pacifique, en tenant compte des économies d’heure du jour : </p> <p>&lt;meta name="dc.date" content="Mon, 05 sept 201213:12:00"&gt; </p> </td> 
+      <td colname="col2"> <p>Disponible uniquement si le type de données <span class="uicontrol"> Date </span> est sélectionné comme type de données. </p> <p>Contrôle le fuseau horaire supposé appliqué lors de l’indexation des valeurs de date pour ce champ qui ne spécifient pas de fuseau horaire. </p> <p>Par exemple, si le fuseau horaire de votre compte est défini sur "Amérique/Los Angeles" et que vous sélectionnez <span class="uicontrol"> Utiliser le fuseau horaire du compte </span>, la valeur de date méta suivante, qui ne comporte pas de fuseau horaire spécifié, est traitée comme s'il s'agissait de l'heure du Pacifique, en tenant compte des économies d'heure du jour : </p> <p>&lt;meta name="dc.date" content="Mon, 05 Sep 201213:12:00"&gt; </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Valeur de classement la moins importante </p> </td> 
-      <td colname="col2"> <p>Disponible uniquement si le type de données <span class="uicontrol"> Classement </span> est sélectionné en tant que Type de données. </p> <p>Contrôle la valeur de classement qui représente le rang minimum de n’importe quel document. </p> <p>Si le classement par document est compris entre 0 pour le rang le plus bas et 10 pour le rang le plus élevé, définissez cette valeur sur 0. </p> <p>Si le classement par document est compris entre 1 pour le rang le plus élevé et 10 pour le rang le plus bas, définissez cette valeur sur 10. </p> </td> 
+      <td colname="col2"> <p>Disponible uniquement si le type de données <span class="uicontrol"> Classement </span> est sélectionné comme type de données. </p> <p>Contrôle la valeur de classement qui représente le rang minimum de n’importe quel document. </p> <p>Si le classement par document est compris entre 0 pour le rang le plus bas et 10 pour le rang le plus élevé, définissez cette valeur sur 0. </p> <p>Si le classement par document est compris entre 1 pour le rang le plus élevé et 10 pour le rang le plus bas, définissez cette valeur sur 10. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Valeur de classement par défaut </p> </td> 
-      <td colname="col2"> <p>Disponible uniquement si le type de données <span class="uicontrol"> Classement </span> est sélectionné en tant que Type de données. </p> <p>Contrôle la valeur de classement utilisée si un document ne contient aucune des balises meta définies pour ce champ de classement. </p> </td> 
+      <td colname="col2"> <p>Disponible uniquement si le type de données <span class="uicontrol"> Classement </span> est sélectionné comme type de données. </p> <p>Contrôle la valeur de classement utilisée si un document ne contient aucune des balises meta définies pour ce champ de classement. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Valeur de classement la plus importante </p> </td> 
-      <td colname="col2"> <p>Disponible uniquement si le type de données <span class="uicontrol"> Classement </span> est sélectionné en tant que Type de données. </p> <p>Contrôle la valeur de classement qui représente le rang maximum de n’importe quel document. </p> <p>Si le classement par document est compris entre 0 pour le rang le plus bas et 10 pour le rang le plus élevé, définissez cette valeur sur 10. </p> <p>Si le classement par document est compris entre 1 pour le rang le plus élevé et 10 pour le rang le plus bas, définissez cette valeur sur 1. </p> </td> 
+      <td colname="col2"> <p>Disponible uniquement si le type de données <span class="uicontrol"> Classement </span> est sélectionné comme type de données. </p> <p>Contrôle la valeur de classement qui représente le rang maximum de n’importe quel document. </p> <p>Si le classement par document est compris entre 0 pour le rang le plus bas et 10 pour le rang le plus élevé, définissez cette valeur sur 10. </p> <p>Si le classement par document est compris entre 1 pour le rang le plus élevé et 10 pour le rang le plus bas, définissez cette valeur sur 1. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Unités par défaut </p> </td> 
-      <td colname="col2"> <p>Disponible uniquement si le type de données Emplacement <span class="uicontrol"> </span> est sélectionné en tant que Type de données. </p> <p>Contrôle le traitement des valeurs de distance pour les recherches de proximité. </p> <p>Si vous définissez les unités par défaut sur <span class="uicontrol"> Miles </span>, tous les critères de distance minimale/maximale de recherche de proximité appliqués à ce champ (au moyen des paramètres <code>
+      <td colname="col2"> <p>Disponible uniquement si le type de données <span class="uicontrol"> Emplacement </span> est sélectionné comme type de données. </p> <p>Contrôle le traitement des valeurs de distance pour les recherches de proximité. </p> <p>Si vous définissez les unités par défaut sur <span class="uicontrol"> Miles </span>, tous les critères de distance minimale/maximale de la recherche de proximité qui sont appliqués à ce champ (au moyen de la variable 
+      <code>
         sp_q_min[_#] 
-      </code> ou des paramètres CGI <code>
+      </code> ou la variable 
+      <code>
         sp_q_max[_#] 
-      </code> de recherche) sont traités comme des milles, sinon comme des kilomètres. </p> <p>Cette option contrôle également les unités de distance par défaut appliquées à la sortie de la balise de modèle de résultats de <code>
+      </code> Les paramètres CGI de recherche) sont traités comme des milles, sinon comme des kilomètres. </p> <p>Cette option contrôle également les unités de distance par défaut appliquées à la sortie de la variable 
+      <code>
         &lt;Search-Display-Field&gt; 
-      </code> recherche lorsqu'elle est appliquée à un champ de sortie de recherche de proximité. </p> <p>Voir <a href="../c-appendices/r-about-proximity-search.md#reference_45AC6BB50609431ABD31DA46EE65360D" type="reference" format="dita" scope="local"> A propos de la recherche de proximité </a>. </p> </td> 
+      </code> balise de modèle de résultats de recherche lorsqu'elle est appliquée à un champ de sortie de recherche de proximité. </p> <p>Voir <a href="../c-appendices/r-about-proximity-search.md#reference_45AC6BB50609431ABD31DA46EE65360D" type="reference" format="dita" scope="local"> À propos de la recherche de proximité </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Créer une description de plage ? </p> </td> 
-      <td colname="col2"> <p>Disponible uniquement si <span class="uicontrol"> Numéro </span> est sélectionné en tant que Type de données. </p> <p>Contrôle la création automatique de descriptions de plage de champs, à utiliser avec <span class="uicontrol"> Conception </span> &gt; <span class="uicontrol"> Navigation </span> &gt; <span class="uicontrol"> Facettes </span>. </p> <p>Voir <a href="../c-about-design-menu/c-about-facets.md#concept_FA912B3B41EE493DB2F492D188457FF5" format="dita" scope="local"> A propos des facettes </a>. </p> <p> <p>Remarque :  Si ce champ comporte <span class="uicontrol"> une case Mettre à jour verticalement </span> cochée, le champ de description Période de champ généré est mis à jour lors d’une mise à jour verticale. Toutefois, il est recommandé que le champ identifié dans le champ <span class="uicontrol"> Période </span> comporte également <span class="uicontrol"> </span> une vérification du champ Mise à jour verticale. </p> </p> </td> 
+      <td colname="col2"> <p>Disponible uniquement si <span class="uicontrol"> Numéro </span> est sélectionné comme type de données. </p> <p>Contrôle la création automatique de descriptions de plage de champs, à utiliser avec <span class="uicontrol"> Conception </span> &gt; <span class="uicontrol"> Navigation </span> &gt; <span class="uicontrol"> Facettes </span>. </p> <p>Voir <a href="../c-about-design-menu/c-about-facets.md#concept_FA912B3B41EE493DB2F492D188457FF5" format="dita" scope="local"> A propos des facettes </a>. </p> <p> <p>Remarque :  Si <span class="uicontrol"> Champ de mise à jour verticale </span> est coché dans ce champ, le champ de description de la plage de champs généré est mis à jour lors d'une mise à jour verticale. Cependant, il est recommandé que le champ identifié dans <span class="uicontrol"> Champ de plage </span> soit également <span class="uicontrol"> Champ de mise à jour verticale </span> coché. </p> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Champ de plage </p> </td> 
-      <td colname="col2"> <p>Disponible uniquement si <span class="uicontrol"> Créer une description de plage </span> est cochée. </p> <p>Le <span class="uicontrol"> champ de texte </span> à mettre à jour avec les descriptions de plage pour le champ actif. Cette liste contient tous les <span class="uicontrol"> champs de texte </span> qui ne sont pas encore utilisés avec d’autres champs pour la génération de la plage de champs. </p> </td> 
+      <td colname="col2"> <p>Disponible uniquement si <span class="uicontrol"> Create Range Description </span> est coché. </p> <p>Le champ <span class="uicontrol"> Texte </span> à mettre à jour avec les descriptions de plage pour le champ actif. Cette liste contient tous les champs <span class="uicontrol"> Texte </span> qui ne sont pas encore utilisés avec d'autres champs pour la génération de la plage de champs. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Valeurs de plage </p> </td> 
-      <td colname="col2"> <p>Disponible uniquement si <span class="uicontrol"> Créer une description de plage </span> est coché et qu’un élément de champ de <span class="uicontrol"> plage </span> est sélectionné. </p> <p>Liste de points de données délimités par des blancs à utiliser lors de la création des descriptions de plage de champs. Par exemple : </p> <code> 10&amp;nbsp;20&amp;nbsp;50&amp;nbsp;100&amp;nbsp;1000 </code> <p>Vous pouvez entrer ces valeurs dans n’importe quel ordre. Les valeurs sont triées et les duplicata supprimés avant leur enregistrement. Vous pouvez également spécifier des valeurs négatives et non entières. </p> <p>Pour chacune des valeurs de ce champ : 
+      <td colname="col2"> <p>Disponible uniquement si <span class="uicontrol"> Créer une description de plage </span> est coché et qu'un élément <span class="uicontrol"> Champ de plage </span> est sélectionné. </p> <p>Liste de points de données délimités par des blancs à utiliser lors de la création des descriptions de plage de champs. Par exemple : </p> <code> 10&amp;nbsp;20&amp;nbsp;50&amp;nbsp;100&amp;nbsp;1000 </code> <p>Vous pouvez entrer ces valeurs dans n’importe quel ordre. Les valeurs sont triées et les duplicata supprimés avant leur enregistrement. Vous pouvez également spécifier des valeurs négatives et non entières. </p> <p>Pour chacune des valeurs de ce champ : 
       <ul id="ul_C4B41AF5AADF4B84B9C489CE82FF7075"> 
-      <li id="li_90736394A5AE4F5CA6B47687BCB627AA">si la valeur est inférieure à (&lt;) la plus petite valeur des valeurs <span class="uicontrol"> de plage </span>, le format <span class="uicontrol"> "Inférieur à" </span> est utilisé. </li> 
-      <li id="li_A5C272B2D26A468CA07EB2046B2EA8A7">si la valeur est supérieure ou égale à (&gt;=) la valeur la plus élevée dans <span class="uicontrol"> les valeurs de plage </span>, le format <span class="uicontrol"> "Supérieur à" </span> est utilisé. </li> 
-      <li id="li_9DDFB70E1E824CF4819C57450C1A6DD2">dans le cas contraire, une "plage" est trouvée lorsque la valeur du champ est comprise entre deux valeurs <span class="uicontrol"> de plage consécutives </span> (supérieures à (&gt;) la valeur la plus petite et inférieure ou égale à (&lt;=) la valeur la plus élevée) et que le <span class="uicontrol"> format intermédiaire </span> est utilisé. </li> 
+      <li id="li_90736394A5AE4F5CA6B47687BCB627AA">si la valeur est inférieure à (&lt;) la valeur la plus petite dans <span class="uicontrol"> Valeurs de plage </span>, le format <span class="uicontrol"> "Inférieur à" </span> est utilisé. </li> 
+      <li id="li_A5C272B2D26A468CA07EB2046B2EA8A7">si la valeur est supérieure ou égale à (&gt;=) la valeur la plus élevée dans <span class="uicontrol"> Valeurs de plage </span>, le format <span class="uicontrol"> "Supérieur à" </span> est utilisé. </li> 
+      <li id="li_9DDFB70E1E824CF4819C57450C1A6DD2">dans le cas contraire, une "plage" est trouvée lorsque la valeur du champ est comprise entre deux valeurs consécutives <span class="uicontrol"> Valeurs de plage </span> (supérieures à (&gt;) la valeur la plus petite et inférieure ou égale à (&lt;=) la valeur la plus élevée), et le <span class="uicontrol"> Format intermédiaire </span> est utilisé. </li> 
     </ul> </p> <p>Par exemple, l’exemple ci-dessus définit un ensemble de descriptions pour les valeurs : 
     <ul id="ul_03ED30D5A19346AB8E6809BDD186A9A9"> 
       <li id="li_F97A6B3763954EFE9B6751F472AF7D20">moins de 10 </li> 
@@ -212,77 +224,77 @@ Avant que les effets de la nouvelle définition de balise meta ne soient visible
       </tr> 
       <tr> 
       <td colname="col1"> <p>Format "Inférieur à" </p> </td> 
-      <td colname="col2"> <p>Disponible uniquement si <span class="uicontrol"> Créer une description de plage </span> est coché et qu’un élément de champ de <span class="uicontrol"> plage </span> est sélectionné. </p> <p>Il s’agit du modèle utilisé pour spécifier la description de la plage pour les valeurs inférieures à la plus petite valeur trouvée dans <span class="uicontrol"> les valeurs de plage </span>. La plus petite valeur sera représentée à l’aide du jeton d’espace réservé numérique <span class="uicontrol"> ~N~ </span>. Par exemple : </p> <code> Less&amp;nbsp;than&amp;nbsp;~N~ </code> <p>ou : </p> <code> ~N~&amp;nbsp;and&amp;nbsp;below </code> <p>Normalement, la valeur sera formatée "en l'état" - c'est-à-dire pour une <span class="uicontrol"> définition de "5 10 20" pour les valeurs de </span> plage et une valeur fournie de 1, la description de plage générée serait simplement quelque chose comme "Inférieur à 5". Si vous préférez qu'il soit "4.99 et moins", définissez <span class="uicontrol"> Precision </span> sur <span class="uicontrol"> 2 </span> et utilisez ce format : </p> <code> ~n~&amp;nbsp;and&amp;nbsp;below </code> <p>Dans <span class="uicontrol"> le format "Inférieur à" </span>, la minuscule <span class="uicontrol"> ~n~ </span> fera arrondir la valeur <i>vers le bas</i> selon le paramètre de  de précision <span class="uicontrol"> .</span> </p> <p>Remarque : pour inclure tout espace réservé numérique dans la description de la plage, en l’état, spécifiez avec un préfixe barre oblique inverse (\) - par ex. <span class="uicontrol"> \~N~ </span> ou <span class="uicontrol"> \~n~ </span>. Pour inclure une barre oblique inverse, spécifiez-la avec une autre barre oblique inverse, par ex. <span class="uicontrol"> \\ </span>. </p> </td> 
+      <td colname="col2"> <p>Disponible uniquement si <span class="uicontrol"> Créer une description de plage </span> est coché et qu'un élément <span class="uicontrol"> Champ de plage </span> est sélectionné. </p> <p>Il s’agit du modèle utilisé pour spécifier la description de la plage pour les valeurs inférieures à la plus petite valeur trouvée dans <span class="uicontrol"> Valeurs de plage </span>. La valeur la plus petite sera représentée à l’aide du jeton d’espace réservé numérique <span class="uicontrol"> ~N~ </span>. Par exemple : </p> <code> Less&amp;nbsp;than&amp;nbsp;~N~ </code> <p>ou : </p> <code> ~N~&amp;nbsp;and&amp;nbsp;below </code> <p>Normalement, la valeur sera formatée "telle quelle" - c'est-à-dire pour une définition de <span class="uicontrol"> Valeurs de plage </span> de "5 10 20" et une valeur fournie de 1, la description de plage générée serait simplement quelque chose comme "Inférieur à 5". Si vous souhaitez qu'il soit de type "4.99 et inférieur", définissez <span class="uicontrol"> Precision </span> sur <span class="uicontrol"> 2 </span> et utilisez ce format : </p> <code> ~n~&amp;nbsp;and&amp;nbsp;below </code> <p>Dans le format <span class="uicontrol"> "Inférieur à" </span>, la minuscule <span class="uicontrol"> ~n~ </span> arrondit la valeur <i>vers le bas </i> selon le paramètre <span class="uicontrol"> Precision </span>. </p> <p>Remarque : pour inclure tout espace réservé numérique dans la description de la plage, en l’état, spécifiez avec un préfixe barre oblique inverse (\) - par ex. <span class="uicontrol"> \~N~ </span> ou <span class="uicontrol"> \~n~ </span>. Pour inclure une barre oblique inverse, spécifiez-la avec une autre barre oblique inverse, par ex. <span class="uicontrol"> \\ </span>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Format intermédiaire </p> </td> 
-      <td colname="col2"> <p>Disponible uniquement si <span class="uicontrol"> Créer une description de plage </span> est coché et qu’un élément de champ de <span class="uicontrol"> plage </span> est sélectionné. </p> <p>Il s’agit du modèle utilisé pour spécifier la description de la plage pour les valeurs qui se situent quelque part entre les valeurs les plus petites et les plus grandes trouvées dans <span class="uicontrol"> les valeurs de plage </span>. Pour la plage donnée, la valeur de plage inférieure sera représentée à l’aide du jeton d’espace réservé numérique <span class="uicontrol"> ~L~ </span>, et la valeur de plage supérieure sera représentée à l’aide du jeton <span class="uicontrol"> ~H~ </span>. Par exemple : </p> <code> ~L~&amp;nbsp;to&amp;nbsp;~H~ </code> <p>ou : </p> <code> Between&amp;nbsp;~L~&amp;nbsp;and&amp;nbsp;~H~ </code> <p>ou : </p> <code> Less&amp;nbsp;than&amp;nbsp;~H~&amp;nbsp;and&amp;nbsp;greater&amp;nbsp;than&amp;nbsp;~L~ </code> <p>Normalement, les valeurs seront formatées "en l'état" - c'est-à-dire pour une <span class="uicontrol"> définition de "5 10 20" pour les valeurs de </span> plage et une valeur fournie de 8, la description de plage générée serait simplement quelque chose comme "Entre 5 et 10". Si vous préférez qu'il soit "Entre 5 et 9,99", avec la valeur la plus élevée ajustée <i>vers le bas</i>, définissez <span class="uicontrol"> Precision </span> sur <span class="uicontrol"> 2 </span> et utilisez ce format : </p> <code> Between&amp;nbsp;~L~&amp;nbsp;and&amp;nbsp;~h~ </code> <p>De même, <span class="uicontrol"> ~L~ </span> peut être remplacé par <span class="uicontrol"> ~l~ </span> pour que la valeur la plus faible soit ajustée <i>à la hausse</i>, également selon le paramètre de  de précision <span class="uicontrol"> . </span> Cela signifie qu'une définition telle que : </p> <code> Between&amp;nbsp;~l~&amp;nbsp;and&amp;nbsp;~H~ </code> <p>avec une valeur <span class="uicontrol"> Precision </span> de <span class="uicontrol"> 2 </span> créerait "Entre 5,01 et 10". </p> <p>La minuscule <span class="uicontrol"> ~l~ </span> entraîne l’arrondi de la valeur inférieure <i>vers le haut</i> selon le paramètre <span class="uicontrol"> Precision </span> , et la minuscule <span class="uicontrol"> ~h~  entraîne l’arrondi de la valeur supérieure down.</span><i></i> </p> <p>Remarque : pour inclure tout espace réservé numérique dans la description de la plage, en l’état, spécifiez avec un préfixe barre oblique inverse (\) - par ex. <span class="uicontrol"> \~L~ </span> ou <span class="uicontrol"> \~h~ </span>. Pour inclure une barre oblique inverse, spécifiez-la avec une autre barre oblique inverse, par ex. <span class="uicontrol"> \\ </span>. </p> </td> 
+      <td colname="col2"> <p>Disponible uniquement si <span class="uicontrol"> Créer une description de plage </span> est coché et qu'un élément <span class="uicontrol"> Champ de plage </span> est sélectionné. </p> <p>Il s’agit du modèle utilisé pour spécifier la description de la plage pour les valeurs comprises entre les valeurs les plus petites et les plus grandes trouvées dans <span class="uicontrol"> Valeurs de plage </span>. Pour la plage donnée, la valeur de plage inférieure sera représentée à l’aide du jeton d’espace réservé numérique <span class="uicontrol"> ~L~ </span>, et la valeur de plage supérieure sera représentée à l’aide du jeton <span class="uicontrol"> ~H~ </span>. Par exemple : </p> <code> ~L~&amp;nbsp;to&amp;nbsp;~H~ </code> <p>ou : </p> <code> Between&amp;nbsp;~L~&amp;nbsp;and&amp;nbsp;~H~ </code> <p>ou : </p> <code> Less&amp;nbsp;than&amp;nbsp;~H~&amp;nbsp;and&amp;nbsp;greater&amp;nbsp;than&amp;nbsp;~L~ </code> <p>Normalement, les valeurs seront formatées "en l'état" - c'est-à-dire pour une définition de <span class="uicontrol"> Valeurs de plage </span> de "5 10 20" et une valeur fournie de 8, la description de plage générée serait simplement quelque chose comme "Entre 5 et 10". Si vous préférez qu'il soit "Entre 5 et 9,99", avec la valeur la plus élevée ajustée <i>vers le bas</i>, définissez <span class="uicontrol"> Precision </span> sur <span class="uicontrol"> 2 </span> et utilisez ce format : </p> <code> Between&amp;nbsp;~L~&amp;nbsp;and&amp;nbsp;~h~ </code> <p>De même, <span class="uicontrol"> ~L~ </span> peut être remplacé par <span class="uicontrol"> ~l~ </span> pour que la valeur inférieure soit ajustée <i>à la hausse</i>, également selon le paramètre <span class="uicontrol"> Precision </span>. Cela signifie qu'une définition telle que : </p> <code> Between&amp;nbsp;~l~&amp;nbsp;and&amp;nbsp;~H~ </code> <p>avec une valeur <span class="uicontrol"> Precision </span> de <span class="uicontrol"> 2 </span> créerait "Entre 5.01 et 10". </p> <p>La minuscule <span class="uicontrol"> ~l~ </span> fera arrondir la valeur inférieure <i>up</i> conformément au paramètre <span class="uicontrol"> Precision </span> et la minuscule <span class="uicontrol"> ~h~ </span> fera arrondir la valeur supérieure <i>down</i>. </p> <p>Remarque : pour inclure tout espace réservé numérique dans la description de la plage, en l’état, spécifiez avec un préfixe barre oblique inverse (\) - par ex. <span class="uicontrol"> \~L~ </span> ou <span class="uicontrol"> \~h~ </span>. Pour inclure une barre oblique inverse, spécifiez-la avec une autre barre oblique inverse, par ex. <span class="uicontrol"> \\ </span>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Format "Supérieur à" </p> </td> 
-      <td colname="col2"> <p>Disponible uniquement si <span class="uicontrol"> Créer une description de plage </span> est coché et qu’un élément de champ de <span class="uicontrol"> plage </span> est sélectionné. </p> <p>Il s’agit du modèle utilisé pour spécifier la description de la plage pour les valeurs supérieures à la valeur la plus élevée trouvée dans <span class="uicontrol"> les valeurs de plage </span>. La valeur la plus élevée sera représentée à l’aide du jeton d’espace réservé numérique <span class="uicontrol"> ~N~ </span>. Par exemple : </p> <code> Greater&amp;nbsp;than&amp;nbsp;~N~ </code> <p>ou : </p> <code> ~N~&amp;nbsp;and&amp;nbsp;above </code> <p>Normalement, la valeur sera formatée "en l'état" - c'est-à-dire pour une <span class="uicontrol"> définition de "5 10 20" pour les valeurs de </span> plage et une valeur fournie de 30, la description de plage générée serait simplement un peu comme "Supérieur à 20". Si vous préférez qu'il soit "20.01 et plus", définissez <span class="uicontrol"> Precision </span> sur <span class="uicontrol"> 2 </span> et utilisez ce format : </p> <code> ~n~&amp;nbsp;and&amp;nbsp;above </code> <p>Dans <span class="uicontrol"> le format </span>"Supérieur à" <span class="uicontrol"> , la minuscule </span> ~n~ <i>entraîne l’arrondi de la valeur</i> vers le haut <span class="uicontrol"> selon le paramètre de  deprécision.</span> </p> <p>Remarque : pour inclure tout espace réservé numérique dans la description de la plage, en l’état, spécifiez avec un préfixe barre oblique inverse (\) - par ex. <span class="uicontrol"> \~N~ </span> ou <span class="uicontrol"> \~n~ </span>. Pour inclure une barre oblique inverse, spécifiez-la avec une autre barre oblique inverse, par ex. <span class="uicontrol"> \\ </span>. </p> </td> 
+      <td colname="col2"> <p>Disponible uniquement si <span class="uicontrol"> Créer une description de plage </span> est coché et qu'un élément <span class="uicontrol"> Champ de plage </span> est sélectionné. </p> <p>Il s’agit du modèle utilisé pour spécifier la description de plage pour les valeurs supérieures à la valeur la plus élevée trouvée dans <span class="uicontrol"> Valeurs de plage </span>. La valeur la plus élevée sera représentée à l’aide du jeton d’espace réservé numérique <span class="uicontrol"> ~N~ </span>. Par exemple : </p> <code> Greater&amp;nbsp;than&amp;nbsp;~N~ </code> <p>ou : </p> <code> ~N~&amp;nbsp;and&amp;nbsp;above </code> <p>Normalement, la valeur sera formatée "telle quelle", c'est-à-dire pour une définition de <span class="uicontrol"> Valeurs de plage </span> de "5 10 20" et une valeur fournie de 30, la description de plage générée serait simplement un peu comme "Supérieur à 20". Si vous préférez qu’il s’agisse de "20.01 et plus", définissez <span class="uicontrol"> Precision </span> sur <span class="uicontrol"> 2 </span> et utilisez ce format : </p> <code> ~n~&amp;nbsp;and&amp;nbsp;above </code> <p>Dans le format <span class="uicontrol"> "Supérieur à" </span>, la minuscule <span class="uicontrol"> ~n~ </span> fera arrondir la valeur <i>up</i> selon le paramètre <span class="uicontrol"> Precision </span>. </p> <p>Remarque : pour inclure tout espace réservé numérique dans la description de la plage, en l’état, spécifiez avec un préfixe barre oblique inverse (\) - par ex. <span class="uicontrol"> \~N~ </span> ou <span class="uicontrol"> \~n~ </span>. Pour inclure une barre oblique inverse, spécifiez-la avec une autre barre oblique inverse, par ex. <span class="uicontrol"> \\ </span>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Précision </p> </td> 
-      <td colname="col2"> <p>Disponible uniquement si <span class="uicontrol"> Créer une description de plage </span> est coché et qu’un élément de champ de <span class="uicontrol"> plage </span> est sélectionné. </p> <p>Valeur entière spécifiant le nombre de chiffres à droite d’un point décimal. Cela contrôle également les opérations d’arrondi. </p> </td> 
+      <td colname="col2"> <p>Disponible uniquement si <span class="uicontrol"> Créer une description de plage </span> est coché et qu'un élément <span class="uicontrol"> Champ de plage </span> est sélectionné. </p> <p>Valeur entière spécifiant le nombre de chiffres à droite d’un point décimal. Cela contrôle également les opérations d’arrondi. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Éliminer les zéros de début ? </p> </td> 
-      <td colname="col2"> <p>Disponible uniquement si <span class="uicontrol"> Créer une description de plage </span> est coché, un <span class="uicontrol"> élément Champ de </span> plage est sélectionné et une valeur de précision non nulle <span class="uicontrol"> </span> a été définie. </p> <p>Doit-on afficher "0,50" comme ".50" ? </p> </td> 
+      <td colname="col2"> <p>Disponible uniquement si <span class="uicontrol"> Créer une description de plage </span> est coché, un élément <span class="uicontrol"> Champ de plage </span> est sélectionné et une valeur de précision <span class="uicontrol"> non nulle </span> a été définie. </p> <p>Doit-on afficher "0,50" comme ".50" ? </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Éliminer les zéros de fin ? </p> </td> 
-      <td colname="col2"> <p>Disponible uniquement si <span class="uicontrol"> Créer une description de plage </span> est coché, un <span class="uicontrol"> élément Champ de </span> plage est sélectionné et une valeur de précision non nulle <span class="uicontrol"> </span> a été définie. </p> <p>Doit-on afficher "10.00" comme "10" ? </p> </td> 
+      <td colname="col2"> <p>Disponible uniquement si <span class="uicontrol"> Créer une description de plage </span> est coché, un élément <span class="uicontrol"> Champ de plage </span> est sélectionné et une valeur de précision <span class="uicontrol"> non nulle </span> a été définie. </p> <p>Doit-on afficher "10.00" comme "10" ? </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Afficher des milliers de séparateurs ? </p> </td> 
-      <td colname="col2"> <p>Disponible uniquement si <span class="uicontrol"> Créer une description de plage </span> est coché et qu’un élément de champ de <span class="uicontrol"> plage </span> est sélectionné. </p> <p>Devrions-nous afficher "10 000" comme "10 000" ? Des valeurs spécifiques aux paramètres régionaux seront utilisées. </p> </td> 
+      <td colname="col2"> <p>Disponible uniquement si <span class="uicontrol"> Créer une description de plage </span> est coché et qu'un élément <span class="uicontrol"> Champ de plage </span> est sélectionné. </p> <p>Devrions-nous afficher "10 000" comme "10 000" ? Des valeurs spécifiques aux paramètres régionaux seront utilisées. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Ajuster les valeurs nulles ? </p> </td> 
-      <td colname="col2"> <p>Disponible uniquement si <span class="uicontrol"> Créer une description de plage </span> est coché et qu’un élément de champ de <span class="uicontrol"> plage </span> est sélectionné. </p> <p>Lorsque des valeurs arrondies nulles sont affichées, doivent-elles être arrondies vers le haut ou vers le bas selon le paramètre <span class="uicontrol"> Precision </span> ? c'est-à-dire afficher "0,01" ? </p> </td> 
+      <td colname="col2"> <p>Disponible uniquement si <span class="uicontrol"> Créer une description de plage </span> est coché et qu'un élément <span class="uicontrol"> Champ de plage </span> est sélectionné. </p> <p>Lorsque des valeurs nulles arrondies sont affichées, doivent-elles être arrondies vers le haut ou vers le bas selon le paramètre <span class="uicontrol"> Precision </span> ? c'est-à-dire afficher "0,01" ? </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Test à l’aide de la valeur Supérieur à ? </p> </td> 
-      <td colname="col2"> <p>Disponible uniquement si <span class="uicontrol"> Créer une description de plage </span> est coché et qu’un élément de champ de <span class="uicontrol"> plage </span> est sélectionné. </p> <p>Chaque valeur étant comparée aux valeurs de la <span class="uicontrol"> plage Valeurs </span>, traitées dans l’ordre <i><b>décroissant</b></i> , elle est comparée, par défaut, à l’aide de l’opérateur Plus grand que ou égal (&gt;=), en s’arrêtant une fois que ce test réussit. Cela signifie qu’avec un ensemble de valeurs <span class="uicontrol"> de plage </span> comme "10 20 50 100 1 000", la valeur 100 tombera dans la plage 100 à 1 000, car 100 est en effet &gt;= 100. Si vous préférez qu’elle tombe dans la plage 50 à 100, cochez cette option, ce qui entraînera l’utilisation de l’opérateur Plus grand que (&gt;) dans les comparaisons. </p> <p>Par exemple, pour chacune des valeurs de ce champ, lorsque cette option est cochée : 
+      <td colname="col2"> <p>Disponible uniquement si <span class="uicontrol"> Créer une description de plage </span> est coché et qu'un élément <span class="uicontrol"> Champ de plage </span> est sélectionné. </p> <p>Chaque valeur étant comparée aux valeurs de <span class="uicontrol"> Valeurs de plage </span>, traitées dans l'ordre <i><b>décroissant</b></i>, elle est comparée, par défaut, à l'aide de l'opérateur Plus grand que ou égal (&gt;=), en s'arrêtant une fois que ce test réussit. Cela signifie qu’avec un ensemble de <span class="uicontrol"> Valeurs de plage </span> comme "10 20 50 100 1000", la valeur 100 tombera dans la plage 100 à 1000, car 100 est en effet &gt;= 100. Si vous préférez qu’elle tombe dans la plage 50 à 100, cochez cette option, ce qui entraînera l’utilisation de l’opérateur Plus grand que (&gt;) dans les comparaisons. </p> <p>Par exemple, pour chacune des valeurs de ce champ, lorsque cette option est cochée : 
       <ul id="ul_969621B1BD914FA5BD73ED21F8841010"> 
-      <li id="li_157BEFDA7D0E44C481F4E4BC9046EF24">si la valeur est inférieure ou égale à (&lt;=) la plus petite valeur des valeurs de <span class="uicontrol"> plage </span>, le format <span class="uicontrol"> "Inférieur à" </span> sera utilisé. </li> 
-      <li id="li_737EE666CA6243A8864E17A311CF3ACC">si la valeur est supérieure à (&gt;) la valeur la plus élevée dans les valeurs de <span class="uicontrol"> plage </span>, le format <span class="uicontrol"> "supérieur à" </span> sera utilisé. </li> 
-      <li id="li_353A9820F7F74CCCBB3281EC4CB48734">sinon, une plage sera trouvée lorsque la valeur du champ est comprise entre deux valeurs <span class="uicontrol"> de plage consécutives </span> (supérieures ou égales à (&gt;=) la valeur la plus petite et inférieure à (&lt;) la valeur la plus élevée), et le format <span class="uicontrol"> intermédiaire </span> sera utilisé. </li> 
+      <li id="li_157BEFDA7D0E44C481F4E4BC9046EF24">si la valeur est inférieure ou égale à (&lt;=) la valeur la plus petite dans <span class="uicontrol"> Valeurs de plage </span>, le format <span class="uicontrol"> "Inférieur à" </span> sera utilisé. </li> 
+      <li id="li_737EE666CA6243A8864E17A311CF3ACC">si la valeur est supérieure à (&gt;) la valeur la plus élevée dans <span class="uicontrol"> Valeurs de plage </span>, le format <span class="uicontrol"> "Supérieur à" </span> sera utilisé. </li> 
+      <li id="li_353A9820F7F74CCCBB3281EC4CB48734">sinon, une plage sera trouvée lorsque la valeur du champ est comprise entre deux valeurs consécutives <span class="uicontrol"> Valeurs de plage </span> (supérieures ou égales à (&gt;=) la valeur la plus petite et inférieure à (&lt;) la valeur la plus élevée), et le <span class="uicontrol"> Format intermédiaire </span> sera utilisé. </li> 
     </ul> </p> <p>et, lorsqu'elle n'est pas cochée : 
     <ul id="ul_945844C33C2E4D95A598C4876E15F211"> 
-      <li id="li_653B6E2934574DA3B4BCEF07D0A84527">si la valeur est inférieure à (&lt;) la plus petite valeur des valeurs <span class="uicontrol"> de plage </span>, le format <span class="uicontrol"> "Inférieur à" </span> sera utilisé. </li> 
-      <li id="li_AECA6880002F40FAB1820B37237550A7">si la valeur est supérieure ou égale à (&gt;=) la valeur la plus élevée dans les valeurs de <span class="uicontrol"> plage </span>, le format <span class="uicontrol"> "Supérieur à" </span> sera utilisé. </li> 
-      <li id="li_ECB2DF7CA592497298E9ADC708220366">sinon, une plage sera trouvée lorsque la valeur du champ est comprise entre deux valeurs <span class="uicontrol"> de plage consécutives </span> (supérieures à (&gt;) la valeur la plus petite et inférieure ou égale à (&lt;=) la valeur la plus élevée), et le format <span class="uicontrol"> intermédiaire </span> sera utilisé. </li> 
+      <li id="li_653B6E2934574DA3B4BCEF07D0A84527">si la valeur est inférieure à (&lt;) la valeur la plus petite dans <span class="uicontrol"> Valeurs de plage </span>, le format <span class="uicontrol"> "Inférieur à" </span> sera utilisé. </li> 
+      <li id="li_AECA6880002F40FAB1820B37237550A7">si la valeur est supérieure ou égale à (&gt;=) la valeur la plus élevée dans <span class="uicontrol"> Valeurs de plage </span>, le format <span class="uicontrol"> "Supérieur à" </span> sera utilisé. </li> 
+      <li id="li_ECB2DF7CA592497298E9ADC708220366">sinon, une plage sera trouvée lorsque la valeur du champ est comprise entre deux valeurs consécutives <span class="uicontrol"> Valeurs de plage </span> (supérieures à (&gt;) la valeur plus petite et inférieure ou égale à (&lt;=) la valeur plus grande), et le <span class="uicontrol"> Format intermédiaire </span> sera utilisé. </li> 
       </ul> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Test </p> </td> 
-      <td colname="col2"> <p>Disponible uniquement si <span class="uicontrol"> Créer une description de plage </span> est coché et qu’un élément de champ de <span class="uicontrol"> plage </span> est sélectionné. </p> <p>Fournissez un exemple de valeur numérique et appuyez sur le <span class="uicontrol"> bouton </span> Tester pour voir comment le champ Plage est créé. La description de la plage générée s'affiche dans la fenêtre. </p> </td> 
+      <td colname="col2"> <p>Disponible uniquement si <span class="uicontrol"> Créer une description de plage </span> est coché et qu'un élément <span class="uicontrol"> Champ de plage </span> est sélectionné. </p> <p>Fournissez un exemple de valeur numérique et appuyez sur le bouton <span class="uicontrol"> Tester </span> pour voir comment le champ de plage est créé. La description de la plage générée s'affiche dans la fenêtre. </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
-   Voir aussi [Ajouter un nouveau champ](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5)de balise meta.
+   Voir aussi [Ajouter un nouveau champ de balise meta](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5).
 1. Cliquez sur **[!UICONTROL Add]**.
 1. (Facultatif) Recréez l’index de votre site d’évaluation si vous souhaitez prévisualisation les résultats.
 
-   Voir [Configuration d’un index incrémentiel d’un site Web](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0)intermédiaire.
-1. (Facultatif) Sur la [!DNL Definitions] page, effectuez l’une des opérations suivantes :
+   Voir [Configuration d’un index incrémentiel d’un site Web intermédiaire](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
+1. (Facultatif) Sur la page [!DNL Definitions], effectuez l’une des opérations suivantes :
 
    * Cliquez sur **[!UICONTROL History]** pour annuler les modifications que vous avez apportées.
 
-      Voir [Utilisation de l’option](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historique.
+      Voir [Utilisation de l’option Historique](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Cliquez sur **[!UICONTROL Live]**.
 
-      Voir [Affichage des paramètres](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)en direct.
+      Voir [Affichage des paramètres en direct](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Cliquez sur **[!UICONTROL Push Live]**.
 
       Voir [Activation des paramètres d’étape](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Modification de champs de balise meta prédéfinis ou définis par l’utilisateur {#task_0A7657B63596421BB6DB3ED44F827AB3}
+## Modification des champs de balise meta prédéfinis ou définis par l&#39;utilisateur {#task_0A7657B63596421BB6DB3ED44F827AB3}
 
 Vous pouvez modifier uniquement certains champs des balises meta prédéfinies ou tous les champs des balises meta définies par l’utilisateur.
 
@@ -291,58 +303,58 @@ Avant que les effets des modifications apportées à vos balises meta ne soient 
 **Pour modifier des champs de balise meta prédéfinis ou définis par l’utilisateur**
 
 1. Dans le menu produit, cliquez sur **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Definitions]**.
-1. Sur la [!DNL Definitions] page, dans la [!DNL Actions] colonne du tableau, cliquez sur **[!UICONTROL Edit]** dans la ligne du nom du champ de balise meta que vous souhaitez modifier.
-1. Sur la [!DNL Pinned Keyword Results Manager] page, dans le tableau, cliquez **[!UICONTROL Edit]** dans la ligne du mot-clé à modifier.
-1. Sur la [!DNL Edit Field] page, définissez les options de votre choix.
+1. Sur la page [!DNL Definitions], dans la colonne [!DNL Actions] du tableau, cliquez sur **[!UICONTROL Edit]** dans la ligne du nom du champ de balise meta que vous souhaitez modifier.
+1. Sur la page [!DNL Pinned Keyword Results Manager], dans le tableau, cliquez sur **[!UICONTROL Edit]** dans la ligne du mot-clé à modifier.
+1. Sur la page [!DNL Edit Field], définissez les options de votre choix.
 
    Si vous choisissez d’apporter des modifications à un champ de balise meta prédéfini, sachez que tous les champs ne sont pas modifiables.
 
-   Consultez le tableau des options sous [Ajouter un nouveau champ](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5)de balise meta.
+   Consultez le tableau des options sous [Ajouter un nouveau champ de balise meta](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5).
 1. Cliquez sur **[!UICONTROL Save Changes]**.
 1. (Facultatif) Recréez l’index de votre site d’évaluation si vous souhaitez prévisualisation les résultats.
 
-   Voir [Configuration d’un index incrémentiel d’un site Web](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0)intermédiaire.
-1. (Facultatif) Sur la [!DNL Definitions] page, effectuez l’une des opérations suivantes :
+   Voir [Configuration d’un index incrémentiel d’un site Web intermédiaire](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
+1. (Facultatif) Sur la page [!DNL Definitions], effectuez l’une des opérations suivantes :
 
    * Cliquez sur **[!UICONTROL History]** pour annuler les modifications que vous avez apportées.
 
-      Voir [Utilisation de l’option](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historique.
+      Voir [Utilisation de l’option Historique](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Cliquez sur **[!UICONTROL Live]**.
 
-      Voir [Affichage des paramètres](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)en direct.
+      Voir [Affichage des paramètres en direct](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Cliquez sur **[!UICONTROL Push Live]**.
 
       Voir [Activation des paramètres d’étape](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Suppression d’un champ de balise meta défini par l’utilisateur {#task_9361EF38B5E743038B6672FA6CF70FD3}
+## Suppression d’un champ de balise META défini par l’utilisateur {#task_9361EF38B5E743038B6672FA6CF70FD3}
 
 Vous pouvez supprimer un champ de balise meta défini par l’utilisateur dont vous n’avez plus besoin ou que vous n’utilisez plus.
 
 Vous ne pouvez pas supprimer les champs de balise meta prédéfinis. Vous pouvez toutefois modifier certains champs.
 
-Voir [Modification de champs](../c-about-settings-menu/c-about-metadata-menu.md#task_0A7657B63596421BB6DB3ED44F827AB3)de balise meta prédéfinis ou définis par l’utilisateur.
+Voir [Modification des champs de balise meta prédéfinis ou définis par l’utilisateur](../c-about-settings-menu/c-about-metadata-menu.md#task_0A7657B63596421BB6DB3ED44F827AB3).
 
 Avant que les effets de votre balise meta supprimée ne soient visibles par les clients, vous devez regénérer l&#39;index de votre site.
 
 **Pour supprimer un champ de balise meta défini par l’utilisateur**
 
 1. Dans le menu produit, cliquez sur **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Definitions]**.
-1. Sur la [!DNL Definitions] page, dans la [!DNL User-defined fields] section du tableau, cliquez sur **[!UICONTROL Delete]** dans la ligne du nom du champ de balise meta que vous souhaitez supprimer.
+1. Sur la page [!DNL Definitions], dans la section [!DNL User-defined fields] du tableau, cliquez sur **[!UICONTROL Delete]** dans la ligne du nom du champ de balise meta que vous souhaitez supprimer.
 1. Dans la boîte de dialogue Confirmation, cliquez sur **[!UICONTROL OK]**.
 1. (Facultatif) Recréez l’index de votre site d’évaluation si vous souhaitez prévisualisation les résultats.
 
-   Voir [Configuration d’un index incrémentiel d’un site Web](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0)intermédiaire.
-1. (Facultatif) Sur la [!DNL Definitions] page, effectuez l’une des opérations suivantes :
+   Voir [Configuration d’un index incrémentiel d’un site Web intermédiaire](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
+1. (Facultatif) Sur la page [!DNL Definitions], effectuez l’une des opérations suivantes :
 
    * Cliquez sur **[!UICONTROL History]** pour annuler les modifications que vous avez apportées.
 
-      Voir [Utilisation de l’option](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historique.
+      Voir [Utilisation de l’option Historique](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Cliquez sur **[!UICONTROL Live]**.
 
-      Voir [Affichage des paramètres](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)en direct.
+      Voir [Affichage des paramètres en direct](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Cliquez sur **[!UICONTROL Push Live]**.
 
@@ -350,7 +362,7 @@ Avant que les effets de votre balise meta supprimée ne soient visibles par les 
 
 ## A propos des injections {#concept_DA091920671948A0A893A26B3A2FAAE5}
 
-Vous pouvez les utiliser [!DNL Injections] pour insérer du contenu dans vos pages Web sans avoir à modifier les pages elles-mêmes.
+Vous pouvez utiliser [!DNL Injections] pour insérer du contenu dans vos pages Web sans avoir à modifier les pages elles-mêmes.
 
 Vous pouvez ajouter du contenu à des champs indexés spécifiques, tels que &quot;cible&quot; ou &quot;corps&quot;, ou remplacer le contenu indexé par de nouvelles valeurs. Par exemple, si vous avez inséré un nouveau contenu dans le champ de balise meta &quot;cible&quot;, ces informations sont traitées de la même manière que le contenu de la page codé en dur. Vous pouvez modifier le contenu de tout champ de balise meta prédéfini, que les pages de votre site contiennent ou non le contenu correspondant. Par exemple, vous pouvez modifier le contenu des noms de champ de balise meta suivants prédéfinis :
 
@@ -365,9 +377,9 @@ Vous pouvez ajouter du contenu à des champs indexés spécifiques, tels que &qu
 * title
 * url
 
-## Utilisation des injections de champs de test {#section_74939EA9E6EA4D2A92E8066B3B11CF92}
+## Utilisation des injections de champ de test {#section_74939EA9E6EA4D2A92E8066B3B11CF92}
 
-Vous pouvez éventuellement l’utiliser **[!UICONTROL Test]** sur la [!DNL Staged Injections] page. Vous saisissez un nom de champ de test (par exemple, &quot;titre&quot; ou &quot;corps&quot;), la valeur de champ d’origine (par exemple, &quot;Page d&#39;accueil&quot;) et une URL de test de votre site Web. La valeur résultante est affichée pour votre référence. Les valeurs actives ne sont pas modifiées pendant le test.
+Vous pouvez éventuellement utiliser **[!UICONTROL Test]** sur la page [!DNL Staged Injections]. Vous saisissez un nom de champ de test (par exemple, &quot;titre&quot; ou &quot;corps&quot;), la valeur de champ d’origine (par exemple, &quot;Page d&#39;accueil&quot;) et une URL de test de votre site Web. La valeur résultante est affichée pour votre référence. Les valeurs actives ne sont pas modifiées pendant le test.
 
 ## Utilisation des définitions d’injection de champ {#section_C1BBF19DE8EF4A6F8CC3ED691F3953A9}
 
@@ -377,7 +389,7 @@ Les définitions d&#39;injection se présentent sous la forme suivante :
 append|replace field [regexp] URL value
 ```
 
-The `append|replace`, `field`, `URL`. et `value` les éléments sont obligatoires. Vous entrez une définition d’injection par ligne. L&#39;exemple suivant contient six définitions d&#39;injection différentes.
+`append|replace`, `field`, `URL`. et `value` éléments sont obligatoires. Vous entrez une définition d’injection par ligne. L&#39;exemple suivant contient six définitions d&#39;injection différentes.
 
 ```
 replace title  https://www.yoursite.com/company/contactus.html Adobe: Contact Us 
@@ -397,24 +409,24 @@ replace language https://www.yoursite.com/japanese/intro.txt ja_JP
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> append|replace </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> append|replace  </span> </p> </td> 
    <td colname="col2"> <p>Choisissez "ajouter" pour ajouter la valeur de la définition d’injection ("Adobe : Contactez-nous" ou "En vente maintenant !" dans les exemples ci-dessus) au contenu des champs existants. Choisissez "remplacer" pour remplacer le contenu de champ existant par la valeur définie. Si un champ ne comporte actuellement aucun contenu, la valeur définie est ajoutée automatiquement, quelle que soit l’option utilisée (ajouter ou remplacer). </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> field </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> field  </span> </p> </td> 
    <td colname="col2"> <p>Un nom de champ est requis. Vous pouvez utiliser les dix noms de champ prédéfinis suivants : </p> <p> 
      <ul id="ul_B9336FA53023474EAEE399116E7FC972"> 
-      <li id="li_C621203DCD2B4875A54A1DD19F0B5B90"> <span class="codeph"> alt </span> </li> 
+      <li id="li_C621203DCD2B4875A54A1DD19F0B5B90"> <span class="codeph"> alt  </span> </li> 
       <li id="li_9217E6A037254BEDBB8D006B70D7670D"> <span class="codeph"> body </span> </li> 
       <li id="li_DCDC50F93F224F02897419B745E09399"> <span class="codeph"> charset </span> </li> 
       <li id="li_D95668236B6547B99966668C82B302AB"> <span class="codeph"> date </span> </li> 
-      <li id="li_D2071681274345C3B97E9ADA6D223271"> <span class="codeph"> desc </span> </li> 
+      <li id="li_D2071681274345C3B97E9ADA6D223271"> <span class="codeph"> desc  </span> </li> 
       <li id="li_26683A9209454A438D811187FB929482"> <span class="codeph"> clés </span> </li> 
       <li id="li_A5E19F81B872402CA62B5AB9497E030D"> <span class="codeph"> language </span> </li> 
-      <li id="li_FD0B1CD9E6304B18B9D7F57E61015107"> <span class="codeph"> cible </span> </li> 
+      <li id="li_FD0B1CD9E6304B18B9D7F57E61015107"> <span class="codeph"> cible  </span> </li> 
       <li id="li_400D7E3F3E9B47EFB2FF5C0D278DB573"> <span class="codeph"> titre </span> </li> 
       <li id="li_449BCBEE4F64424BB69F780C10F5956C"> <span class="codeph"> url </span> </li> 
-     </ul> </p> <p>Chaque nom de champ correspond aux éléments des pages de votre site. Si vous spécifiez le nom du champ <span class="codeph"> desc </span> , par exemple, vous pouvez ajouter la valeur de définition de l’injection au champ qui correspond à la description Méta balises sur les pages de votre site. </p> <p>S’il n’existe aucune description La balise Meta sur vos pages, le contenu défini crée la balise pour vous. Le contenu spécifié dans une injection <span class="codeph"> desc </span> s’affiche sur votre page de résultats tout comme le contenu de la méta-description codée en dur le ferait. </p> <p>Vous pouvez également créer plusieurs définitions avec le même nom de champ. Par exemple, supposons que vous ayez les injections suivantes : </p> <p> <code> replace&nbsp; <b>title</b>&nbsp;https://www.mysite.com/&nbsp;Welcome&nbsp;to&nbsp;My&nbsp;Site </code> </p> <p> <code> replace&nbsp; <b>title</b>&nbsp;https://www.mysite.com/company/*.html&nbsp;My&nbsp;Site:&nbsp;Contact </code> </p> <p>Toutes les pages du site de l'exemple ci-dessus reçoivent un titre injecté "Bienvenue sur mon site". Les pages du dossier "/société/" sont insérées avec un nouveau titre "Mon site : Nous contacter" qui remplace le précédent. </p> <p>Notez que les injections sont appliquées dans l’ordre dans lequel elles s’affichent dans la zone de <span class="wintitle"> </span> texte Définition des injections de champ. Si le même champ ("titre" dans cet exemple) est défini plusieurs fois pour les pages situées au même emplacement, la définition ultérieure est prioritaire. </p> <p> <span class="codeph"> [regexp] </span> - facultatif. Si vous choisissez d’utiliser l’ <span class="codeph"> option </span> regexp, l’URL définie est traitée comme une expression régulière. </p> <p>Voir Expressions <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> régulières </a>. </p> <p>Dans la définition suivante : </p> <p> <code> replace&nbsp;target&nbsp; <b>regexp&amp;nbsp;^.*/products/.*\.html$</b>&nbsp;Important&nbsp;information </code> </p> <p> "Informations importantes" est injecté dans le champ "cible" de toutes les pages qui correspondent à l’expression normale <span class="codeph"> ^.*/products/.*\.html$ </span>. </p> <p>Par conséquent, vous disposez des éléments suivants : </p> <p> <code> https://www.mydomain.com/products/page1.html 
+     </ul> </p> <p>Chaque nom de champ correspond aux éléments des pages de votre site. Si vous spécifiez le nom du champ <span class="codeph"> desc </span> par exemple, vous pouvez ajouter la valeur de définition d'injection au champ correspondant à la description des balises Meta sur les pages de votre site. </p> <p>S’il n’existe aucune description La balise Meta sur vos pages, le contenu défini crée la balise pour vous. Le contenu spécifié dans une injection <span class="codeph"> desc </span> s'affiche sur votre page de résultats tout comme le contenu de la méta-description codée en dur le ferait. </p> <p>Vous pouvez également créer plusieurs définitions avec le même nom de champ. Par exemple, supposons que vous ayez les injections suivantes : </p> <p> <code> replace&nbsp; <b>title</b>&nbsp;https://www.mysite.com/&nbsp;Welcome&nbsp;to&nbsp;My&nbsp;Site </code> </p> <p> <code> replace&nbsp; <b>title</b>&nbsp;https://www.mysite.com/company/*.html&nbsp;My&nbsp;Site:&nbsp;Contact </code> </p> <p>Toutes les pages du site de l'exemple ci-dessus reçoivent un titre injecté "Bienvenue sur mon site". Les pages du dossier "/société/" sont insérées avec un nouveau titre "Mon site : Nous contacter" qui remplace le précédent. </p> <p>Notez que les injections sont appliquées dans l’ordre dans lequel elles apparaissent dans la zone de texte <span class="wintitle"> Définition des injections de champ </span>. Si le même champ ("titre" dans cet exemple) est défini plusieurs fois pour les pages situées au même emplacement, la définition ultérieure est prioritaire. </p> <p> <span class="codeph"> [regexp]  </span> - facultatif. Si vous choisissez d’utiliser l’option <span class="codeph"> regexp </span>, l’URL définie est traitée comme une expression régulière. </p> <p>Voir <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Expressions régulières </a>. </p> <p>Dans la définition suivante : </p> <p> <code> replace&nbsp;target&nbsp; <b>regexp&amp;nbsp;^.*/products/.*\.html$</b>&nbsp;Important&nbsp;information </code> </p> <p> "Informations importantes" est injecté dans le champ "cible" de toutes les pages qui correspondent à l’expression régulière <span class="codeph"> ^.*/products/.*\.html$ </span>. </p> <p>Par conséquent, vous disposez des éléments suivants : </p> <p> <code> https://www.mydomain.com/products/page1.html 
       &nbsp;&nbsp;&nbsp;&nbsp;(Will&nbsp;receive&nbsp;"target"&nbsp;content) </code> </p> <p> <code> https://www.mydomain.com/product/oldstuff.html 
       &nbsp;&nbsp;&nbsp;&nbsp;(Will&nbsp;not&nbsp;receive&nbsp;"target"&nbsp;content) </code> </p> <p>Dans l’exemple suivant : </p> <p> <code> append&amp;nbsp;title&amp;nbsp;regexp&amp;nbsp;^.*\.pdf$&amp;nbsp;Millennium&amp;nbsp;Science </code> </p> <p>L'injection ajoute "Millennium Science" au contenu "title" de toutes les pages qui se terminent par une extension de nom de fichier ".pdf". </p> </td> 
   </tr> 
@@ -425,46 +437,46 @@ replace language https://www.yoursite.com/japanese/intro.txt ja_JP
       <li id="li_382392DB778D4E14BFFC96D35A861951"> Un chemin complet, comme dans https://www.mydomain.com/products.html </li> 
       <li id="li_EA2BD0FB66A44CD0844613316F6174D4"> Un chemin partiel, comme dans https://www.mydomain.com/products </li> 
       <li id="li_D5E0D6D897C8493ABBFC65517CD4A7DB"> URL qui utilise des caractères génériques, comme dans https://www.mydomain.com/*.html </li> 
-     </ul> </p> <p>La valeur URL ne doit pas contenir d’espace. Si l’ <span class="codeph"> option </span> regexp est utilisée, l’URL est traitée comme une expression normale. </p> </td> 
+     </ul> </p> <p>La valeur URL ne doit pas contenir d’espace. Si l'option <span class="codeph"> regexp </span> est utilisée, l'URL est traitée comme une expression normale. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> value </span> </p> </td> 
-   <td colname="col2"> <p>Une valeur est requise et est utilisée pour remplacer ou ajouter du contenu de champ existant. Vous pouvez spécifier plusieurs valeurs pour le même nom de champ. Par exemple : </p> <p>ajouter <b>des clés</b> https://www.mysite.com/travel/ <b>été</b>, <b>plage</b>, <b>sable</b> </p> <p>ajouter des <b>clés</b> https://www.mysite.com/travel/fare/*.html billets <b>bon marché</b> </p> <p>Dans l’exemple ci-dessus, les mots "été, plage, sable" sont ajoutés au champ "clés" sur toutes les pages du répertoire "/travel/". Les mots "billets bon marché" sont également ajoutés au champ "clés" de toutes les pages du répertoire "/travel/fare/". </p> </td> 
+   <td colname="col2"> <p>Une valeur est requise et est utilisée pour remplacer ou ajouter du contenu de champ existant. Vous pouvez spécifier plusieurs valeurs pour le même nom de champ. Par exemple : </p> <p>ajouter <b>clés</b> https://www.mysite.com/travel/ <b>été</b>, <b>plage</b>, <b>sable</b> </p> <p>ajouter <b>keys</b> https://www.mysite.com/travel/fare/*.html <b>billets bon marché</b> </p> <p>Dans l’exemple ci-dessus, les mots "été, plage, sable" sont ajoutés au champ "clés" sur toutes les pages du répertoire "/travel/". Les mots "billets bon marché" sont également ajoutés au champ "clés" de toutes les pages du répertoire "/travel/fare/". </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Voir aussi [Sélection de types de contenu à analyser et à indexer](../c-about-settings-menu/c-about-crawling-menu.md#task_CCAC5C67C8BF4AB7B79D34A1495D5EE8).
+Voir aussi [Sélection des types de contenu à analyser et à indexer](../c-about-settings-menu/c-about-crawling-menu.md#task_CCAC5C67C8BF4AB7B79D34A1495D5EE8).
 
-## ajouter des définitions d’injection de champ {#task_E86566FA1FF74CF68115C0ADA05172AE}
+## Ajouter les définitions d&#39;injection de champ {#task_E86566FA1FF74CF68115C0ADA05172AE}
 
-Vous pouvez les utiliser [!DNL Injections] pour insérer du contenu dans vos pages Web sans avoir à modifier les pages elles-mêmes.
+Vous pouvez utiliser [!DNL Injections] pour insérer du contenu dans vos pages Web sans avoir à modifier les pages elles-mêmes.
 
-Vous pouvez éventuellement l’utiliser **[!UICONTROL Test]** sur la [!DNL Injections] page. Vous saisissez un nom de champ de test (par exemple, &quot;titre&quot; ou &quot;corps&quot;), la valeur de champ d’origine (par exemple, &quot;Page d&#39;accueil&quot;) et une URL de test de votre site Web. La valeur résultante est affichée pour votre référence. Les valeurs actives ne sont pas modifiées pendant le test.
+Vous pouvez éventuellement utiliser **[!UICONTROL Test]** sur la page [!DNL Injections]. Vous saisissez un nom de champ de test (par exemple, &quot;titre&quot; ou &quot;corps&quot;), la valeur de champ d’origine (par exemple, &quot;Page d&#39;accueil&quot;) et une URL de test de votre site Web. La valeur résultante est affichée pour votre référence. Les valeurs actives ne sont pas modifiées pendant le test.
 
 **Pour ajouter des définitions d’injection de champ**
 
 1. Dans le menu produit, cliquez sur **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Injections]**.
-1. (Facultatif) Sur la [!DNL Injections] page, dans la [!DNL Test Field Injections] zone, saisissez le champ de test, la valeur d’origine du test et l’URL du test, puis cliquez sur **[!UICONTROL Test]**.
-1. Dans le [!DNL Field Injection Definitions] champ, entrez une définition d’injection par ligne.
+1. (Facultatif) Sur la page [!DNL Injections], dans la zone [!DNL Test Field Injections], saisissez le champ test, la valeur d’origine du test et l’URL du test, puis cliquez sur **[!UICONTROL Test]**.
+1. Dans le champ [!DNL Field Injection Definitions], entrez une définition d&#39;injection par ligne.
 1. Cliquez sur **[!UICONTROL Save Changes]**.
 1. (Facultatif) Utilisez l’une des méthodes suivantes :
 
    * Cliquez sur **[!UICONTROL History]** pour annuler les modifications que vous avez apportées.
 
-      Voir [Utilisation de l’option](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historique.
+      Voir [Utilisation de l’option Historique](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Cliquez sur **[!UICONTROL Live]**.
 
-      Voir [Affichage des paramètres](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)en direct.
+      Voir [Affichage des paramètres en direct](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Cliquez sur **[!UICONTROL Push Live]**.
 
       Voir [Activation des paramètres d’étape](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## A propos du chargeur d’attributs {#concept_9EF38E98811B42CDA41996432B9AD209}
+## A propos du chargeur d&#39;attributs {#concept_9EF38E98811B42CDA41996432B9AD209}
 
-Utilisez-le [!DNL Attribute Loader] pour définir d’autres sources d’entrée afin d’augmenter les données analysées à partir d’un site Web.
+Utilisez [!DNL Attribute Loader] pour définir d&#39;autres sources d&#39;entrée afin d&#39;augmenter les données analysées à partir d&#39;un site Web.
 
 >[!NOTE]
 >
@@ -472,22 +484,22 @@ Utilisez-le [!DNL Attribute Loader] pour définir d’autres sources d’entrée
 
 Vous pouvez utiliser une source d’entrée de flux de données pour accéder au contenu stocké dans un formulaire différent de ce qui est généralement découvert sur un site Web. Pour ce faire, utilisez l’une des méthodes d’analyse disponibles. Les données issues de ces sources peuvent ensuite être injectées dans les données issues du contenu analysé.
 
-Après avoir ajouté une définition de chargeur d’attributs à la [!DNL Staged Attribute Loader Definitions] page, vous pouvez modifier n’importe quel paramètre de configuration, à l’exception des valeurs Nom et Type.
+Après avoir ajouté une définition de chargeur d’attributs à la page [!DNL Staged Attribute Loader Definitions], vous pouvez modifier tout paramètre de configuration, à l’exception des valeurs Nom et Type.
 
-La [!DNL Attribute Loader] page affiche les informations suivantes :
+La page [!DNL Attribute Loader] contient les informations suivantes :
 
 * Nom de la configuration de chargeur d’attributs définie que vous avez configurée et ajoutée.
 * L’un des types de source de données suivants pour chaque connecteur que vous avez ajouté :
 
-   * **Texte** - Fichiers simples &quot;plats&quot;, délimités par des virgules, délimités par des tabulations ou autres formats délimités de manière cohérente.
-   * **Flux** - Flux XML.
+   * **Texte**  : fichiers simples &quot;plats&quot;, délimités par des virgules, délimités par des tabulations ou autres formats délimités de manière cohérente.
+   * **Flux**  - Flux XML.
 
 * Indique si la configuration est activée ou non pour l’analyse et l’indexation suivantes.
 * Adresse de la source de données.
 
-Voir aussi [Fonctionnement du processus d’injection d’attributs pour le texte et le flux...](../c-about-settings-menu/c-about-metadata-menu.md#section_E059A33D61EE4DB0972A37B8A35E9E16)
+Voir aussi [Comment fonctionne le processus d’injection d’attributs pour le texte et le flux...](../c-about-settings-menu/c-about-metadata-menu.md#section_E059A33D61EE4DB0972A37B8A35E9E16)
 
-Voir aussi [A propos de la configuration de plusieurs chargeurs d’attributs](../c-about-settings-menu/c-about-metadata-menu.md#section_4CC49C74EF294608A184E233F215ADFF)
+Voir aussi [A propos de la configuration de plusieurs chargeurs d&#39;attributs](../c-about-settings-menu/c-about-metadata-menu.md#section_4CC49C74EF294608A184E233F215ADFF)
 
 Voir aussi [A propos de l&#39;utilisation de la Prévisualisation lorsque vous ajoutez un attribut...](../c-about-settings-menu/c-about-metadata-menu.md#section_E9CAB000A94C4D9189786C1EDB1CDB46)
 
@@ -510,20 +522,20 @@ Voir aussi [A propos de l&#39;utilisation de la Prévisualisation lorsque vous a
   <tr> 
    <td colname="col1"> <p>2 </p> </td> 
    <td colname="col2"> <p>Ventilez la source de données téléchargée en pseudo-documents individuels. </p> </td> 
-   <td colname="col3"> <p>Pour <span class="uicontrol"> Texte </span>, chaque nouvelle ligne de texte délimitée par des lignes correspond à un document individuel et est analysée à l’aide du délimiteur spécifié, tel qu’une virgule ou une tabulation. </p> <p>Pour le <span class="uicontrol"> flux </span>, les données de chaque document sont extraites à l’aide d’un modèle d’expression standard sous la forme suivante : </p> <p> <code class="syntax js"> &lt;${Itemtag}&gt;(.*?)&lt;/${Itemtag}&gt; </code> </p> <p>A l’aide de <span class="uicontrol"> Map </span> sur la page d’Ajoute du chargeur <span class="wintitle"> d’attributs </span> , créez une copie mise en cache des données, puis créez une liste de liens pour le moteur de recherche. Les données sont stockées dans un cache local et renseignées avec les champs configurés. </p> <p>Les données analysées sont écrites dans le cache local. </p> <p>Ce cache est lu ultérieurement pour créer les documents HTML simples dont a besoin l’analyseur. Par exemple : </p> <p> <code class="syntax html"> &lt;html&gt;&lt;head&gt; 
+   <td colname="col3"> <p>Pour <span class="uicontrol"> Texte </span>, chaque nouvelle ligne de texte délimitée par des lignes correspond à un document individuel et est analysée à l’aide du délimiteur spécifié, tel qu’une virgule ou une tabulation. </p> <p>Pour le flux <span class="uicontrol"> </span>, les données de chaque document sont extraites à l’aide d’un modèle d’expression standard sous la forme suivante : </p> <p> <code class="syntax js"> &lt;${Itemtag}&gt;(.*?)&lt;/${Itemtag}&gt; </code> </p> <p>En utilisant <span class="uicontrol"> mappage </span> sur la page <span class="wintitle"> Ajoute du chargeur d’attributs </span>, créez une copie mise en cache des données, puis créez une liste de liens pour le moteur de recherche. Les données sont stockées dans un cache local et renseignées avec les champs configurés. </p> <p>Les données analysées sont écrites dans le cache local. </p> <p>Ce cache est lu ultérieurement pour créer les documents HTML simples dont a besoin l’analyseur. Par exemple : </p> <p> <code class="syntax html"> &lt;html&gt;&lt;head&gt; 
       &lt;title&gt;{title}&lt;/title&gt; 
       &lt;meta&nbsp;name="{field}"&nbsp;content="{data}"&nbsp;/&gt; 
       ... 
       &lt;/head&gt;&lt;body&gt; 
       {body} 
-      &lt;/body&gt;&lt;/html&gt; </code> </p> <p>L’élément <span class="codeph"> &lt;title&gt; </span> n’est généré que lorsqu’il existe un mappage au champ de métadonnées Titre. De même, l’élément <span class="codeph"> &lt;body&gt; </span> n’est généré que lorsqu’il existe un mappage au champ de métadonnées Body. </p> <p> <b>Important</b>: L’affectation de valeurs à la balise meta d’URL prédéfinie n’est pas prise en charge. </p> <p>Pour tous les autres mappages, <span class="codeph"> &lt;meta&gt; </span> balises sont générées pour chaque champ contenant des données trouvées dans le document d’origine. </p> <p>Les champs de chaque document sont ajoutés au cache. Pour chaque document écrit dans le cache, un lien est également généré, comme dans les exemples suivants : </p> <p> <code class="syntax html"> &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
+      &lt;/body&gt;&lt;/html&gt; </code> </p> <p>L’élément <span class="codeph"> &lt;title&gt; </span> n’est généré que lorsqu’il existe un mappage au champ de métadonnées Titre. De même, l’élément <span class="codeph"> &lt;body&gt; </span> n’est généré que lorsqu’il existe un mappage au champ de métadonnées Body. </p> <p> <b>Important</b> : L’affectation de valeurs à la balise meta d’URL prédéfinie n’est pas prise en charge. </p> <p>Pour tous les autres mappages, les balises <span class="codeph"> &lt;meta&gt; </span> sont générées pour chaque champ contenant des données trouvées dans le document d’origine. </p> <p>Les champs de chaque document sont ajoutés au cache. Pour chaque document écrit dans le cache, un lien est également généré, comme dans les exemples suivants : </p> <p> <code class="syntax html"> &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
       &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
-      .... </code> </p> <p>Le mappage de la configuration doit comporter un champ identifié comme clé Principal. Ce mappage forme la clé utilisée lorsque les données sont extraites du cache. </p> <p>L’analyseur de liens identifie l’index <span class="codeph"> d’URL : </span> préfixe de schéma, qui peut ensuite accéder aux données mises en cache localement. </p> </td> 
+      .... </code> </p> <p>Le mappage de la configuration doit comporter un champ identifié comme clé Principal. Ce mappage forme la clé utilisée lorsque les données sont extraites du cache. </p> <p>L’analyseur de liens reconnaît l’index d’URL <span class="codeph"> : Préfixe de schéma </span>, qui peut ensuite accéder aux données mises en cache localement. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>3 </p> </td> 
    <td colname="col2"> <p>Analysez le jeu de documents mis en cache. </p> </td> 
-   <td colname="col3"> <p>L' <span class="codeph"> index : </span> les liens sont ajoutés à la liste en attente de l’analyseur et sont traités dans la séquence d’analyse normale. </p> </td> 
+   <td colname="col3"> <p>L'index <span class="codeph"> : Les liens </span> sont ajoutés à la liste en attente de l'analyseur et sont traités dans la séquence d'analyse normale. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>4 </p> </td> 
@@ -533,11 +545,11 @@ Voir aussi [A propos de l&#39;utilisation de la Prévisualisation lorsque vous a
  </tbody> 
 </table>
 
-## A propos de la configuration de plusieurs chargeurs d’attributs {#section_4CC49C74EF294608A184E233F215ADFF}
+## A propos de la configuration de plusieurs chargeurs d&#39;attributs {#section_4CC49C74EF294608A184E233F215ADFF}
 
 Vous pouvez définir plusieurs configurations de chargeur d’attributs pour n’importe quel compte.
 
-Lorsque vous ajoutez un chargeur d’attributs, vous pouvez éventuellement utiliser cette fonction **[!UICONTROL Setup Maps]** pour télécharger un exemple de votre source de données. Les données sont examinées pour déterminer si elles sont appropriées.
+Lorsque vous ajoutez un chargeur d’attributs, vous pouvez éventuellement utiliser la fonction **[!UICONTROL Setup Maps]** pour télécharger un exemple de source de données. Les données sont examinées pour déterminer si elles sont appropriées.
 
 <table> 
  <thead> 
@@ -549,7 +561,7 @@ Lorsque vous ajoutez un chargeur d’attributs, vous pouvez éventuellement util
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Texte </p> </td> 
-   <td colname="col2"> <p>Détermine la valeur du délimiteur en essayant d’abord d’utiliser des onglets, puis des barres verticales ( <span class="codeph"> | </span>) et enfin des virgules ( <span class="codeph"> , </span>). Si vous avez déjà spécifié une valeur de délimiteur avant de cliquer sur <span class="uicontrol"> Configurer les zones cliquables </span>, cette valeur est utilisée à la place. </p> <p>Le modèle le mieux adapté permet de remplir les champs de zone cliquable avec des suppositions aux valeurs de balise et de champ appropriées. En outre, un échantillon des données analysées s’affiche. Veillez à sélectionner <span class="uicontrol"> En-têtes dans la première rangée </span> si vous savez que le fichier contient une rangée d’en-tête. La fonction de configuration utilise ces informations pour mieux identifier les entrées de mappage résultantes. </p> </td> 
+   <td colname="col2"> <p>Détermine la valeur du délimiteur en essayant d’abord les onglets, puis les barres verticales ( <span class="codeph"> | </span>), et enfin des virgules ( <span class="codeph"> , </span>). Si vous avez déjà spécifié une valeur de délimiteur avant de cliquer sur <span class="uicontrol"> Configurer les zones </span>, cette valeur est utilisée à la place. </p> <p>Le modèle le mieux adapté permet de remplir les champs de zone cliquable avec des suppositions aux valeurs de balise et de champ appropriées. En outre, un échantillon des données analysées s’affiche. Veillez à sélectionner <span class="uicontrol"> En-têtes dans la première ligne </span> si vous savez que le fichier contient une rangée d’en-tête. La fonction de configuration utilise ces informations pour mieux identifier les entrées de mappage résultantes. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Flux </p> </td> 
@@ -562,17 +574,17 @@ Lorsque vous ajoutez un chargeur d’attributs, vous pouvez éventuellement util
 >
 >La fonction de configuration des zones cliquables peut ne pas fonctionner pour les jeux de données XML volumineux, car l’analyseur de fichiers tente de lire l’intégralité du fichier en mémoire. Par conséquent, vous pourriez rencontrer une condition de mémoire insuffisante. Cependant, lorsque le même document est traité au moment de l’indexation, il n’est pas lu dans la mémoire. Au lieu de cela, les documents volumineux sont traités &quot;en déplacement&quot; et ne sont pas lus entièrement en mémoire en premier.
 
-## A propos de l’utilisation de la Prévisualisation lorsque vous ajoutez un chargeur d’attributs {#section_E9CAB000A94C4D9189786C1EDB1CDB46}
+## A propos de l&#39;utilisation de la Prévisualisation lorsque vous ajoutez un chargeur d&#39;attributs {#section_E9CAB000A94C4D9189786C1EDB1CDB46}
 
 Les données du chargeur d’attributs sont chargées avant une opération d’index.
 
-Au moment où vous ajoutez un chargeur d’attributs, vous pouvez éventuellement utiliser la fonction **[!UICONTROL Preview]** pour valider les données, comme si vous les aviez enregistrées. Il exécute un test par rapport à la configuration, mais sans enregistrer la configuration dans le compte. Le test accède à la source de données configurée. Cependant, il écrit le cache de téléchargement à un emplacement temporaire ; il n&#39;entre pas en conflit avec le dossier cache principal utilisé par l&#39;analyseur d&#39;indexation.
+Au moment où vous ajoutez un chargeur d&#39;attributs, vous pouvez éventuellement utiliser la fonction **[!UICONTROL Preview]** pour valider les données, comme si vous les aviez enregistrées. Il exécute un test par rapport à la configuration, mais sans enregistrer la configuration dans le compte. Le test accède à la source de données configurée. Cependant, il écrit le cache de téléchargement à un emplacement temporaire ; il n&#39;entre pas en conflit avec le dossier cache principal utilisé par l&#39;analyseur d&#39;indexation.
 
-La prévisualisation ne traite qu&#39;un documents par défaut de cinq , contrôlé par **Acct:IndexConnector-Prévisualisation-Max-Documents**. Les documents prévisualisés s’affichent sous forme de source, dans la mesure où ils sont présentés à l’analyseur d’indexation. L&#39;affichage est similaire à une fonction &quot;Source de Vue&quot; dans un navigateur Web. Vous pouvez parcourir les documents du jeu de prévisualisations à l’aide de liens de navigation standard.
+La prévisualisation ne traite que cinq documents par défaut, comme le contrôle **Acct:IndexConnector-Prévisualisation-Max-Documents**. Les documents prévisualisés s’affichent sous forme de source, dans la mesure où ils sont présentés à l’analyseur d’indexation. L&#39;affichage est similaire à une fonction &quot;Source de Vue&quot; dans un navigateur Web. Vous pouvez parcourir les documents du jeu de prévisualisations à l’aide de liens de navigation standard.
 
 La prévisualisation ne prend pas en charge les configurations XML, car ces documents sont traités directement et ne sont pas téléchargés dans le cache.
 
-## ajouter une définition de chargeur d’attributs {#task_A735E5EF763343A9B675E1A3B09AFDBC}
+## Ajouter une définition de chargeur d&#39;attributs {#task_A735E5EF763343A9B675E1A3B09AFDBC}
 
 Chaque configuration du chargeur d’attributs définit une source de données et des mappages pour relier les éléments de données définis pour cette source aux champs de métadonnées de l’index.
 
@@ -585,8 +597,8 @@ Avant que les effets de la nouvelle définition activée ne soient visibles pour
 **Pour ajouter une définition de chargeur d’attributs**
 
 1. Dans le menu produit, cliquez sur **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]**.
-1. Sur la [!DNL Stage Attribute Loader Definitions] page, cliquez sur **[!UICONTROL Add New Attribute Loader]**.
-1. Sur la [!DNL Attribute Loader Add] page, définissez les options de configuration de votre choix. Les options disponibles dépendent de celles **[!UICONTROL Type]** que vous avez sélectionnées.
+1. Sur la page [!DNL Stage Attribute Loader Definitions], cliquez sur **[!UICONTROL Add New Attribute Loader]**.
+1. Sur la page [!DNL Attribute Loader Add], définissez les options de configuration de votre choix. Les options disponibles dépendent du **[!UICONTROL Type]** que vous avez sélectionné.
 
    <table> 
     <thead> 
@@ -602,7 +614,7 @@ Avant que les effets de la nouvelle définition activée ne soient visibles pour
       </tr> 
       <tr> 
       <td colname="col1"> <p>Type </p> </td> 
-      <td colname="col2"> <p>Source de vos données. Le type de source de données que vous sélectionnez affecte les options résultantes disponibles sur la <span class="wintitle"> page Ajoute du chargeur d’ </span> attributs. Vous pouvez choisir parmi les options suivantes : </p> <p> 
+      <td colname="col2"> <p>Source de vos données. Le type de source de données que vous sélectionnez affecte les options résultantes disponibles sur la page <span class="wintitle"> Attribut Loader Ajoute </span>. Vous pouvez choisir parmi les options suivantes : </p> <p> 
       <ul id="ul_1ADC3DFBC929467385F7465BE8E13635"> 
       <li id="li_64FCD749F55442BAB316BD474128D4F9"> <span class="uicontrol"> Texte </span> <p>Fichiers de texte simple à plat, délimités par des virgules, délimités par des tabulations ou autres formats délimités de manière cohérente. Chaque nouvelle ligne de texte délimitée par des lignes correspond à un document individuel et est analysée à l’aide du délimiteur spécifié. </p> <p>Vous pouvez mapper chaque valeur, ou colonne, à un champ de métadonnées, référencé par le numéro de colonne, en commençant par 1 (un). </p> </li> 
       <li id="li_2A4F16CE6DCE4114B7F8E4FE156252BB"> <span class="uicontrol"> Flux </span> <p>Télécharge un Principal document XML contenant plusieurs "lignes" d’informations. </p> </li> 
@@ -614,7 +626,7 @@ Avant que les effets de la nouvelle définition activée ne soient visibles pour
       </tr> 
       <tr> 
       <td colname="col1"> <p>Activé </p> </td> 
-      <td colname="col2"> <p>Active la configuration en vue de son utilisation. Vous pouvez également désactiver la configuration pour empêcher l’utilisation de cette dernière. </p> <p> <b>Remarque</b>: Les configurations de chargeur d’attributs désactivées sont ignorées. </p> </td> 
+      <td colname="col2"> <p>Active la configuration en vue de son utilisation. Vous pouvez également désactiver la configuration pour empêcher l’utilisation de cette dernière. </p> <p> <b>Remarque</b> : Les configurations de chargeur d’attributs désactivées sont ignorées. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Adresse de l’hôte </p> </td> 
@@ -649,7 +661,7 @@ Avant que les effets de la nouvelle définition activée ne soient visibles pour
       </tr> 
       <tr> 
       <td colname="col1"> <p>Délimiteur </p> </td> 
-      <td colname="col2"> <p>Indique le caractère à utiliser pour délimiter chaque champ du fichier de source de données spécifié. </p> <p>La virgule ( <span class="codeph"> , </span>) est un exemple de délimiteur. La virgule agit comme un délimiteur de champ qui permet de séparer les champs de données dans le fichier de source de données spécifié. </p> <p>Sélectionner l' <span class="uicontrol"> onglet ? </span> pour utiliser le caractère de tabulation horizontale comme délimiteur. </p> </td> 
+      <td colname="col2"> <p>Indique le caractère à utiliser pour délimiter chaque champ du fichier de source de données spécifié. </p> <p>La virgule ( <span class="codeph"> , </span>) est un exemple de délimiteur. La virgule agit comme un délimiteur de champ qui permet de séparer les champs de données dans le fichier de source de données spécifié. </p> <p>Sélectionner l'onglet <span class="uicontrol"> ? </span> pour utiliser le caractère de tabulation horizontale comme délimiteur. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>En-têtes de la première ligne </p> </td> 
@@ -665,9 +677,9 @@ Avant que les effets de la nouvelle définition activée ne soient visibles pour
       <ul id="ul_981AE2C6D30443BDBFC6575D413732A2"> 
       <li id="li_A42CB9DFFF8C45A7BAC2D471FE96CEBE"> <span class="uicontrol"> Colonne </span> <p> Spécifie un numéro de colonne, la première colonne étant 1 (un). Pour ajouter de nouvelles lignes de mappage pour chaque colonne, sous <span class="wintitle"> Action </span>, cliquez sur <span class="uicontrol"> + </span>. </p> <p>Il n’est pas nécessaire de référencer chaque colonne de la source de données. Vous pouvez à la place choisir d’ignorer les valeurs. </p> </li> 
       <li id="li_26E8C9554A5D4BC5A5073D6385E3626F"> <span class="uicontrol"> Champ </span> <p>Définit la valeur d’attribut name utilisée pour chaque balise &lt;meta&gt; générée. </p> </li> 
-      <li id="li_5DFA514B7F9549B98D6CBC095A66033C"> <span class="uicontrol"> Métadonnées? </span> <p>Le champ <span class="uicontrol"> </span> devient une liste déroulante à partir de laquelle vous pouvez sélectionner des champs de métadonnées définis pour le compte actif. </p> <p>Si vous le souhaitez, la <span class="uicontrol"> </span> valeur de champ peut être un champ de métadonnées non défini. Un champ de métadonnées non défini est parfois utile pour créer du contenu utilisé par un script de <span class="wintitle"> filtrage </span>. </p> <p>Voir <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> A propos du filtrage de script </a>. </p> </li> 
+      <li id="li_5DFA514B7F9549B98D6CBC095A66033C"> <span class="uicontrol"> Métadonnées? </span> <p>Le champ <span class="uicontrol"> </span> devient une liste déroulante à partir de laquelle vous pouvez sélectionner des champs de métadonnées définis pour le compte actif. </p> <p>La valeur <span class="uicontrol"> Champ </span> peut être un champ de métadonnées non défini, si vous le souhaitez. Un champ de métadonnées non défini est parfois utile pour créer le contenu utilisé par un script de filtrage <span class="wintitle"> </span>. </p> <p>Voir <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> À propos du filtrage de script </a>. </p> </li> 
       <li id="li_80DB205525094CE1AA6762BFC7892C95"> <span class="uicontrol"> Clé primaire? </span> <p>Un seul champ est identifié comme clé Principale. Ce champ sera utilisé comme "clé étrangère" pour faire correspondre les données du chargeur d’attributs avec le document correspondant dans l’index. </p> </li> 
-      <li id="li_80DB205525094CE1AA6762BFC7892D96"> <span class="uicontrol"> Eliminer le code HTML ? </span> <p>Lorsque cette option est cochée, toutes les balises HTML trouvées dans les données de ce champ sont supprimées. </p> </li> 
+      <li id="li_80DB205525094CE1AA6762BFC7892D96"> <span class="uicontrol"> Eliminer le code HTML ?  </span> <p>Lorsque cette option est cochée, toutes les balises HTML trouvées dans les données de ce champ sont supprimées. </p> </li> 
       <li id="li_359D2902859B4C5BADB0BA26F0BA4DC0"> <span class="uicontrol"> Action </span> <p>Permet d’ajouter des rangées au mappage ou de supprimer des rangées du mappage. L’ordre des rangées n’est pas important. </p> </li> 
       </ul> </p> </td> 
       </tr> 
@@ -677,7 +689,7 @@ Avant que les effets de la nouvelle définition activée ne soient visibles pour
       </tr> 
       <tr> 
       <td colname="col1"> <p>Activé </p> </td> 
-      <td colname="col2"> <p>Active la configuration en vue de son utilisation. Vous pouvez également désactiver la configuration pour empêcher l’utilisation de cette dernière. </p> <p> <b>Remarque</b>: Les configurations de chargeur d’attributs désactivées sont ignorées. </p> </td> 
+      <td colname="col2"> <p>Active la configuration en vue de son utilisation. Vous pouvez également désactiver la configuration pour empêcher l’utilisation de cette dernière. </p> <p> <b>Remarque</b> : Les configurations de chargeur d’attributs désactivées sont ignorées. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Adresse de l’hôte </p> </td> 
@@ -700,7 +712,7 @@ Avant que les effets de la nouvelle définition activée ne soient visibles pour
       </tr> 
       <tr> 
       <td colname="col1"> <p>Itemtag </p> </td> 
-      <td colname="col2"> <p>Identifie l’élément XML que vous pouvez utiliser pour identifier des lignes XML individuelles dans le fichier de source de données que vous avez spécifié. </p> <p>Par exemple, dans le fragment Flux suivant d’un document XML d’Adobe, la valeur Itemtag est <span class="codeph"> un enregistrement </span>: </p> <p> <code class="syntax xml"> &lt;?xml&nbsp;version="1.0"&nbsp;encoding="utf-8"?&gt; 
+      <td colname="col2"> <p>Identifie l’élément XML que vous pouvez utiliser pour identifier des lignes XML individuelles dans le fichier de source de données que vous avez spécifié. </p> <p>Par exemple, dans le fragment Flux suivant d’un document XML d’Adobe, la valeur Itemtag est <span class="codeph"> record </span> : </p> <p> <code class="syntax xml"> &lt;?xml&nbsp;version="1.0"&nbsp;encoding="utf-8"?&gt; 
         &lt;!DOCTYPE&nbsp;gsafeed&nbsp;PUBLIC&nbsp;"-//Google//DTD&nbsp;GSA&nbsp;Feeds//EN"&nbsp;""&gt; 
         &lt;gsafeed&gt; 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;header&gt; 
@@ -741,7 +753,7 @@ Avant que les effets de la nouvelle définition activée ne soient visibles pour
       </tr> 
       <tr> 
       <td colname="col1"> <p>Nom du champ de référence croisée </p> </td> 
-      <td colname="col2"> <p>Spécifie un champ de métadonnées dont les valeurs sont utilisées comme "clés" de recherche dans les données de la configuration du chargeur d’attributs. Si aucune valeur n’est sélectionnée (<b>—Aucun—</b>), les données de cette configuration ne sont pas disponibles pour les calculs de classement (<b>Règles</b> &gt; Règles <b>de</b> classement &gt; <b>Modifier les règles). </b> Lorsque vous sélectionnez une valeur, les valeurs de ce champ sont utilisées pour référencer les documents de recherche/marchandisage de site avec les données de cette configuration. </p> </td> 
+      <td colname="col2"> <p>Spécifie un champ de métadonnées dont les valeurs sont utilisées comme "clés" de recherche dans les données de la configuration du chargeur d’attributs. Si aucune valeur n’est sélectionnée (<b>—None—</b>), les données de cette configuration ne sont pas disponibles pour les calculs de classement (<b>Règles</b> &gt; <b>Règles de classement</b> &gt; <b>Modifier les règles</b>). Lorsque vous sélectionnez une valeur, les valeurs de ce champ sont utilisées pour référencer les documents de recherche/marchandisage de site avec les données de cette configuration. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Jours périmés </p> </td> 
@@ -756,33 +768,33 @@ Avant que les effets de la nouvelle définition activée ne soient visibles pour
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;desc 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;body </code> </p> <p>La syntaxe ci-dessus se traduit comme suit : </p> <p> 
         <ul id="ul_6400EBD08D424EADA1612FE4F7EFB640"> 
-        <li id="li_9958F9B40D42434195597DBA9F2AF28F"> <code class="syntax xml"> /record/@displayurl&amp;nbsp;-&gt;&amp;nbsp;page-url </code> <p>L’attribut <span class="codeph"> display url </span> de l’ <span class="codeph"> élément d’enregistrement </span> est mappé au champ de métadonnées <span class="codeph"> page-url </span>. </p> </li> 
-        <li id="li_759013EA02CD48BE971A55B0A6A11424"> <code class="syntax xml"> /record/metadata/meta[@name='title']/@content&amp;nbsp;-&gt;&amp;nbsp;title </code> <p>L’ <span class="codeph"> attribut </span> de contenu de tout <span class="codeph"></span> élément de métadonnées contenu dans un <span class="codeph"> </span> <span class="codeph"> élément de métadonnées, contenu dans un élément de  d’enregistrement, dont l’attribut de nom est  titre , est associé au  de titre du champ de métadonnées.</span><span class="codeph"></span><span class="codeph"></span> </p> </li> 
-        <li id="li_E741CA59197D462EB2946EDE874AFDC8"> <code class="syntax xml"> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p>L’ <span class="codeph"> attribut </span> de contenu de tout <span class="codeph"></span> élément de métadonnées contenu dans un <span class="codeph"> élément de métadonnées, contenu dans l’élément de  d’enregistrement </span> <span class="codeph"> , dont l’attribut de nom est  description , correspond au  desc du champ de métadonnées.</span><span class="codeph"></span><span class="codeph"></span> </p> </li> 
-        <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code class="syntax xml"> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>L’ <span class="codeph"> attribut </span> de contenu de tout <span class="codeph"></span> élément de métadonnées contenu dans un <span class="codeph"> élément de métadonnées, contenu dans l’élément de  d’enregistrement </span> <span class="codeph"> , dont l’attribut de nom est  description , correspond au corps du  du champ de métadonnées.</span><span class="codeph"></span><span class="codeph"></span> </p> </li> 
+        <li id="li_9958F9B40D42434195597DBA9F2AF28F"> <code class="syntax xml"> /record/@displayurl&amp;nbsp;-&gt;&amp;nbsp;page-url </code> <p>L'attribut <span class="codeph"> affichurl </span> de l'élément <span class="codeph"> record </span> correspond au champ de métadonnées <span class="codeph"> page-url </span>. </p> </li> 
+        <li id="li_759013EA02CD48BE971A55B0A6A11424"> <code class="syntax xml"> /record/metadata/meta[@name='title']/@content&amp;nbsp;-&gt;&amp;nbsp;title </code> <p>L'attribut <span class="codeph"> content </span> de tout élément <span class="codeph"> meta </span> contenu dans un élément <span class="codeph"> de métadonnées </span> contenu dans un élément <span class="codeph"> d'enregistrement </span>, dont l'attribut name est <span class="codeph"> title </span>, correspond au champ de métadonnées <span class="codeph"> titre </span>. </p> </li> 
+        <li id="li_E741CA59197D462EB2946EDE874AFDC8"> <code class="syntax xml"> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p>L'attribut <span class="codeph"> content </span> de tout élément <span class="codeph"> meta </span> contenu dans un élément <span class="codeph"> metadata </span> contenu dans l'élément <span class="codeph"> record </span>, dont l'attribut name est <span class="codeph"> description </span>, correspond au champ de métadonnées <span class="codeph"> desc &lt;a11 1/&gt;.</span> </p> </li> 
+        <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code class="syntax xml"> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>L'attribut <span class="codeph"> content </span> de tout élément <span class="codeph"> meta </span> contenu dans un élément <span class="codeph"> metadata </span> contenu dans l'élément <span class="codeph"> record </span>, dont l'attribut name est <span class="codeph"> description </span>, correspond au champ de métadonnées <span class="codeph"> corps </span>. </p> </li> 
         </ul> </p> <p>XPath est une notation relativement compliquée. Pour plus d'informations, consultez l'adresse suivante : </p> <p>Voir <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Champ </span> <p>Définit la valeur d’attribut name utilisée pour chaque balise <span class="codeph"> &lt;meta&gt; </span> générée. </p> </li> 
-      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Métadonnées? </span> <p>Le champ <span class="uicontrol"> </span> devient une liste déroulante à partir de laquelle vous pouvez sélectionner des champs de métadonnées définis pour le compte actif. </p> <p>Si vous le souhaitez, la <span class="uicontrol"> </span> valeur de champ peut être un champ de métadonnées non défini. Un champ de métadonnées non défini est parfois utile pour créer le contenu utilisé par <span class="wintitle"> le script de filtrage </span>. </p> <p>Voir <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> A propos du filtrage de script </a>. </p> <p>Lorsque le chargeur d’attributs traite des documents XML avec plusieurs accès sur un champ de mappage, les valeurs multiples sont concaténées en une seule valeur dans le document mis en cache qui en résulte. Par défaut, ces valeurs sont combinées à l’aide d’un délimiteur de virgules. Cependant, supposons que la valeur de <span class="wintitle"> champ correspondante </span> soit un champ de métadonnées défini. En outre, l’attribut <span class="wintitle"> Listes autorisées </span> est défini pour ce champ. Dans ce cas, la valeur Délimiteurs de Liste du champ, qui est le premier délimiteur défini, est utilisée dans la concaténation. </p> </li> 
+      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Métadonnées? </span> <p>Le champ <span class="uicontrol"> </span> devient une liste déroulante à partir de laquelle vous pouvez sélectionner des champs de métadonnées définis pour le compte actif. </p> <p>La valeur <span class="uicontrol"> Champ </span> peut être un champ de métadonnées non défini, si vous le souhaitez. Un champ de métadonnées non défini est parfois utile pour créer le contenu utilisé par <span class="wintitle"> Script de filtrage </span>. </p> <p>Voir <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> À propos du filtrage de script </a>. </p> <p>Lorsque le chargeur d’attributs traite des documents XML avec plusieurs accès sur un champ de mappage, les valeurs multiples sont concaténées en une seule valeur dans le document mis en cache qui en résulte. Par défaut, ces valeurs sont combinées à l’aide d’un délimiteur de virgules. Cependant, supposons que la valeur <span class="wintitle"> de champ </span> correspondante soit un champ de métadonnées défini. En outre, ce champ a l'attribut <span class="wintitle"> Listes autorisées </span> défini. Dans ce cas, la valeur Délimiteurs de Liste du champ, qui est le premier délimiteur défini, est utilisée dans la concaténation. </p> </li> 
       <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Clé primaire? </span> <p>Un seul champ est identifié comme clé Principale. Ce champ sera utilisé comme "clé étrangère" pour faire correspondre les données du chargeur d’attributs avec le document correspondant dans l’index. </p> </li> 
-      <li id="li_80D6AF130FCE40AC972FE4B605B86BF6"> <span class="uicontrol"> Eliminer le code HTML ? </span> <p>Lorsque cette option est cochée, toutes les balises HTML trouvées dans les données de ce champ sont supprimées. </p> </li> 
-      <li id="li_D40E2F9AD8AD49FC9AC4B8C75BA31E28"> <span class="uicontrol"> Action </span> <p>Permet d’ajouter des rangées au mappage ou de supprimer des rangées du mappage. L’ordre des rangées n’est pas important. </p> </li> 
+      <li id="li_80D6AF130FCE40AC972FE4B605B86BF6"> <span class="uicontrol"> Eliminer le code HTML ?  </span> <p>Lorsque cette option est cochée, toutes les balises HTML trouvées dans les données de ce champ sont supprimées. </p> </li> 
+      <li id="li_D40E2F9AD8AD49FC9AC4B8C75BA31E28"> <span class="uicontrol"> Action  </span> <p>Permet d’ajouter des rangées au mappage ou de supprimer des rangées du mappage. L’ordre des rangées n’est pas important. </p> </li> 
       </ul> </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
 1. (Facultatif) Cliquez sur **[!UICONTROL Setup Maps]** pour télécharger un exemple de votre source de données. Les données sont examinées pour déterminer si elles sont appropriées.
-1. Cliquez sur **[!UICONTROL Add]** pour ajouter la configuration à la [!DNL Attribute Loader Definitions] page.
-1. Sur la [!DNL Attribute Loader Definitions] page, cliquez sur **[!UICONTROL rebuild your staged site index]**.
-1. (Facultatif) Sur la [!DNL Attribute Loader Definitions] page, effectuez l’une des opérations suivantes :
+1. Cliquez sur **[!UICONTROL Add]** pour ajouter la configuration à la page [!DNL Attribute Loader Definitions].
+1. Sur la page [!DNL Attribute Loader Definitions], cliquez sur **[!UICONTROL rebuild your staged site index]**.
+1. (Facultatif) Sur la page [!DNL Attribute Loader Definitions], effectuez l’une des opérations suivantes :
 
    * Cliquez sur **[!UICONTROL History]** pour annuler les modifications que vous avez apportées.
 
-      Voir [Utilisation de l’option](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historique.
+      Voir [Utilisation de l’option Historique](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Cliquez sur **[!UICONTROL Live]**.
 
-      Voir [Affichage des paramètres](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)en direct.
+      Voir [Affichage des paramètres en direct](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Cliquez sur **[!UICONTROL Push Live]**.
 
@@ -796,26 +808,26 @@ Vous pouvez modifier un chargeur d’attributs existant que vous avez défini.
 >
 >Pour utiliser le chargeur d’attributs, vous devrez peut-être l’activer dans votre compte par le représentant de votre compte d’Adobe ou par l’assistance Adobe.
 
-Toutes les options du chargeur d’attributs ne sont pas disponibles pour que vous puissiez les modifier, comme le nom du chargeur d’attributs ou le type dans la liste [!DNL Type] déroulante.
+Toutes les options du chargeur d’attributs ne sont pas disponibles pour que vous puissiez les modifier, comme le nom du chargeur d’attributs ou le type dans la liste déroulante [!DNL Type].
 
 **Pour modifier une définition de chargeur d&#39;attributs**
 
 1. Dans le menu produit, cliquez sur **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]**.
-1. Sur la [!DNL Attribute Loader] page, sous l’en-tête de [!DNL Actions] colonne, cliquez sur **[!UICONTROL Edit]** un nom de définition de chargeur d’attributs dont vous souhaitez modifier les paramètres.
-1. Sur la [!DNL Attribute Loader Edit] page, définissez les options de votre choix.
+1. Sur la page [!DNL Attribute Loader], sous l&#39;en-tête de colonne [!DNL Actions], cliquez sur **[!UICONTROL Edit]** pour un nom de définition de chargeur d&#39;attributs dont vous souhaitez modifier les paramètres.
+1. Sur la page [!DNL Attribute Loader Edit], définissez les options de votre choix.
 
-   Consultez le tableau des options sous [Ajouter une définition](../c-about-settings-menu/c-about-metadata-menu.md#task_A735E5EF763343A9B675E1A3B09AFDBC)de chargeur d’attributs.
+   Voir la table des options sous [Ajouter une définition de chargeur d&#39;attributs](../c-about-settings-menu/c-about-metadata-menu.md#task_A735E5EF763343A9B675E1A3B09AFDBC).
 1. Cliquez sur **[!UICONTROL Save Changes]**.
-1. (Facultatif) Sur la [!DNL Attribute Loader Definitions] page, cliquez sur **[!UICONTROL rebuild your staged site index]**.
-1. (Facultatif) Sur la [!DNL Attribute Loader Definitions] page, effectuez l’une des opérations suivantes :
+1. (Facultatif) Sur la page [!DNL Attribute Loader Definitions], cliquez sur **[!UICONTROL rebuild your staged site index]**.
+1. (Facultatif) Sur la page [!DNL Attribute Loader Definitions], effectuez l’une des opérations suivantes :
 
    * Cliquez sur **[!UICONTROL History]** pour annuler les modifications que vous avez apportées.
 
-      Voir [Utilisation de l’option](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historique.
+      Voir [Utilisation de l’option Historique](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Cliquez sur **[!UICONTROL Live]**.
 
-      Voir [Affichage des paramètres](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)en direct.
+      Voir [Affichage des paramètres en direct](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Cliquez sur **[!UICONTROL Push Live]**.
 
@@ -829,31 +841,31 @@ Vous pouvez copier une définition existante de chargeur d’attributs pour l’
 >
 >Pour utiliser le chargeur d’attributs, vous devrez peut-être l’activer dans votre compte par le représentant de votre compte d’Adobe ou par l’assistance Adobe.
 
-Lors de la copie d’une définition de chargeur d’attributs, la définition copiée est désactivée par défaut. Pour activer ou &quot;activer&quot; la définition, vous devez la modifier à partir de la [!DNL Attribute Loader Edit] page, puis sélectionner **[!UICONTROL Enable]**.
+Lors de la copie d’une définition de chargeur d’attributs, la définition copiée est désactivée par défaut. Pour activer ou &quot;activer&quot; la définition, vous devez la modifier à partir de la page [!DNL Attribute Loader Edit] et sélectionner **[!UICONTROL Enable]**.
 
-Voir [Modification d’une définition](../c-about-settings-menu/c-about-metadata-menu.md#task_AA2D1B2BCAFA44A6A0C59A0318274E80)de chargeur d’attributs.
+Voir [Modification d&#39;une définition de chargeur d&#39;attributs](../c-about-settings-menu/c-about-metadata-menu.md#task_AA2D1B2BCAFA44A6A0C59A0318274E80).
 
 **Pour copier une définition de chargeur d&#39;attributs**
 
 1. Dans le menu produit, cliquez sur **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]**.
-1. Sur la [!DNL Attribute Loader] page, sous l’en-tête de [!DNL Actions] colonne, cliquez sur **[!UICONTROL Copy]** le nom de définition d’un chargeur d’attributs dont vous voulez duplicata les paramètres.
-1. Sur la [!DNL Attribute Loader Copy] page, entrez le nouveau nom de la définition.
+1. Sur la page [!DNL Attribute Loader], sous l&#39;en-tête de colonne [!DNL Actions], cliquez sur **[!UICONTROL Copy]** pour le nom de définition d&#39;un chargeur d&#39;attributs dont vous voulez duplicata les paramètres.
+1. Sur la page [!DNL Attribute Loader Copy], entrez le nouveau nom de la définition.
 1. Cliquez sur **[!UICONTROL Copy]**.
-1. (Facultatif) Sur la [!DNL Attribute Loader Definitions] page, effectuez l’une des opérations suivantes :
+1. (Facultatif) Sur la page [!DNL Attribute Loader Definitions], effectuez l’une des opérations suivantes :
 
    * Cliquez sur **[!UICONTROL History]** pour annuler les modifications que vous avez apportées.
 
-      Voir [Utilisation de l’option](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historique.
+      Voir [Utilisation de l’option Historique](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Cliquez sur **[!UICONTROL Live]**.
 
-      Voir [Affichage des paramètres](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)en direct.
+      Voir [Affichage des paramètres en direct](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Cliquez sur **[!UICONTROL Push Live]**.
 
       Voir [Activation des paramètres d’étape](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Modification du nom d’une définition de chargeur d’attributs {#task_58D5DFD7EBC04111BCB91118E4440DB4}
+## Attribution d&#39;un nouveau nom à une définition de chargeur d&#39;attributs {#task_58D5DFD7EBC04111BCB91118E4440DB4}
 
 Vous pouvez modifier le nom d’une définition existante de chargeur d’attributs.
 
@@ -864,28 +876,28 @@ Vous pouvez modifier le nom d’une définition existante de chargeur d’attrib
 **Pour renommer une définition de chargeur d’attributs**
 
 1. Dans le menu produit, cliquez sur **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]**.
-1. Sur la [!DNL Attribute Loader] page, sous l’en-tête de [!DNL Actions] colonne, cliquez **[!UICONTROL Rename]** pour le nom de définition du chargeur d’attributs que vous souhaitez modifier.
-1. Sur la [!DNL Attribute Loader Rename] page, entrez le nouveau nom de la définition dans le [!DNL Name] champ.
+1. Sur la page [!DNL Attribute Loader], sous l&#39;en-tête de colonne [!DNL Actions], cliquez sur **[!UICONTROL Rename]** pour le nom de définition du chargeur d&#39;attributs que vous souhaitez modifier.
+1. Sur la page [!DNL Attribute Loader Rename], entrez le nouveau nom de la définition dans le champ [!DNL Name].
 1. Cliquez sur **[!UICONTROL Rename]**.
-1. (Facultatif) Sur la [!DNL Attribute Loader Definitions] page, effectuez l’une des opérations suivantes :
+1. (Facultatif) Sur la page [!DNL Attribute Loader Definitions], effectuez l’une des opérations suivantes :
 
    * Cliquez sur **[!UICONTROL History]** pour annuler les modifications que vous avez apportées.
 
-      Voir [Utilisation de l’option](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historique.
+      Voir [Utilisation de l’option Historique](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Cliquez sur **[!UICONTROL Live]**.
 
-      Voir [Affichage des paramètres](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)en direct.
+      Voir [Affichage des paramètres en direct](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Cliquez sur **[!UICONTROL Push Live]**.
 
       Voir [Activation des paramètres d’étape](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Chargement des données du chargeur d’attributs {#task_2F3C55189B0A4049AB2113F2291CC181}
+## Chargement des données du chargeur d&#39;attributs {#task_2F3C55189B0A4049AB2113F2291CC181}
 
 Vous pouvez télécharger les données du chargeur d’attributs configurées dans la recherche et le marchandisage sur le site.
 
-La [!DNL Data Load] page affiche les informations suivantes sur l’état de votre dernière opération de chargement des données du chargeur d’attributs :
+La page [!DNL Data Load] affiche les informations suivantes sur l&#39;état de votre dernière opération de chargement de données du chargeur d&#39;attributs :
 
 <table> 
  <thead> 
@@ -913,18 +925,18 @@ La [!DNL Data Load] page affiche les informations suivantes sur l’état de vot
 **Pour charger les données du chargeur d’attributs**
 
 1. Dans le menu produit, cliquez sur **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]**.
-1. Sur la [!DNL Attribute Loader Definitions] page, cliquez sur **[!UICONTROL Load Attribute Loader Data]**.
-1. Sur la **[!UICONTROL Attribute Loader Data Load]** page, effectuez l’une des opérations suivantes :
+1. Sur la page [!DNL Attribute Loader Definitions], cliquez sur **[!UICONTROL Load Attribute Loader Data]**.
+1. Sur la page **[!UICONTROL Attribute Loader Data Load]**, effectuez l&#39;une des opérations suivantes :
 
-   * Cliquez sur **[!UICONTROL Start Load]** pour début l’opération de chargement.
+   * Cliquez sur **[!UICONTROL Start Load]** pour début de l&#39;opération de chargement.
 
-      Au cours d’une opération de chargement de données,**la ligne Progression** fournit des informations sur sa progression.
+      Lors d’une opération de chargement de données, la ligne **Progress** fournit des informations sur son avancement.
 
-   * Cliquez sur **[!UICONTROL Stop Load]** pour arrêter l’opération de chargement.
+   * Cliquez sur **[!UICONTROL Stop Load]** pour arrêter l&#39;opération de chargement.
 
-1. Cliquez sur **[!UICONTROL Close]** pour revenir à la [!DNL Attribute Loader Definitions] page.
+1. Cliquez sur **[!UICONTROL Close]** pour revenir à la page [!DNL Attribute Loader Definitions].
 
-## Prévisualisation des données du chargeur d’attributs {#task_735CDCC1D8174B7B9F5B8E0AFA5F0CA0}
+## Prévisualisation des données du chargeur d&#39;attributs {#task_735CDCC1D8174B7B9F5B8E0AFA5F0CA0}
 
 Vous pouvez utiliser la Prévisualisation pour vue vos dernières données de chargeur d’attributs chargées.
 
@@ -932,15 +944,15 @@ La colonne Ligne du tableau affiche le nombre de chaque ligne de données, indiq
 
 Les autres colonnes affichent les valeurs associées à chaque entrée.
 
-Si la table est vide, cela signifie que vous n’avez pas encore chargé de données de chargeur d’attributs. Vous pouvez fermer la [!DNL Attribute Loader Data Preview] page, puis charger les données du chargeur d’attributs.
+Si la table est vide, cela signifie que vous n’avez pas encore chargé de données de chargeur d’attributs. Vous pouvez fermer la page [!DNL Attribute Loader Data Preview], puis charger les données du chargeur d’attributs.
 
-Voir [Chargement des données](../c-about-settings-menu/c-about-metadata-menu.md#task_2F3C55189B0A4049AB2113F2291CC181)du chargeur d’attributs.
+Voir [Chargement des données du chargeur d’attributs](../c-about-settings-menu/c-about-metadata-menu.md#task_2F3C55189B0A4049AB2113F2291CC181).
 
 **Pour prévisualisation des données du chargeur d’attributs**
 
 1. Dans le menu produit, cliquez sur **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]**.
-1. Sur la [!DNL Attribute Loader Definitions] page, sous la [!DNL Actions] colonne, cliquez sur **[!UICONTROL Preview]** pour la configuration dont vous voulez vue les données téléchargées.
-1. Sur la [!DNL Attribute Loader Data Preview] page, utilisez les options de navigation et d’affichage en haut et en bas de la page pour vue les données.
+1. Sur la page [!DNL Attribute Loader Definitions], sous la colonne [!DNL Actions], cliquez sur **[!UICONTROL Preview]** pour la configuration dont vous voulez vue les données téléchargées.
+1. Sur la page [!DNL Attribute Loader Data Preview], utilisez les options de navigation et d’affichage en haut et en bas de la page pour vue les données.
 
    Cliquez sur un en-tête de colonne du tableau pour trier les données par ordre croissant ou décroissant.
 1. Effectuez l’une des opérations suivantes :
@@ -952,7 +964,7 @@ Voir [Chargement des données](../c-about-settings-menu/c-about-metadata-menu.md
 
 Vous pouvez vérifier les paramètres de configuration d’une définition existante de chargeur d’attributs.
 
-Une fois qu’une définition de chargeur d’attributs est ajoutée à la [!DNL Attribute Loader Definitions] page, vous ne pouvez pas modifier son paramètre Type. Vous devez à la place supprimer la définition, puis en ajouter une nouvelle.
+Une fois qu’une définition de chargeur d’attributs a été ajoutée à la page [!DNL Attribute Loader Definitions], vous ne pouvez pas modifier son paramètre Type. Vous devez à la place supprimer la définition, puis en ajouter une nouvelle.
 
 >[!NOTE]
 >
@@ -961,22 +973,22 @@ Une fois qu’une définition de chargeur d’attributs est ajoutée à la [!DNL
 **Pour vue des paramètres d&#39;une définition de chargeur d&#39;attributs**
 
 1. Dans le menu produit, cliquez sur **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]**.
-1. Sur la [!DNL Attribute Loader] page, sous l’en-tête de [!DNL Actions] colonne, cliquez sur **[!UICONTROL Edit]** le nom de définition d’un chargeur d’attributs dont vous souhaitez vérifier ou modifier les paramètres.
+1. Sur la page [!DNL Attribute Loader], sous l&#39;en-tête de colonne [!DNL Actions], cliquez sur **[!UICONTROL Edit]** pour un nom de définition de chargeur d&#39;attributs dont vous souhaitez vérifier ou modifier les paramètres.
 
-## Affichage du journal à partir du chargement de données le plus récent du chargeur d’attributs {#task_9C7D6E34BB6C4A40B7CA3EE36ACB0837}
+## Affichage du journal à partir du chargement de données du chargeur d&#39;attributs le plus récent {#task_9C7D6E34BB6C4A40B7CA3EE36ACB0837}
 
-Vous pouvez l’utiliser [!DNL View Log] pour examiner le fichier journal des données du chargeur d’attributs du processus de téléchargement le plus récent. Vous pouvez également utiliser la vue de journal pour surveiller un téléchargement en cours d’exécution.
+Vous pouvez utiliser [!DNL View Log] pour examiner le fichier journal des données du chargeur d’attributs du processus de téléchargement le plus récent. Vous pouvez également utiliser la vue de journal pour surveiller un téléchargement en cours d’exécution.
 
-Voir [Chargement des données](../c-about-settings-menu/c-about-metadata-menu.md#task_2F3C55189B0A4049AB2113F2291CC181)du chargeur d’attributs.
+Voir [Chargement des données du chargeur d’attributs](../c-about-settings-menu/c-about-metadata-menu.md#task_2F3C55189B0A4049AB2113F2291CC181).
 
 **Pour vue le journal à partir du chargement de données le plus récent du chargeur d’attributs**
 
 1. Dans le menu produit, cliquez sur **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]**.
-1. Sur la [!DNL Attribute Loader Definitions] page, cliquez sur **[!UICONTROL View Log]**. Page de journal,
-1. Sur la [!DNL Attribute Loader Data Log] page, utilisez les options de navigation et d’affichage en haut et en bas de la page pour vue les informations du journal.
-1. Lorsque vous avez terminé, fermez la page pour revenir à la [!DNL Attribute Loader Definitions] page.
+1. Sur la page [!DNL Attribute Loader Definitions], cliquez sur **[!UICONTROL View Log]**. Page de journal,
+1. Sur la page [!DNL Attribute Loader Data Log], utilisez les options de navigation et d’affichage en haut et en bas de la page pour vue les informations du journal.
+1. Lorsque vous avez terminé, fermez la page pour revenir à la page [!DNL Attribute Loader Definitions].
 
-## Suppression d’une définition de chargeur d’attributs {#task_E8980F66888B476E98C228C1D307EDF8}
+## Suppression d&#39;une définition de chargeur d&#39;attributs {#task_E8980F66888B476E98C228C1D307EDF8}
 
 Vous pouvez supprimer une définition de chargeur d’attributs existante dont vous n’avez plus besoin ou que vous n’utilisez plus.
 
@@ -987,5 +999,5 @@ Vous pouvez supprimer une définition de chargeur d’attributs existante dont v
 **Pour supprimer une définition de chargeur d&#39;attributs**
 
 1. Dans le menu produit, cliquez sur **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]**.
-1. Sur la [!DNL Attribute Loader Definitions] page, sous l’en-tête de [!DNL Actions] colonne, cliquez sur **[!UICONTROL Delete]** le nom de définition du chargeur d’attributs à supprimer.
-1. Sur la [!DNL Attribute Loader Delete] page, cliquez sur **[!UICONTROL Delete]**.
+1. Sur la page [!DNL Attribute Loader Definitions], sous l&#39;en-tête de colonne [!DNL Actions], cliquez sur **[!UICONTROL Delete]** pour le nom de définition du chargeur d&#39;attributs à supprimer.
+1. Sur la page [!DNL Attribute Loader Delete], cliquez sur **[!UICONTROL Delete]**.

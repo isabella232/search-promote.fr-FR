@@ -1,20 +1,23 @@
 ---
 description: valeur nulle
 seo-description: valeur nulle
-seo-title: Notes de mise à jour de Search&amp;Promote 8.9.3 (01/11/2012)
+seo-title: Notes de mise à jour de Search&amp ; amp ; Promote 8.9.3 (01/11/2012)
 solution: Target
-title: Notes de mise à jour de Search&amp;Promote 8.9.3 (01/11/2012)
+title: Notes de mise à jour de Search&amp ; amp ; Promote 8.9.3 (01/11/2012)
 topic: Release Notes,Site search and merchandising
 uuid: 7bc7bcb6-f47f-4e05-94e5-a22a13a187b7
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '285'
+ht-degree: 84%
 
 ---
 
 
-# Search&amp;Promote 8.9.3 Release Notes (11/01/2012){#search-promote-release-notes}
+# Notes de mise à jour de Search &amp; Promote 8.9.3 (01/11/2012){#search-promote-release-notes}
 
-## Search&amp;Promote 8.9.3 Release Notes (11/01/2012) {#concept_85F5B4B4C40C43FEA3AD63E6EA5593CF}
+## Notes de mise à jour de la Search &amp; Promote 8.9.3 (01/11/2012) {#concept_85F5B4B4C40C43FEA3AD63E6EA5593CF}
 
 <table> 
  <thead> 
@@ -34,7 +37,7 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
    <td colname="col2"> <p> Ajout de la prise en charge du tri alternatif des facettes imbriquées. </p> <p>Voir <a href="../c-about-design-menu/c-about-facet-rails.md#concept_1FDC8BCDFFC84A0889DA670F63D5F6DB" format="dita" scope="local">A propos de la rampe de facettes</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Champ Remarques des règles de classement </p> </td> 
+   <td colname="col1"> <p>Champ Remarques dans les règles de classement </p> </td> 
    <td colname="col2"> <p> 
      <!--3063772--> Ajout d’un champ <span class="wintitle">Remarques</span> de plusieurs lignes à la boîte de dialogue <span class="wintitle">Add Ranking Metric</span> (Ajouter une mesure de classement) et dans la boîte de dialogue <span class="wintitle">Edit Ranking Metric</span> (Modifier la mesure de classement) pour les règles de classement et les définitions des groupes de règles. </p> <p>Les remarques sur les règles de classement s’affichent sur la page <span class="wintitle">Define Ranking Rules</span> (Définir les règles de classement). Les remarques sur les groupes de règles s’affichent lorsque vous modifiez la définition. </p> <p>Voir <a href="../c-about-rules-menu/c-about-ranking-rules.md#concept_F555C076759B4E81B925441CFE707397" format="dita" scope="local">A propos des règles de classement</a>. </p> </td> 
   </tr> 
@@ -55,7 +58,7 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 * Les règles de fonctionnement ne fonctionnaient pas de manière cohérente en présence d’un indice [!DNL Stage] (phase).
 * Les règles de classement automatique s’appliquent désormais aux pages d’entrée définies.
 
-   Voir le tableau des options dans [Ajout d’une règle](../c-about-rules-menu/c-about-ranking-rules.md#task_A132789FD4E5423DAD090DCDA7311E8A)de classement.
+   Voir la table des options dans [Ajouter une règle de classement](../c-about-rules-menu/c-about-ranking-rules.md#task_A132789FD4E5423DAD090DCDA7311E8A).
 
 * [!DNL promosearch.cgi] ne renvoyait aucune promotion.
 
@@ -65,7 +68,7 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 
    Voir [A propos des bannières](../c-about-design-menu/c-about-banners.md#concept_5BBE01FEC6134393B43CC917C8CC64DA).
 
-* **[!UICONTROL Did You Mean]** la mise en cache des requêtes de recherche est désormais désactivée.
+* **[!UICONTROL Did You Mean]** la mise en cache des requêtes de recherche est maintenant désactivée.
 
    Voir [A propos de Vouliez-vous dire](../c-about-linguistics-menu/c-about-did-you-mean.md#concept_7D4F3C29EF184B538B8AE2ECAE0CDC5E)
 

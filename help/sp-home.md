@@ -1,6 +1,6 @@
 ---
-title: adobe Search&amp ; amp ; Promouvoir la documentation technique
-seo-title: adobe Search&amp ; amp ; Promouvoir la documentation technique et l’auto-assistance
+title: Adobe Search&amp ; amp ; Promouvoir la documentation technique
+seo-title: Adobe Search&amp ; amp ; Promouvoir la documentation technique et l’auto-assistance
 description: Documentation technique et matériel d’aide autonome pour la recherche et l’horodatage d’Adobe ; amp ; Promote
 seo-description: Documentation technique, notes de mise à jour et matériel d’aide autonome pour la recherche et l’horodatage d’Adobe ; amp ; Promote
 solution: Target
@@ -10,18 +10,18 @@ translation-type: tm+mt
 source-git-commit: dcbee1a3092f46db8f19e0b14f55cafac5fdbc13
 workflow-type: tm+mt
 source-wordcount: '157'
-ht-degree: 17%
+ht-degree: 20%
 
 ---
 
 
-# adobe Search &amp; Promote Guide {#search-promote-documentation}
+# Guide d’Adobe Search&amp;Promote {#search-promote-documentation}
 
-## News and announcements {#topic_02625547D07F411DBAC9593FCBD4741B}
+## Actualités et annonces {#topic_02625547D07F411DBAC9593FCBD4741B}
 
 * Notes de mise à jour de Adobe Marketing Cloud : contient de nouvelles fonctionnalités, des correctifs et des problèmes connus dans toutes les solutions de Marketing Cloud. Les nouvelles fonctions sont intégrées aux versions du printemps et de l’automne ; les versions de maintenance reviennent chaque mois.
 
-   **Accès** anticipé : Inscrivez-vous à la mise à jour [prioritaire des produits](https://campaign.adobe.com/webApp/adbePriorityProductSubscribe) Adobes pour recevoir les notes de mise à jour de Adobe Marketing Cloud une semaine avant chaque mise à jour.
+   **Accès** anticipé : Inscrivez-vous à la  [mise à jour prioritaire des produits ](https://campaign.adobe.com/webApp/adbePriorityProductSubscribe) Adobe pour recevoir les notes de mise à jour de Adobe Marketing Cloud une semaine avant chaque mise à jour.
 
 * Notes de mise à jour des Search &amp; Promote Adobes les plus récentes :
 
@@ -31,7 +31,7 @@ ht-degree: 17%
 
 [Compréhension et conception de flux Connecteur d’index dans un Search &amp; Promote d’Adobe](https://marketing.adobe.com/resources/help/en_US/snp/index_connector_feeds.pdf)
 
-## Other information {#topic_34A00195904D4AE7AE982D3746F693AA}
+## Autres informations {#topic_34A00195904D4AE7AE982D3746F693AA}
 
 [Site Web Adobe Search &amp; Promote](https://www.adobe.com/solutions/testing-targeting/search-driven-merchandising.html)
 

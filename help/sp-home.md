@@ -4,20 +4,24 @@ seo-title: Adobe Search&amp ; amp ; Promouvoir la documentation technique et l�
 description: Documentation technique et matériel d’aide autonome pour la recherche et l’horodatage d’Adobe ; amp ; Promote
 seo-description: Documentation technique, notes de mise à jour et matériel d’aide autonome pour la recherche et l’horodatage d’Adobe ; amp ; Promote
 solution: Target
-topic: Site search and merchandising
+topic: Recherche et marchandisage sur site
 uuid: bb1c49be-7cfd-485a-a848-c5dc8733b009
 translation-type: tm+mt
-source-git-commit: dcbee1a3092f46db8f19e0b14f55cafac5fdbc13
+source-git-commit: ce3b55f0265c52670a81a17b9eff79309ff32bc0
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 20%
+source-wordcount: '161'
+ht-degree: 19%
 
 ---
 
 
 # Guide d’Adobe Search&amp;Promote {#search-promote-documentation}
 
+<!-- ## [Option 1: Lorem Ipsum FAQ announcement](#lorem-ipsum) -->
+
 ## Actualités et annonces {#topic_02625547D07F411DBAC9593FCBD4741B}
+
+<!-- * [Option 2: Lorem ipsum FAQ announcement](anchor) -->
 
 * Notes de mise à jour de Adobe Marketing Cloud : contient de nouvelles fonctionnalités, des correctifs et des problèmes connus dans toutes les solutions de Marketing Cloud. Les nouvelles fonctions sont intégrées aux versions du printemps et de l’automne ; les versions de maintenance reviennent chaque mois.
 

@@ -1,15 +1,13 @@
 ---
 description: Actualisation concernant la syntaxe et les règles de construction des expressions régulières.
-seo-description: Actualisation concernant la syntaxe et les règles de construction des expressions régulières.
-seo-title: Expressions régulières
 solution: Target
 title: Expressions régulières
-topic: Appendices,Site search and merchandising
+topic: Annexes, Recherche sur site et marchandisage
 uuid: 369b54f6-372a-41de-bb5d-3ae0bd640199
 translation-type: tm+mt
-source-git-commit: 7b883870bb16284d8070a21547cdb62cc79d7632
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1050'
 ht-degree: 1%
 
 ---

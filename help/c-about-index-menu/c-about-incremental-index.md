@@ -1,16 +1,14 @@
 ---
 description: Vous pouvez utiliser l’index incrémentiel pour indexer des "morceaux" de votre site Web réel ou d’évaluation, par exemple un ensemble de pages fréquemment modifiées.
-seo-description: Vous pouvez utiliser l’index incrémentiel pour indexer des "morceaux" de votre site Web réel ou d’évaluation, par exemple un ensemble de pages fréquemment modifiées.
-seo-title: A propos de l'index incrémentiel
 solution: Target
 subtopic: Incremental Index
 title: A propos de l'index incrémentiel
-topic: Index,Site search and merchandising
+topic: Index, recherche sur le site et marchandisage
 uuid: b1ee9b08-dcbe-4ffe-b0b4-d379daaac9b5
 translation-type: tm+mt
-source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1357'
 ht-degree: 1%
 
 ---

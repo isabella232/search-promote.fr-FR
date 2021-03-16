@@ -1,15 +1,13 @@
 ---
 description: Si vous êtes novice en matière de navigation dynamique et Search & Promote, début ici pour être opérationnel avec votre compte. Entre autres, vous apprendrez à indexer votre site Web et à personnaliser l’aspect et l’aspect des résultats de votre recherche.
-seo-description: Si vous êtes novice en matière de navigation dynamique et Search & Promote, début ici pour être opérationnel avec votre compte. Entre autres, vous apprendrez à indexer votre site Web et à personnaliser l’aspect et l’aspect des résultats de votre recherche.
-seo-title: Prise en main
 solution: Target
 title: Prise en main
-topic: Getting Started,Site search and merchandising
+topic: Prise en main, recherche sur le site et marchandisage
 uuid: 816ad003-15c9-4e44-b09d-cab284518634
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---

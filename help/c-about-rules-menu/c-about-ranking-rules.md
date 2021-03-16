@@ -1,16 +1,14 @@
 ---
 description: Vous pouvez utiliser des règles de classement pour contrôler le positionnement ou le classement relatif des résultats de recherche d’un client en fonction du contenu des balises meta et des mesures Adobe Analytics connexes.
-seo-description: Vous pouvez utiliser des règles de classement pour contrôler le positionnement ou le classement relatif des résultats de recherche d’un client en fonction du contenu des balises meta et des mesures Adobe Analytics connexes.
-seo-title: A propos des règles de classement
 solution: Target
 subtopic: Ranking Rules
 title: A propos des règles de classement
-topic: Rules,Site search and merchandising
+topic: Règles, Recherche sur le site et marchandisage
 uuid: 21962f9a-1d9c-442f-a6c4-5f452436c640
 translation-type: tm+mt
-source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '4647'
+source-wordcount: '4621'
 ht-degree: 0%
 
 ---
@@ -245,13 +243,13 @@ Voir [Configuration du classement](../c-about-rules-menu/c-about-ranking-rules.m
       <td colname="col1"> <p>Valeurs/grades </p> </td> 
       <td colname="col2"> <p>Comprend soit l’une des fonctions de classement intégrées, soit le contenu de source de données possible avec les grades souhaités. </p> <p>Si vous avez choisi <span class="uicontrol"> Mesure Adobe Analytics (nombre) </span> comme type de source de données, vous obtenez une liste déroulante avec les options suivantes : 
       <ul id="ul_104906B6AA8547BAB6979AA37C4FAB90"> 
-      <li id="li_7656A2855A054DB8B64E90FE501517AA"> <span class="uicontrol"> Classement automatique par ordre (par défaut)  </span> <p>Calcule un rang basé sur la position relative du document, selon sa mesure Adobe Analytics. Par exemple, plus le document occupe la première place du document, plus son rang est élevé. </p> </li> 
+      <li id="li_7656A2855A054DB8B64E90FE501517AA"> <span class="uicontrol"> Classement automatique par ordre (par défaut)  </span> <p>Calcule un rang basé sur la position relative du document, selon sa mesure Adobe Analytics. Par exemple, plus le document se rapproche du document le mieux classé, plus son rang est élevé. </p> </li> 
       <li id="li_1A7D60EA6965434AA6D39B215C158306"> <span class="uicontrol"> Classement automatique par valeur  </span> <p>Calcule un rang en fonction de la valeur relative du document, selon sa mesure Adobe Analytics. Par exemple, plus la valeur du document est proche de la valeur du document qui occupe le premier rang, plus son rang est élevé. </p> </li> 
       <li id="li_457DE44D6ADA40619DC77220BF12318E"> <span class="uicontrol"> Personnalisé </span> <p>Spécifie des paramètres personnalisés. Par exemple, une source de données nommée "marque" peut contenir le nom de marque d’un produit particulier. Vous pouvez indiquer l’importance relative de chaque marque en l’répertoriant avec son classement. </p> </li> 
       </ul> </p> <p>Les valeurs de classement renvoyées par les calculs de classement automatique se situent dans la plage de 0,0 (le plus bas) à 1,0 (le plus élevé). Ils ne sont pas ajustés en fonction des plages définies pour le champ Classement sous Paramètres &gt; Métadonnées &gt; Définitions. </p> <p>Dans l’exemple suivant, si la source de données de la marque pour un résultat de recherche particulier correspond exactement à "DKNY", le classement appliqué pour ce résultat est 0,5. Sinon, si la marque est "Levis", le classement appliqué est 0,1. Le contenu de la source de données doit correspondre à la valeur définie. En d’autres termes, si le contenu de la source de données est "Levis Corp.", il ne correspondra pas à la valeur "Levis". La casse est ignorée, de sorte que "DKNY" correspond à "dkny" et "Dkny". <code> DKNY&nbsp;0.5 Levis&nbsp;0.1 Lee&nbsp;0.2 </code> </p> <p>En tant qu’option plus avancée, vous pouvez spécifier des valeurs en tant qu’expressions régulières. Supposons, par exemple, que certaines pages de votre site contiennent la valeur de la marque "Levis" et que d’autres pages du site contiennent la valeur de la marque "jeans Levis". Vous pouvez utiliser une expression régulière spécifiée avec le mot-clé 
       <code>
         regexp 
-      </code>. </p> <p>Voir <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Expressions régulières </a>. </p> <p>Dans l’exemple suivant, un document de résultats de recherche contenant le contenu de la marque "jeans Levis" est affecté d’un rang de 0,1. Comme pour la comparaison standard, la casse est ignorée pour les expressions régulières. <code> DKNY&nbsp;0.5 regexp&nbsp;Levis.*&nbsp;0.1 Lee&nbsp;0.2 </code> </p> </td> 
+      </code>. </p> <p>Voir <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Expressions régulières </a>. </p> <p>Dans l’exemple suivant, un document de résultats de recherche contenant le contenu de la marque "jeans Levis" se voit attribuer un rang de 0,1. Comme pour la comparaison standard, la casse est ignorée pour les expressions régulières. <code> DKNY&nbsp;0.5 regexp&nbsp;Levis.*&nbsp;0.1 Lee&nbsp;0.2 </code> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Classement par défaut </p> </td> 

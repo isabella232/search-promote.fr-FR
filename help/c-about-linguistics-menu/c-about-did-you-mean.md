@@ -1,15 +1,13 @@
 ---
 description: Vous pouvez configurer le champ Voulez-vous dire pour que les clients reçoivent des suggestions de termes de recherche valides lorsqu'ils ont essayé des recherches qui ont échoué. Les suggestions sont formées en recherchant l’orthographe et en saisissant des corrections dans les termes recherchés qui génèrent une recherche valide.
-seo-description: Vous pouvez configurer le champ Voulez-vous dire pour que les clients reçoivent des suggestions de termes de recherche valides lorsqu'ils ont essayé des recherches qui ont échoué. Les suggestions sont formées en recherchant l’orthographe et en saisissant des corrections dans les termes recherchés qui génèrent une recherche valide.
-seo-title: A propos de Voulez-vous dire
 solution: Target
 title: A propos de Voulez-vous dire
-topic: Linguistics,Site search and merchandising
+topic: Linguistique,Recherche sur le site et marchandisage
 uuid: c5973541-3d6b-4fc9-bad4-66d4d3559fe8
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '733'
 ht-degree: 2%
 
 ---

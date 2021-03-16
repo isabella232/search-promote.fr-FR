@@ -1,16 +1,14 @@
 ---
 description: Vous pouvez configurer différentes zones de la saisie semi-automatique pour contrôler la génération du formulaire de recherche activée à saisie semi-automatique et le fichier autocomplete_data.js, inclus dans le formulaire de recherche activée à saisie semi-automatique.
-seo-description: Vous pouvez configurer différentes zones de la saisie semi-automatique pour contrôler la génération du formulaire de recherche activée à saisie semi-automatique et le fichier autocomplete_data.js, inclus dans le formulaire de recherche activée à saisie semi-automatique.
-seo-title: A propos de la saisie automatique
 solution: Target
 subtopic: Auto-Complete
 title: A propos de la saisie automatique
-topic: Design,Site search and merchandising
+topic: Création, recherche sur site et marchandisage
 uuid: 3dfdd14d-2044-4f01-a5bc-fcb2eb0d5068
 translation-type: tm+mt
-source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1499'
 ht-degree: 1%
 
 ---

@@ -1,15 +1,13 @@
 ---
 description: Vous pouvez utiliser des règles de fonctionnement pour marchandiser votre recherche.
-seo-description: Vous pouvez utiliser des règles de fonctionnement pour marchandiser votre recherche.
-seo-title: A propos des règles de fonctionnement
 solution: Target
 title: A propos des règles de fonctionnement
-topic: Rules,Site search and merchandising
+topic: Règles, Recherche sur le site et marchandisage
 uuid: f2186f54-7a39-4f46-bb29-5115d5a17f07
 translation-type: tm+mt
-source-git-commit: fc1f0b15a15a9d0308494fc23c5b4258442c8aab
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '3127'
+source-wordcount: '3120'
 ht-degree: 1%
 
 ---
@@ -25,7 +23,7 @@ Par exemple, vous pouvez configurer le moment où les bannières s&#39;affichent
 
 Chaque règle de fonctionnement est composée de déclencheurs et d’actions.
 
-Le déclencheur définit le moment où la règle s’exécute. Par exemple, lorsque le terme de requête est &quot;mens&quot; ou lorsque les résultats sont principalement des chapeaux. Le déclencheur est constitué de plusieurs conditions qui doivent être toutes, ou n’importe lesquelles d’entre elles doivent être vraies pour que le déclencheur global soit vrai. Vous pouvez définir la priorité en modifiant l’opérateur de déclenchement.
+Le déclencheur définit le moment où la règle s’exécute. Par exemple, lorsque le terme de requête est &quot;homme&quot; ou lorsque les résultats sont principalement des chapeaux. Le déclencheur est constitué de plusieurs conditions qui doivent être toutes, ou n’importe lesquelles d’entre elles doivent être vraies pour que le déclencheur global soit vrai. Vous pouvez définir la priorité en modifiant l’opérateur de déclenchement.
 
 L’action définit ce qui se produit lorsque la condition de déclenchement est remplie. Par exemple, la définition de la bannière pour afficher ou déplacer un résultat donné à la position 1. Le tableau des règles affiche des informations récapitulatives sur la règle. Vous pouvez cliquer sur le nom d’une règle pour l’ouvrir et afficher des informations supplémentaires.
 

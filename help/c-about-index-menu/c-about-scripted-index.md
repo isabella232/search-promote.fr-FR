@@ -1,16 +1,14 @@
 ---
 description: Avec l'index par script, vous pouvez écrire, mettre à jour et gérer des options d'indexation incrémentielle sans avoir à vous connecter. Le robot de recherche lit les instructions à partir d’un fichier texte hébergé sur votre serveur.
-seo-description: Avec l'index par script, vous pouvez écrire, mettre à jour et gérer des options d'indexation incrémentielle sans avoir à vous connecter. Le robot de recherche lit les instructions à partir d’un fichier texte hébergé sur votre serveur.
-seo-title: A propos de l’index par script
 solution: Target
 subtopic: Scripted Index
 title: A propos de l’index par script
-topic: Index,Site search and merchandising
+topic: Index, recherche sur le site et marchandisage
 uuid: 51e726ad-414b-4cbd-8a68-fefc3cf9b565
 translation-type: tm+mt
-source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1730'
 ht-degree: 1%
 
 ---

@@ -1,16 +1,14 @@
 ---
 description: Utilisez le menu Filtrage pour utiliser des scripts qui modifient le contenu d’un document Web avant son indexation.
-seo-description: Utilisez le menu Filtrage pour utiliser des scripts qui modifient le contenu d’un document Web avant son indexation.
-seo-title: A propos du menu Filtrage
 solution: Target
 subtopic: Filtering
 title: A propos du menu Filtrage
-topic: Settings,Site search and merchandising
+topic: Paramètres, recherche sur le site et marchandisage
 uuid: ebb08fa8-4e17-417d-868b-11fc2af9f284
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '4026'
+source-wordcount: '4008'
 ht-degree: 1%
 
 ---
@@ -576,7 +574,7 @@ Voir [Variables globales](#global-variables).
 
 ## Ajouter un script de terminaison {#task_F0CFB412871642CFBC88132889C5B6F9}
 
-Le script de terminaison est un script Perl exécuté une fois après l’indexation de tous les documents.
+Le script de terminaison est un script Perl qui est exécuté une fois après l’indexation de tous les documents.
 
 Vous utilisez le script de fin conjointement avec un script de filtrage, un script de fin et un script de masques d’URL.
 

@@ -1,15 +1,13 @@
 ---
 description: Chaque fois que votre site Web change, vous pouvez exécuter un script ou un programme demandant au robot de recherche d'exécuter un index à l'aide de la télécommande.
-seo-description: Chaque fois que votre site Web change, vous pouvez exécuter un script ou un programme demandant au robot de recherche d'exécuter un index à l'aide de la télécommande.
-seo-title: A propos du contrôle à distance pour l'indexation
 solution: Target
 title: A propos du contrôle à distance pour l'indexation
-topic: Index,Site search and merchandising
+topic: Index, recherche sur le site et marchandisage
 uuid: 20e230c6-5c1a-4bf4-bff3-b8236d14ab21
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1042'
 ht-degree: 1%
 
 ---

@@ -1,15 +1,13 @@
 ---
 description: Utilisez des règles de nettoyage de Requête pour analyser et modifier la requête entrante.
-seo-description: Utilisez des règles de nettoyage de Requête pour analyser et modifier la requête entrante.
-seo-title: A propos des règles de nettoyage des Requêtes
 solution: Target
 title: A propos des règles de nettoyage des Requêtes
-topic: Rules,Site search and merchandising
+topic: Règles, Recherche sur le site et marchandisage
 uuid: 683af81f-f7c0-45f8-9212-e5e7cb82ccca
 translation-type: tm+mt
-source-git-commit: d07cdc2c88f93eed4cecb0ee8818f7fdea06ee9d
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1611'
+source-wordcount: '1601'
 ht-degree: 1%
 
 ---

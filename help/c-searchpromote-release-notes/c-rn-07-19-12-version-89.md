@@ -1,16 +1,14 @@
 ---
-description: valeur nulle
-seo-description: valeur nulle
-seo-title: Notes de mise à jour de Search&amp ; amp ; Promote 8.9 (19/07/2012)
+description: Search&amp ; amp ; Notes de mise à jour de Promote 8.9.
 solution: Target
 title: Notes de mise à jour de Search&amp ; amp ; Promote 8.9 (19/07/2012)
-topic: Release Notes,Site search and merchandising
+topic: Notes de mise à jour, Recherche sur le site et marchandisage
 uuid: 3853c75d-19ed-4e36-9e81-dcbffe5f5b0c
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 62%
+source-wordcount: '287'
+ht-degree: 60%
 
 ---
 

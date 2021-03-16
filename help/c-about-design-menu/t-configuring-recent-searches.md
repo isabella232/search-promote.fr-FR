@@ -1,16 +1,14 @@
 ---
 description: Les recherches récentes sont un système basé sur les cookies qui vous permet d’utiliser un modèle de présentation pour afficher l’historique de recherche récente de votre client.
-seo-description: Les recherches récentes sont un système basé sur les cookies qui vous permet d’utiliser un modèle de présentation pour afficher l’historique de recherche récente de votre client.
-seo-title: Configuration des recherches récentes
 solution: Target
 subtopic: Navigation
 title: Configuration des recherches récentes
-topic: Design,Site search and merchandising
+topic: Création, recherche sur site et marchandisage
 uuid: 8ab1b35c-f953-4c26-921f-524af1fea4ef
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '186'
 ht-degree: 2%
 
 ---

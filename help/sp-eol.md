@@ -1,42 +1,45 @@
 ---
-title: 'Lorem Ipsum '
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate nulla quis libero sagittis prisitudin.
-solution: Target
+title: Annonce de fin de service du Search & Promote d'Adobe
+description: En savoir plus sur l'annonce de fin de service d'Adobe Search & Promote.
+feature: null
+role: Administrateur, Professionnel, Ingénieur de données, Développeur
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: ce3b55f0265c52670a81a17b9eff79309ff32bc0
+source-git-commit: aa10a950262e5d1828da3d2e417dd5a5b752029b
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 5%
+source-wordcount: '330'
+ht-degree: 0%
 
 ---
 
 
-# Lorem Ipsum
+# Annonce de fin de service du Search &amp; Promote d&#39;Adobe
 
-## Lorem ipsum dolor sit amet
+## Questions fréquentes sur la fin de service des Search &amp; Promote
 
-Elite de l&#39;adipiscing du consectetur. Etiam vulputate nulla quis libero sagittis prisitudin. L&#39;enim pellentesque Quisque est assis amet maximus commodo. Suspendisse vitae risus volutpat, véhicule orci a, placerat nulla. Curabitur ullamcorper quis dolor ac lacinia. Fusce aliquet egestas mi nec rooms.
+### **_À quelle date le Search &amp; Promote cessera-t-il de fonctionner ?_**
 
-Donec neque odio, scelerisque sed odio a, consécutitetur efficacité ex. Nunc sodales vitae turpis non rutrum. Mauris imperrégime prisitudin leo vel efficacité. Quisque mattis nulla eget nulla ornare, ac éphlorem maximus. Dans les installations nisl elit, et vulputate nunc maximus quis.
+La fin de service des Search &amp; Promote est prévue pour le 1er août 2022. A cette date, l’interface utilisateur d’administration du Search &amp; Promote ne sera plus accessible et les demandes aux API de Search &amp; Promote ne produiront plus de résultats. Avant cette date, le service sera entièrement disponible et fonctionnel.
 
-### **_Lorem ipsum dolor sit amet, consectetur adipiscing elit?_**
+### **_Que se passera-t-il si une recherche ou une autre demande d&#39;API est envoyée au Search &amp; Promote ?_**
 
-Dans le rutrum metus à metus volutpat sodales. Donec imperrégime augue nec ipsum vestibulum, dans elementum ante egestas. Duis sodales ligula maximus ex auctor, chez auctor tortor malesuada.
+La recherche et les autres demandes d’API effectuées au Search &amp; Promote ne retourneront plus de résultats. Les requêtes peuvent générer une erreur &quot;Hôte introuvable&quot;, une redirection HTTP 3xx ou une erreur HTTP telle que 404, 408 ou tout autre code d’erreur HTTP.
 
-### **_Pellentesque fringilla purus convallis, sollicitudin leo sit amet, condimentum ex ?_**
+### **_L&#39;Adobe dispose-t-il d&#39;autres options pour la recherche sur le site et la recherche commerciale ?_**
 
-Quisque a magna dictum, molestie mauris at, iaculis leo. Le type pellentesque erat ac tellus véhicule ultrpolicies. Morbi condimentum ligula ut condimentum conséquat.
+Oui. Pour la recherche de produits et de commerce, [Live Search from Magento Commerce](https://blog.adobe.com/en/publish/2020/11/23/new-ai-capabilities-for-magento-commerce-improve-retail.html) est l&#39;application de recherche de l&#39;Adobe qui va de l&#39;avant. La recherche en direct à partir du Magento Commerce devrait être lancée au premier semestre 2021.
 
-### **_Curabitur id nunc au massa fringilla condimentum ?_**
+### **_L&#39;Adobe peut-il recommander des structures ou des plateformes qui offre des fonctionnalités similaires à celles du Search &amp; Promote ?_**
 
-Morbi eu nisl nec urna aliquet laoreet. Suspendisse luctus nisl dans bibendum scelerisque. Assis paellentesque amet lacus vel erat convallis ornare. Le quisque gravida eros eu dapibus a permis de réfléchir.
+Oui. Si la fonction de Search &amp; Promote est essentielle à votre stratégie marketing, tenez compte des nombreuses infrastructures open source qui existent pour la recherche de puissance, notamment [Apache Solr](https://solr.apache.org/) et [Elastic Free et Open](https://www.elastic.co/about/free-and-open).
 
-### **_Massa fringilla condimentum ?_**
+En outre, les [AWS](https://aws.amazon.com/cloudsearch/) et [Microsoft® Azure](https://azure.microsoft.com/en-us/services/search/) offrent des fonctionnalités de recherche natives au cloud sur leurs plates-formes de cloud respectives. Vous pouvez intégrer les deux options dans Adobe Experience Manager Sites pour alimenter la recherche sur le site et plus encore.
 
-Morbi eu nisl nec urna aliquet laoreet. Suspendisse luctus nisl dans bibendum scelerisque. Assis paellentesque amet lacus vel erat convallis ornare. Le quisque gravida eros eu dapibus a permis de réfléchir.
+### **_Qui puis-je contacter pour en savoir plus ?_**
 
-### **_Nam et sem ac quam sollicitudin egestas et sit amet ligula ?_**
+Contactez votre responsable de succès client pour toute question ou contactez l’équipe d’Adobes à l’adresse [searchquestions@adobe.com](mailto:searchquestions@adobe.com).
 
-Mais id libero chez velit porttitor lacinia sagittis sit amet metus. Nulla véhicule odio mollis dolor Facilisis éphémère. Morbi sit amet felis sit amet dolor varius véhicule. Nulla vel leo a utilisé le purus varius rhoncus.
+### **_Puis-je toujours renouveler ma licence de Search &amp; Promote avant la fin de service ?_**
+
+Oui. Travaillez avec votre représentant d’Adobe pour renouveler votre licence avec une date de fin de contrat au plus tard le 1er août 2022.

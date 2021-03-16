@@ -1,16 +1,14 @@
 ---
-description: valeur nulle
-seo-description: valeur nulle
-seo-title: Notes de mise à jour de Search&amp ; amp ; Promote 15.1.1 (15/01/2015)
+description: Search&amp ; amp ; Notes de mise à jour de Promote 15.1.1.
 solution: Target
 title: Notes de mise à jour de Search&amp ; amp ; Promote 15.1.1 (15/01/2015)
-topic: Release Notes,Site search and merchandising
+topic: Notes de mise à jour, Recherche sur le site et marchandisage
 uuid: 070f9c46-426f-4ca1-80c7-8ca53d40a402
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 17%
+source-wordcount: '241'
+ht-degree: 16%
 
 ---
 

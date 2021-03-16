@@ -1,16 +1,14 @@
 ---
-description: valeur nulle
-seo-description: valeur nulle
-seo-title: Modèles
+description: Découvrez comment utiliser les balises de présentation et de modèle dans Search&amp ; amp ; Promote.
 solution: Target
 title: Modèles
-topic: Appendices,Site search and merchandising
+topic: Annexes, Recherche sur site et marchandisage
 uuid: 78299032-dc23-4dfe-b68f-cd57b2b6d7d8
 translation-type: tm+mt
-source-git-commit: ca4156f80d7dbb85d2d56b6caf7c0f560299d86e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '15139'
-ht-degree: 3%
+source-wordcount: '15153'
+ht-degree: 2%
 
 ---
 
@@ -105,7 +103,7 @@ Les déclarations sont des balises de déclaration guidée spéciales que vous p
    <td colname="col01"> <p>4 </p> </td> 
    <td colname="col1"> <p> 
      <!--Updated to match search-eng version, 1/31/13; search-eng version does not have [escape...] Added ijson on 8/28/2015--> <span class="codeph"> &lt;guided-result-field gsname="fieldname"&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Toute information à présenter dans les résultats s’affiche sous la forme d’une balise <span class="codeph"> &lt;champ-résultat-guidé&gt; </span> (sauf si vous utilisez des balises générées automatiquement telles que la balise <span class="codeph"> </span> &lt;a3/&gt; &lt;guidé-result-img&gt;). </p> <p>Spécifiez le nom du champ d'index de recherche dans <span class="codeph"> gsname </span>. La chaîne exacte transmise est générée dans le modèle. </p> <p>Vous pouvez spécifier une option d’échappement si vous souhaitez que ce champ soit protégé par une séquence d’échappement différente de celle spécifiée dans le modèle de transport. </p> <p>Ce codage est appliqué en plus du codage spécifié dans le modèle de transport. </p> </td> 
+   <td colname="col2"> <p> Toute information à présenter dans les résultats s’affiche sous la forme d’une balise <span class="codeph"> &lt;champ-résultat-guidé&gt; </span> (sauf si vous utilisez des balises générées automatiquement telles que la balise <span class="codeph"> </span>  &lt;guidé-result-img&gt;). </p> <p>Spécifiez le nom du champ d'index de recherche dans <span class="codeph"> gsname </span>. La chaîne exacte transmise est générée dans le modèle. </p> <p>Vous pouvez spécifier une option d’échappement si vous souhaitez que ce champ soit protégé par une séquence d’échappement différente de celle spécifiée dans le modèle de transport. </p> <p>Ce codage est appliqué en plus du codage spécifié dans le modèle de transport. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>5 </p> </td> 
@@ -257,11 +255,11 @@ Voir [A propos des facettes dynamiques](../c-about-design-menu/c-about-dynamic-f
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> 
      <!--NEW 02/27/2014--> <span class="codeph"> &lt;guided-dynamic-facets&gt;&lt;/guided-dynamic-facets&gt; </span> </p> </td> 
    <td colname="col2"> 
-    <!--NEW 2/2/2014--> <p>Contexte de boucle pour toute facette dynamique pour une recherche donnée. </p> <p>La balise de modèle de présentation <span class="codeph"> </span> &lt;a1/&gt; est modifiée de sorte que l’attribut gsname soit automatiquement fourni par le contexte de boucle <span class="codeph"> </span> &lt;a3/&gt;. </p> </td> 
+    <!--NEW 2/2/2014--> <p>Contexte de boucle pour toute facette dynamique pour une recherche donnée. </p> <p>La balise de modèle de présentation <span class="codeph"> </span>  est modifiée de sorte que l’attribut gsname soit automatiquement fourni par le contexte de boucle <span class="codeph"> </span> . </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>2 </p> </td> 
@@ -269,7 +267,7 @@ Voir [A propos des facettes dynamiques](../c-about-design-menu/c-about-dynamic-f
    <td colname="col2"> <p>Renvoie le libellé d’affichage de la facette. </p> <p>Si la facette utilise la balise <span class="codeph"> &lt;nom-affichage&gt; </span> sur le modèle de transport, le contenu de cette balise devient l’étiquette. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> 
      <!--In search-eng version 1/31/13--> <span class="codeph"> &lt;guided-facet-rail&gt;&lt;/guided-facet-rail&gt; </span> </p> </td> 
    <td colname="col2"> <p> Définit une section du modèle de présentation qui est utilisée comme modèle de répétition pour chaque facette du rail de facettes. </p> <p> Chaque facette appartenant au rail de facettes utilise cette section pour évaluer sa sortie. </p> <p>Voici un exemple de rail de facettes : </p> <p> <code class="syntax html"> &lt;guided-facet-rail&gt; 
@@ -277,7 +275,7 @@ Voir [A propos des facettes dynamiques](../c-about-design-menu/c-about-dynamic-f
       &nbsp;&nbsp;&nbsp;&nbsp;&lt;guided-facet-display-name/&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;... 
       &nbsp;&nbsp;&nbsp;&nbsp;&lt;/guided-facet&gt; 
-      &nbsp;&nbsp;&lt;/guided-facet-rail&gt; </code> </p> <p>Notez que les balises suivantes n’ont pas besoin de l’attribut <span class="codeph"> gsname </span> lorsqu’elles se trouvent dans la balise <span class="codeph"> </span> &lt;a3/&gt; comme valeur déterminée dynamiquement au moment de la recherche et correctement substituée : </p> 
+      &nbsp;&nbsp;&lt;/guided-facet-rail&gt; </code> </p> <p>Notez que les balises suivantes n’ont pas besoin de l’attribut <span class="codeph"> gsname </span> lorsqu’elles se trouvent dans la balise <span class="codeph"> </span>  comme valeur déterminée dynamiquement au moment de la recherche et correctement substituée : </p> 
     <ul id="ul_5B5ACAFD2B8848DDB27471AB9DA7BE6E"> 
      <li id="li_5A07E78D51FE4708879DD742C877FFFF">facette guidée </li> 
      <li id="li_B875DCACD7AB4FC890A456A6939AB657">guidé-facette-nom-affichage </li> 
@@ -350,7 +348,7 @@ Voir [A propos des facettes dynamiques](../c-about-design-menu/c-about-dynamic-f
    <td colname="col01"> <p>8 </p> </td> 
    <td colname="col1"> <p> 
      <!--Added 7/15/2014--> <span class="codeph"> &lt;guided-if&gt;&lt;/guided-if&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Cette balise conditionnelle est vraie lorsque la facette est à sélection multiple. Utilisez la balise pour modifier l’affichage de la facette dans les balises <span class="codeph"> </span> &lt;a1/&gt; ou <span class="codeph"> </span> &lt;a3/&gt;. </p> <p> 
+   <td colname="col2"> <p>Cette balise conditionnelle est vraie lorsque la facette est à sélection multiple. Utilisez la balise pour modifier l’affichage de la facette dans les balises <span class="codeph"> </span>  ou <span class="codeph"> </span> . </p> <p> 
 
     &amp;nbsp ;&amp;nbsp ;&amp;nbsp ;&amp;nbsp ;&amp;nbsp ;&amp;lt ; guidé-if-facet-multiselect&amp;gt ; 
     &amp;nbsp ; ...
@@ -607,7 +605,7 @@ Voir [A propos des chemins de navigation](../c-about-design-menu/c-about-breadcr
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-breadcrumb&gt; nom_grand-mère  </span>"]&gt;&lt;/guided-breadcrumb&gt; </span><span class="varname"> </span></p> </td> 
    <td colname="col2"> <p>Balise de boucle de la barre de navigation. Tout contenu entre les balises d’ouverture et de fermeture est itéré pour chaque numéro de requête de l’état actuel. </p> <p>Si <span class="codeph"> <span class="varname"> gsname </span> </span> est omis, le chemin de navigation nommé "default" est utilisé. </p> </td> 
   </tr> 
@@ -622,7 +620,7 @@ Voir [A propos des chemins de navigation](../c-about-design-menu/c-about-breadcr
       &lt;/guided-breadcrumb&gt; </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> 
      <!--Updated to search-eng version, 2/1/2013--> <span class="codeph"> &lt;guided-breadcrumb-value /&gt; </span> </p> </td> 
    <td colname="col2"> <p>La balise value imprime la valeur transformée de l’itération de chemin de navigation actuelle. Il est utilisé uniquement dans le contexte d'un bloc de navigation guidé <span class="codeph"> </span>. </p> <p> <code class="syntax html"> &lt;guided-breadcrumb&gt; 
@@ -690,7 +688,7 @@ Voir [Menus](../c-about-design-menu/c-about-menus.md#concept_68123CE5CF4447B5921
    <td colname="col2"> <p>Donne l'URL pour affiner la recherche actuelle de l'élément de menu. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> 
      <!--Matched search-eng version, 2/1/2013--> <span class="codeph"> &lt;guided-menu-item-option&gt; </span> </p> </td> 
    <td colname="col2"> <p>En règle générale, un menu s'affiche dans un contrôle de sélection sur un modèle. Cette balise facilite la construction de la commande select, car elle génère le code HTML permettant de générer l’option de la commande select. </p> <p>Par exemple, le bloc de code suivant : </p> <p> <code class="syntax html"> &lt;select&nbsp;name="sort"&nbsp;onchange="gcGo(this);"&gt; 
@@ -747,7 +745,7 @@ Les balises de navigation de la page peuvent être utilisées pour créer un ens
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> 
      <!--Matched search-eng version, 2/1/2013--> <span class="codeph"> &lt;guided-pages&gt;&lt;/guided-pages&gt; </span> </p> </td> 
    <td colname="col2"> <p>Balise de boucle pour la navigation dans la page. Tout contenu entre les balises d’ouverture et de fermeture est itéré pour chaque page. </p> </td> 
@@ -891,7 +889,7 @@ Voir [Configuration des recherches récentes](../c-about-design-menu/t-configuri
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-recent-searches&gt;&lt;/guided-recent-searches&gt; </span> </p> </td> 
    <td colname="col2"> <p>Balise de boucle pour les recherches récentes. Tout contenu entre les balises d’ouverture et de fermeture est itéré pour chaque page. </p> </td> 
   </tr> 
@@ -956,7 +954,7 @@ Voir [A propos de Vouliez-vous dire](../c-about-linguistics-menu/c-about-did-you
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> 
      <!--Matches search-eng version, 2/1/2013--> <span class="codeph"> &lt;guided-suggestions&gt;&lt;/guided-suggestions&gt; </span> </p> </td> 
    <td colname="col2"> <p>Il s’agit de la balise de boucle permettant de parcourir les suggestions en boucle. </p> </td> 
@@ -1107,7 +1105,7 @@ Utilisez les balises suivantes pour tester et afficher le magasin dans lequel se
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-zone gsname="zone area"&gt; </span> </p> </td> 
    <td colname="col2"> <p>Vous pouvez placer n’importe quel contenu dans des balises de zone pour créer une zone en dehors de cette zone. Vous pouvez ainsi utiliser des règles de fonctionnement pour afficher la zone selon vos besoins. Par défaut, les zones sont toujours affichées. Vous pouvez utiliser les paramètres facultatifs de recherche et de facette pour indiquer quelle recherche ou facette est associée à la zone. Cette fonctionnalité permet au logiciel d’ignorer les recherches ou les facettes lorsqu’une zone est masquée, améliorant ainsi les performances de recherche en temps réel. Les attributs de hauteur et de largeur sont facultatifs et sont utilisés pour configurer l’affichage de l’espace réservé dans le Créateur de règles visuel lorsqu’une zone est supprimée. </p> <p> Dans la mesure du possible, utilisez la balise <span class="codeph"> guided-if-facet[-not]-visible </span> au lieu de la zone. Il simplifie le modèle de présentation. </p> </td> 
   </tr> 
@@ -1139,7 +1137,7 @@ Vous pouvez utiliser chacun des indicateurs de boucle suivants dans l’un de ce
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> 
      <!--Updated to match search-eng version, 2/1/2013--> <code> &lt;guided-if[-not]-first&gt;&lt;guided-else[-not]-first&gt; 
       &lt;/guided-if[-not]-first&gt; </code> </p> </td> 
@@ -1153,7 +1151,7 @@ Vous pouvez utiliser chacun des indicateurs de boucle suivants dans l’un de ce
    <td colname="col2"> <p>Cette condition est vraie lorsque l'itération actuelle est la dernière itération de la boucle. Cela ne signifie pas nécessairement le dernier résultat ou la dernière page, mais le dernier affiché dans le contexte actuel (page). Si le visiteur du site se trouve à la page 1 d’un jeu de résultats qui contient 200 résultats mais n’en a que 10 par page, la dernière itération est le résultat 10 au lieu du résultat 200. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> 
      <!--Updated to match search-eng version, 2/1/2013--> <code> &lt;guided-if[-not]-odd&gt;&lt;guided-else[-not]-odd&gt; 
       &lt;/guided-if[-not]-odd&gt; </code> </p> </td> 
@@ -1588,7 +1586,7 @@ Voir [A propos des balises de boucle Résultats](../c-appendices/c-templates.md#
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-index&gt; </span> </p> </td> 
    <td colname="col2"> <p>Renvoie l’index numérique du résultat actuel. </p> </td> 
   </tr> 
@@ -1610,7 +1608,7 @@ Voir [A propos des balises de boucle Résultats](../c-appendices/c-templates.md#
   <tr> 
    <td colname="col01"> <p>5 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-score rank="dynamic/static/dynamic-raw/static-raw/final-raw" precision="XX"&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Renvoie le score du résultat actuel, qui est un nombre compris entre 0 et 100. Si vous avez défini un champ de classement sous <span class="uicontrol"> Options </span> &gt; <span class="uicontrol"> Métadonnées </span> &gt; <span class="uicontrol"> Définitions </span>, vous pouvez afficher le classement de page dynamique en définissant l'attribut de classement sur dynamic ( <span class="codeph"> &lt;a6/&gt; </span> &lt;a7/&gt;). Vous pouvez afficher le classement de page statique en définissant l’attribut de classement sur statique ( <span class="codeph"> &lt;search-score grade="static"&gt; </span>). Vous pouvez utiliser l’attribut de précision facultatif pour spécifier le nombre de décimales à afficher. La valeur par défaut est 0, ce qui affiche le score entier). </p> </td> 
+   <td colname="col2"> <p>Renvoie le score du résultat actuel, qui est un nombre compris entre 0 et 100. Si vous avez défini un champ de classement sous <span class="uicontrol"> Options </span> &gt; <span class="uicontrol"> Métadonnées </span> &gt; <span class="uicontrol"> Définitions </span>, vous pouvez afficher le classement de page dynamique en définissant l'attribut de classement sur dynamic ( <span class="codeph">  </span> ). Vous pouvez afficher le classement de page statique en définissant l’attribut de classement sur statique ( <span class="codeph"> &lt;search-score grade="static"&gt; </span>). Vous pouvez utiliser l’attribut de précision facultatif pour spécifier le nombre de décimales à afficher. La valeur par défaut est 0, ce qui affiche le score entier). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>6 </p> </td> 
@@ -1650,7 +1648,7 @@ Voir [A propos des balises de boucle Résultats](../c-appendices/c-templates.md#
   <tr> 
    <td colname="col01"> <p>13 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-display-field-value date-format="date-format-string" gmt="yes/no" language="0/language-id" encoding="html/javascript/json/perl/url/none"&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Cette balise produit la valeur du champ de métadonnées (url, titre, desc, clés, cible, corps, alt, date, charset et langue ou champs définis sous <span class="uicontrol"> Options </span> &gt; <span class="uicontrol"> Métadonnées </span> &gt; <span class="uicontrol"> Définitions </span>) pour l'itération <span class="codeph"> actuelle </span> &lt;search-display-field-values&gt;. Cette balise n’est valide que dans une boucle <span class="codeph"> &lt;search-display-field-values&gt; </span>. Les attributs <span class="codeph"> date-format </span>, <span class="codeph"> gmt </span> et <span class="codeph"> langue </span> ne sont pertinents que si le type de contenu du nom de champ spécifié dans la balise <span class="codeph"> </span> &lt;a7/&gt; encadrée est <span class="codeph"> date </span>. L'attribut <span class="codeph"> date-format </span> utilise une chaîne de format de date de style UNIX telle que <span class="codeph"> "%A </span>, <span class="codeph"> %B </span> <span class="codeph"> %d </span>, <span class="codeph"> %Y </span>" (pour "le lundi 25 juillet 2016"). L'attribut <span class="codeph"> gmt </span> prend par défaut la valeur <span class="codeph"> yes </span> et contrôle si la partie heure de la chaîne de date est générée en GMT ( <span class="codeph"> yes </span>) ou le fuseau horaire du compte ( <span class="codeph"> no </span>). </p> <p>L'attribut <span class="codeph"> langue </span> contrôle les conventions de langue et de paramètres régionaux de la chaîne de date de sortie. <span class="codeph"> 0  </span> (valeur par défaut) signifie "Utiliser la langue du compte". Toute autre valeur de <span class="codeph"> langue </span> est interprétée comme un identifiant de langue spécifique, par exemple, <span class="codeph"> en_US </span> signifie "Anglais (États-Unis)". </p> <p>L’attribut facultatif de codage <span class="codeph"> </span> contrôle si la sortie est encodée au format HTML, JavaScript, Perl, URL encodée ou non, pour la sortie sur la page de résultats. La valeur par défaut du codage <span class="codeph"> </span> est <span class="codeph"> html </span>. Normalement, vous n’avez pas besoin de spécifier l’attribut de codage. </p> </td> 
+   <td colname="col2"> <p>Cette balise produit la valeur du champ de métadonnées (url, titre, desc, clés, cible, corps, alt, date, charset et langue ou champs définis sous <span class="uicontrol"> Options </span> &gt; <span class="uicontrol"> Métadonnées </span> &gt; <span class="uicontrol"> Définitions </span>) pour l'itération <span class="codeph"> actuelle </span> &lt;search-display-field-values&gt;. Cette balise n’est valide que dans une boucle <span class="codeph"> &lt;search-display-field-values&gt; </span>. Les attributs <span class="codeph"> date-format </span>, <span class="codeph"> gmt </span> et <span class="codeph"> langue </span> ne sont pertinents que si le type de contenu du nom de champ spécifié dans la balise <span class="codeph"> </span>  encadrée est <span class="codeph"> date </span>. L'attribut <span class="codeph"> date-format </span> utilise une chaîne de format de date de style UNIX telle que <span class="codeph"> "%A </span>, <span class="codeph"> %B </span> <span class="codeph"> %d </span>, <span class="codeph"> %Y </span>" (pour "le lundi 25 juillet 2016"). L'attribut <span class="codeph"> gmt </span> prend par défaut la valeur <span class="codeph"> yes </span> et contrôle si la partie heure de la chaîne de date est générée en GMT ( <span class="codeph"> yes </span>) ou le fuseau horaire du compte ( <span class="codeph"> no </span>). </p> <p>L'attribut <span class="codeph"> langue </span> contrôle les conventions de langue et de paramètres régionaux de la chaîne de date de sortie. <span class="codeph"> 0  </span> (valeur par défaut) signifie "Utiliser la langue du compte". Toute autre valeur de <span class="codeph"> langue </span> est interprétée comme un identifiant de langue spécifique, par exemple, <span class="codeph"> en_US </span> signifie "Anglais (États-Unis)". </p> <p>L’attribut facultatif de codage <span class="codeph"> </span> contrôle si la sortie est encodée au format HTML, JavaScript, Perl, URL encodée ou non, pour la sortie sur la page de résultats. La valeur par défaut du codage <span class="codeph"> </span> est <span class="codeph"> html </span>. Normalement, vous n’avez pas besoin de spécifier l’attribut de codage. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>14 </p> </td> 
@@ -1717,7 +1715,7 @@ Voir [A propos des balises de boucle Résultats](../c-appendices/c-templates.md#
    <td colname="col2"> <p> Ces balises incluent le code HTML entre elles si l’appel suivant à <span class="codeph"> &lt;search-description&gt; </span> renvoie (ou ne renvoie pas) du texte de la description du document. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-bodytext&gt; ...  &lt;/search-if-bodytext&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-bodytext&gt; ...  &lt;/search-if-not-bodytext&gt; </span> </p> </td> 
    <td colname="col2"> <p>Ces balises incluent le code HTML entre elles si l’appel suivant à <span class="codeph"> &lt;search-body text&gt; </span> renvoie (ou ne renvoie pas) du texte du corps du document. </p> </td> 
   </tr> 
@@ -1758,14 +1756,14 @@ Voir [A propos des balises de boucle Résultats](../c-appendices/c-templates.md#
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-link target="frame-name" hbx-enable="yes/no" hbx-linkid-name="field-name" hbx-linkid-none="text" hbx-linkid-length="XX"&gt; ...  &lt;/search-link&gt; </span> </p> </td> 
    <td colname="col2"> <p>Cette paire de balises crée un lien d’ancrage autour du code HTML entre elles. Lorsque vous cliquez sur le lien, la page de résultats s’affiche. Un attribut de cible facultatif spécifie la fenêtre nommée dans laquelle les navigateurs capables d’afficher les cadres doivent afficher la page de résultats. </p> <p>Définissez l’attribut hbx-enable sur "yes" pour tirer parti des analyses disponibles via HBX. Définissez hbx-linkid-name sur le nom d’un champ de métadonnées dont vous souhaitez effectuer le suivi. Par exemple, pour suivre les résultats de la recherche par numéro de SKU, définissez hbx-linkid-name sur le nom du champ Meta-data qui contient les informations du SKU. </p> <p>Les champs de type de date ne sont actuellement pas pris en charge. La valeur de hbx-linkid-name est ajoutée à l’ID de lien dans l’ancre générée. La valeur de l’attribut hbx-linkid-none est ajoutée à l’ID de lien chaque fois que le champ Meta-data nommé est vide. La valeur de hbx-linkid-length limite le nombre de caractères récupérés et affichés à partir de la balise Meta. Le nombre de caractères par défaut est 12. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>2 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-smart-link target="frame-name" hbx-enable="yes/no" hbx-linkid-name="field-name" hbx-linkid-none="text" hbx-linkid-length="XX"&gt; ...  &lt;/search-smart-link&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Cette paire de balises est similaire aux balises <span class="codeph"> &lt;search-link&gt; ... &lt;/search-link&gt; </span>. Lorsque vous cliquez sur les liens d’ancrage générés, la page de résultats s’affiche, mais avec le défilement de la page vers la balise d’ancrage la plus proche précédant le résultat. Pour les liens PDF, le lecteur Acrobat affiche la page qui contient le résultat. Un attribut de cible facultatif spécifie la fenêtre nommée dans laquelle les navigateurs capables d’afficher les cadres doivent afficher la page de résultats. </p> <p>Définissez l’attribut hbx-enable sur "yes" pour tirer parti des analyses disponibles via HBX. Définissez hbx-linkid-name sur le nom d’un champ de métadonnées dont vous souhaitez effectuer le suivi. Par exemple, pour suivre les résultats de la recherche par numéro de SKU, définissez hbx-linkid-name sur le nom du champ Meta-data qui contient les informations du SKU. </p> <p>Les champs de type de date ne sont actuellement pas pris en charge. La valeur de hbx-linkid-name est ajoutée à l’ID de lien dans l’ancre générée. La valeur de l’attribut hbx-linkid-none est ajoutée à l’ID de lien chaque fois que le champ Meta-data nommé est vide. La valeur de hbx-linkid-length limite le nombre de caractères récupérés et affichés à partir de la balise Meta. Le nombre de caractères par défaut est 12. </p> </td> 
+   <td colname="col2"> <p>Cette paire de balises est similaire aux balises <span class="codeph"> &lt;lien-recherche&gt; ... &lt;/lien-recherche&gt; </span>. Lorsque vous cliquez sur les liens d’ancrage générés, la page de résultats s’affiche, mais avec le défilement de la page vers la balise d’ancrage la plus proche précédant le résultat. Pour les liens PDF, le lecteur Acrobat affiche la page qui contient le résultat. Un attribut de cible facultatif spécifie la fenêtre nommée dans laquelle les navigateurs capables d’afficher les cadres doivent afficher la page de résultats. </p> <p>Définissez l’attribut hbx-enable sur "yes" pour tirer parti des analyses disponibles via HBX. Définissez hbx-linkid-name sur le nom d’un champ de métadonnées dont vous souhaitez effectuer le suivi. Par exemple, pour suivre les résultats de la recherche par numéro de SKU, définissez hbx-linkid-name sur le nom du champ Meta-data qui contient les informations du SKU. </p> <p>Les champs de type de date ne sont actuellement pas pris en charge. La valeur de hbx-linkid-name est ajoutée à l’ID de lien dans l’ancre générée. La valeur de l’attribut hbx-linkid-none est ajoutée à l’ID de lien chaque fois que le champ Meta-data nommé est vide. La valeur de hbx-linkid-length limite le nombre de caractères récupérés et affichés à partir de la balise Meta. Le nombre de caractères par défaut est 12. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>3 </p> </td> 
@@ -1839,7 +1837,7 @@ Voir [A propos des balises de boucle Résultats](../c-appendices/c-templates.md#
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>1 </p> </td> 
+   <td colname="col1"> <p>3 </p> </td> 
    <td colname="col2"> <p>Premier résultat </p> </td> 
    <td colname="col3"> <p>Non </p> </td> 
    <td colname="col4"> <p>Non </p> </td> 
@@ -1851,7 +1849,7 @@ Voir [A propos des balises de boucle Résultats](../c-appendices/c-templates.md#
    <td colname="col4"> <p>Oui </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>1 </p> </td> 
+   <td colname="col1"> <p>3 </p> </td> 
    <td colname="col2"> <p>Troisième résultat </p> </td> 
    <td colname="col3"> <p>Non </p> </td> 
    <td colname="col4"> <p>Non </p> </td> 
@@ -1975,7 +1973,7 @@ Les balises avancées suivantes énumèrent et extraient les valeurs des champs 
   <tr> 
    <td colname="col01"> <p>2 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-field-value date-format="date-format-string" encoding="html/javascript/json/perl/url/none" gmt="yes/no" language="0/language-id"&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Cette balise génère la valeur de champ pour l’itération de boucle &lt;search-field-values&gt; en cours. Cette balise n’est valide que dans une boucle <span class="codeph"> &lt;search-field-values&gt; </span>. Les attributs "date-format", "gmt" et "langue" ne sont pertinents que si le type de contenu du nom de champ spécifié dans la balise &lt;search-field-values&gt; encadrée est "date". L'attribut "format de date" utilise une chaîne de format de date de style UNIX telle que "%A, %B %d, %Y" (pour "lundi, 25 juillet 2020"). </p> <p>Voir <a href="../c-appendices/c-templates.md#section_4BBDBBEF2B96414497617CD4B52D96E4" type="section" format="dita" scope="local"> Chaînes de format de date</a>. </p> <p>L’attribut "encoding" facultatif contrôle si les caractères de la chaîne de sortie sont encodés au format HTML, JavaScript, Perl, URL ou non, pour la sortie sur la page de résultats. La valeur par défaut de "encoding" est "none". Normalement, vous n’avez pas besoin de spécifier l’attribut de codage. "gmt" prend par défaut la valeur "yes" et contrôle si la partie horaire de la chaîne de date doit être affichée en GMT ("yes") ou le fuseau horaire du compte ("no"). L’attribut "langue" contrôle les conventions de langue et de paramètres régionaux de la chaîne de date de sortie. "0" (valeur par défaut) signifie "Utiliser la langue du compte". Toute autre valeur "language" est interprétée comme un identifiant de langue spécifique, par exemple, "en_US" signifie "English (United States)". </p> <p>Voir <a href="../c-appendices/c-templates.md#section_0490DECC00E34691ADE5A9ED90A6D911" type="section" format="dita" scope="local"> Identifiants de langue</a>. </p> </td> 
+   <td colname="col2"> <p>Cette balise produit la valeur du champ pour l’itération de boucle &lt;search-field-values&gt; en cours. Cette balise n’est valide que dans une boucle <span class="codeph"> &lt;search-field-values&gt; </span>. Les attributs "date-format", "gmt" et "langue" ne sont pertinents que si le type de contenu du nom de champ spécifié dans la balise &lt;search-field-values&gt; encadrée est "date". L'attribut "format de date" utilise une chaîne de format de date de style UNIX telle que "%A, %B %d, %Y" (pour "lundi, 25 juillet 2020"). </p> <p>Voir <a href="../c-appendices/c-templates.md#section_4BBDBBEF2B96414497617CD4B52D96E4" type="section" format="dita" scope="local"> Chaînes de format de date</a>. </p> <p>L’attribut "encoding" facultatif contrôle si les caractères de la chaîne de sortie sont encodés au format HTML, JavaScript, Perl, URL ou non, pour la sortie sur la page de résultats. La valeur par défaut de "encoding" est "none". Normalement, vous n’avez pas besoin de spécifier l’attribut de codage. "gmt" prend par défaut la valeur "yes" et contrôle si la partie horaire de la chaîne de date doit être affichée en GMT ("yes") ou le fuseau horaire du compte ("no"). L’attribut "langue" contrôle les conventions de langue et de paramètres régionaux de la chaîne de date de sortie. "0" (valeur par défaut) signifie "Utiliser la langue du compte". Toute autre valeur "language" est interprétée comme un identifiant de langue spécifique, par exemple, "en_US" signifie "English (United States)". </p> <p>Voir <a href="../c-appendices/c-templates.md#section_0490DECC00E34691ADE5A9ED90A6D911" type="section" format="dita" scope="local"> Identifiants de langue</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>1 </p> </td> 
@@ -2015,7 +2013,7 @@ Suggest fournit un &quot;Voulez-vous dire ?&quot; convivial pour suggérer d’a
   <tr> 
    <td colname="col01"> <p>2 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-suggestions&gt; ...  &lt;/search-suggestions&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Cette balise génère la boucle "Suggérer", qui contient une liste de termes de recherche suggérés (par exemple, "intention", "intention" et "intention", pour une requête initialement saisie comme "intention"). Lors de la génération de la liste des termes, le moteur de recherche répète jusqu’à cinq fois les balises HTML et/ou de modèle imbriquées, ce qui correspond au nombre maximum de suggestions. Utilisez l’attribut count pour spécifier le nombre de suggestions générées (entre 0 et 5). </p> <p>La balise <span class="codeph"> &lt;search-suggestions&gt; </span> peut s’afficher plusieurs fois sur la page pour répéter la liste des suggestions. Plusieurs suggestions sont triées en fonction du nombre de résultats obtenus. </p> <p>Imbriquez la balise <span class="codeph"> &lt;search-suggestions&gt; </span> entre les balises open et close <span class="codeph"> &lt;search-if-suggestions&gt; </span>. </p> </td> 
+   <td colname="col2"> <p>Cette balise génère la boucle "Suggérer", qui contient une liste de termes de recherche suggérés (par exemple, "intention", "intention" et "intention", pour une requête initialement saisie comme "intention"). Lors de la génération de la liste des termes, le moteur de recherche répète jusqu’à cinq fois les balises HTML et/ou de modèle imbriquées, ce qui correspond au nombre maximum de suggestions. Utilisez l’attribut count pour spécifier le nombre de suggestions générées (entre 0 et 5). </p> <p>La balise <span class="codeph"> &lt;search-suggestions&gt; </span> peut s’afficher plusieurs fois sur la page pour répéter la liste des suggestions. Plusieurs suggestions sont triées en fonction du nombre de résultats que chaque rapport produit. </p> <p>Imbriquez la balise <span class="codeph"> &lt;search-suggestions&gt; </span> entre les balises open et close <span class="codeph"> &lt;search-if-suggestions&gt; </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>1 </p> </td> 
@@ -2074,7 +2072,7 @@ Les balises suivantes génèrent une chaîne dans le code HTML à ce stade du mo
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-body&gt; </span> </p> </td> 
    <td colname="col2"> <p>Balise de corps HTML contenant tous les paramètres de couleur de lien de recherche définis par la section Aspect de base sous le lien Modèle. Ajoutez un attribut d’arrière-plan à cette balise pour afficher les images d’arrière-plan sur la page de résultats. Les attributs de couleur ajoutés à cette balise remplacent les paramètres de couleur des liens de recherche définis par la section Aspect de base. </p> </td> 
   </tr> 
@@ -2084,7 +2082,7 @@ Les balises suivantes génèrent une chaîne dans le code HTML à ce stade du mo
    <td colname="col2"> <p>Code HTML de l’en-tête des résultats de la recherche tel que défini dans la section Aspect de base sous le lien Modèle. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-cdata&gt; ...  &lt;/search-cdata&gt; </span> </p> </td> 
    <td colname="col2"> <p>Les balises search-data sont remplacées par leurs équivalents XML : <span class="codeph"> &lt;search-cdata&gt; </span> est remplacé par <span class="codeph"> &lt;![CDATA[" et la balise &lt;/search-cdata&gt; </span> est remplacée par " <span class="codeph"> ]]&gt; </span>". Un analyseur XML n’analyse aucune information entre les balises open et close. </p> </td> 
   </tr> 
@@ -2202,7 +2200,7 @@ Les balises suivantes provoquent l’entourage du code HTML par un lien d’ancr
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-next URL="https://search.yourdomain.com/search/"&gt; ...  &lt;/search-next&gt; </span> </p> <p> <span class="codeph"> &lt;search-prev URL="https://search.yourdomain.com/search/"&gt; ...  &lt;/search-prev&gt; </span> </p> </td> 
    <td colname="col2"> <p>Affiche la page suivante ou précédente des résultats. </p> </td> 
   </tr> 
@@ -2212,7 +2210,7 @@ Les balises suivantes provoquent l’entourage du code HTML par un lien d’ancr
    <td colname="col2"> <p>Trie les résultats par date ou par pertinence. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-show-summaries URL="https://search.yourdomain.com/search/"&gt; ...  &lt;/search-show-summaries&gt; </span> </p> <p> <span class="codeph"> &lt;search-hide-summaries URL="https://search.yourdomain.com/search/"&gt; ...  &lt;/search-hide-summaries&gt; </span> </p> </td> 
    <td colname="col2"> <p>Affiche ou masque les résumés. </p> </td> 
   </tr> 
@@ -2233,9 +2231,9 @@ Balises qui vous permettent d’inclure du code HTML de manière conditionnelle 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-results&gt; ...  &lt;/search-if-results&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-results&gt; ...&lt;/search-if-not-results&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Ces balises incluent du code HTML si la page active contient des résultats de recherche (ou aucun). </p> </td> 
+   <td colname="col2"> <p>Ces balises comprennent du code HTML si la page active contient des résultats de recherche (ou aucun). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>2 </p> </td> 
@@ -2322,7 +2320,7 @@ Balises qui vous permettent de contrôler l’état de sélection par défaut de
       &lt;/search-select&gt; </code> </p> <p>Si vous souhaitez ajouter des zones de liste à <span class="codeph"> &lt;formulaire&gt; </span> dans votre modèle de recherche, utilisez <span class="codeph"> &lt;search-select...&gt; </span> à la place de <span class="codeph"> &lt;select...&gt; </span>, <span class="codeph"> &lt;/search-select&gt; </span> à la place de <span class="codeph"> &lt;/select &lt;a&gt;9/&gt;, <span class="codeph"> &lt;option de recherche...&gt; </span> en lieu et place de <span class="codeph"> &lt;option...&gt; </span> et <span class="codeph"> &lt;/option de recherche&gt; </span> en lieu et place de <span class="codeph"> &lt;/option&gt; &lt;a17/ .</span></span> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-sort-by-field name="field-name" count="XX"&gt; ...  &lt;/search-sort-by-field&gt; </span> </p> </td> 
    <td colname="col2"> <p>Ces balises avancées créent un lien d’ancrage autour du code HTML entre elles. Lorsque vous cliquez sur cette ancre, une page de résultats triée sur le champ donné s’affiche. L'attribut facultatif <span class="codeph"> count </span> spécifie le nombre de résultats à afficher sur la page de résultats. Si <span class="codeph"> nombre </span> est omis, le nombre utilisé sur la page active est utilisé. </p> </td> 
   </tr> 
@@ -2701,7 +2699,7 @@ Pour configurer vos formulaires de recherche pour utiliser un modèle de transpo
 
 `<input type=hidden name="sp_t" value="clearance">`
 
-Lorsqu’un client clique sur un formulaire standard qui contient cette ligne de code, le modèle de transport de recherche &quot;d’autorisation&quot; s’affiche avec ses résultats de recherche.
+Lorsqu’un client clique sur un formulaire standard qui contient cette ligne de code, le modèle de transport de recherche &quot;liquidation&quot; s’affiche avec ses résultats de recherche.
 
 Voir [Utilisation des collections dans les formulaires de recherche](../c-appendices/c-searchforms.md#reference_5A079AEEEFB84457892EF0870D0605C3).
 

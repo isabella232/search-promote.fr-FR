@@ -1,15 +1,13 @@
 ---
 description: Vous pouvez utiliser l’historique pour passer en revue une liste de toutes les révisions apportées à une fonction implémentée, telle qu’une facette, un chemin de navigation, une bannière ou un modèle, pour n’en citer que quelques-unes.
-seo-description: Vous pouvez utiliser l’historique pour passer en revue une liste de toutes les révisions apportées à une fonction implémentée, telle qu’une facette, un chemin de navigation, une bannière ou un modèle, pour n’en citer que quelques-unes.
-seo-title: Utilisation de l’option Historique
 solution: Target
 title: Utilisation de l’option Historique
-topic: Using History,Site search and merchandising
+topic: Utilisation de l’historique, de la recherche sur le site et du marchandisage
 uuid: 48b9ee9d-cd61-41e7-b8c3-5f1665b9a9cb
 translation-type: tm+mt
-source-git-commit: 52c8d7985e7cb0aa35be1deabeb7cb92a55f07c2
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---

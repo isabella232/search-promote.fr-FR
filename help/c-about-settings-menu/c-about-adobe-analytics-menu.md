@@ -1,16 +1,14 @@
 ---
 description: Utilisez le menu Adobe Analytics pour configurer l’authentification des mesures Adobe Analytics, gérer les mesures Adobe Analytics d’une suite de rapports ou utiliser le SAINT pour améliorer les rapports Adobe Analytics en acceptant les données tabulaires provenant de sources externes.
-seo-description: Utilisez le menu Adobe Analytics pour configurer l’authentification des mesures Adobe Analytics, gérer les mesures Adobe Analytics d’une suite de rapports ou utiliser le SAINT pour améliorer les rapports Adobe Analytics en acceptant les données tabulaires provenant de sources externes.
-seo-title: A propos du menu Adobe Analytics
 solution: Target
 subtopic: Adobe Analytics
 title: A propos du menu Adobe Analytics
-topic: Settings,Site search and merchandising
+topic: Paramètres, recherche sur le site et marchandisage
 uuid: 5536edf1-d3a4-47af-a307-6e46f385f738
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '3448'
+source-wordcount: '3412'
 ht-degree: 1%
 
 ---
@@ -22,7 +20,7 @@ Utilisez le menu Adobe Analytics pour configurer l’authentification des mesure
 
 ## Configuration de l&#39;authentification des mesures Adobe Analytics {#task_8AA93F6273B747F9B4DE9E8DFBCBDC42}
 
-Pour incorporer des mesures Adobe Analytics dans les classements de recherche/marchandisage de votre site, vous devez d&#39;abord vous connecter aux services Web Adobe Analytics. Après avoir obtenu les informations de connexion, vous pouvez les utiliser pour configurer l&#39;authentification Adobe Analytics dans la recherche/marchandisage de site.
+Pour incorporer des mesures Adobe Analytics dans les classements de recherche/marchandisage de votre site, vous devez d&#39;abord vous connecter aux services Web Adobe Analytics. Après avoir obtenu les informations de connexion, vous pouvez les utiliser pour configurer l’authentification Adobe Analytics dans la recherche/marchandisage de site.
 
 **Pour configurer l&#39;authentification des mesures Adobe Analytics**
 

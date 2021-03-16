@@ -1,16 +1,14 @@
 ---
 description: Vous pouvez utiliser Rollback pour sauvegarder et archiver les index de site Web que vous avez générés. Vous pouvez également restaurer la sauvegarde d’un index à tout moment.
-seo-description: Vous pouvez utiliser Rollback pour sauvegarder et archiver les index de site Web que vous avez générés. Vous pouvez également restaurer la sauvegarde d’un index à tout moment.
-seo-title: A propos de la restauration des index
 solution: Target
 subtopic: Rollback
 title: A propos de la restauration des index
-topic: Index,Site search and merchandising
+topic: Index, recherche sur le site et marchandisage
 uuid: abed878a-71b3-4122-9822-7410f4427a9a
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '840'
 ht-degree: 0%
 
 ---

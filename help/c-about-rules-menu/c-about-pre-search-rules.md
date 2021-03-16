@@ -1,15 +1,13 @@
 ---
 description: Utilisez les règles de pré-recherche pour analyser la requête entrante et déterminer le modèle de présentation à utiliser. Les règles pré-recherche sont exécutées de manière séquentielle pour chaque requête. Pour modifier l’ordre de vos règles, vous pouvez utiliser la fonction glisser-déposer. L'ordre réel ne change pas tant que vous ne l'avez pas enregistré.
-seo-description: Utilisez les règles de pré-recherche pour analyser la requête entrante et déterminer le modèle de présentation à utiliser. Les règles pré-recherche sont exécutées de manière séquentielle pour chaque requête. Pour modifier l’ordre de vos règles, vous pouvez utiliser la fonction glisser-déposer. L'ordre réel ne change pas tant que vous ne l'avez pas enregistré.
-seo-title: A propos des règles préalables à la recherche
 solution: Target
 title: A propos des règles préalables à la recherche
-topic: Rules,Site search and merchandising
+topic: Règles, Recherche sur le site et marchandisage
 uuid: e75f9d9e-e8ca-4184-bf79-b1fdadb5c0fe
 translation-type: tm+mt
-source-git-commit: d07cdc2c88f93eed4cecb0ee8818f7fdea06ee9d
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1666'
 ht-degree: 1%
 
 ---

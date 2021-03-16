@@ -1,15 +1,13 @@
 ---
 description: Vous pouvez utiliser les bannières pour gérer les bannières publicitaires sur votre site Web.
-seo-description: Vous pouvez utiliser les bannières pour gérer les bannières publicitaires sur votre site Web.
-seo-title: A propos des bannières
 solution: Target
 title: A propos des bannières
-topic: Design,Site search and merchandising
+topic: Création, recherche sur site et marchandisage
 uuid: 653b567d-5cf3-41a0-a260-a6912d0fd20d
 translation-type: tm+mt
-source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '4810'
+source-wordcount: '4801'
 ht-degree: 1%
 
 ---

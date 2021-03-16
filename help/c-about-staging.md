@@ -1,15 +1,13 @@
 ---
 description: L’évaluation vous permet de tester et de prévisualisation les modifications apportées à vos paramètres et configurations sans affecter votre index dynamique.
-seo-description: L’évaluation vous permet de tester et de prévisualisation les modifications apportées à vos paramètres et configurations sans affecter votre index dynamique.
-seo-title: A propos de la mise en scène
 solution: Target
 title: A propos de la mise en scène
-topic: Staging,Site search and merchandising
+topic: Zone de transit, recherche sur le site et marchandisage
 uuid: 2e5889a6-2e9c-4ac7-9d6e-d35e7cafda5b
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '964'
 ht-degree: 0%
 
 ---

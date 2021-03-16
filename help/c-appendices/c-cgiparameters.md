@@ -1,15 +1,13 @@
 ---
-description: valeur nulle
-seo-description: valeur nulle
-seo-title: Paramètres CGI
+description: Découvrez comment utiliser divers paramètres CGI.
 solution: Target
 title: Paramètres CGI
-topic: Appendices,Site search and merchandising
+topic: Annexes, Recherche sur site et marchandisage
 uuid: a5f43547-bc15-44aa-ba23-6b8b573e09d2
 translation-type: tm+mt
-source-git-commit: 930ceebc6c35006c6b8bc96bc799b3242b6818e1
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1934'
+source-wordcount: '1943'
 ht-degree: 1%
 
 ---

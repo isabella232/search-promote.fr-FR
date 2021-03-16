@@ -1,16 +1,14 @@
 ---
 description: Vous pouvez utiliser des balises MEO (Search Engine Optimization) pour aider à personnaliser certains éléments de vos pages et ainsi améliorer le positionnement des moteurs de recherche.
-seo-description: Vous pouvez utiliser des balises MEO (Search Engine Optimization) pour aider à personnaliser certains éléments de vos pages et ainsi améliorer le positionnement des moteurs de recherche.
-seo-title: A propos du référencement
 solution: Target
 subtopic: SEO
 title: A propos du référencement
-topic: Settings,Site search and merchandising
+topic: Paramètres, recherche sur le site et marchandisage
 uuid: 5c5d64f5-fe79-4489-85c6-399d1437f2c4
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1206'
 ht-degree: 1%
 
 ---

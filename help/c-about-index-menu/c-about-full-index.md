@@ -1,16 +1,14 @@
 ---
 description: Vous pouvez utiliser l’index complet pour indexer toutes les pages de votre site Web intermédiaire ou intermédiaire. L'indexation permet à vos clients de trouver plus facilement ce qu'ils recherchent ou ce dont ils ont besoin lorsqu'ils effectuent une recherche.
-seo-description: Vous pouvez utiliser l’index complet pour indexer toutes les pages de votre site Web intermédiaire ou intermédiaire. L'indexation permet à vos clients de trouver plus facilement ce qu'ils recherchent ou ce dont ils ont besoin lorsqu'ils effectuent une recherche.
-seo-title: A propos de l'index complet
 solution: Target
 subtopic: Full Index
 title: A propos de l'index complet
-topic: Index,Site search and merchandising
+topic: Index, recherche sur le site et marchandisage
 uuid: dce1eafd-5aea-4945-8305-8f9e7dc392df
 translation-type: tm+mt
-source-git-commit: 7af85dd37f06fe506e5f57e28a25385ca7ab3db5
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '760'
 ht-degree: 1%
 
 ---

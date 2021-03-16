@@ -1,15 +1,13 @@
 ---
 description: Vous pouvez utiliser des modèles pour gérer vos modèles de présentation et les modèles de transport.
-seo-description: Vous pouvez utiliser des modèles pour gérer vos modèles de présentation et les modèles de transport.
-seo-title: A propos des modèles
 solution: Target
 title: A propos des modèles
-topic: Design,Site search and merchandising
+topic: Création, recherche sur site et marchandisage
 uuid: f5805d3e-43bf-4e13-95df-b6bd6b762d11
 translation-type: tm+mt
-source-git-commit: 60cedaac1846e384a37699a42bf7fda33828e1c0
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '2661'
+source-wordcount: '2652'
 ht-degree: 1%
 
 ---

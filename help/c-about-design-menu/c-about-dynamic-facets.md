@@ -1,16 +1,14 @@
 ---
 description: Utilisez les facettes dynamiques pour créer automatiquement de nouvelles sélections de plage au moment de la recherche. Vous pouvez éventuellement associer chaque champ de facette dynamique à un nom de table maximum dans votre compte Search&amp ; amp ; Promote. Vous appliquez ces relations de table au moment de la recherche pour tous les champs de facettes dynamiques impliqués dans la recherche.
-seo-description: Utilisez les facettes dynamiques pour créer automatiquement de nouvelles sélections de plage au moment de la recherche. Vous pouvez éventuellement associer chaque champ de facette dynamique à un nom de table maximum dans votre compte Search&amp ; amp ; Promote. Vous appliquez ces relations de table au moment de la recherche pour tous les champs de facettes dynamiques impliqués dans la recherche.
-seo-title: A propos des facettes dynamiques
 solution: Target
 subtopic: Navigation
 title: A propos des facettes dynamiques
-topic: Design,Site search and merchandising
+topic: Création, recherche sur site et marchandisage
 uuid: 1ea91c22-dcc2-4173-aa50-ce618ad0a99c
 translation-type: tm+mt
-source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1062'
 ht-degree: 0%
 
 ---

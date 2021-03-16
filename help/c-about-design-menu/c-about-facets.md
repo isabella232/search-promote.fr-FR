@@ -1,16 +1,14 @@
 ---
 description: Vous pouvez utiliser Facettes pour personnaliser votre couche de présentation et fournir à vos utilisateurs une recherche guidée qui leur permet d’analyser en détail les résultats de leur recherche.
-seo-description: Vous pouvez utiliser Facettes pour personnaliser votre couche de présentation et fournir à vos utilisateurs une recherche guidée qui leur permet d’analyser en détail les résultats de leur recherche.
-seo-title: A propos des facettes
 solution: Target
 subtopic: Navigation
 title: A propos des facettes
-topic: Design,Site search and merchandising
+topic: Création, recherche sur site et marchandisage
 uuid: 28bc4d4d-a84c-4a77-befb-b0fb3bbdb966
 translation-type: tm+mt
-source-git-commit: 52c8d7985e7cb0aa35be1deabeb7cb92a55f07c2
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '3855'
+source-wordcount: '3832'
 ht-degree: 1%
 
 ---
@@ -140,7 +138,7 @@ Voici les comportements de divers types de facettes imbriquées :
    <td colname="col2"> <p>Comme le type de facette imbriquée à sélection multiple avec les exceptions suivantes : </p> 
     <ul id="ul_D5AB6AF3169A483E8F3FC6D2A2EA3A28"> 
      <li id="li_9308156EF2FF43CE9DFB933F13786C58">Toute autre facette précédemment choisie est désélectionnée si cette facette est sélectionnée pour la première fois. </li> 
-     <li id="li_DD96D6802A9C479283212A0FD68C6F85">Les autres facettes précédemment sélectionnées sont également désélectionnées si le client effectue une analyse directe vers la facette enfant sans cliquer sur la facette parente ou si un frère d’une autre facette parente est choisi. </li> 
+     <li id="li_DD96D6802A9C479283212A0FD68C6F85">Les autres facettes précédemment sélectionnées sont également désélectionnées si le client effectue une analyse directe vers la facette enfant sans cliquer sur la facette parente ou si un frère d’une facette parente différente est choisi. </li> 
      <li id="li_8BF58F10969B4743986D5D0E0086AD6C">Ils peuvent avoir des parents dans le sens où les facettes de la catégorie ont des parents. Ne confondez pas ce comportement avec les relations parent-enfant trouvées avec toutes les facettes imbriquées. </li> 
     </ul> </td> 
   </tr> 
@@ -238,7 +236,7 @@ Voir [Ajouter les définitions d&#39;injection de champ](../c-about-settings-men
       </tr> 
       <tr> 
       <td colname="col1"> <p>Seuil de longueur </p> </td> 
-      <td colname="col2"> <p>Définit la longueur verticale (1-999) de la facette définie en nombre d’éléments. </p> <p>Si votre modèle de présentation est configuré de manière appropriée, vous pouvez utiliser ce paramètre pour indiquer "Afficher plus...". ou déterminez quand lancer la facette dans une balise div défilante, etc. </p> </td> 
+      <td colname="col2"> <p>Définit la longueur verticale (1-999) de la facette définie en nombre d’éléments. </p> <p>Si votre modèle de présentation est configuré de manière appropriée, vous pouvez utiliser ce paramètre pour indiquer "Afficher plus...". ou déterminer quand jeter la facette dans une balise div défilante, etc. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Seuil de longueur de troncature </p> </td> 
@@ -264,7 +262,7 @@ Voir [Ajouter les définitions d&#39;injection de champ](../c-about-settings-men
       <li id="li_304E4A518FBE48D18D9E9EA7339A3481"> <span class="uicontrol"> alpha (alphanumérique uniquement)  </span> <p>Trie les valeurs par ordre alphabétique (0-9, A-Z), sans tenir compte des caractères de ponctuation. </p> </li> 
       <li id="li_CADB888CC514455F9CA379C8EEE490AA"> <span class="uicontrol"> alpha (non sensible à la casse)  </span> <p>Trie les valeurs par ordre alphabétique (0-9, A-Z), sans tenir compte de la casse des caractères alphabétiques, y compris les caractères de ponctuation. </p> </li> 
       <li id="li_F61122E79AB5413792DA31F8AB1414BD"> <span class="uicontrol"> alpha (non sensible à la casse, alphanumérique uniquement)  </span> <p>Trie les valeurs par ordre alphabétique (0-9, A-Z), ignore la casse des caractères alphabétiques et ignore les caractères de ponctuation. </p> </li> 
-      <li id="li_F50CC298ABF046D0A39D5AE5B1261823"> <span class="uicontrol"> count  </span> <p>Trie par nombre de résultats correspondant à chaque valeur de facette du plus grand au moins. </p> </li> 
+      <li id="li_F50CC298ABF046D0A39D5AE5B1261823"> <span class="uicontrol"> count </span> <p>Trie par nombre de résultats correspondant à chaque valeur de facette du plus grand au moins. </p> </li> 
       <li id="li_32B6AF39E9534762B39B15181DC5AD01"> <span class="uicontrol"> numérique  </span> <p>Trie les valeurs par ordre numérique. Lors du tri des nombres, cette option est préférable à un tri Alpha car si vous utilisez un tri Alpha, 10 s’affiche avant 2. </p> </li> 
       <li id="li_CF8E76A7B1184E0C8DCC11B53E31A1DC"> <span class="uicontrol"> split </span> <p>Ventile la liste en deux listes distinctes par seuil de décompte. Les valeurs de facette supérieures au seuil sont déplacées vers le haut. Les valeurs de facette dont le nombre est inférieur au seuil sont déplacées vers le bas. Un seuil de fractionnement est requis lorsque vous souhaitez forcer les valeurs d’une certaine plage à toujours se trouver en haut. </p> </li> 
       <li id="li_4AB8276577384B1099CBA895898205AD"> <span class="uicontrol"> break  </span> <p>Force certaines valeurs en haut ou en bas de la liste. Par exemple, vous pouvez toujours souhaiter que le terme "Autre" s’affiche au bas de la liste. Les valeurs supérieures ou inférieures sont requises lorsque vous utilisez un tri par sauts pour identifier les valeurs explicites qui doivent se trouver en haut ou en bas du tri. </p> </li> 

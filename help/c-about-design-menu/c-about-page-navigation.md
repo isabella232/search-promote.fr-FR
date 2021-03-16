@@ -1,16 +1,14 @@
 ---
 description: Vous pouvez utiliser la navigation sur les pages pour personnaliser le contrôle de navigation sur les pages de votre couche de présentation de la recherche.
-seo-description: Vous pouvez utiliser la navigation sur les pages pour personnaliser le contrôle de navigation sur les pages de votre couche de présentation de la recherche.
-seo-title: A propos de la navigation dans les pages
 solution: Target
 subtopic: Navigation
 title: A propos de la navigation dans les pages
-topic: Design,Site search and merchandising
+topic: Création, recherche sur site et marchandisage
 uuid: fb17a99e-d7b4-415e-ba1b-ca194fe41a5d
 translation-type: tm+mt
-source-git-commit: 7f1b5d94e8002992d62ec1e3dce11f9c5605fde8
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '405'
 ht-degree: 2%
 
 ---

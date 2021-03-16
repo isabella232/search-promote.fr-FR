@@ -1,15 +1,13 @@
 ---
-description: Vous pouvez personnaliser la sortie dans n’importe quel format texte, y compris XML ou JSON.
-seo-description: Vous pouvez personnaliser la sortie dans n’importe quel format texte, y compris XML ou JSON.
-seo-title: Sortie de recherche guidée
+description: Découvrez comment personnaliser la sortie dans n’importe quel format texte, y compris XML ou JSON.
 solution: Target
 title: Sortie de recherche guidée
-topic: Appendices,Site search and merchandising
+topic: Annexes, Recherche sur site et marchandisage
 uuid: 234fd563-f249-42b0-88ca-c89b44f8df77
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '6298'
+source-wordcount: '6289'
 ht-degree: 2%
 
 ---
@@ -96,7 +94,7 @@ Le tableau suivant décrit les paramètres standard de requête de recherche pr�
    <td colname="col3"> <p> Indique la collection à utiliser pour la recherche. Ce paramètre correspond au paramètre de recherche principal <span class="codeph"> sp_k </span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> count  </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> count </span> </p> </td> 
    <td colname="col2"> <p> <span class="codeph"> count= nombre  </span> </p> </td> 
    <td colname="col3"> <p> Indique le nombre total de résultats affichés. La valeur par défaut est définie dans <span class="uicontrol"> Paramètres </span> &gt; <span class="uicontrol"> Recherche </span> &gt; <span class="uicontrol"> Recherches </span>. Ce paramètre correspond au paramètre de recherche principal <span class="codeph"> sp_c </span>. </p> </td> 
   </tr> 
@@ -339,7 +337,7 @@ Exemple :
    <td colname="col2"> <p> Titre orienté client pour la facette. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;libellé&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;label&gt; </span> </p> </td> 
    <td colname="col2"> <p> Libellé destiné au client pour l’option de facette. </p> </td> 
   </tr> 
   <tr> 
@@ -748,7 +746,7 @@ Exemple :
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;libellé&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;label&gt; </span> </p> </td> 
    <td colname="col2"> <p> Texte de l’option destiné aux clients. </p> </td> 
   </tr> 
   <tr> 
@@ -1021,7 +1019,7 @@ Exemple :
    <td colname="col2"> <p> Titre orienté client pour la facette. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;libellé&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;label&gt; </span> </p> </td> 
    <td colname="col2"> <p> Libellé destiné au client pour l’option de facette. </p> </td> 
   </tr> 
   <tr> 
@@ -1431,7 +1429,7 @@ Exemple :
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;libellé&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;label&gt; </span> </p> </td> 
    <td colname="col2"> <p> Texte de l’option destiné aux clients. </p> </td> 
   </tr> 
   <tr> 

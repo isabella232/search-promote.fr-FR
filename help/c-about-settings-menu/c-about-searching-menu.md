@@ -1,16 +1,14 @@
 ---
 description: Utilisez le menu Rechercher pour définir des mots exclus, des collections, des restrictions, des prévisualisations et des cadres.
-seo-description: Utilisez le menu Rechercher pour définir des mots exclus, des collections, des restrictions, des prévisualisations et des cadres.
-seo-title: A propos du menu Recherche
 solution: Target
 subtopic: Searching
 title: A propos du menu Recherche
-topic: Settings,Site search and merchandising
+topic: Paramètres, recherche sur le site et marchandisage
 uuid: 072111fc-a32b-4acb-8337-cb21bcdb5542
 translation-type: tm+mt
-source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '11182'
+source-wordcount: '11170'
 ht-degree: 1%
 
 ---
@@ -1159,7 +1157,7 @@ t_creating_a_feed.xml
         </ul> <p>Les flux génériques ont besoin d’un paramètre CGI spécial spécifié. Pour lier le modèle spécial associé à ce flux, définissez le paramètre <span class="codeph"> sp_t </span>. Définissez la valeur <span class="codeph"> sp_t </span> sur le nom du fichier de modèle de transport. Par exemple, si vous avez ajouté un fichier de modèle de transport nommé <span class="codeph"> super_feed.tpl </span>, vous créez un paramètre de recherche CGI personnalisé sous la forme <span class="codeph"> sp_t=super_feed </span>. La zone de texte permettant de saisir <span class="codeph"> sp_t </span> n’apparaît que lorsque vous sélectionnez <span class="uicontrol"> Formulaire libre </span> dans la liste déroulante <span class="wintitle"> Meta Field </span>. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>3 </p> </td> 
+      <td colname="col1"> <p>1 </p> </td> 
       <td colname="col2"> <p>Envoi du fichier </p> </td> 
       <td colname="col3"> <p>Vous permet de configurer le calendrier d’envoi des fichiers de flux et de définir la méthode à utiliser pour télécharger les fichiers. </p> 
         <ul id="ul_30E830C41F6A4526822AF1FD3083075A"> 
@@ -1266,7 +1264,7 @@ t_creating_a_feed.xml
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <p>1 </p> </td> 
+      <td colname="col1"> <p>3 </p> </td> 
       <td colname="col2"> <p>Nom du flux </p> </td> 
       <td colname="col3"> <p>Indique le nom du flux. </p> </td> 
       </tr> 

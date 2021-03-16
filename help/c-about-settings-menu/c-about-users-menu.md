@@ -1,16 +1,14 @@
 ---
 description: Utilisez le menu Utilisateurs pour vue et ajouter des utilisateurs, des vues et ajouter des rôles ou modifier l’appartenance à un rôle. Vous devez être un utilisateur de recherche/marchandisage de site disposant de droits d’administrateur pour effectuer l’une des tâches du menu Utilisateurs.
-seo-description: Utilisez le menu Utilisateurs pour vue et ajouter des utilisateurs, des vues et ajouter des rôles ou modifier l’appartenance à un rôle. Vous devez être un utilisateur de recherche/marchandisage de site disposant de droits d’administrateur pour effectuer l’une des tâches du menu Utilisateurs.
-seo-title: A propos du menu Utilisateurs
 solution: Target
 subtopic: Users
 title: A propos du menu Utilisateurs
-topic: Settings,Site search and merchandising
+topic: Paramètres, recherche sur le site et marchandisage
 uuid: 6242b73c-5e8a-44b7-9942-0684530940bc
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1487'
+source-wordcount: '1450'
 ht-degree: 0%
 
 ---

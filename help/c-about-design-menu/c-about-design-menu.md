@@ -1,16 +1,14 @@
 ---
 description: Utilisez le menu Conception pour créer la présentation de votre page de résultats de recherche.
-seo-description: Utilisez le menu Conception pour créer la présentation de votre page de résultats de recherche.
-seo-title: Conception de votre page de résultats de recherche
 solution: Target
 title: Conception de votre page de résultats de recherche
-topic: Design,Site search and merchandising
+topic: Création, recherche sur site et marchandisage
 uuid: 61cb3ead-705e-45b7-a365-2c694d160d0a
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 4%
+source-wordcount: '56'
+ht-degree: 5%
 
 ---
 

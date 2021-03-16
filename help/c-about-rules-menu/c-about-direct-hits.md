@@ -1,15 +1,13 @@
 ---
 description: Les accès directs vous permettent de rediriger un client vers une URL spécifique lorsque le client recherche un terme correspondant. Ce type de fonctionnalité vous permet d'améliorer la navigation dans la recherche de votre site Web.
-seo-description: Les accès directs vous permettent de rediriger un client vers une URL spécifique lorsque le client recherche un terme correspondant. Ce type de fonctionnalité vous permet d'améliorer la navigation dans la recherche de votre site Web.
-seo-title: A propos des accès directs
 solution: Target
 title: A propos des accès directs
-topic: Rules,Site search and merchandising
+topic: Règles, Recherche sur le site et marchandisage
 uuid: 374d63c8-2b82-4165-b543-05b587757baa
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '400'
 ht-degree: 1%
 
 ---

@@ -1,16 +1,14 @@
 ---
 description: Utilisez le menu Mon Profil pour définir les informations personnelles, les préférences, le mot de passe de connexion et les privilèges d'accès aux vues.
-seo-description: Utilisez le menu Mon Profil pour définir les informations personnelles, les préférences, le mot de passe de connexion et les privilèges d'accès aux vues.
-seo-title: A propos du menu Mon Profil
 solution: Target
 subtopic: My Profile
 title: A propos du menu Mon Profil
-topic: Settings,Site search and merchandising
+topic: Paramètres, recherche sur le site et marchandisage
 uuid: 6a0a4e57-59fa-48fb-b712-eb16a9f47c3a
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1055'
 ht-degree: 0%
 
 ---

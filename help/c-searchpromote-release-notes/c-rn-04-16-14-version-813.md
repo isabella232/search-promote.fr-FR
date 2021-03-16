@@ -1,16 +1,14 @@
 ---
-description: valeur nulle
-seo-description: valeur nulle
-seo-title: Notes de mise à jour de Search&amp ; amp ; Promote 8.13.0 (16/04/2014)
+description: Search&amp ; amp ; Notes de mise à jour de Promote 8.13.0.
 solution: Target
 title: Notes de mise à jour de Search&amp ; amp ; Promote 8.13.0 (16/04/2014)
-topic: Release Notes,Site search and merchandising
+topic: Notes de mise à jour, Recherche sur le site et marchandisage
 uuid: b3524992-ff00-4a7c-a404-078242456734
 translation-type: tm+mt
-source-git-commit: 9d5ac055d665b39d09b28063179d74a389d7f830
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 57%
+source-wordcount: '330'
+ht-degree: 56%
 
 ---
 
@@ -47,7 +45,7 @@ ht-degree: 57%
 
 * Si un grand nombre de champs de facettes dynamiques ont été définis, les utilisateurs ont connu des temps de réponse de recherche de base lents.
 * De fausses erreurs d’index de plage se produisaient.
-* L&#39;accès Dynamic Media Classic aux centres de données non nord-américains a été interrompu.
+* L&#39;accès Dynamic Media Classic dans les centres de données non nord-américains a été interrompu.
 * La fonction de validation XPath SPIN retournait une erreur de faux positif.
 
 * Après une opération d’activation/de désactivation SPIN, l’utilisateur était redirigé vers la page de connexion du centre des membres.

@@ -1,16 +1,14 @@
 ---
 description: Utilisez le menu Métadonnées pour personnaliser les définitions de recherche et les injections d’index.
-seo-description: Utilisez le menu Métadonnées pour personnaliser les définitions de recherche et les injections d’index.
-seo-title: A propos du menu Métadonnées
 solution: Target
 subtopic: Metadata
 title: A propos du menu Métadonnées
-topic: Settings,Site search and merchandising
+topic: Paramètres, recherche sur le site et marchandisage
 uuid: f12fc863-a140-45e8-b219-3dbfdef099cd
 translation-type: tm+mt
-source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '8039'
+source-wordcount: '8029'
 ht-degree: 1%
 
 ---
@@ -143,7 +141,7 @@ Avant que les effets de la nouvelle définition de balise meta ne soient visible
       </tr> 
       <tr> 
       <td colname="col1"> <p>Champ de mise à jour verticale </p> </td> 
-      <td colname="col2"> <p> <p>Remarque : cette fonctionnalité n’est pas activée par défaut. Contactez le support technique pour l’activer pour votre utilisation. Une fois activé, il apparaît dans l’interface utilisateur. </p> </p> <p>Définit le champ identifié comme un champ Mise à jour verticale. </p> <p>Les champs Mise à jour verticale peuvent être mis à jour au moyen du processus Mise à jour verticale ( <span class="uicontrol"> Index </span> &gt; <span class="uicontrol"> Mise à jour verticale </span>). En raison de la manière dont les mises à jour verticales sont effectuées, il n’est pas possible de rechercher le contenu de ces champs dans des recherches de texte libre. Si cette option est cochée, le contenu de ce champ n’est pas ajouté à l’index "word" lors d’une opération d’index de quelque type que ce soit. Il active également la mise à jour de ce champ lors d’une opération de mise à jour verticale. </p> <p>Pour en savoir plus sur les mises à jour verticales, voir <a href="../c-about-index-menu/c-about-vertical-updates.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> À propos de la mise à jour verticale </a>. </p> </td> 
+      <td colname="col2"> <p> <p>Remarque : cette fonctionnalité n’est pas activée par défaut. Contactez le support technique pour l’activer pour votre utilisation. Une fois activé, il apparaît dans l’interface utilisateur. </p> </p> <p>Définit le champ identifié comme un champ Mise à jour verticale. </p> <p>Les champs Mise à jour verticale peuvent être mis à jour au moyen du processus Mise à jour verticale ( <span class="uicontrol"> Index </span> &gt; <span class="uicontrol"> Mise à jour verticale </span>). En raison de la manière dont les mises à jour verticales sont effectuées, il n’est pas possible de rechercher le contenu de ces champs dans des recherches en texte libre. Si cette option est cochée, le contenu de ce champ n’est pas ajouté à l’index "word" lors d’une opération d’index de quelque type que ce soit. Il active également la mise à jour de ce champ lors d’une opération de mise à jour verticale. </p> <p>Pour en savoir plus sur les mises à jour verticales, voir <a href="../c-about-index-menu/c-about-vertical-updates.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> À propos de la mise à jour verticale </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Pertinence </p> </td> 
@@ -364,7 +362,7 @@ Avant que les effets de votre balise meta supprimée ne soient visibles par les 
 
 Vous pouvez utiliser [!DNL Injections] pour insérer du contenu dans vos pages Web sans avoir à modifier les pages elles-mêmes.
 
-Vous pouvez ajouter du contenu à des champs indexés spécifiques, tels que &quot;cible&quot; ou &quot;corps&quot;, ou remplacer le contenu indexé par de nouvelles valeurs. Par exemple, si vous avez inséré un nouveau contenu dans le champ de balise meta &quot;cible&quot;, ces informations sont traitées de la même manière que le contenu de la page codé en dur. Vous pouvez modifier le contenu de tout champ de balise meta prédéfini, que les pages de votre site contiennent ou non le contenu correspondant. Par exemple, vous pouvez modifier le contenu des noms de champ de balise meta suivants prédéfinis :
+Vous pouvez ajouter du contenu à des champs indexés spécifiques tels que &quot;cible&quot; ou &quot;corps&quot;, ou remplacer le contenu indexé par de nouvelles valeurs. Par exemple, si vous avez inséré un nouveau contenu dans le champ de balise meta &quot;cible&quot;, ces informations sont traitées de la même manière que le contenu de la page codé en dur. Vous pouvez modifier le contenu de tout champ de balise meta prédéfini, que les pages de votre site contiennent ou non le contenu correspondant. Par exemple, vous pouvez modifier le contenu des noms de champ de balise meta suivants prédéfinis :
 
 * alt
 * body

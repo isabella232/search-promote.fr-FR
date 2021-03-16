@@ -1,16 +1,14 @@
 ---
 description: Les chemins de navigation sont un contrôle de navigation que vous pouvez ajouter à votre site Web. La barre de navigation donne aux clients des commentaires sur l'emplacement de leur contenu dans un jeu de résultats de recherche. Cela les aide également à revenir rapidement à une étape précédente.
-seo-description: Les chemins de navigation sont un contrôle de navigation que vous pouvez ajouter à votre site Web. La barre de navigation donne aux clients des commentaires sur l'emplacement de leur contenu dans un jeu de résultats de recherche. Cela les aide également à revenir rapidement à une étape précédente.
-seo-title: A propos des chemins de navigation
 solution: Target
 subtopic: Navigation
 title: A propos des chemins de navigation
-topic: Design,Site search and merchandising
+topic: Création, recherche sur site et marchandisage
 uuid: 3e630a72-a631-4f4f-8aa5-adf2882cdf1c
 translation-type: tm+mt
-source-git-commit: 7f1b5d94e8002992d62ec1e3dce11f9c5605fde8
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '755'
 ht-degree: 1%
 
 ---
@@ -22,7 +20,7 @@ Les chemins de navigation sont un contrôle de navigation que vous pouvez ajoute
 
 ## Utilisation des chemins de navigation {#concept_FB8A943C594A4A1593B118141DA61F03}
 
-Les chemins de navigation suivent le terme recherché et les facettes suivantes qui ont été sélectionnées pour réduire le jeu de résultats.
+Les chemins de navigation effectuent le suivi du terme recherché et des facettes suivantes qui ont été sélectionnées pour réduire le jeu de résultats.
 
 Utilisez les paramètres du chemin de navigation pour personnaliser le contrôle du chemin de navigation de votre couche de présentation de recherche. Si votre couche de présentation comporte plusieurs jeux de résultats de recherche, le contrôle de chemin de navigation agit sur la recherche Principale de la page.
 
@@ -72,7 +70,7 @@ t_adding_a_new_breadcrumb.xml
       <td colname="col1"> <p>Comportement </p> </td> 
       <td colname="col2"> <p>Définit l’un des trois comportements de chemin de navigation suivants : </p> <p> 
       <ul id="ul_7E66ACC1DA494B20BEC3B0B2CCAB103A"> 
-        <li id="li_D81876660A8B48AFB70D3317063FBF6F"> <span class="uicontrol"> Aller  </span> <p>Atteindre supprime toutes les chemins de navigation après celui sur lequel l’utilisateur a cliqué et début une nouvelle recherche à ce stade. </p> </li> 
+        <li id="li_D81876660A8B48AFB70D3317063FBF6F"> <span class="uicontrol"> Aller  </span> <p>Atteindre supprime tous les chemins de navigation après celui sur lequel l’utilisateur a cliqué et début une nouvelle recherche à ce stade. </p> </li> 
         <li id="li_63AE06B544B64DCAA8C55031B3DFFFF7"> <span class="uicontrol"> Supprimer </span> <p>Supprimer supprime du chemin la barre de navigation sur laquelle le client a cliqué, puis début une nouvelle recherche. Ce comportement s’avère utile lorsque vous souhaitez laisser le client annuler les étapes d’exploration vers le bas de la recherche. </p> </li> 
         <li id="li_EEC810D420FF41498ECE49EBAAB33BE5"> <span class="uicontrol"> Déposer  </span> <p>Déposer supprime tous les chemins de navigation. </p> </li> 
       </ul> </p> <p> Par exemple, supposons que vous avez un chemin de navigation de 1 &gt; 2 &gt; 3 &gt; 4. Lorsqu’un client clique sur "2", les résultats suivants s’affichent, en fonction du comportement que vous avez choisi : </p> <p> 

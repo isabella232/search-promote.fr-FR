@@ -1,15 +1,13 @@
 ---
 description: Utilisez le menu Rapports pour vue ou réinitialiser les rapports des requêtes de recherche des clients.
-seo-description: Utilisez le menu Rapports pour vue ou réinitialiser les rapports des requêtes de recherche des clients.
-seo-title: A propos du menu Rapports
 solution: Target
 title: A propos du menu Rapports
-topic: Reports,Site search and merchandising
+topic: Rapports, Recherche sur le site et marchandisage
 uuid: 3ea856d7-dc07-455f-8dc7-c7f7f56355d7
 translation-type: tm+mt
-source-git-commit: 7af85dd37f06fe506e5f57e28a25385ca7ab3db5
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1257'
+source-wordcount: '1245'
 ht-degree: 2%
 
 ---

@@ -1,15 +1,13 @@
 ---
 description: Vous pouvez définir des expressions courantes utilisées sur votre site Web de sorte que lorsqu’un client entre dans une requête de recherche, il n’est pas nécessaire de saisir des guillemets autour des expressions que vous avez définies.
-seo-description: Vous pouvez définir des expressions courantes utilisées sur votre site Web de sorte que lorsqu’un client entre dans une requête de recherche, il n’est pas nécessaire de saisir des guillemets autour des expressions que vous avez définies.
-seo-title: A propos des expressions courantes
 solution: Target
 title: A propos des expressions courantes
-topic: Linguistics,Site search and merchandising
+topic: Linguistique,Recherche sur le site et marchandisage
 uuid: 0f980a22-d826-4476-97de-0e9c14549bc8
 translation-type: tm+mt
-source-git-commit: 8efa90ac2927b263b7d48ccbf25d4b0e917dac79
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1183'
 ht-degree: 1%
 
 ---

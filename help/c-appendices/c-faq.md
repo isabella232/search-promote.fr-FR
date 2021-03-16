@@ -1,15 +1,13 @@
 ---
-description: valeur nulle
-seo-description: valeur nulle
-seo-title: Questions fréquentes
+description: Lisez les questions fréquentes sur Search&amp;Promote
 solution: Target
 title: Questions fréquentes
-topic: Appendices,Site search and merchandising
+topic: Annexes, Recherche sur site et marchandisage
 uuid: 4ce454a4-e770-4587-91a0-a25491818ac6
 translation-type: tm+mt
-source-git-commit: 4270ea66ba645ad0f71c9c8b5c2a1fcc6eb02ad2
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '8639'
+source-wordcount: '8648'
 ht-degree: 0%
 
 ---
@@ -1123,4 +1121,4 @@ Vérifiez si votre compte a atteint sa limite sur l’écran &quot;État de l’
 
 Pour protéger les serveurs de recherche/marchandisage de site, il existe des limites internes sur les octets et le temps. Ces limites ne sont atteintes que lorsque les fichiers analysés sont très volumineux ou lorsque le serveur que la recherche/marchandisage sur le site tente d&#39;atteindre est lent.
 
-Si vous atteignez une limite de temps, assurez-vous que votre serveur est en ligne et réessayez d’indexer ultérieurement. Si vous atteignez une limite d’octets, vérifiez les fichiers analysés en affichant votre journal d’index. Sont-ils exceptionnellement grands ? Contactez l’assistance technique si vous voyez l’un de ces messages.
+Si vous atteignez une limite de temps, assurez-vous que votre serveur est en ligne et réessayez d’indexer l’index ultérieurement. Si vous atteignez une limite d’octets, vérifiez les fichiers analysés en affichant votre journal d’index. Sont-ils exceptionnellement grands ? Contactez l’assistance technique si vous voyez l’un de ces messages.

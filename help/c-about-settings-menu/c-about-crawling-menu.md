@@ -1,16 +1,14 @@
 ---
 description: Utilisez le menu Analyse pour définir des masques de date et d’URL, des mots de passe, des types de contenu, des connexions, des définitions de formulaire et des points d’entrée d’URL.
-seo-description: Utilisez le menu Analyse pour définir des masques de date et d’URL, des mots de passe, des types de contenu, des connexions, des définitions de formulaire et des points d’entrée d’URL.
-seo-title: A propos du menu Analyse
 solution: Target
 subtopic: Crawling
 title: A propos du menu Analyse
-topic: Settings,Site search and merchandising
+topic: Paramètres, recherche sur le site et marchandisage
 uuid: a58c03bf-90f7-4b5b-91ff-988b95c246b0
 translation-type: tm+mt
-source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '11033'
+source-wordcount: '11016'
 ht-degree: 1%
 
 ---
@@ -515,7 +513,7 @@ Une virgule n&#39;est pas valide comme séparateur entre le masque et le mot-cl�
    <td colname="col2"> <p> Utilisé pour inclure et exclure des masques. </p> <p>Tout masque de date précédé par 
      <code>
        regexp 
-     </code> est traité comme une expression régulière. </p> <p>Si le robot de recherche détecte des fichiers qui correspondent à un masque de date d’expression standard exclus, il n’indexe pas ces fichiers. </p> <p>Si le robot de recherche rencontre des fichiers qui correspondent à un masque de date d’expression standard inclus, il indexe ces documents. </p> <p>Supposons, par exemple, que vous ayez le masque de date suivant : </p> <p> <code> exclude-days&amp;nbsp;180&amp;nbsp;regexp&amp;nbsp;.*archive.* </code> </p> <p>Le masque indique au robot de recherche d’exclure les fichiers correspondants de 180 jours ou plus. Autrement dit, les fichiers qui contiennent le mot "archive" dans leur URL. </p> <p>Voir <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Expressions régulières </a>. </p> </td> 
+     </code> est traité comme une expression régulière. </p> <p>Si le robot de recherche détecte des fichiers qui correspondent à un masque de date d’expression standard exclus, il n’indexe pas ces fichiers. </p> <p>Si le robot de recherche détecte des fichiers qui correspondent à un masque de date d’expression normal inclus, il indexe ces documents. </p> <p>Supposons, par exemple, que vous ayez le masque de date suivant : </p> <p> <code> exclude-days&amp;nbsp;180&amp;nbsp;regexp&amp;nbsp;.*archive.* </code> </p> <p>Le masque indique au robot de recherche d’exclure les fichiers correspondants de 180 jours ou plus. Autrement dit, les fichiers qui contiennent le mot "archive" dans leur URL. </p> <p>Voir <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Expressions régulières </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1063,7 +1061,7 @@ Par exemple, supposons que vous ayez la règle de réécriture suivante :
 RewriteRule (^http.*[.]xml$) index:Adobe?key=$1
 ```
 
-Cette règle convertit toute URL se terminant par `.xml` en lien Connecteur d’index. L’analyseur de liens identifie et réécrit le schéma d’URL `index:`. Le processus de téléchargement est redirigé vers le serveur Apache Index Connector sur la Principale. Chaque document téléchargé est examiné en utilisant le même modèle d’expression standard que celui utilisé avec les flux. Dans ce cas, cependant, le document HTML fabriqué n’est pas enregistré dans le cache. Au lieu de cela, elle est transmise directement à l’analyseur pour le traitement de l’index.
+Cette règle convertit toute URL se terminant par `.xml` en lien Connecteur d’index. L’analyseur de liens identifie et réécrit le schéma d’URL `index:`. Le processus de téléchargement est redirigé vers le serveur Apache Index Connector sur la Principale. Chaque document téléchargé est examiné en utilisant le même modèle d’expression standard que celui utilisé avec les flux. Dans ce cas, cependant, le document HTML fabriqué n’est pas enregistré dans le cache. Au lieu de cela, il est transmis directement à l’analyseur pour le traitement de l’index.
 
 ## Comment configurer plusieurs connecteurs d&#39;index {#section_C2B14C0F06354A57AEF6238FF3814E5D}
 

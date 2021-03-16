@@ -1,15 +1,13 @@
 ---
-description: valeur nulle
-seo-description: valeur nulle
-seo-title: Rechercher des formulaires
+description: En savoir plus sur les formulaires de recherche dans Search&amp;Promote
 solution: Target
 title: Rechercher des formulaires
-topic: Appendices,Site search and merchandising
+topic: Annexes, Recherche sur site et marchandisage
 uuid: 91153e3a-c437-47f3-8c2a-d9ac02965b8c
 translation-type: tm+mt
-source-git-commit: 4542702e1d2ba04c70d9f6b24bfa32e1f1c6acb5
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '2921'
+source-wordcount: '2931'
 ht-degree: 0%
 
 ---
@@ -203,7 +201,7 @@ Lorsqu’un client effectue une recherche sur votre site Web, les résultats de 
 
 Vous pouvez définir le cadre de destination en modifiant directement votre modèle.
 
-Si vos résultats de recherche apparaissent dans le cadre &quot;body&quot;, vous souhaitez probablement que les liens s’ouvrent également dans le cadre &quot;body&quot;. Dans la mesure où il s’agit de la même image, la valeur de cible `"_self"` qui est le paramètre par défaut, vous n’avez pas besoin d’apporter des modifications.
+Si vos résultats de recherche apparaissent dans le cadre &quot;body&quot;, vous souhaitez probablement que les liens s’ouvrent également dans le cadre &quot;body&quot;. Dans la mesure où il s’agit du même cadre, la valeur de cible `"_self"` qui est le paramètre par défaut, vous n’avez pas besoin d’apporter des modifications.
 
 Vous pouvez également définir le cadre de destination pour les liens de résultats. Vous trouverez ci-dessous quelques exemples de ce que vous pouvez faire :
 

@@ -1,16 +1,14 @@
 ---
-description: valeur nulle
-seo-description: valeur nulle
-seo-title: Notes de mise à jour de Search&amp ; amp ; Promote 8.17.0 (30/10/2014)
+description: Search&amp ; amp ; Notes de mise à jour de Promote 8.17.0.
 solution: Target
 title: Notes de mise à jour de Search&amp ; amp ; Promote 8.17.0 (30/10/2014)
-topic: Release Notes,Site search and merchandising
+topic: Notes de mise à jour, Recherche sur le site et marchandisage
 uuid: ea1725df-778c-4875-a269-f33d0c367126
 translation-type: tm+mt
-source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 14%
+source-wordcount: '172'
+ht-degree: 13%
 
 ---
 

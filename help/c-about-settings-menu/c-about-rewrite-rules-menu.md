@@ -1,16 +1,14 @@
 ---
 description: Utilisez le menu Réécrire les règles pour définir l’analyse et rechercher les règles d’URL et de titre.
-seo-description: Utilisez le menu Réécrire les règles pour définir l’analyse et rechercher les règles d’URL et de titre.
-seo-title: A propos du menu Réécrire les règles
 solution: Target
 subtopic: Rewrite Rules
 title: A propos du menu Réécrire les règles
-topic: Settings,Site search and merchandising
+topic: Paramètres, recherche sur le site et marchandisage
 uuid: 77ee84dd-fdba-4d34-ae8e-2fe786599800
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '10216'
+source-wordcount: '10202'
 ht-degree: 0%
 
 ---
@@ -723,7 +721,7 @@ Texte ordinaire : texte transmis sans modification.
 Les références arrière permettent d&#39;accéder aux parties groupées (entre parenthèses internes) du modèle ou du modèle CondPattern. Il existe deux types de références arrière :
 
 * Réécrire les références arrière de règle Ces références arrière correspondent dans le modèle RewriteRule correspondant et se présentent sous la forme $N (0 &lt;= N &lt;= 9). Par exemple, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
-* RéécrireCond Références de renvoi Ces références de renvoi correspondent dans le dernier CondPattern RewriteCond correspondant et se présentent sous la forme %N (0 &lt;= N &lt;= 9).
+* RéécrireCond Références de renvoi Ces références de renvoi correspondent dans le dernier CondPattern RewriteCond correspondant et prennent la forme %N (0 &lt;= N &lt;= 9).
 
 Variables Il s’agit de variables sous la forme %{NAME_OF_VARIABLE} où NAME_OF_VARIABLE peut être une chaîne pour le nom d’une variable définie. Pour plus d&#39;informations sur la définition des variables d&#39;environnement, consultez l&#39;indicateur `[E]`.
 
@@ -778,7 +776,7 @@ Les indicateurs sont placés entre crochets `[]`et plusieurs indicateurs sont s�
  <tbody> 
   <tr> 
    <td colname="col1"> <p> 'nocase|NC' </p> </td> 
-   <td colname="col2"> <p>Aucun cas. </p> <p> Rend le test non sensible. En d'autres termes, il n'y a aucune différence entre "A-Z" et "a-z" à la fois dans le <i>TestString</i> étendu et dans le <i>CondPattern.</i> </p> </td> 
+   <td colname="col2"> <p>Aucun cas. </p> <p> Rend le test non sensible. En d'autres termes, il n'y a aucune différence entre "A-Z" et "a-z" dans le <i>TestString</i> étendu et dans le <i>CondPattern.</i> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> 'ornext|OR' </p> </td> 

@@ -1,15 +1,13 @@
 ---
 description: Utilisez Comptes dans le menu produit pour sélectionner un compte auquel vous souhaitez accéder et que vous souhaitez utiliser.
-seo-description: Utilisez Comptes dans le menu produit pour sélectionner un compte auquel vous souhaitez accéder et que vous souhaitez utiliser.
-seo-title: A propos du menu Comptes
 solution: Target
 title: A propos du menu Comptes
-topic: Settings,Site search and merchandising
+topic: Paramètres, recherche sur le site et marchandisage
 uuid: 7cfc1b68-5126-484a-8a1d-54995a8fd19b
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '172'
 ht-degree: 2%
 
 ---

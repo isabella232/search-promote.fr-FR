@@ -2,7 +2,7 @@
 description: Vous pouvez utiliser Mots et langue pour déterminer comment les termes de recherche correspondent au contenu de vos pages Web.
 solution: Target
 title: A propos des mots et de la langue
-topic: Linguistique,Recherche sur le site et marchandisage
+topic: Linguistics,Site search and merchandising
 uuid: 793d7a40-4609-44b8-a170-536eb1434537
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

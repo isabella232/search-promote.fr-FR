@@ -2,7 +2,7 @@
 description: Search&amp ; amp ; Notes de mise à jour de Promote 15.1.1.
 solution: Target
 title: Notes de mise à jour de Search&amp ; amp ; Promote 15.1.1 (15/01/2015)
-topic: Notes de mise à jour, Recherche sur le site et marchandisage
+topic: Release Notes,Site search and merchandising
 uuid: 070f9c46-426f-4ca1-80c7-8ca53d40a402
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

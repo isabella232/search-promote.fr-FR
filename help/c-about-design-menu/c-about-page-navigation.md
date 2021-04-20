@@ -3,7 +3,7 @@ description: Vous pouvez utiliser la navigation sur les pages pour personnaliser
 solution: Target
 subtopic: Navigation
 title: A propos de la navigation dans les pages
-topic: Création, recherche sur site et marchandisage
+topic: Design,Site search and merchandising
 uuid: fb17a99e-d7b4-415e-ba1b-ca194fe41a5d
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -2,7 +2,7 @@
 description: Lisez les questions fréquentes sur Search&amp;Promote
 solution: Target
 title: Questions fréquentes
-topic: Annexes, Recherche sur site et marchandisage
+topic: Appendices,Site search and merchandising
 uuid: 4ce454a4-e770-4587-91a0-a25491818ac6
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

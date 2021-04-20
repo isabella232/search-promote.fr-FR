@@ -2,7 +2,7 @@
 description: Vous pouvez utiliser des modèles pour gérer vos modèles de présentation et les modèles de transport.
 solution: Target
 title: A propos des modèles
-topic: Création, recherche sur site et marchandisage
+topic: Design,Site search and merchandising
 uuid: f5805d3e-43bf-4e13-95df-b6bd6b762d11
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

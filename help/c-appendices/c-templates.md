@@ -2,7 +2,7 @@
 description: Découvrez comment utiliser les balises de présentation et de modèle dans Search&amp ; amp ; Promote.
 solution: Target
 title: Modèles
-topic: Annexes, Recherche sur site et marchandisage
+topic: Appendices,Site search and merchandising
 uuid: 78299032-dc23-4dfe-b68f-cd57b2b6d7d8
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -2,7 +2,7 @@
 description: Les Vues de données affichent les résultats de la recherche avec les champs de métadonnées. Chaque colonne est un champ de métadonnées et chaque ligne résulte d'une requête de recherche. Personnalisez les Vues de données en choisissant et en réorganisant les colonnes. Les Vues de données peuvent également comporter des descriptions et des titres personnalisés.
 solution: Target
 title: A propos des Vues de données
-topic: Rapports, Recherche sur le site et marchandisage
+topic: Reports,Site search and merchandising
 uuid: 18930551-960d-40c2-b5b7-0807a2e11134
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

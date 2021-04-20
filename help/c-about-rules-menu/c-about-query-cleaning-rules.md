@@ -2,7 +2,7 @@
 description: Utilisez des règles de nettoyage de Requête pour analyser et modifier la requête entrante.
 solution: Target
 title: A propos des règles de nettoyage des Requêtes
-topic: Règles, Recherche sur le site et marchandisage
+topic: Rules,Site search and merchandising
 uuid: 683af81f-f7c0-45f8-9212-e5e7cb82ccca
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

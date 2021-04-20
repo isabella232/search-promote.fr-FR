@@ -3,7 +3,7 @@ description: Utilisez les facettes dynamiques pour créer automatiquement de nou
 solution: Target
 subtopic: Navigation
 title: A propos des facettes dynamiques
-topic: Création, recherche sur site et marchandisage
+topic: Design,Site search and merchandising
 uuid: 1ea91c22-dcc2-4173-aa50-ce618ad0a99c
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

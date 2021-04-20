@@ -2,7 +2,7 @@
 description: Vous pouvez utiliser les bannières pour gérer les bannières publicitaires sur votre site Web.
 solution: Target
 title: A propos des bannières
-topic: Création, recherche sur site et marchandisage
+topic: Design,Site search and merchandising
 uuid: 653b567d-5cf3-41a0-a260-a6912d0fd20d
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

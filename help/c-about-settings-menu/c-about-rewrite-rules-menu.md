@@ -3,7 +3,7 @@ description: Utilisez le menu Réécrire les règles pour définir l’analyse e
 solution: Target
 subtopic: Rewrite Rules
 title: A propos du menu Réécrire les règles
-topic: Paramètres, recherche sur le site et marchandisage
+topic: Settings,Site search and merchandising
 uuid: 77ee84dd-fdba-4d34-ae8e-2fe786599800
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

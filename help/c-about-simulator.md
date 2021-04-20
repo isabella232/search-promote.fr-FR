@@ -2,7 +2,7 @@
 description: Utilisez Simulator pour voir à quoi ressemblerait votre recherche si vous poussiez tout ce qui est actuellement mis en scène, en direct.
 solution: Target
 title: Simulateur
-topic: Simulateur,Recherche sur site et marchandisage
+topic: Simulator,Site search and merchandising
 uuid: 7ec8f5b9-3ab3-4b9a-bf8a-65d0ca1dfddb
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

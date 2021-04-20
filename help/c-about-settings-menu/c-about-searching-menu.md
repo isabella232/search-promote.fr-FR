@@ -3,7 +3,7 @@ description: Utilisez le menu Rechercher pour définir des mots exclus, des coll
 solution: Target
 subtopic: Searching
 title: A propos du menu Recherche
-topic: Paramètres, recherche sur le site et marchandisage
+topic: Settings,Site search and merchandising
 uuid: 072111fc-a32b-4acb-8337-cb21bcdb5542
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

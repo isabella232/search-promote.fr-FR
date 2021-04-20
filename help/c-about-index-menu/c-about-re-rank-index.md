@@ -3,7 +3,7 @@ description: Vous pouvez utiliser l’index de classement à nouveau pour mettre
 solution: Target
 subtopic: Re-Rank Index
 title: A propos de l’index de classement
-topic: Index, recherche sur le site et marchandisage
+topic: Index,Site search and merchandising
 uuid: 5c2a4c12-5e06-4fcc-897c-c12fcc5d7aa8
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

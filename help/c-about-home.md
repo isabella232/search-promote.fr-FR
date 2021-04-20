@@ -2,7 +2,7 @@
 description: Vous pouvez utiliser Accueil pour vue divers widgets de rapports qui vous donnent un aperçu rapide de votre compte Search&amp;Promote.
 solution: Target
 title: A propos de Accueil
-topic: Accueil, Recherche sur le site et marchandisage
+topic: Home,Site search and merchandising
 uuid: 5d4dbf5e-954d-46ae-a822-18a58af60de6
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

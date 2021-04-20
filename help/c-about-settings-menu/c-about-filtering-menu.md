@@ -3,7 +3,7 @@ description: Utilisez le menu Filtrage pour utiliser des scripts qui modifient l
 solution: Target
 subtopic: Filtering
 title: A propos du menu Filtrage
-topic: Paramètres, recherche sur le site et marchandisage
+topic: Settings,Site search and merchandising
 uuid: ebb08fa8-4e17-417d-868b-11fc2af9f284
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

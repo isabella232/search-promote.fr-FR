@@ -2,7 +2,7 @@
 description: Search&amp ; amp ; Notes de mise à jour de Promote 8.9.5.
 solution: Target
 title: Notes de mise à jour de Search&amp ; amp ; Promote 8.9.5 (21/02/2013)
-topic: Notes de mise à jour, Recherche sur le site et marchandisage
+topic: Release Notes,Site search and merchandising
 uuid: 1cd8a540-f85f-4e87-8e0c-dbdcd230a6c4
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

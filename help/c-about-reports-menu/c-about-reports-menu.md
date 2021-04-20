@@ -2,7 +2,7 @@
 description: Utilisez le menu Rapports pour vue ou réinitialiser les rapports des requêtes de recherche des clients.
 solution: Target
 title: A propos du menu Rapports
-topic: Rapports, Recherche sur le site et marchandisage
+topic: Reports,Site search and merchandising
 uuid: 3ea856d7-dc07-455f-8dc7-c7f7f56355d7
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

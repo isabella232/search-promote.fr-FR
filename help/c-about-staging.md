@@ -2,7 +2,7 @@
 description: L’évaluation vous permet de tester et de prévisualisation les modifications apportées à vos paramètres et configurations sans affecter votre index dynamique.
 solution: Target
 title: A propos de la mise en scène
-topic: Zone de transit, recherche sur le site et marchandisage
+topic: Staging,Site search and merchandising
 uuid: 2e5889a6-2e9c-4ac7-9d6e-d35e7cafda5b
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

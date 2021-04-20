@@ -2,7 +2,7 @@
 description: Vous pouvez définir les formats de date utilisés lors de l’analyse et de l’index de n’importe quel champ avec un type de données "date".
 solution: Target
 title: Formats de date
-topic: Annexes, Recherche sur site et marchandisage
+topic: Appendices,Site search and merchandising
 uuid: 148914b5-33ef-41db-8404-67c03f6f0832
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

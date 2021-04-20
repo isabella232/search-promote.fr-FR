@@ -3,7 +3,7 @@ description: Utilisez le menu Utilisateurs pour vue et ajouter des utilisateurs,
 solution: Target
 subtopic: Users
 title: A propos du menu Utilisateurs
-topic: Paramètres, recherche sur le site et marchandisage
+topic: Settings,Site search and merchandising
 uuid: 6242b73c-5e8a-44b7-9942-0684530940bc
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

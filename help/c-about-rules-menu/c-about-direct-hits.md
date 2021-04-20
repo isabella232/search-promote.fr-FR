@@ -2,7 +2,7 @@
 description: Les accès directs vous permettent de rediriger un client vers une URL spécifique lorsque le client recherche un terme correspondant. Ce type de fonctionnalité vous permet d'améliorer la navigation dans la recherche de votre site Web.
 solution: Target
 title: A propos des accès directs
-topic: Règles, Recherche sur le site et marchandisage
+topic: Rules,Site search and merchandising
 uuid: 374d63c8-2b82-4165-b543-05b587757baa
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

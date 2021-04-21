@@ -3,16 +3,16 @@ description: Vous pouvez utiliser l’index de classement à nouveau pour mettre
 solution: Target
 subtopic: Re-Rank Index
 title: A propos de l’index de classement
-topic: Index,Site search and merchandising
+topic-legacy: Index,Site search and merchandising
 uuid: 5c2a4c12-5e06-4fcc-897c-c12fcc5d7aa8
+exl-id: c4ddaec9-43ba-42ec-89dc-04d42306b9b6
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '343'
 ht-degree: 1%
 
 ---
-
 
 # A propos de l’index de classement réorganisé{#about-re-rank-index}
 
@@ -67,4 +67,3 @@ Vous ne pouvez pas exporter de journaux ni les enregistrer. Cependant, le journa
    * Utilisez les options de navigation **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** ou **[!UICONTROL Go to line]** pour parcourir le journal.
 
    * Utilisez les options d&#39;affichage **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** ou **[!UICONTROL Show]** pour affiner ce que vous voyez.
-

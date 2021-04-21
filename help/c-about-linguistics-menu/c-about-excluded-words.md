@@ -2,16 +2,16 @@
 description: Vous pouvez utiliser des mots exclus pour spécifier les expressions fréquemment utilisées et les mots courants, tels que "a" et "the", que vous souhaitez exclure des résultats de la recherche.
 solution: Target
 title: A propos des mots exclus
-topic: Linguistics,Site search and merchandising
+topic-legacy: Linguistics,Site search and merchandising
 uuid: 1c879462-1b19-44f6-a3b2-20aa786b3221
+exl-id: d553b776-907a-4f4a-8481-b36dc0cb75c9
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '683'
 ht-degree: 0%
 
 ---
-
 
 # A propos des mots exclus{#about-excluded-words}
 
@@ -73,4 +73,3 @@ Vous pouvez choisir d&#39;afficher les résultats de la recherche lorsque tous l
    * Cliquez sur **[!UICONTROL Push Live]**.
 
       Voir [Activation des paramètres d’étape](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
-

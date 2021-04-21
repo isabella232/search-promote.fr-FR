@@ -2,16 +2,16 @@
 description: Vous pouvez définir les formats de date utilisés lors de l’analyse et de l’index de n’importe quel champ avec un type de données "date".
 solution: Target
 title: Formats de date
-topic: Appendices,Site search and merchandising
+topic-legacy: Appendices,Site search and merchandising
 uuid: 148914b5-33ef-41db-8404-67c03f6f0832
+exl-id: d3b4561b-6359-4b12-b0ff-40ca342a2faa
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '744'
 ht-degree: 3%
 
 ---
-
 
 # Formats de date{#date-formats}
 
@@ -192,4 +192,3 @@ Les chaînes de format par défaut suivantes sont utilisées par les modèles. V
   </tr> 
  </tbody> 
 </table>
-

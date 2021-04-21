@@ -2,16 +2,16 @@
 description: Search&amp ; amp ; Notes de mise à jour de Promote 8.7.1.
 solution: Target
 title: Notes de mise à jour de Search&amp ; amp ; Promote 8.7.1 (23/02/2012)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: 3fabf7b2-4a27-4f0a-862a-52f701a0631d
+exl-id: b10f0081-ed69-4c6b-86c9-816326b647f0
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 32%
+source-wordcount: '173'
+ht-degree: 33%
 
 ---
-
 
 # Notes de mise à jour de Search &amp; Promote 8.7.1 (23/02/2012){#search-promote-release-notes}
 
@@ -38,4 +38,3 @@ Amélioration des délais de recherche grâce à l’ajout d’une prise en char
 * Conservation des horodatages afin que les caches de modèle ne soient pas invalidés.
 * Certains champs de paramètres de modification ont été coupés lorsque la barre de défilement s’affichait dans la boîte de dialogue de bannière Dynamic Media Classic.
 * Toutes les modifications apportées aux règles métier aux paramètres de bannière Dynamic Media Classic fonctionnaient dans la zone d’évaluation, mais ne prenaient pas effet lorsque vous les publiiez.
-

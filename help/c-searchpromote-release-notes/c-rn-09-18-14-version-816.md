@@ -2,16 +2,16 @@
 description: Search&amp ; amp ; Notes de mise à jour de Promote 8.16.0.
 solution: Target
 title: Notes de mise à jour de Search&amp ; amp ; Promote 8.16.0 (18/09/2014)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: 0a59858b-213b-40d6-aea1-d085c4d6d2fa
+exl-id: 929d6f97-4939-4e37-aded-6a746757b960
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '332'
 ht-degree: 39%
 
 ---
-
 
 # Notes de mise à jour de la version 8.16.0 (18/9/2014){#search-promote-release-notes}
 
@@ -52,4 +52,3 @@ ht-degree: 39%
 * Des résultats de recherche incohérents ont été observés avec la fonction **[!UICONTROL Common Phrases]**.
 * L’affichage des noms d’attribut était tronqué dans le résumé des listes de règles.
 * La publication d’une règle métier individuelle impliquait la mise en oeuvre de toutes les règles métier.
-

@@ -2,16 +2,16 @@
 description: Vous pouvez utiliser des règles de fonctionnement pour marchandiser votre recherche.
 solution: Target
 title: A propos des règles de fonctionnement
-topic: Rules,Site search and merchandising
+topic-legacy: Rules,Site search and merchandising
 uuid: f2186f54-7a39-4f46-bb29-5115d5a17f07
+exl-id: 6a52e0f5-29c2-4a48-b996-d217eeb52011
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '3120'
+source-wordcount: '3115'
 ht-degree: 1%
 
 ---
-
 
 # A propos des règles de fonctionnement{#about-business-rules}
 
@@ -23,7 +23,7 @@ Par exemple, vous pouvez configurer le moment où les bannières s&#39;affichent
 
 Chaque règle de fonctionnement est composée de déclencheurs et d’actions.
 
-Le déclencheur définit le moment où la règle s’exécute. Par exemple, lorsque le terme de requête est &quot;homme&quot; ou lorsque les résultats sont principalement des chapeaux. Le déclencheur est constitué de plusieurs conditions qui doivent être toutes, ou n’importe lesquelles d’entre elles doivent être vraies pour que le déclencheur global soit vrai. Vous pouvez définir la priorité en modifiant l’opérateur de déclenchement.
+Le déclencheur définit le moment où la règle s’exécute. Par exemple, lorsque le terme de requête est &quot;mens&quot; ou lorsque les résultats sont principalement des chapeaux. Le déclencheur est constitué de plusieurs conditions qui doivent être toutes, ou n’importe lesquelles d’entre elles doivent être vraies pour que le déclencheur global soit vrai. Vous pouvez définir la priorité en modifiant l’opérateur de déclenchement.
 
 L’action définit ce qui se produit lorsque la condition de déclenchement est remplie. Par exemple, la définition de la bannière pour afficher ou déplacer un résultat donné à la position 1. Le tableau des règles affiche des informations récapitulatives sur la règle. Vous pouvez cliquer sur le nom d’une règle pour l’ouvrir et afficher des informations supplémentaires.
 

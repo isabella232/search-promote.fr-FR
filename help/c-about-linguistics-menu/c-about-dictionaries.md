@@ -2,16 +2,16 @@
 description: Vous pouvez utiliser des dictionnaires pour gérer une collection de dictionnaires et leurs synonymes et hyponymes associés.
 solution: Target
 title: A propos des dictionnaires
-topic: Linguistics,Site search and merchandising
+topic-legacy: Linguistics,Site search and merchandising
 uuid: d4463896-30fe-4385-a283-c930c8264a02
+exl-id: c8e83422-bc96-48f8-b4f1-58a25cade1ef
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2457'
 ht-degree: 1%
 
 ---
-
 
 # A propos des dictionnaires{#about-dictionaries}
 
@@ -403,4 +403,3 @@ Assurez-vous de supprimer un dictionnaire dont vous savez qu&#39;il vous faut pl
    * Cliquez sur **[!UICONTROL Push Live]**.
 
       Voir [Activation des paramètres d’étape](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
-

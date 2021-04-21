@@ -2,16 +2,16 @@
 description: La page Alertes fournit un emplacement central pour la vue et la gestion de toutes les alertes liées à votre compte.
 solution: Target
 title: Alertes
-topic: Reports,Site search and merchandising
+topic-legacy: Reports,Site search and merchandising
 uuid: 94524563-f9a6-40cf-89f3-e80b1d0113c7
+exl-id: b6d637c9-2a2c-49b3-828b-3ae272bf28aa
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
-
 
 # Alertes{#about-alerts}
 
@@ -50,4 +50,3 @@ La page Alertes fournit un emplacement central pour la vue et la gestion de tout
    * Pour sélectionner toutes les alertes affichées, cochez la case en haut de la colonne de gauche.
 
       Si vous souhaitez sélectionner toutes les alertes correspondantes plutôt qu’une seule page, dans la liste déroulante à droite, sélectionnez **[!UICONTROL All Alerts]**, puis cochez la case en haut de la colonne.
-

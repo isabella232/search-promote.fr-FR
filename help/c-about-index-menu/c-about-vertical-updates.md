@@ -3,16 +3,16 @@ description: Vous pouvez utiliser la mise à jour verticale pour mettre rapideme
 solution: Target
 subtopic: Vertical Update
 title: A propos de la mise à jour verticale
-topic: Index,Site search and merchandising
+topic-legacy: Index,Site search and merchandising
 uuid: ded09e89-5a52-4e8c-a6f7-3e25b4191183
+exl-id: 8d6a48c0-377d-4a15-bddc-c67e28037bfc
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
-
 
 # A propos de la mise à jour verticale{#about-vertical-update}
 
@@ -134,4 +134,3 @@ Vous ne pouvez pas exporter de fichiers journaux de mise à jour verticale, ni l
    * Utilisez les options de navigation **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** ou **[!UICONTROL Go to line]** pour parcourir le journal.
 
    * Utilisez les options d&#39;affichage **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** ou **[!UICONTROL Show]** pour affiner ce que vous voyez.
-

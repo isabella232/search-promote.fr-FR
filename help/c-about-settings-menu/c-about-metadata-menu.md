@@ -3,16 +3,16 @@ description: Utilisez le menu Métadonnées pour personnaliser les définitions 
 solution: Target
 subtopic: Metadata
 title: A propos du menu Métadonnées
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: f12fc863-a140-45e8-b219-3dbfdef099cd
+exl-id: 53d62da9-c5bd-4c4a-bb89-743704f66f7f
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '8029'
+source-wordcount: '8024'
 ht-degree: 1%
 
 ---
-
 
 # A propos du menu Métadonnées{#about-the-metadata-menu}
 
@@ -141,7 +141,7 @@ Avant que les effets de la nouvelle définition de balise meta ne soient visible
       </tr> 
       <tr> 
       <td colname="col1"> <p>Champ de mise à jour verticale </p> </td> 
-      <td colname="col2"> <p> <p>Remarque : cette fonctionnalité n’est pas activée par défaut. Contactez le support technique pour l’activer pour votre utilisation. Une fois activé, il apparaît dans l’interface utilisateur. </p> </p> <p>Définit le champ identifié comme un champ Mise à jour verticale. </p> <p>Les champs Mise à jour verticale peuvent être mis à jour au moyen du processus Mise à jour verticale ( <span class="uicontrol"> Index </span> &gt; <span class="uicontrol"> Mise à jour verticale </span>). En raison de la manière dont les mises à jour verticales sont effectuées, il n’est pas possible de rechercher le contenu de ces champs dans des recherches en texte libre. Si cette option est cochée, le contenu de ce champ n’est pas ajouté à l’index "word" lors d’une opération d’index de quelque type que ce soit. Il active également la mise à jour de ce champ lors d’une opération de mise à jour verticale. </p> <p>Pour en savoir plus sur les mises à jour verticales, voir <a href="../c-about-index-menu/c-about-vertical-updates.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> À propos de la mise à jour verticale </a>. </p> </td> 
+      <td colname="col2"> <p> <p>Remarque : cette fonctionnalité n’est pas activée par défaut. Contactez le support technique pour l’activer pour votre utilisation. Une fois activé, il apparaît dans l’interface utilisateur. </p> </p> <p>Définit le champ identifié comme un champ Mise à jour verticale. </p> <p>Les champs Mise à jour verticale peuvent être mis à jour au moyen du processus Mise à jour verticale ( <span class="uicontrol"> Index </span> &gt; <span class="uicontrol"> Mise à jour verticale </span>). En raison de la manière dont les mises à jour verticales sont effectuées, il n’est pas possible de rechercher le contenu de ces champs dans des recherches de texte libre. Si cette option est cochée, le contenu de ce champ n’est pas ajouté à l’index "word" lors d’une opération d’index de quelque type que ce soit. Il active également la mise à jour de ce champ lors d’une opération de mise à jour verticale. </p> <p>Pour en savoir plus sur les mises à jour verticales, voir <a href="../c-about-index-menu/c-about-vertical-updates.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> À propos de la mise à jour verticale </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Pertinence </p> </td> 

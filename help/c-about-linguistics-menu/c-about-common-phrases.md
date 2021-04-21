@@ -2,16 +2,16 @@
 description: Vous pouvez définir des expressions courantes utilisées sur votre site Web de sorte que lorsqu’un client entre dans une requête de recherche, il n’est pas nécessaire de saisir des guillemets autour des expressions que vous avez définies.
 solution: Target
 title: A propos des expressions courantes
-topic: Linguistics,Site search and merchandising
+topic-legacy: Linguistics,Site search and merchandising
 uuid: 0f980a22-d826-4476-97de-0e9c14549bc8
+exl-id: 72305fcd-8f9a-4ce2-b416-aa1b58486312
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1178'
 ht-degree: 1%
 
 ---
-
 
 # A propos des expressions courantes{#about-common-phrases}
 
@@ -211,4 +211,3 @@ Voir [Utilisation de l’option Historique](../t-using-the-history-option.md#tas
    * Cliquez sur **[!UICONTROL Push Live]**.
 
       Voir [Activation des paramètres d’étape](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
-

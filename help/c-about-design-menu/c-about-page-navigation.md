@@ -3,16 +3,16 @@ description: Vous pouvez utiliser la navigation sur les pages pour personnaliser
 solution: Target
 subtopic: Navigation
 title: A propos de la navigation dans les pages
-topic: Design,Site search and merchandising
+topic-legacy: Design,Site search and merchandising
 uuid: fb17a99e-d7b4-415e-ba1b-ca194fe41a5d
+exl-id: ed1ba6a8-1bab-4616-a447-50cfe319dac8
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '400'
 ht-degree: 2%
 
 ---
-
 
 # A propos de la navigation dans la page{#about-page-navigation}
 
@@ -129,4 +129,3 @@ Si votre couche de présentation comporte plusieurs jeux de résultats de recher
    * Cliquez sur **[!UICONTROL Push Live]**.
 
       Voir [Activation des paramètres d’étape](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
-

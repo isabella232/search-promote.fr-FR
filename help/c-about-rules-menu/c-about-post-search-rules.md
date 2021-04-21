@@ -2,16 +2,16 @@
 description: Vous pouvez utiliser les règles de post-recherche pour examiner les résultats d’une recherche et déterminer comment la recherche affecte le contenu affiché.
 solution: Target
 title: A propos des règles après la recherche
-topic: Rules,Site search and merchandising
+topic-legacy: Rules,Site search and merchandising
 uuid: 312d1e4a-f5b6-4629-8645-17e6f6c09fc4
+exl-id: 021aaf99-050e-4d3a-a1da-45f0edfd7c35
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '2102'
+source-wordcount: '2097'
 ht-degree: 1%
 
 ---
-
 
 # À propos des règles après la recherche{#about-post-search-rules}
 

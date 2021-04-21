@@ -3,16 +3,16 @@ description: Vous pouvez utiliser Regenerate Index pour mettre à jour l’index
 solution: Target
 subtopic: Regenerate Index
 title: A propos de l'index de régénération
-topic: Index,Site search and merchandising
+topic-legacy: Index,Site search and merchandising
 uuid: 9d1f1d88-0453-4422-a625-a348febbf224
+exl-id: 4155a52c-33f6-4f54-b69b-2a092530f7aa
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '393'
 ht-degree: 1%
 
 ---
-
 
 # A propos de Regenerate Index{#about-regenerate-index}
 
@@ -75,4 +75,3 @@ Vous ne pouvez pas exporter de journaux ni les enregistrer. Cependant, le journa
    * Utilisez les options de navigation **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** ou **[!UICONTROL Go to line]** pour parcourir le journal.
 
    * Utilisez les options d&#39;affichage **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** ou **[!UICONTROL Show]** pour affiner ce que vous voyez.
-

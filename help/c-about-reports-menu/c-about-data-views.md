@@ -2,16 +2,16 @@
 description: Les Vues de données affichent les résultats de la recherche avec les champs de métadonnées. Chaque colonne est un champ de métadonnées et chaque ligne résulte d'une requête de recherche. Personnalisez les Vues de données en choisissant et en réorganisant les colonnes. Les Vues de données peuvent également comporter des descriptions et des titres personnalisés.
 solution: Target
 title: A propos des Vues de données
-topic: Reports,Site search and merchandising
+topic-legacy: Reports,Site search and merchandising
 uuid: 18930551-960d-40c2-b5b7-0807a2e11134
+exl-id: 9ef5eaef-85d6-41e9-af44-b4775755e5bf
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1018'
 ht-degree: 1%
 
 ---
-
 
 # À propos des Vues de données{#about-data-views}
 
@@ -185,4 +185,3 @@ La vue de données que vous sélectionnez s’ouvre dans une fenêtre de navigat
    * Sur la page [!DNL Data Views], dans la colonne [!DNL Title] du tableau, cliquez sur le nom d&#39;une vue de données à ouvrir.
 
    * Sur la page [!DNL Data Views], dans la colonne [!DNL Actions] du tableau, cliquez sur **[!UICONTROL View]** dans la ligne contenant la vue de données à ouvrir.
-

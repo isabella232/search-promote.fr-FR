@@ -2,16 +2,16 @@
 description: La recherche de proximité vous permet d’associer un emplacement unique à n’importe quelle page de votre site Web, puis de rechercher et de trier les résultats par proximité (distance) depuis un emplacement donné.
 solution: Target
 title: A propos de la recherche de proximité
-topic: Appendices,Site search and merchandising
+topic-legacy: Appendices,Site search and merchandising
 uuid: 24fc9265-3400-46a7-b6e0-4de5b049a39a
+exl-id: 52e796a6-43ea-414f-8404-84ecd358bd76
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '749'
 ht-degree: 0%
 
 ---
-
 
 # A propos de la recherche de proximité{#about-proximity-search}
 

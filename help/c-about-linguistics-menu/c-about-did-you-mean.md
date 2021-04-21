@@ -2,16 +2,16 @@
 description: Vous pouvez configurer le champ Voulez-vous dire pour que les clients reçoivent des suggestions de termes de recherche valides lorsqu'ils ont essayé des recherches qui ont échoué. Les suggestions sont formées en recherchant l’orthographe et en saisissant des corrections dans les termes recherchés qui génèrent une recherche valide.
 solution: Target
 title: A propos de Voulez-vous dire
-topic: Linguistics,Site search and merchandising
+topic-legacy: Linguistics,Site search and merchandising
 uuid: c5973541-3d6b-4fc9-bad4-66d4d3559fe8
+exl-id: c86da375-ac5f-442b-9975-6a4e1ba8a70d
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '728'
 ht-degree: 2%
 
 ---
-
 
 # A propos de Voulez-vous dire{#about-did-you-mean}
 
@@ -99,4 +99,3 @@ t_configuring_did_you_mean.xml
    * Cliquez sur **[!UICONTROL Push Live]**.
 
       Voir [Activation des paramètres d’étape](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
-

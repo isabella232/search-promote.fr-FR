@@ -3,16 +3,16 @@ description: Vous pouvez utiliser des règles de classement pour contrôler le p
 solution: Target
 subtopic: Ranking Rules
 title: A propos des règles de classement
-topic: Rules,Site search and merchandising
+topic-legacy: Rules,Site search and merchandising
 uuid: 21962f9a-1d9c-442f-a6c4-5f452436c640
+exl-id: 7f66c4f6-7659-4faf-9f05-b650cf8c7d47
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '4621'
+source-wordcount: '4616'
 ht-degree: 0%
 
 ---
-
 
 # A propos des règles de classement{#about-ranking-rules}
 
@@ -249,7 +249,7 @@ Voir [Configuration du classement](../c-about-rules-menu/c-about-ranking-rules.m
       </ul> </p> <p>Les valeurs de classement renvoyées par les calculs de classement automatique se situent dans la plage de 0,0 (le plus bas) à 1,0 (le plus élevé). Ils ne sont pas ajustés en fonction des plages définies pour le champ Classement sous Paramètres &gt; Métadonnées &gt; Définitions. </p> <p>Dans l’exemple suivant, si la source de données de la marque pour un résultat de recherche particulier correspond exactement à "DKNY", le classement appliqué pour ce résultat est 0,5. Sinon, si la marque est "Levis", le classement appliqué est 0,1. Le contenu de la source de données doit correspondre à la valeur définie. En d’autres termes, si le contenu de la source de données est "Levis Corp.", il ne correspondra pas à la valeur "Levis". La casse est ignorée, de sorte que "DKNY" correspond à "dkny" et "Dkny". <code> DKNY&nbsp;0.5 Levis&nbsp;0.1 Lee&nbsp;0.2 </code> </p> <p>En tant qu’option plus avancée, vous pouvez spécifier des valeurs en tant qu’expressions régulières. Supposons, par exemple, que certaines pages de votre site contiennent la valeur de la marque "Levis" et que d’autres pages du site contiennent la valeur de la marque "jeans Levis". Vous pouvez utiliser une expression régulière spécifiée avec le mot-clé 
       <code>
         regexp 
-      </code>. </p> <p>Voir <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Expressions régulières </a>. </p> <p>Dans l’exemple suivant, un document de résultats de recherche contenant le contenu de la marque "jeans Levis" se voit attribuer un rang de 0,1. Comme pour la comparaison standard, la casse est ignorée pour les expressions régulières. <code> DKNY&nbsp;0.5 regexp&nbsp;Levis.*&nbsp;0.1 Lee&nbsp;0.2 </code> </p> </td> 
+      </code>. </p> <p>Voir <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Expressions régulières </a>. </p> <p>Dans l’exemple suivant, un document de résultats de recherche contenant le contenu de la marque "jeans Levis" est affecté d’un rang de 0,1. Comme pour la comparaison standard, la casse est ignorée pour les expressions régulières. <code> DKNY&nbsp;0.5 regexp&nbsp;Levis.*&nbsp;0.1 Lee&nbsp;0.2 </code> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Classement par défaut </p> </td> 

@@ -3,16 +3,16 @@ description: Utilisez le menu Rechercher pour définir des mots exclus, des coll
 solution: Target
 subtopic: Searching
 title: A propos du menu Recherche
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: 072111fc-a32b-4acb-8337-cb21bcdb5542
+exl-id: 4cb70240-051b-4bf3-ae2a-b151acc7cba1
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '11170'
+source-wordcount: '11165'
 ht-degree: 1%
 
 ---
-
 
 # A propos du menu Recherche{#about-the-searching-menu}
 
@@ -1141,7 +1141,7 @@ t_creating_a_feed.xml
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <p>1 </p> </td> 
+      <td colname="col1"> <p>3 </p> </td> 
       <td colname="col2"> <p>Nom du flux </p> </td> 
       <td colname="col3"> <p>Indique le nom du flux. </p> </td> 
       </tr> 
@@ -1209,7 +1209,7 @@ t_creating_a_feed.xml
       <td colname="col3"> <p>Permet de mapper des champs de flux spécifiques au fournisseur aux champs de métadonnées de recherche/marchandisage de site. Cette étape de mappage dans l’assistant est importante car elle permet aux flux de mettre en corrélation les informations entre les champs de l’index et les champs des données du flux. Dans la plupart des cas, à l’exception de <span class="wintitle"> Flux génériques </span>, les corrélations sont enregistrées dans un modèle de recherche généré dynamiquement. </p> <p>Chaque ligne de la table Zone cliquable représente un mappage de champ. Dans la colonne <span class="wintitle"> Ajouter/Supprimer </span> de la table, cliquez sur <span class="uicontrol"> + </span> pour ajouter une nouvelle ligne de mappage de champ ; cliquez sur <span class="uicontrol"> - </span> pour supprimer de la table la ligne de mappage de champ actuellement sélectionnée. Pour associer un champ de flux à un champ de métadonnées de recherche de site/marchandisage, utilisez les listes déroulantes correspondantes pour choisir les champs de votre choix. </p> <p> <b>Utilisation avancée</b> </p> <p>Vous pouvez créer vos propres champs personnalisés. Dans la liste déroulante <span class="wintitle"> Champs de flux </span>, cliquez sur <span class="uicontrol"> Personnalisé </span>. Dans le champ de texte associé, saisissez un nom de balise personnalisé pour ce champ. Cette option personnalisée est utile si un flux nécessite des champs spécifiques à un fournisseur. </p> <p>Vous pouvez également créer un champ de métadonnées personnalisé. Dans la liste déroulante <span class="wintitle"> Champs de métadonnées </span>, cliquez sur <span class="uicontrol"> Personnalisé </span>. Dans le champ de texte associé, saisissez une valeur de champ de métadonnées personnalisée. La valeur est insérée dans le modèle prégénéré et peut également être utilisée pour injecter des balises de modèle de recherche personnalisée. </p> <p>Voir <a href="../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4" type="reference" format="dita" scope="local"> Balises de modèle de recherche </a>. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>1 </p> </td> 
+      <td colname="col1"> <p>3 </p> </td> 
       <td colname="col2"> <p>Critères de recherche </p> </td> 
       <td colname="col3"> <p>Lorsque les fichiers de flux sont générés, une requête de recherche est utilisée pour filtrer les données. Vous définissez les filtres utilisés pour la requête de recherche dans ce panneau. </p> 
         <ul id="ul_8179321A58BB4C72B0CDB2B2BEC58FE4"> 
@@ -1264,7 +1264,7 @@ t_creating_a_feed.xml
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <p>3 </p> </td> 
+      <td colname="col1"> <p>1 </p> </td> 
       <td colname="col2"> <p>Nom du flux </p> </td> 
       <td colname="col3"> <p>Indique le nom du flux. </p> </td> 
       </tr> 

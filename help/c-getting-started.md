@@ -2,16 +2,16 @@
 description: Si vous êtes novice en matière de navigation dynamique et Search & Promote, début ici pour être opérationnel avec votre compte. Entre autres, vous apprendrez à indexer votre site Web et à personnaliser l’aspect et l’aspect des résultats de votre recherche.
 solution: Target
 title: Prise en main
-topic: Getting Started,Site search and merchandising
+topic-legacy: Getting Started,Site search and merchandising
 uuid: 816ad003-15c9-4e44-b09d-cab284518634
+exl-id: f2772d7a-b558-403e-9e77-8c87302e2b02
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1022'
 ht-degree: 0%
 
 ---
-
 
 # Prise en main{#getting-started}
 
@@ -142,4 +142,3 @@ De nombreuses autres options vous permettent de personnaliser et de contrôler e
 * Configurez des dictionnaires pour vous permettre de spécifier des groupes de mots apparentés (par exemple, achat, achat et achat). Ces mots apparentés permettent de renvoyer des résultats pertinents même si la requête de recherche d’un client ne correspond pas exactement à la terminologie utilisée sur vos pages Web. Avec le synonyme utilisé dans l’exemple ci-dessus, la requête de recherche &quot;purchase&quot; d’un client renvoie les pages qui contiennent le mot &quot;buy&quot;.
 
    Voir [A propos des dictionnaires](c-about-linguistics-menu/c-about-dictionaries.md#concept_B8028B71EC8144669614C64578EDB034).
-

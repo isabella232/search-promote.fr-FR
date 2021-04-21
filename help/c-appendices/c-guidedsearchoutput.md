@@ -2,16 +2,16 @@
 description: Découvrez comment personnaliser la sortie dans n’importe quel format texte, y compris XML ou JSON.
 solution: Target
 title: Sortie de recherche guidée
-topic: Appendices,Site search and merchandising
+topic-legacy: Appendices,Site search and merchandising
 uuid: 234fd563-f249-42b0-88ca-c89b44f8df77
+exl-id: 5e36b30f-defb-4a28-8516-53cea81d44c2
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '6289'
+source-wordcount: '6284'
 ht-degree: 2%
 
 ---
-
 
 # Sortie de recherche guidée{#guided-search-output}
 
@@ -62,7 +62,7 @@ Chaque fois que le format d’optimisation du référencement est utilisé pour 
 
 ## Paramètres de la requête de recherche {#section_7ADA5E130E3040C9BE85D0D68EDD3223}
 
-Le tableau suivant décrit les paramètres standard de requête de recherche prêts à l’emploi que vous pouvez utiliser. Les règles de traitement et les règles de fonctionnement peuvent être créées à partir de paramètres de requête définis par l’utilisateur pour implémenter une logique métier personnalisée adaptée à votre société. Vous pouvez travailler avec l’équipe de conseil pour obtenir de la documentation sur ces paramètres.
+Le tableau suivant décrit les paramètres standard de requête de recherche prêts à l’emploi que vous pouvez utiliser. Les règles de traitement et les règles de fonctionnement peuvent être créées à partir de paramètres de requête définis par l’utilisateur afin d’implémenter une logique métier personnalisée adaptée à votre société. Vous pouvez travailler avec l’équipe de conseil pour obtenir de la documentation sur ces paramètres.
 
 <table> 
  <thead> 
@@ -3005,4 +3005,3 @@ Voici un exemple de modèle de présentation utilisé pour produire l’exemple 
  
 </customer-results> 
 ```
-

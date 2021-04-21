@@ -2,16 +2,16 @@
 description: Search&amp ; amp ; Notes de mise à jour de Promote 8.9.
 solution: Target
 title: Notes de mise à jour de Search&amp ; amp ; Promote 8.9 (19/07/2012)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: 3853c75d-19ed-4e36-9e81-dcbffe5f5b0c
+exl-id: d61bf0ee-60a9-4c89-8381-5514ba85cb99
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 60%
+source-wordcount: '281'
+ht-degree: 61%
 
 ---
-
 
 # Notes de mise à jour de Search &amp; Promote 8.9 (19/07/2012){#search-promote-release-notes}
 
@@ -39,4 +39,3 @@ ht-degree: 60%
 * Le fait de cliquer sur Modifier sur certaines bannières n’affichait pas la page Modifier.
 * Le reclassement du code de mise à jour était parfois extraordinairement lent.
 * Le retrait ou la publication d’un élément de facette ne fonctionnait pas si les lettres du nom de la facette étaient en minuscules et en majuscules.
-

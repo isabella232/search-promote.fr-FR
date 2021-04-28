@@ -5,14 +5,14 @@ feature: null
 role: Administrator,Business Practitioner,Data Engineer,Developer
 hide: true
 hidefromtoc: true
+exl-id: 1e062554-090b-4275-8595-8ae4233c58d7
 translation-type: tm+mt
-source-git-commit: 681e3e6768f214759598482526ce7ffba27e860e
+source-git-commit: 1562d46d096206f21228cb8ca9cbd8cec406e8dc
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
-
 
 # Annonce de fin de service du Search &amp; Promote d&#39;Adobe
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ### **_À quelle date le Search &amp; Promote cessera-t-il de fonctionner ?_**
 
-La fin de service des Search &amp; Promote est prévue pour le 1er août 2022. A cette date, l’interface utilisateur d’administration du Search &amp; Promote ne sera plus accessible et les demandes aux API de Search &amp; Promote ne produiront plus de résultats. Avant cette date, le service sera entièrement disponible et fonctionnel.
+La fin de service des Search &amp; Promote est prévue pour le **1er septembre 2022**. A cette date, l’interface utilisateur d’administration du Search &amp; Promote ne sera plus accessible et les demandes aux API de Search &amp; Promote ne produiront plus de résultats. Avant cette date, le service sera entièrement disponible et fonctionnel.
 
 ### **_Que se passera-t-il si une recherche ou une autre demande d&#39;API est envoyée au Search &amp; Promote ?_**
 
@@ -42,4 +42,4 @@ Contactez votre responsable de succès client pour toute question ou contactez l
 
 ### **_Puis-je toujours renouveler ma licence de Search &amp; Promote avant la fin de service ?_**
 
-Oui. Travaillez avec votre représentant d’Adobe pour renouveler votre licence avec une date de fin de contrat au plus tard le 1er août 2022.
+Oui. Contactez votre représentant d’Adobe pour renouveler votre licence avec une date de fin de contrat au plus tard le **1er septembre 2022**.

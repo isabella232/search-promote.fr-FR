@@ -6,10 +6,10 @@ topic-legacy: Site search and merchandising
 uuid: bb1c49be-7cfd-485a-a848-c5dc8733b009
 exl-id: 6920dbf0-beeb-4723-8178-4da37f0b03ed
 translation-type: tm+mt
-source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
+source-git-commit: c52719f476a61592b11bf1182a1bfe3525488817
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 23%
+source-wordcount: '141'
+ht-degree: 22%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 23%
 
 ## Actualités et annonces {#topic_02625547D07F411DBAC9593FCBD4741B}
 
-<!-- * **Attention:** [Adobe Search&amp;Promote End-of-Service Announcement](/help/sp-eol.md). -->
+* **ATTENTION**  - Annonce [ de fin de service ](/help/sp-eol.md)Adobe Search &amp; Promote.
 
 * Notes de mise à jour de Adobe Marketing Cloud : contient de nouvelles fonctionnalités, des correctifs et des problèmes connus dans toutes les solutions de Marketing Cloud. Les nouvelles fonctions sont intégrées aux versions du printemps et de l’automne ; les versions de maintenance reviennent chaque mois.
 

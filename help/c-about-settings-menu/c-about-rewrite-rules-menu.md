@@ -7,9 +7,9 @@ topic-legacy: Settings,Site search and merchandising
 uuid: 77ee84dd-fdba-4d34-ae8e-2fe786599800
 exl-id: cff17ead-6997-4ff6-a995-7ca020b06d50
 translation-type: tm+mt
-source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
+source-git-commit: aa095add9eb656913792b3f14001dda66cdd7d67
 workflow-type: tm+mt
-source-wordcount: '10197'
+source-wordcount: '10178'
 ht-degree: 0%
 
 ---
@@ -281,14 +281,14 @@ t_adding_a_crawl_list_store_url_rule.xml
 
  -->
 
-**Pour ajouter des règles d’URL de banque de listes d’analyse**
+**Pour ajouter des règles d’URL de banque de listes d’analyse :**
 
 1. Dans le menu produit, cliquez sur **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl List Store URL Rules]**.
 1. Dans le champ [!DNL Crawl List Store URL Rules], entrez les règles de votre choix.
 
    Les lignes vierges et les lignes de commentaire commençant par le caractère &quot;#&quot; (hachage) sont autorisées.
-1. (Facultatif) Sur la page [!DNL Crawl List Store URL Rules], dans le champ [!DNL Test Crawl List Store URL Rules], saisissez une URL de test dont vous souhaitez tester les règles d’analyse, puis cliquez sur **Test**.
-1. Cliquez sur **Enregistrer les modifications**.
+1. (Facultatif) Sur la page [!DNL Crawl List Store URL Rules], dans le champ [!DNL Test Crawl List Store URL Rules], saisissez une URL de test dont vous souhaitez tester les règles d’analyse, puis cliquez sur **[!UICONTROL Test]**.
+1. Cliquez sur **[!UICONTROL Save Changes]**.
 1. (Facultatif) Recréez l’index de votre site d’évaluation si vous souhaitez prévisualisation les résultats.
 
    Voir [Configuration d’un index incrémentiel d’un site Web intermédiaire](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
@@ -566,14 +566,14 @@ t_adding_crawl_list_retrieve_url_rules.xml
 
  -->
 
-**Pour ajouter des règles d’URL de récupération de liste d’analyse**
+**Pour ajouter des règles d&#39;URL de récupération de liste d&#39;analyse :**
 
 1. Dans le menu produit, cliquez sur **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl List Retrieve URL Rules]**.
 1. Dans le champ [!DNL Crawl List Retrieve URL Rules], entrez les règles de votre choix.
 
    Les lignes vierges et les lignes de commentaire commençant par le caractère &quot;#&quot; (hachage) sont autorisées.
-1. (Facultatif) Sur la page [!DNL Crawl List Retrieve URL Rules], dans le champ [!DNL Test Crawl List Retrieve URL Rules], saisissez une URL de test dont vous souhaitez tester les règles d’analyse, puis cliquez sur **Test**.
-1. Cliquez sur **Enregistrer les modifications**.
+1. (Facultatif) Sur la page [!DNL Crawl List Retrieve URL Rules], dans le champ [!DNL Test Crawl List Retrieve URL Rules], saisissez une URL de test dont vous souhaitez tester les règles d’analyse, puis cliquez sur **[!UICONTROL Test]**.
+1. Cliquez sur **[!UICONTROL Save Changes]**.
 1. (Facultatif) Recréez l’index de votre site d’évaluation si vous souhaitez prévisualisation les résultats.
 
    Voir [Configuration d’un index incrémentiel d’un site Web intermédiaire](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
@@ -637,22 +637,21 @@ RewriteRule Pattern Substitution [Flags]
 
 Voir [Expressions régulières](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
 
-Vous pouvez utiliser le caractère &quot;pas&quot; (&#39;!&#39;) pour préfixer le modèle. Le caractère &quot;pas&quot; vous permet de nier un modèle, c’est-à-dire d’être vrai uniquement si le titre actuel ne correspond PAS au modèle. Le caractère &quot;pas&quot; peut être utilisé lorsqu’il est préférable de faire correspondre un modèle négatif ou comme règle par défaut finale. Remarque : Vous ne pouvez pas utiliser à la fois le caractère &quot;pas&quot; et les caractères génériques groupés dans un modèle. En outre, vous ne pouvez pas utiliser un modèle dégradé lorsque la chaîne de substitution contient $N.
+Vous pouvez utiliser le caractère &quot;pas&quot; (&#39;!&#39;) pour préfixer le modèle. Le caractère &quot;pas&quot; vous permet de nier un modèle, c’est-à-dire d’être vrai uniquement si le titre actuel ne correspond PAS au modèle. Le caractère &quot;pas&quot; peut être utilisé lorsqu’il est préférable de faire correspondre un modèle négatif ou comme règle par défaut finale. Remarque : Vous ne pouvez pas utiliser à la fois le caractère &quot;pas&quot; et les caractères génériques groupés dans un modèle. En outre, vous ne pouvez pas utiliser un modèle dégradé lorsque la chaîne de substitution contient `$N`.
 
 Vous pouvez utiliser des parenthèses pour créer une référence arrière, qui peut être référencée par Substitution et CondPattern.
 
-**** SubstitutionLe titre est remplacé par la chaîne de substitution. La chaîne peut contenir les éléments suivants :
+Substitution : le titre est remplacé par la chaîne de substitution. La chaîne peut contenir les éléments suivants :
 
 Texte ordinaire : texte transmis sans modification.
 
 Les références arrière permettent d&#39;accéder aux parties groupées (entre parenthèses internes) du modèle ou du modèle CondPattern. Voici deux types de références arrière :
 
-* Réécrire les références arrière de règle
+* Réécrire les références arrière de règle : ces références arrière correspondent dans le modèle de règle de réécriture correspondant et prennent la forme $N (0 &lt;= N &lt;= 9).
 
-   Ces références arrière correspondent dans le modèle RewriteRule correspondant et prennent la forme $N (0 &lt;= N &lt;= 9). Par exemple, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
-* Réécrire les références arrière de Cond
+   Par exemple, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
 
-   Ces références arrière correspondent dans le dernier CondPattern RewriteCond correspondant et prennent la forme %N (0 &lt;= N &lt;= 9).
+* Réécrire les références arrière - Ces références arrière correspondent dans le dernier CondPattern RewriteCond correspondant et prennent la forme %N (0 &lt;= N &lt;= 9).
 
 Variables Il s’agit de variables sous la forme %{NAME_OF_VARIABLE} où NAME_OF_VARIABLE peut être une chaîne pour le nom d’une variable définie. Consultez l&#39;indicateur `[E]` pour plus d&#39;informations sur la définition des variables d&#39;environnement.
 
@@ -720,8 +719,11 @@ Texte ordinaire : texte transmis sans modification.
 
 Les références arrière permettent d&#39;accéder aux parties groupées (entre parenthèses internes) du modèle ou du modèle CondPattern. Il existe deux types de références arrière :
 
-* Réécrire les références arrière de règle Ces références arrière correspondent dans le modèle RewriteRule correspondant et se présentent sous la forme $N (0 &lt;= N &lt;= 9). Par exemple, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
-* RéécrireCond Références de renvoi Ces références de renvoi correspondent dans le dernier CondPattern RewriteCond correspondant et prennent la forme %N (0 &lt;= N &lt;= 9).
+* Réécrire les références arrière de règle : ces références arrière correspondent dans le modèle de règle de réécriture correspondant et prennent la forme $N (0 &lt;= N &lt;= 9).
+
+   Par exemple, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+
+* Réécrire les références arrière - Ces références arrière correspondent dans le dernier CondPattern RewriteCond correspondant et prennent la forme %N (0 &lt;= N &lt;= 9).
 
 Variables Il s’agit de variables sous la forme %{NAME_OF_VARIABLE} où NAME_OF_VARIABLE peut être une chaîne pour le nom d’une variable définie. Pour plus d&#39;informations sur la définition des variables d&#39;environnement, consultez l&#39;indicateur `[E]`.
 
@@ -797,7 +799,15 @@ RewriteRule  ^My[[:blank:]]Company[[:blank:]]-[[:blank:]]
 <b>$1</b>}
 ```
 
-Le modèle de la règle `(^My[[:blank:]]Company[[:blank:]]-[[:blank:]] (.*))` contient une référence arrière `(.*)` qui correspond au contenu du titre qui suit &quot;Ma Société-&quot;. N&#39;oubliez pas que le fait d&#39;entourer une partie d&#39;un modèle avec une parenthèse ( ) crée une référence arrière qui peut être référencée par la Substitution. Dans cet exemple, la Substitution (${toupper:**$1**}) réécrit cette référence arrière (**$1**) à l’aide de la fonction toupper.
+Le modèle de la règle
+
+`(^My[[:blank:]]Company[[:blank:]]-[[:blank:]] (.*))`
+
+contient une référence `(.*)` qui correspond au contenu du titre qui suit &quot;Ma Société-&quot;. N&#39;oubliez pas que le fait d&#39;entourer une partie d&#39;un modèle avec une parenthèse ( ) crée une référence arrière qui peut être référencée par la Substitution. Dans cet exemple, la substitution
+
+`(${toupper:**$1**})`
+
+réécrit cette référence inverse (`**$1**`) à l’aide de la fonction toupper.
 
 Ainsi, le titre du formulaire &quot;Ma Société - Bienvenue&quot; est réécrit en &quot;BIENVENUE&quot;.
 
@@ -815,14 +825,14 @@ t_adding_crawl_title_rules.xml
 
  -->
 
-**Pour ajouter des règles de titre d’analyse**
+**Pour ajouter des règles de titre d&#39;analyse :**
 
 1. Dans le menu produit, cliquez sur **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl Title Rules]**.
 1. Dans le champ [!DNL Crawl Title Rules], entrez les règles de votre choix.
 
    Les lignes vierges et les lignes de commentaire commençant par le caractère &quot;#&quot; (hachage) sont autorisées.
-1. (Facultatif) Sur la page [!DNL Crawl Title Rules], dans le champ [!DNL Test Crawl Title Rules], saisissez une URL de test dont vous souhaitez tester les règles de recherche, puis cliquez sur **Test**.
-1. Cliquez sur **Enregistrer les modifications**.
+1. (Facultatif) Sur la page [!DNL Crawl Title Rules], dans le champ [!DNL Test Crawl Title Rules], saisissez une URL de test dont vous souhaitez tester les règles de recherche, puis cliquez sur **[!UICONTROL Test]**.
+1. Cliquez sur **[!UICONTROL Save Changes]**.
 1. (Facultatif) Recréez l’index de votre site d’évaluation si vous souhaitez prévisualisation les résultats.
 
    Voir [Configuration d’un index incrémentiel d’un site Web intermédiaire](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
@@ -983,9 +993,11 @@ Texte ordinaire : Texte transmis sans modification.
 
 Les références arrière permettent d&#39;accéder aux parties groupées (entre parenthèses internes) du modèle ou du modèle CondPattern. Il existe deux types de références arrière :
 
-* ** Réécrire les références arrière de règle** Ces références arrière correspondent dans le modèle de règle de réécriture correspondant et prennent la forme $N (0 &lt;= N &lt;= 9). Par exemple, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+* Réécrire les références arrière de règle : ces références arrière correspondent dans le modèle de règle de réécriture correspondant et prennent la forme $N (0 &lt;= N &lt;= 9).
 
-* **RéécrireCond** RéférencesRéférencesCes références arrière correspondent dans le dernier CondPattern RewriteCond correspondant et se présentent sous la forme %N (0  &lt;>
+   Par exemple, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+
+* Réécrire les références arrière - Ces références arrière correspondent dans le dernier CondPattern RewriteCond correspondant et prennent la forme %N (0 &lt;= N &lt;= 9).
 
 Variables Il s’agit de variables sous la forme %{NAME_OF_VARIABLE} où NAME_OF_VARIABLE peut être une chaîne pour le nom d’une variable définie. Voir l&#39;indicateur RewriteRule *`[E]`* pour plus d&#39;informations sur la définition de variables.
 
@@ -1070,14 +1082,15 @@ t_adding_search_url_rules.xml
 
  -->
 
-**Pour ajouter des règles d’URL de recherche**
+**Pour ajouter des règles d’URL de recherche :**
 
 1. Dans le menu produit, cliquez sur **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Search URL Rules]**.
 1. Dans le champ [!DNL Search URL Rules], entrez les règles de votre choix.
 
    Les lignes vierges et les lignes de commentaire commençant par le caractère &quot;#&quot; (hachage) sont autorisées.
-1. (Facultatif) Sur la page [!DNL Search URL Rules], dans le champ [!DNL Test Search URL Rules], saisissez une URL de test dont vous souhaitez tester les règles d’analyse, puis cliquez sur **Test**.
-1. Cliquez sur **Enregistrer les modifications**.
+
+1. (Facultatif) Sur la page [!DNL Search URL Rules], dans le champ [!DNL Test Search URL Rules], saisissez une URL de test dont vous souhaitez tester les règles d’analyse, puis cliquez sur **[!UICONTROL Test]**.
+1. Cliquez sur **[!UICONTROL Save Changes]**.
 1. (Facultatif) Recréez l’index de votre site d’évaluation si vous souhaitez prévisualisation les résultats.
 
    Voir [Configuration d’un index incrémentiel d’un site Web intermédiaire](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
@@ -1143,9 +1156,11 @@ Vous pouvez utiliser des parenthèses pour créer une référence arrière, qui 
 
 Texte ordinaire : texte transmis sans modification.
 
-**** Références arrièreFournissez un accès aux parties groupées (entre parenthèses internes) du modèle ou du modèle de suite. Voici deux types de références arrière :
+* Références arrière - Fournit un accès aux parties groupées (entre parenthèses internes) du modèle ou du modèle CondPattern. Voici deux types de références arrière :
 
-* **RéécrireRègle** Références arrière Ces références arrière correspondent dans le modèle RewriteRule correspondant et se présentent sous la forme $N (0)  &lt;> Par exemple, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+* Réécrire les références arrière de règle : ces références arrière correspondent dans le modèle de règle de réécriture correspondant et prennent la forme $N (0 &lt;= N &lt;= 9).
+
+   Par exemple, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
 
 * ** Réécrivez les références arrière de Cond** Ces références arrière correspondent dans le dernier CondPattern RewriteCond correspondant et prennent la forme %N (0 &lt;= N &lt;= 9).
 
@@ -1213,9 +1228,11 @@ Texte ordinaire : texte transmis sans modification.
 
 Les références arrière permettent d&#39;accéder aux parties groupées (entre parenthèses internes) du modèle ou du modèle CondPattern. Il existe deux types de références arrière :
 
-* **RéécrireRègle** Références arrière Ces références arrière correspondent dans le modèle RewriteRule correspondant et se présentent sous la forme $N (0)  &lt;> Par exemple, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+* Réécrire les références arrière de règle : ces références arrière correspondent dans le modèle de règle de réécriture correspondant et prennent la forme $N (0 &lt;= N &lt;= 9).
 
-* **RéécrireCond** RéférencesRéférencesCes références arrière correspondent dans le dernier CondPattern RewriteCond correspondant et se présentent sous la forme %N (0  &lt;>
+   Par exemple, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+
+* Réécrire les références arrière - Ces références arrière correspondent dans le dernier CondPattern RewriteCond correspondant et prennent la forme %N (0 &lt;= N &lt;= 9).
 
 **** VariablesIl s’agit de variables au format %{NAME_OF_VARIABLE} où NAME_OF_VARIABLE peut être une chaîne pour le nom d’une variable définie. Consultez l&#39;indicateur `[E]` pour plus d&#39;informations sur la définition des variables d&#39;environnement. Les variables peuvent également être définies dans le formulaire de recherche qui a généré les résultats de la recherche.
 
@@ -1291,7 +1308,11 @@ RewriteRule  ^My[[:blank:]]Company[[:blank:]]-[[:blank:]]
 <b>$1</b>} 
 ```
 
-Le modèle de la règle `(^My[[:blank:]]Company[[:blank:]]-[[:blank:]] (.*))` contient une référence arrière **`(.*)`** qui correspond au contenu du titre qui suit &quot;Ma Société-&quot;. N&#39;oubliez pas que le fait d&#39;entourer une partie d&#39;un modèle avec une parenthèse ( ) crée une référence arrière qui peut être référencée par la Substitution. Dans cet exemple, la Substitution (${toupper:**$1**}) réécrit cette référence arrière (**$1**) à l’aide de la fonction toupper.
+Le modèle de la règle `(^My[[:blank:]]Company[[:blank:]]-[[:blank:]] (.*))` contient une référence arrière **`(.*)`** qui correspond au contenu du titre qui suit &quot;Ma Société-&quot;. N&#39;oubliez pas que le fait d&#39;entourer une partie d&#39;un modèle avec une parenthèse ( ) crée une référence arrière qui peut être référencée par la Substitution. Dans cet exemple, la substitution
+
+`(${toupper:**$1**})`
+
+réécrit cette référence arrière (**$1**) à l’aide de la fonction toupper.
 
 Ainsi, le titre du formulaire &quot;Ma Société - Bienvenue&quot; est réécrit en &quot;BIENVENUE&quot;.
 
@@ -1309,14 +1330,14 @@ t_adding_search_title_rules.xml
 
  -->
 
-**Pour ajouter des règles de titre de recherche**
+**Pour ajouter des règles de titre de recherche :**
 
 1. Dans le menu produit, cliquez sur **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Search Title Rules]**.
 1. Dans le champ [!DNL Search Title Rules], entrez les règles de votre choix.
 
    Les lignes vierges et les lignes de commentaire commençant par le caractère &quot;#&quot; (hachage) sont autorisées.
-1. (Facultatif) Sur la page [!DNL Search Title Rules], dans le champ [!DNL Test Search Title Rules], saisissez un titre de test, puis cliquez sur **Test**.
-1. Cliquez sur **Enregistrer les modifications**.
+1. (Facultatif) Sur la page [!DNL Search Title Rules], dans le champ [!DNL Test Search Title Rules], saisissez un titre de test, puis cliquez sur **[!UICONTROL Test]**.
+1. Cliquez sur **[!UICONTROL Save Changes]**.
 1. (Facultatif) Recréez l’index de votre site d’évaluation si vous souhaitez prévisualisation les résultats.
 
    Voir [Configuration d’un index incrémentiel d’un site Web intermédiaire](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).

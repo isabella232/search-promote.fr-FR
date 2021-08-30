@@ -5,10 +5,10 @@ solution: Target
 topic-legacy: Site search and merchandising
 uuid: bb1c49be-7cfd-485a-a848-c5dc8733b009
 exl-id: 6920dbf0-beeb-4723-8178-4da37f0b03ed
-source-git-commit: bd8341e6bd955dbf5496351594938b65e1bd2948
+source-git-commit: 95bf92df17d7832df72e8d883a22f9063e53a18d
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 22%
+source-wordcount: '106'
+ht-degree: 26%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 22%
 
 * **IMPORTANT :** [Annonce de fin de service d’Adobe](/help/sp-eol.md).
 
-* Notes de mise à jour de Adobe Marketing Cloud : contient de nouvelles fonctionnalités, des correctifs et des problèmes connus de toutes les solutions de Marketing Cloud. Les nouvelles fonctions sont intégrées aux versions du printemps et de l’automne ; les versions de maintenance reviennent chaque mois.
+* Notes de mise à jour de Adobe Experience Cloud : contient de nouvelles fonctionnalités, des correctifs et des problèmes connus de toutes les solutions Experience Cloud. Les nouvelles fonctions sont intégrées aux versions du printemps et de l’automne ; les versions de maintenance reviennent chaque mois.
 
-   Accès anticipé : Inscrivez-vous à la [mise à jour prioritaire des produits par Adobe](https://campaign.adobe.com/webApp/adbePriorityProductSubscribe) pour recevoir les notes de mise à jour de Adobe Marketing Cloud une semaine avant chaque mise à jour.
+<!--   Early Access: Sign up for the [Adobe Priority Product Update](https://campaign.adobe.com/webApp/adbePriorityProductSubscribe) to receive Adobe Marketing Cloud release notes one week before each release. -->
 
 * Notes de mise à jour des Search &amp; Promote Adobe les plus récentes :
 
@@ -32,6 +32,6 @@ ht-degree: 22%
 
 ## Autres informations {#topic_34A00195904D4AE7AE982D3746F693AA}
 
-[Adobe Search &amp; Promote](https://www.adobe.com/solutions/testing-targeting/search-driven-merchandising.html)
+<!-- [Adobe Search&amp;Promote website](https://www.adobe.com/solutions/testing-targeting/search-driven-merchandising.html) -->
 
 [Industry Insights](https://blog.adobe.com/en/topics/digital-transformation.html) - Le blog d’Adobe pour le marketing numérique.
